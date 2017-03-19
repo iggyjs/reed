@@ -2,6 +2,7 @@ const User = require('../models/user');
 const express = require('express');
 const routes = express.Router();
 const bcrypt = require('bcrypt');
+const shortid = require('shortid');
 const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 const config = require('../config');
@@ -46,6 +47,7 @@ routes.post('/signup', (req, res) => {
     bcrypt.genSalt(saltRounds, (err, salt) => {
         bcrypt.hash(pw, salt, (err, hash) => {
             let user = new User({
+                guid: shortid.generate(),
                 name: payload.name,
                 password: hash,
                 admin: true
