@@ -1,0 +1,30 @@
+{
+  "name": "reed-rest-api",
+  "version": "1.0.0",
+  "description": "A REST API for reed application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iggyjoaquin/reed-rest-api.git"
+  },
+  "author": "Ignacio Streuly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iggyjoaquin/reed-rest-api/issues"
+  },
+  "homepage": "https://github.com/iggyjoaquin/reed-rest-api#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.1",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
