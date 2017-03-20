@@ -12,6 +12,7 @@ mongoose.connect('mongodb://localhost/reed');
 //routes
 const auth = require('./routes/auth');
 const list = require('./routes/list');
+const users = require('./routes/users');
 
 app.use(bodyParser.urlencoded({extended: false}));
 
@@ -28,7 +29,7 @@ app.get('/', (req, res) => {
 app.use(bodyParser.json());
 
 //apply our routes
-app.use('/api', auth, list);
+app.use('/api', auth, list, users);
 
 app.listen(PORT);
 console.log('Server running at port ' + PORT + '...');

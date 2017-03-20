@@ -13,7 +13,7 @@ const config = require('../config');
 
 let userId = '';
 
-// route middleware to verify a tokens
+//middleware to verify a tokens
 routes.use((req, res, next) => {
     let token = req.body.token || req.query.token || req.headers['x-access-token'];
 
