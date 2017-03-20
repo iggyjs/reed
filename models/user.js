@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 module.exports = mongoose.model('User', new Schema({
-    guid: Number,
+    guid: String,
     name: String,
     password: String,
     admin: Boolean

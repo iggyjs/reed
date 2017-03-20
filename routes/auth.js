@@ -7,6 +7,7 @@ const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 const config = require('../config');
 
+//logs a user in
 routes.post('/login', (req, res) => {
     User.findOne({
         name: req.body.name
@@ -39,7 +40,7 @@ routes.post('/login', (req, res) => {
     }); //end User.findOne
 });
 
-
+//creates a new user
 routes.post('/signup', (req, res) => {
     let payload = req.body;
     let pw = req.body.password;
