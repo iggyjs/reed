@@ -15,6 +15,7 @@ const list = require('./routes/list');
 const users = require('./routes/users');
 
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 //middleware to log requests
 app.use((req, res, next) => {

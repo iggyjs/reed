@@ -18,7 +18,7 @@ routes.post('/login', (req, res) => {
             res.json({ success: false, message: 'Authentication failed. User not found.' });
         } else if (user) {
             // check if password matches
-            bcrypt.compare(req.body.password, user.password, function(err, response) {
+            bcrypt.compare(req.body.password, user.password, (err, response) => {
                 if (response == true) {
                     // if user is found and password is right
                     // create a token
@@ -44,6 +44,8 @@ routes.post('/login', (req, res) => {
 routes.post('/signup', (req, res) => {
     let payload = req.body;
     let pw = req.body.password;
+
+    console.log(req.body);
 
     bcrypt.genSalt(saltRounds, (err, salt) => {
         bcrypt.hash(pw, salt, (err, hash) => {

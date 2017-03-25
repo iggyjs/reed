@@ -40,7 +40,7 @@ routes.use((req, res, next) => {
 //returns list of following
 routes.get('/following', (req, res) => {
     // get the current user object
-    User.find({}, (err, user) => {
+    User.findById(userId, (err, user) => {
         res.json(user.following);
     });
 });
@@ -48,19 +48,117 @@ routes.get('/following', (req, res) => {
 //returns list of followers
 routes.get('/followers', (req, res) => {
     // get the current user object
-    User.find({}, (err, user) => {
+    User.findById(userId, (err, user) => {
         res.json(user.followers);
     });
 });
 
-//TODO:
 //sends a follow request
+routes.post('/followRequest', (req, res) => {
+    let recipientId = req.body.userGuidToAdd;
 
-//TODO:
-//adds a user to following
+    User.find({guid: recipientId}, (err, userToFollowReturn) => {
+        if (err) {
+            console.log(err);
+            res.json({success: false});
+        }
 
-//TODO:
-//adds a user to followers
+        let userToFollow = userToFollowReturn[0];
 
+        //add a following request to this user
+        User.findById(userId, (err, currUser) => {
+
+            if (err) {
+                res.json({success: false});
+            }
+
+            let currUserGuid = currUser.guid;
+
+            //check to see if the current user has already sent a request
+            if (userToFollow.followRequests.indexOf(currUserGuid) === -1) {
+                //add to the chosen users follow requests
+                userToFollow.followRequests.push(currUserGuid);
+                userToFollow.save();
+
+                res.json({success: true});
+            } else {
+                res.json({success: false, statusCode:4001, message: 'User already submiitted request.'})
+            }
+
+
+        });
+    });
+});
+
+
+//Confirms follow request and updates documents for both the requester
+//and approver
+routes.post('/followAccept', (req, res) =>  {
+    let requesterGuid = req.body.reqGuid;
+
+    //find the current user
+    User.findById(userId, (err, currUser) => {
+        //make sure we have follow requests
+        if (currUser.followRequests.length === 0) {
+            res.json({success: false, message: 'Empty list of following requests.'});
+        }
+
+        //find the requester
+        User.find({guid: requesterGuid}, (err, requestUserReturn) => {
+            if (err) {
+                console.log(err);
+                res.json({success: false});
+            }
+
+            if (requestUserReturn.length === 0) {
+                res.json({success: false, statusCode:4004, message: 'Requester not found'});
+            }
+
+            //guid's assigned are unique, we know it's the first entry
+            let requestUser = requestUserReturn[0];
+
+            //add the current user to the requestors `following`
+            requestUser.following.push(currUser.guid);
+            requestUser.save((err, saved) => {
+                //update the current user to include the newly accepted follower in 'followers'
+                currUser.followers.push(requestUser.guid);
+
+                //update follow requests
+                let idx = currUser.followRequests.indexOf(requestUser.guid);
+                currUser.followRequests.splice(idx, 1);
+
+                currUser.save();
+
+                res.json({success: true});
+            });
+        });
+
+    });
+
+});
+
+//ignore follow request
+routes.post('/followIgnore', (req, res) => {
+    let requesterGuid = req.body.reqGuid;
+
+    //get current user
+    User.findById(userId, (err, user) => {
+        if (err) {
+            console.log(err);
+            res.json({success: false});
+        }
+
+        console.log(user);
+
+        //remove the users request from request list
+        let idx = user.followRequests.indexOf(requesterGuid);
+
+        if (idx > -1) {
+            user.followRequests.splice(idx, 1);
+            user.save();
+        }
+        res.json({success: true});
+    });
+});
 
 module.exports = routes;
