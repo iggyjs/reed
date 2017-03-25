@@ -157,6 +157,7 @@ routes.post('/followIgnore', (req, res) => {
             user.followRequests.splice(idx, 1);
             user.save();
         }
+        
         res.json({success: true});
     });
 });
