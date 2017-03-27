@@ -3,7 +3,7 @@
 ## Overview
 Recently, I've found myself reading a lot of articles online from a wide array of sites and publications. In the wake of a sudden sprawl to learn more about our poltical system, online privacy, web security and other topics, I consistently wonder what my friends are reading.
 
-Unfortunately, people don't share as liberally on Facebook as they used to, so that's where `Reed` comes in. `Reed` is an social reading list that allows you to, while surfing the web, add articles to a `Daily Reading List`, which in turn populates your followers feeds. You follow people whose readings lists you'd like to see, and people follow you if they want to see what you're reading.
+Unfortunately, people don't share as liberally on Facebook as they used to, so that's where `Reed` comes in. `Reed` is a social reading list that allows you to, while surfing the web, add articles to a `Daily Reading List`, which in turn populates your followers feeds. You follow people whose readings lists you'd like to see, and people follow you if they want to see what you're reading.
 
 
 ## Data Model
@@ -84,8 +84,9 @@ NOTE: More pages may be added in the process of development
     * Will be using gulp for task automation and something like Browserify to have hot reloading and to learn more about workflow.
 * (1 points) Will be designing the UI using Sketch 3
 * (2 points) Will be adding social features like followers, along with the ability to send and ignore follow requests.
+* (2 points) Will be adding a Chrome Extension that interacts with the same endpoints as the web application to seamless upload articles while users surf.
 
-11 points total out of 8 required points.
+13 points total out of 8 required points.
 
 ## [Link to Initial Main Project File](server/server.js)
 
