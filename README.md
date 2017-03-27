@@ -1,57 +1,46 @@
-The content below is an example project proposal / requirements document. Replace the text below the lines marked "__TODO__" with details specific to your project. Remove the "TODO" lines.
-
-(___TODO__: your project name_)
-
-# Shoppy Shoperson 
+# Reed
 
 ## Overview
+Recently, I've found myself reading a lot of articles online from a wide array of sites and publications. In the wake of a sudden sprawl to learn more about our poltical system, online privacy, web security and other topics, I consistently wonder what my friends are reading.
 
-(___TODO__: a brief one or two paragraph, high-level description of your project_)
-
-Remembering what to buy at the grocery store is waaaaay too difficult. Also, shopping for groceries when you're hungry leads to regrettable purchases. Sooo... that's where Shoppy Shoperson comes in!
-
-Shoppy Shoperson is a web app that will allow users to keep track of multiple grocery lists. Users can register and login. Once they're logged in, they can create or view their grocery list. For every list that they have, they can add items to the list or cross off items.
+Unfortunately, people don't share as liberally on Facebook as they used to, so that's where `Reed` comes in. `Reed` is an social reading list that allows you to, while surfing the web, add articles to a `Daily Reading List`, which in turn populates your followers feeds. You follow people whose readings lists you'd like to see, and people follow you if they want to see what you're reading.
 
 
 ## Data Model
 
-(___TODO__: a description of your application's data and their relationships to each other_) 
+The application will store Users, Lists and Articles
 
-The application will store Users, Lists and Items
-
-* users can have multiple lists (via references)
+* users have one list (via references)
 * each list can have multiple items (by embedding)
 
-(___TODO__: sample documents_)
+Below are the schemas for the 3 models:
 
-An Example User:
-
-```javascript
-{
-  username: "shannonshopper",
-  hash: // a password hash,
-  lists: // an array of references to List documents
-}
-```
-
-An Example List with Embedded Items:
+User
 
 ```javascript
-{
-  user: // a reference to a User object
-  name: "Breakfast foods",
-  items: [
-    { name: "pancakes", quantity: "9876", checked: false},
-    { name: "ramen", quantity: "2", checked: true},
-  ],
-  createdAt: // timestamp
-}
+module.exports = mongoose.model('User', new Schema({
+    guid: String,
+    name: String,
+    following: [],
+    followers: [],
+    followRequests: [],
+    password: String,
+    admin: Boolean
+}));
 ```
 
+List with Embedded Articles:
 
-## [Link to Commented First Draft Schema](db.js) 
-
-(___TODO__: create a first draft of your Schemas in db.js and link to it_)
+```javascript
+module.exports = mongoose.model('List', new Schema({
+    user_guid: String, //associated with user
+    listTitle: String,
+    date: String, //date for the lsit
+    articles: [] //object array of articles
+}));
+```
+## [First Draft User Schema](server/models/user.js) 
+## [First Draft List Schema](server/models/list.js) 
 
 ## Wireframes
 
@@ -73,7 +62,6 @@ An Example List with Embedded Items:
 
 (___TODO__: draw out a site map that shows how pages are related to each other_)
 
-Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/20/Sitemap_google.jpg), but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
 
 ## User Stories or Use Cases
 
