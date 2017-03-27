@@ -77,7 +77,7 @@ NOTE: More pages may be added in the process of development
 ## Research Topics
 
 * (1 points) Integrate user authentication
-    * I'm going to be using bcrypt hashing for authentication.
+    * I'm going to be using bcrypt hashing and JSON Web Tokens for authentication.
    
 * (4 points) Will be using a Front-End JavaScript framework to handle View Layer (Either Vue.js or Angular)
 * (3 points) gulp.js and Browserify (or something else more modern for hot-reload)
