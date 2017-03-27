@@ -55,47 +55,40 @@ module.exports = mongoose.model('List', new Schema({
 /search - Search page
 ![search](documentation/search.png)
 
+NOTE: Designs in wireframes are far from final
+
 ## Site map
 
-(___TODO__: draw out a site map that shows how pages are related to each other_)
+![sitemap](documentation/sitemap.png)
 
+NOTE: More pages may be added in the process of development
 
 ## User Stories or Use Cases
 
-(___TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://www.mongodb.com/download-center?jmp=docs&_ga=1.47552679.1838903181.1489282706#previous)_)
-
 1. as non-registered user, I can register a new account with the site
 2. as a user, I can log in to the site
-3. as a user, I can create a new grocery list
-4. as a user, I can view all of the grocery lists I've created in a single list
-5. as a user, I can add items to an existing grocery list
-6. as a user, I can cross off items in an existing grocery list
+3. as a user, I can create a new reading list for other users to see
+4. as a user, I can view the reading lists of other people that I follow
+5. as a user, I can add items to my daily reading list
+6. as a user, I can request to follow other users on the platform
+7. as a user, I can ignore follow requests from other users on the platform
+8. as a user, I can click through links on my dashboard to read articles
 
 ## Research Topics
 
-(___TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed_)
+* (1 points) Integrate user authentication
+    * I'm going to be using bcrypt hashing for authentication.
+   
+* (4 points) Will be using a Front-End JavaScript framework to handle View Layer (Either Vue.js or Angular)
+* (3 points) gulp.js and Browserify (or something else more modern for hot-reload)
+    * Will be using gulp for task automation and something like Browserify to have hot reloading and to learn more about workflow.
+* (1 points) Will be designing the UI using Sketch 3
+* (2 points) Will be adding social features like followers, along with the ability to send and ignore follow requests.
 
-* (5 points) Integrate user authentication
-    * I'm going to be using passport for user authentication
-    * And account has been made for testing; I'll email you the password
-    * see <code>cs.nyu.edu/~jversoza/ait-final/register</code> for register page
-    * see <code>cs.nyu.edu/~jversoza/ait-final/login</code> for login page
-* (4 points) Perform client side form validation using a JavaScript library
-    * see <code>cs.nyu.edu/~jversoza/ait-final/my-form</code>
-    * if you put in a number that's greater than 5, an error message will appear in the dom
-* (5 points) vue.js
-    * used vue.js as the frontend framework; it's a challenging library to learn, so I've assigned it 5 points
+11 points total out of 8 required points.
 
-10 points total out of 8 required points (___TODO__: addtional points will __not__ count for extra credit_)
+## [Link to Initial Main Project File](server/server.js)
 
-
-## [Link to Initial Main Project File](app.js)
-
-(___TODO__: create a skeleton Express application with a package.json, app.js, views folder, etc. ... and link to your initial app.js_)
 
 ## Annotations / References Used
-
-(___TODO__: list any tutorials/references/etc. that you've based your code off of_)
-
-1. [passport.js authentication docs](http://passportjs.org/docs) - (add link to source code that was based on this)
-2. [tutorial on vue.js](https://vuejs.org/v2/guide/) - (add link to source code that was based on this)
+1. [scotch.io auth tutorial with JSON Web Tokens](https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens) - [auth.js](server/routes/auth.js)
