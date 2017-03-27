@@ -84,7 +84,7 @@ NOTE: More pages may be added in the process of development
     * Will be using gulp for task automation and something like Browserify to have hot reloading and to learn more about workflow.
 * (1 points) Will be designing the UI using Sketch 3
 * (2 points) Will be adding social features like followers, along with the ability to send and ignore follow requests.
-* (2 points) Will be adding a Chrome Extension that interacts with the same endpoints as the web application to seamless upload articles while users surf.
+* (2 points) Will be adding a Chrome Extension that interacts with the same endpoints as the web application to seamlessly add articles while users surf.
 
 13 points total out of 8 required points.
 
