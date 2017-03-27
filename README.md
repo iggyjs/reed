@@ -44,19 +44,16 @@ module.exports = mongoose.model('List', new Schema({
 
 ## Wireframes
 
-(___TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc._)
+/dashboard/ - Main dashboard, populated by the reading lists of the users you follow on Reed.
 
-/list/create - page for creating a new shopping list
+![dash](documentation/dashboard.png)
 
-![list create](documentation/list-create.png)
+/you - Profile page
 
-/list - page for showing all shopping lists
+![profile](documentation/profile.png)
 
-![list](documentation/list.png)
-
-/list/slug - page for showing specific shopping list
-
-![list](documentation/list-slug.png)
+/search - Search page
+![search](documentation/search.png)
 
 ## Site map
 
