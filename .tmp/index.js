@@ -42766,7 +42766,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_2mzz6aeuop = function () {
 	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/home/home.js',
-	    hash = 'd7d7ed5b0e219b119b263a199a5577d8f4dd75d9',
+	    hash = 'b3080833c8b6f64bf76312bff6993c8d333b8bb6',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
@@ -42785,11 +42785,11 @@ var cov_2mzz6aeuop = function () {
 			'1': {
 				start: {
 					line: 5,
-					column: 2
+					column: 8
 				},
 				end: {
 					line: 5,
-					column: 34
+					column: 30
 				}
 			},
 			'2': {
@@ -42799,16 +42799,26 @@ var cov_2mzz6aeuop = function () {
 				},
 				end: {
 					line: 6,
-					column: 21
+					column: 34
 				}
 			},
 			'3': {
 				start: {
-					line: 10,
+					line: 7,
+					column: 2
+				},
+				end: {
+					line: 7,
+					column: 21
+				}
+			},
+			'4': {
+				start: {
+					line: 11,
 					column: 20
 				},
 				end: {
-					line: 13,
+					line: 14,
 					column: 1
 				}
 			}
@@ -42832,7 +42842,7 @@ var cov_2mzz6aeuop = function () {
 						column: 30
 					},
 					end: {
-						line: 7,
+						line: 8,
 						column: 2
 					}
 				},
@@ -42844,7 +42854,8 @@ var cov_2mzz6aeuop = function () {
 			'0': 0,
 			'1': 0,
 			'2': 0,
-			'3': 0
+			'3': 0,
+			'4': 0
 		},
 		f: {
 			'0': 0
@@ -42873,12 +42884,14 @@ var HomeController = function HomeController($http, $state) {
 
 	this.$state = $state;
 	++cov_2mzz6aeuop.s[1];
-	this.data = $state.current.data;
+	this.message = 'test';
 	++cov_2mzz6aeuop.s[2];
+	this.data = $state.current.data;
+	++cov_2mzz6aeuop.s[3];
 	this.$http = $http;
 };
 
-var Home = exports.Home = (++cov_2mzz6aeuop.s[3], {
+var Home = exports.Home = (++cov_2mzz6aeuop.s[4], {
 	template: __webpack_require__(14),
 	controller: HomeController
 });

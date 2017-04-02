@@ -2,6 +2,7 @@
 class HomeController {
   	constructor($http, $state) {
 		this.$state = $state;
+        this.message = 'test';
 		this.data = $state.current.data;
 		this.$http = $http;
 	}
