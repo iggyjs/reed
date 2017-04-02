@@ -24,6 +24,6 @@ function reloadBrowserSync(cb) {
 }
 
 function watch(done) {
-  gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
-  done();
+    gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
+    done();
 }

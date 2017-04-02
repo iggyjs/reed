@@ -1,7 +1,7 @@
 import angular from 'angular';
 // import {TodoService} from './app/todos/todos';
 // import containers here
-import {Home} from './app/containers/Home';
+import {Home} from './app/states/home/home';
 
 import 'angular-ui-router';
 import 'angular-jwt';

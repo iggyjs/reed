@@ -8433,126 +8433,7 @@ return /******/ (function(modules) { // webpackBootstrap
 //# sourceMappingURL=angular-ui-router.js.map
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var cov_1rvdu22vwp = function () {
-  var path = '/Users/dstreuly/Sites/reed/reed/src/app/containers/Home.js',
-      hash = 'cf60dfb1a395cb440cb026d7874931b40cf35b3a',
-      global = new Function('return this')(),
-      gcv = '__coverage__',
-      coverageData = {
-    path: '/Users/dstreuly/Sites/reed/reed/src/app/containers/Home.js',
-    statementMap: {
-      '0': {
-        start: {
-          line: 4,
-          column: 4
-        },
-        end: {
-          line: 4,
-          column: 34
-        }
-      },
-      '1': {
-        start: {
-          line: 5,
-          column: 4
-        },
-        end: {
-          line: 5,
-          column: 23
-        }
-      },
-      '2': {
-        start: {
-          line: 13,
-          column: 20
-        },
-        end: {
-          line: 16,
-          column: 1
-        }
-      }
-    },
-    fnMap: {
-      '0': {
-        name: '(anonymous_0)',
-        decl: {
-          start: {
-            line: 3,
-            column: 2
-          },
-          end: {
-            line: 3,
-            column: 3
-          }
-        },
-        loc: {
-          start: {
-            line: 3,
-            column: 29
-          },
-          end: {
-            line: 10,
-            column: 3
-          }
-        },
-        line: 3
-      }
-    },
-    branchMap: {},
-    s: {
-      '0': 0,
-      '1': 0,
-      '2': 0
-    },
-    f: {
-      '0': 0
-    },
-    b: {},
-    _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
-  },
-      coverage = global[gcv] || (global[gcv] = {});
-
-  if (coverage[path] && coverage[path].hash === hash) {
-    return coverage[path];
-  }
-
-  coverageData.hash = hash;
-  return coverage[path] = coverageData;
-}();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/* eslint-disable */
-var HomeController = function HomeController($http, $state) {
-  _classCallCheck(this, HomeController);
-
-  ++cov_1rvdu22vwp.f[0];
-  ++cov_1rvdu22vwp.s[0];
-
-  this.message = 'Hello World!';
-  ++cov_1rvdu22vwp.s[1];
-  this.$http = $http;
-
-  //$state.current.data
-  //$state.go('app')
-};
-
-var Home = exports.Home = (++cov_1rvdu22vwp.s[2], {
-  template: __webpack_require__(10),
-  controller: HomeController
-});
-
-/***/ }),
+/* 3 */,
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42549,12 +42430,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports = "<h1> {{$ctrl.message}} </h1>    \n";
-
-/***/ }),
+/* 10 */,
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42606,7 +42482,7 @@ var _angular = __webpack_require__(0);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _Home = __webpack_require__(3);
+var _home = __webpack_require__(13);
 
 __webpack_require__(2);
 
@@ -42623,7 +42499,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 ++cov_1xfhihfxwp.s[0];
 
 
-_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('home', _Home.Home);
+_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('home', _home.Home);
 
 /***/ }),
 /* 12 */
@@ -42876,6 +42752,142 @@ function updateLink(linkElement, obj) {
 		URL.revokeObjectURL(oldSrc);
 }
 
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var cov_2mzz6aeuop = function () {
+	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/home/home.js',
+	    hash = 'd7d7ed5b0e219b119b263a199a5577d8f4dd75d9',
+	    global = new Function('return this')(),
+	    gcv = '__coverage__',
+	    coverageData = {
+		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/home/home.js',
+		statementMap: {
+			'0': {
+				start: {
+					line: 4,
+					column: 2
+				},
+				end: {
+					line: 4,
+					column: 23
+				}
+			},
+			'1': {
+				start: {
+					line: 5,
+					column: 2
+				},
+				end: {
+					line: 5,
+					column: 34
+				}
+			},
+			'2': {
+				start: {
+					line: 6,
+					column: 2
+				},
+				end: {
+					line: 6,
+					column: 21
+				}
+			},
+			'3': {
+				start: {
+					line: 10,
+					column: 20
+				},
+				end: {
+					line: 13,
+					column: 1
+				}
+			}
+		},
+		fnMap: {
+			'0': {
+				name: '(anonymous_0)',
+				decl: {
+					start: {
+						line: 3,
+						column: 3
+					},
+					end: {
+						line: 3,
+						column: 4
+					}
+				},
+				loc: {
+					start: {
+						line: 3,
+						column: 30
+					},
+					end: {
+						line: 7,
+						column: 2
+					}
+				},
+				line: 3
+			}
+		},
+		branchMap: {},
+		s: {
+			'0': 0,
+			'1': 0,
+			'2': 0,
+			'3': 0
+		},
+		f: {
+			'0': 0
+		},
+		b: {},
+		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+	},
+	    coverage = global[gcv] || (global[gcv] = {});
+
+	if (coverage[path] && coverage[path].hash === hash) {
+		return coverage[path];
+	}
+
+	coverageData.hash = hash;
+	return coverage[path] = coverageData;
+}();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* eslint-disable */
+var HomeController = function HomeController($http, $state) {
+	_classCallCheck(this, HomeController);
+
+	++cov_2mzz6aeuop.f[0];
+	++cov_2mzz6aeuop.s[0];
+
+	this.$state = $state;
+	++cov_2mzz6aeuop.s[1];
+	this.data = $state.current.data;
+	++cov_2mzz6aeuop.s[2];
+	this.$http = $http;
+};
+
+var Home = exports.Home = (++cov_2mzz6aeuop.s[3], {
+	template: __webpack_require__(14),
+	controller: HomeController
+});
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1> {{$ctrl.message}} </h1>    \n";
 
 /***/ })
 /******/ ]);
