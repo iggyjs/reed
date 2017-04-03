@@ -63,14 +63,14 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(7);
+__webpack_require__(9);
 module.exports = angular;
 
 
@@ -78,7 +78,7 @@ module.exports = angular;
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(6);
+__webpack_require__(8);
 module.exports = 'angular-jwt';
 
 
@@ -8433,8 +8433,436 @@ return /******/ (function(modules) { // webpackBootstrap
 //# sourceMappingURL=angular-ui-router.js.map
 
 /***/ }),
-/* 3 */,
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var cov_2ahlwblcat = function () {
+	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
+	    hash = '99a540d064b0e2960b8de5e2bd1a57f57bb87111',
+	    global = new Function('return this')(),
+	    gcv = '__coverage__',
+	    coverageData = {
+		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
+		statementMap: {
+			'0': {
+				start: {
+					line: 4,
+					column: 2
+				},
+				end: {
+					line: 4,
+					column: 23
+				}
+			},
+			'1': {
+				start: {
+					line: 5,
+					column: 8
+				},
+				end: {
+					line: 5,
+					column: 30
+				}
+			},
+			'2': {
+				start: {
+					line: 6,
+					column: 2
+				},
+				end: {
+					line: 6,
+					column: 34
+				}
+			},
+			'3': {
+				start: {
+					line: 7,
+					column: 2
+				},
+				end: {
+					line: 7,
+					column: 21
+				}
+			},
+			'4': {
+				start: {
+					line: 11,
+					column: 25
+				},
+				end: {
+					line: 14,
+					column: 1
+				}
+			}
+		},
+		fnMap: {
+			'0': {
+				name: '(anonymous_0)',
+				decl: {
+					start: {
+						line: 3,
+						column: 3
+					},
+					end: {
+						line: 3,
+						column: 4
+					}
+				},
+				loc: {
+					start: {
+						line: 3,
+						column: 30
+					},
+					end: {
+						line: 8,
+						column: 2
+					}
+				},
+				line: 3
+			}
+		},
+		branchMap: {},
+		s: {
+			'0': 0,
+			'1': 0,
+			'2': 0,
+			'3': 0,
+			'4': 0
+		},
+		f: {
+			'0': 0
+		},
+		b: {},
+		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+	},
+	    coverage = global[gcv] || (global[gcv] = {});
+
+	if (coverage[path] && coverage[path].hash === hash) {
+		return coverage[path];
+	}
+
+	coverageData.hash = hash;
+	return coverage[path] = coverageData;
+}();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* eslint-disable */
+var DashboardController = function DashboardController($http, $state) {
+	_classCallCheck(this, DashboardController);
+
+	++cov_2ahlwblcat.f[0];
+	++cov_2ahlwblcat.s[0];
+
+	this.$state = $state;
+	++cov_2ahlwblcat.s[1];
+	this.message = 'test';
+	++cov_2ahlwblcat.s[2];
+	this.data = $state.current.data;
+	++cov_2ahlwblcat.s[3];
+	this.$http = $http;
+};
+
+var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[4], {
+	template: __webpack_require__(12),
+	controller: DashboardController
+});
+
+/***/ }),
 /* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var cov_l3is81mja = function () {
+	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/login/login.js',
+	    hash = '8ec326a91c792fa083d0d83dc7e1239ab8259f37',
+	    global = new Function('return this')(),
+	    gcv = '__coverage__',
+	    coverageData = {
+		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/login/login.js',
+		statementMap: {
+			'0': {
+				start: {
+					line: 4,
+					column: 2
+				},
+				end: {
+					line: 4,
+					column: 23
+				}
+			},
+			'1': {
+				start: {
+					line: 5,
+					column: 8
+				},
+				end: {
+					line: 5,
+					column: 31
+				}
+			},
+			'2': {
+				start: {
+					line: 6,
+					column: 2
+				},
+				end: {
+					line: 6,
+					column: 34
+				}
+			},
+			'3': {
+				start: {
+					line: 7,
+					column: 2
+				},
+				end: {
+					line: 7,
+					column: 21
+				}
+			},
+			'4': {
+				start: {
+					line: 11,
+					column: 21
+				},
+				end: {
+					line: 14,
+					column: 1
+				}
+			}
+		},
+		fnMap: {
+			'0': {
+				name: '(anonymous_0)',
+				decl: {
+					start: {
+						line: 3,
+						column: 3
+					},
+					end: {
+						line: 3,
+						column: 4
+					}
+				},
+				loc: {
+					start: {
+						line: 3,
+						column: 30
+					},
+					end: {
+						line: 8,
+						column: 2
+					}
+				},
+				line: 3
+			}
+		},
+		branchMap: {},
+		s: {
+			'0': 0,
+			'1': 0,
+			'2': 0,
+			'3': 0,
+			'4': 0
+		},
+		f: {
+			'0': 0
+		},
+		b: {},
+		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+	},
+	    coverage = global[gcv] || (global[gcv] = {});
+
+	if (coverage[path] && coverage[path].hash === hash) {
+		return coverage[path];
+	}
+
+	coverageData.hash = hash;
+	return coverage[path] = coverageData;
+}();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* eslint-disable */
+var LoginController = function LoginController($http, $state) {
+	_classCallCheck(this, LoginController);
+
+	++cov_l3is81mja.f[0];
+	++cov_l3is81mja.s[0];
+
+	this.$state = $state;
+	++cov_l3is81mja.s[1];
+	this.message = 'login';
+	++cov_l3is81mja.s[2];
+	this.data = $state.current.data;
+	++cov_l3is81mja.s[3];
+	this.$http = $http;
+};
+
+var Login = exports.Login = (++cov_l3is81mja.s[4], {
+	template: __webpack_require__(13),
+	controller: LoginController
+});
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var cov_189tzbg59r = function () {
+	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/signup/signup.js',
+	    hash = 'cf89e4dbb9efd9fdcfe115a24a9026e4d5b370f6',
+	    global = new Function('return this')(),
+	    gcv = '__coverage__',
+	    coverageData = {
+		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/signup/signup.js',
+		statementMap: {
+			'0': {
+				start: {
+					line: 4,
+					column: 2
+				},
+				end: {
+					line: 4,
+					column: 23
+				}
+			},
+			'1': {
+				start: {
+					line: 5,
+					column: 8
+				},
+				end: {
+					line: 5,
+					column: 32
+				}
+			},
+			'2': {
+				start: {
+					line: 6,
+					column: 2
+				},
+				end: {
+					line: 6,
+					column: 34
+				}
+			},
+			'3': {
+				start: {
+					line: 7,
+					column: 2
+				},
+				end: {
+					line: 7,
+					column: 21
+				}
+			},
+			'4': {
+				start: {
+					line: 11,
+					column: 22
+				},
+				end: {
+					line: 14,
+					column: 1
+				}
+			}
+		},
+		fnMap: {
+			'0': {
+				name: '(anonymous_0)',
+				decl: {
+					start: {
+						line: 3,
+						column: 3
+					},
+					end: {
+						line: 3,
+						column: 4
+					}
+				},
+				loc: {
+					start: {
+						line: 3,
+						column: 30
+					},
+					end: {
+						line: 8,
+						column: 2
+					}
+				},
+				line: 3
+			}
+		},
+		branchMap: {},
+		s: {
+			'0': 0,
+			'1': 0,
+			'2': 0,
+			'3': 0,
+			'4': 0
+		},
+		f: {
+			'0': 0
+		},
+		b: {},
+		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+	},
+	    coverage = global[gcv] || (global[gcv] = {});
+
+	if (coverage[path] && coverage[path].hash === hash) {
+		return coverage[path];
+	}
+
+	coverageData.hash = hash;
+	return coverage[path] = coverageData;
+}();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* eslint-disable */
+var SignupController = function SignupController($http, $state) {
+	_classCallCheck(this, SignupController);
+
+	++cov_189tzbg59r.f[0];
+	++cov_189tzbg59r.s[0];
+
+	this.$state = $state;
+	++cov_189tzbg59r.s[1];
+	this.message = 'signup';
+	++cov_189tzbg59r.s[2];
+	this.data = $state.current.data;
+	++cov_189tzbg59r.s[3];
+	this.$http = $http;
+};
+
+var Signup = exports.Signup = (++cov_189tzbg59r.s[4], {
+	template: __webpack_require__(14),
+	controller: SignupController
+});
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8447,7 +8875,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1ahuxh4hps = function () {
 	var path = '/Users/dstreuly/Sites/reed/reed/src/routes.js',
-	    hash = '893d03e7c4d72d239edc281354bf784e9d6b1072',
+	    hash = 'b3baef3ab610667995f0a00a800e83b7ff4f47b7',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
@@ -8479,7 +8907,7 @@ var cov_1ahuxh4hps = function () {
 					column: 1
 				},
 				end: {
-					line: 19,
+					line: 43,
 					column: 5
 				}
 			}
@@ -8503,7 +8931,7 @@ var cov_1ahuxh4hps = function () {
 						column: 77
 					},
 					end: {
-						line: 20,
+						line: 44,
 						column: 1
 					}
 				},
@@ -8547,10 +8975,34 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 	++cov_1ahuxh4hps.s[2];
 	$stateProvider.state('app', {
 		url: '/',
-		redirectTo: 'home'
-	}).state('home', {
-		url: '/home',
-		component: 'home',
+		redirectTo: 'login'
+	}).state('dashboard', {
+		url: '/dashboard',
+		component: 'dashboard',
+		data: {
+			authRequired: true
+		}
+	}).state('login', {
+		url: '/login',
+		component: 'login',
+		data: {
+			authRequired: false
+		}
+	}).state('signup', {
+		url: '/signup',
+		component: 'signup',
+		data: {
+			authRequired: false
+		}
+	}).state('search', {
+		url: '/search',
+		component: 'search',
+		data: {
+			authRequired: true
+		}
+	}).state('profile', {
+		url: '/:userId',
+		component: 'profile',
 		data: {
 			authRequired: true
 		}
@@ -8558,16 +9010,16 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 }
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(8);
+var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(12)(content, {});
+var update = __webpack_require__(16)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -8584,7 +9036,7 @@ if(false) {
 }
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, exports) {
 
 (function() {
@@ -8983,7 +9435,7 @@ angular.module('angular-jwt.options', [])
 }());
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports) {
 
 /**
@@ -42360,10 +42812,10 @@ $provide.value("$locale", {
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -42374,7 +42826,7 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports) {
 
 /*
@@ -42430,8 +42882,25 @@ module.exports = function() {
 
 
 /***/ }),
-/* 10 */,
-/* 11 */
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1> {{$ctrl.message}} </h1>    \n";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1> {{$ctrl.message}} </h1>\n";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1> {{$ctrl.message}} </h1>\n";
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42439,7 +42908,7 @@ module.exports = function() {
 
 var cov_1xfhihfxwp = function () {
   var path = '/Users/dstreuly/Sites/reed/reed/src/index.js',
-      hash = 'cff500a3783c3ef1c43c41b71122cc81f8a84511',
+      hash = 'ba947178ca7cb0666cc7163938fb886064f38f76',
       global = new Function('return this')(),
       gcv = '__coverage__',
       coverageData = {
@@ -42447,12 +42916,12 @@ var cov_1xfhihfxwp = function () {
     statementMap: {
       '0': {
         start: {
-          line: 13,
+          line: 20,
           column: 0
         },
         end: {
-          line: 16,
-          column: 27
+          line: 27,
+          column: 33
         }
       }
     },
@@ -42474,35 +42943,50 @@ var cov_1xfhihfxwp = function () {
   coverageData.hash = hash;
   return coverage[path] = coverageData;
 }();
+// import services here
 // import {TodoService} from './app/todos/todos';
-// import containers here
+// import different possible states here
+
+
+// node_modules
+
+
+//styles
 
 
 var _angular = __webpack_require__(0);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _home = __webpack_require__(13);
+var _dashboard = __webpack_require__(3);
+
+var _login = __webpack_require__(4);
+
+var _signup = __webpack_require__(5);
+
+var _search = __webpack_require__(17);
+
+var _profile = __webpack_require__(19);
 
 __webpack_require__(2);
 
 __webpack_require__(1);
 
-var _routes = __webpack_require__(4);
+var _routes = __webpack_require__(6);
 
 var _routes2 = _interopRequireDefault(_routes);
 
-__webpack_require__(5);
+__webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 ++cov_1xfhihfxwp.s[0];
 
 
-_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('home', _home.Home);
+_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('dashboard', _dashboard.Dashboard).component('login', _login.Login).component('signup', _signup.Signup).component('search', _search.Search).component('profile', _profile.Profile);
 
 /***/ }),
-/* 12 */
+/* 16 */
 /***/ (function(module, exports) {
 
 /*
@@ -42754,7 +43238,7 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42764,13 +43248,13 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var cov_2mzz6aeuop = function () {
-	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/home/home.js',
-	    hash = 'b3080833c8b6f64bf76312bff6993c8d333b8bb6',
+var cov_1lowflf3ss = function () {
+	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/search/search.js',
+	    hash = '2d35b18874cb5ca8c4fb7c9522cef9124825c22c',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
-		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/home/home.js',
+		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/search/search.js',
 		statementMap: {
 			'0': {
 				start: {
@@ -42789,7 +43273,7 @@ var cov_2mzz6aeuop = function () {
 				},
 				end: {
 					line: 5,
-					column: 30
+					column: 32
 				}
 			},
 			'2': {
@@ -42815,7 +43299,7 @@ var cov_2mzz6aeuop = function () {
 			'4': {
 				start: {
 					line: 11,
-					column: 20
+					column: 22
 				},
 				end: {
 					line: 14,
@@ -42876,31 +43360,271 @@ var cov_2mzz6aeuop = function () {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var HomeController = function HomeController($http, $state) {
-	_classCallCheck(this, HomeController);
+var SearchController = function SearchController($http, $state) {
+	_classCallCheck(this, SearchController);
 
-	++cov_2mzz6aeuop.f[0];
-	++cov_2mzz6aeuop.s[0];
+	++cov_1lowflf3ss.f[0];
+	++cov_1lowflf3ss.s[0];
 
 	this.$state = $state;
-	++cov_2mzz6aeuop.s[1];
-	this.message = 'test';
-	++cov_2mzz6aeuop.s[2];
+	++cov_1lowflf3ss.s[1];
+	this.message = 'search';
+	++cov_1lowflf3ss.s[2];
 	this.data = $state.current.data;
-	++cov_2mzz6aeuop.s[3];
+	++cov_1lowflf3ss.s[3];
 	this.$http = $http;
 };
 
-var Home = exports.Home = (++cov_2mzz6aeuop.s[4], {
-	template: __webpack_require__(14),
-	controller: HomeController
+var Search = exports.Search = (++cov_1lowflf3ss.s[4], {
+	template: __webpack_require__(18),
+	controller: SearchController
 });
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1> {{$ctrl.message}} </h1>    \n";
+module.exports = "<h1> {{$ctrl.message}} </h1>\n";
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var cov_7j6odsrs9 = function () {
+    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
+        hash = '1b724b53436c05279b8987a066b104d3cf8cad5c',
+        global = new Function('return this')(),
+        gcv = '__coverage__',
+        coverageData = {
+        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
+        statementMap: {
+            '0': {
+                start: {
+                    line: 4,
+                    column: 2
+                },
+                end: {
+                    line: 4,
+                    column: 23
+                }
+            },
+            '1': {
+                start: {
+                    line: 5,
+                    column: 8
+                },
+                end: {
+                    line: 5,
+                    column: 35
+                }
+            },
+            '2': {
+                start: {
+                    line: 6,
+                    column: 8
+                },
+                end: {
+                    line: 6,
+                    column: 33
+                }
+            },
+            '3': {
+                start: {
+                    line: 7,
+                    column: 2
+                },
+                end: {
+                    line: 7,
+                    column: 34
+                }
+            },
+            '4': {
+                start: {
+                    line: 8,
+                    column: 2
+                },
+                end: {
+                    line: 8,
+                    column: 21
+                }
+            },
+            '5': {
+                start: {
+                    line: 9,
+                    column: 8
+                },
+                end: {
+                    line: 9,
+                    column: 24
+                }
+            },
+            '6': {
+                start: {
+                    line: 13,
+                    column: 21
+                },
+                end: {
+                    line: 13,
+                    column: 41
+                }
+            },
+            '7': {
+                start: {
+                    line: 14,
+                    column: 27
+                },
+                end: {
+                    line: 14,
+                    column: 61
+                }
+            },
+            '8': {
+                start: {
+                    line: 21,
+                    column: 23
+                },
+                end: {
+                    line: 24,
+                    column: 1
+                }
+            }
+        },
+        fnMap: {
+            '0': {
+                name: '(anonymous_0)',
+                decl: {
+                    start: {
+                        line: 3,
+                        column: 3
+                    },
+                    end: {
+                        line: 3,
+                        column: 4
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 3,
+                        column: 41
+                    },
+                    end: {
+                        line: 10,
+                        column: 2
+                    }
+                },
+                line: 3
+            },
+            '1': {
+                name: '(anonymous_1)',
+                decl: {
+                    start: {
+                        line: 12,
+                        column: 4
+                    },
+                    end: {
+                        line: 12,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 12,
+                        column: 15
+                    },
+                    end: {
+                        line: 18,
+                        column: 5
+                    }
+                },
+                line: 12
+            }
+        },
+        branchMap: {},
+        s: {
+            '0': 0,
+            '1': 0,
+            '2': 0,
+            '3': 0,
+            '4': 0,
+            '5': 0,
+            '6': 0,
+            '7': 0,
+            '8': 0
+        },
+        f: {
+            '0': 0,
+            '1': 0
+        },
+        b: {},
+        _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+    },
+        coverage = global[gcv] || (global[gcv] = {});
+
+    if (coverage[path] && coverage[path].hash === hash) {
+        return coverage[path];
+    }
+
+    coverageData.hash = hash;
+    return coverage[path] = coverageData;
+}();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* eslint-disable */
+var ProfileController = function () {
+    function ProfileController($http, $state, $location) {
+        _classCallCheck(this, ProfileController);
+
+        ++cov_7j6odsrs9.f[0];
+        ++cov_7j6odsrs9.s[0];
+
+        this.$state = $state;
+        ++cov_7j6odsrs9.s[1];
+        this.$location = $location;
+        ++cov_7j6odsrs9.s[2];
+        this.message = 'profile';
+        ++cov_7j6odsrs9.s[3];
+        this.data = $state.current.data;
+        ++cov_7j6odsrs9.s[4];
+        this.$http = $http;
+        ++cov_7j6odsrs9.s[5];
+        this.findUser();
+    }
+
+    _createClass(ProfileController, [{
+        key: 'findUser',
+        value: function findUser() {
+            ++cov_7j6odsrs9.f[1];
+
+            var userId = (++cov_7j6odsrs9.s[6], this.$location.$$url);
+            var parsedUserId = (++cov_7j6odsrs9.s[7], userId.substring(1, userId.length));
+
+            //search by user id
+        }
+    }]);
+
+    return ProfileController;
+}();
+
+var Profile = exports.Profile = (++cov_7j6odsrs9.s[8], {
+    template: __webpack_require__(20),
+    controller: ProfileController
+});
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1> {{$ctrl.message}} </h1>\n";
 
 /***/ })
 /******/ ]);

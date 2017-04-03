@@ -1,5 +1,5 @@
 /* eslint-disable */
-class HomeController {
+class DashboardController {
   	constructor($http, $state) {
 		this.$state = $state;
         this.message = 'test';
@@ -8,7 +8,7 @@ class HomeController {
 	}
 }
 
-export const Home = {
-	template: require('./Home.html'),
-	controller: HomeController
+export const Dashboard = {
+	template: require('./dashboard.html'),
+	controller: DashboardController
 };
