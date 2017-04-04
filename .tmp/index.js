@@ -8445,7 +8445,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1ujy32kic8 = function () {
 	var path = "/Users/dstreuly/Sites/reed/reed/src/app/services/auth.js",
-	    hash = "1765fb24c95e4db6d354adf8fed7d49426ae7138",
+	    hash = "697e9eb7172726aa416c219a758342a52fe48332",
 	    global = new Function('return this')(),
 	    gcv = "__coverage__",
 	    coverageData = {
@@ -8486,6 +8486,54 @@ var cov_1ujy32kic8 = function () {
 					}
 				},
 				line: 3
+			},
+			"1": {
+				name: "(anonymous_1)",
+				decl: {
+					start: {
+						line: 9,
+						column: 1
+					},
+					end: {
+						line: 9,
+						column: 2
+					}
+				},
+				loc: {
+					start: {
+						line: 9,
+						column: 10
+					},
+					end: {
+						line: 11,
+						column: 2
+					}
+				},
+				line: 9
+			},
+			"2": {
+				name: "(anonymous_2)",
+				decl: {
+					start: {
+						line: 13,
+						column: 1
+					},
+					end: {
+						line: 13,
+						column: 2
+					}
+				},
+				loc: {
+					start: {
+						line: 13,
+						column: 9
+					},
+					end: {
+						line: 15,
+						column: 2
+					}
+				},
+				line: 13
 			}
 		},
 		branchMap: {},
@@ -8493,7 +8541,9 @@ var cov_1ujy32kic8 = function () {
 			"0": 0
 		},
 		f: {
-			"0": 0
+			"0": 0,
+			"1": 0,
+			"2": 0
 		},
 		b: {},
 		_coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
@@ -8508,17 +8558,39 @@ var cov_1ujy32kic8 = function () {
 	return coverage[path] = coverageData;
 }();
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var AuthService = exports.AuthService = function AuthService($http) {
-	_classCallCheck(this, AuthService);
+var AuthService = exports.AuthService = function () {
+	function AuthService($http) {
+		_classCallCheck(this, AuthService);
 
-	++cov_1ujy32kic8.f[0];
-	++cov_1ujy32kic8.s[0];
+		++cov_1ujy32kic8.f[0];
+		++cov_1ujy32kic8.s[0];
 
-	this.$http = $http;
-};
+		this.$http = $http;
+	}
+
+	//TODO: handle api call for signup and login
+	//as well as jwt storage
+
+
+	_createClass(AuthService, [{
+		key: "signup",
+		value: function signup() {
+			++cov_1ujy32kic8.f[1];
+		}
+	}, {
+		key: "login",
+		value: function login() {
+			++cov_1ujy32kic8.f[2];
+		}
+	}]);
+
+	return AuthService;
+}();
 
 /***/ }),
 /* 4 */
@@ -9196,7 +9268,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_189tzbg59r = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/signup/signup.js',
-        hash = '350be46cfddb1d0a291d8d51dffd9905432e027a',
+        hash = '529f3162141083c88f815ef0c6f6b8866a6bfc47',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -9284,11 +9356,111 @@ var cov_189tzbg59r = function () {
             },
             '8': {
                 start: {
+                    line: 16,
+                    column: 29
+                },
+                end: {
+                    line: 16,
+                    column: 76
+                }
+            },
+            '9': {
+                start: {
+                    line: 17,
+                    column: 35
+                },
+                end: {
+                    line: 17,
+                    column: 74
+                }
+            },
+            '10': {
+                start: {
+                    line: 18,
+                    column: 36
+                },
+                end: {
+                    line: 18,
+                    column: 76
+                }
+            },
+            '11': {
+                start: {
                     line: 19,
-                    column: 22
+                    column: 35
+                },
+                end: {
+                    line: 19,
+                    column: 74
+                }
+            },
+            '12': {
+                start: {
+                    line: 21,
+                    column: 8
+                },
+                end: {
+                    line: 40,
+                    column: 9
+                }
+            },
+            '13': {
+                start: {
+                    line: 22,
+                    column: 12
                 },
                 end: {
                     line: 22,
+                    column: 59
+                }
+            },
+            '14': {
+                start: {
+                    line: 25,
+                    column: 12
+                },
+                end: {
+                    line: 27,
+                    column: 13
+                }
+            },
+            '15': {
+                start: {
+                    line: 29,
+                    column: 12
+                },
+                end: {
+                    line: 31,
+                    column: 13
+                }
+            },
+            '16': {
+                start: {
+                    line: 33,
+                    column: 12
+                },
+                end: {
+                    line: 35,
+                    column: 13
+                }
+            },
+            '17': {
+                start: {
+                    line: 37,
+                    column: 12
+                },
+                end: {
+                    line: 39,
+                    column: 13
+                }
+            },
+            '18': {
+                start: {
+                    line: 44,
+                    column: 22
+                },
+                end: {
+                    line: 47,
                     column: 1
                 }
             }
@@ -9336,14 +9508,363 @@ var cov_189tzbg59r = function () {
                         column: 14
                     },
                     end: {
-                        line: 16,
+                        line: 41,
                         column: 5
                     }
                 },
                 line: 13
             }
         },
-        branchMap: {},
+        branchMap: {
+            '0': {
+                loc: {
+                    start: {
+                        line: 16,
+                        column: 29
+                    },
+                    end: {
+                        line: 16,
+                        column: 76
+                    }
+                },
+                type: 'cond-expr',
+                locations: [{
+                    start: {
+                        line: 16,
+                        column: 64
+                    },
+                    end: {
+                        line: 16,
+                        column: 68
+                    }
+                }, {
+                    start: {
+                        line: 16,
+                        column: 71
+                    },
+                    end: {
+                        line: 16,
+                        column: 76
+                    }
+                }],
+                line: 16
+            },
+            '1': {
+                loc: {
+                    start: {
+                        line: 17,
+                        column: 35
+                    },
+                    end: {
+                        line: 17,
+                        column: 74
+                    }
+                },
+                type: 'cond-expr',
+                locations: [{
+                    start: {
+                        line: 17,
+                        column: 62
+                    },
+                    end: {
+                        line: 17,
+                        column: 66
+                    }
+                }, {
+                    start: {
+                        line: 17,
+                        column: 69
+                    },
+                    end: {
+                        line: 17,
+                        column: 74
+                    }
+                }],
+                line: 17
+            },
+            '2': {
+                loc: {
+                    start: {
+                        line: 18,
+                        column: 36
+                    },
+                    end: {
+                        line: 18,
+                        column: 76
+                    }
+                },
+                type: 'cond-expr',
+                locations: [{
+                    start: {
+                        line: 18,
+                        column: 64
+                    },
+                    end: {
+                        line: 18,
+                        column: 68
+                    }
+                }, {
+                    start: {
+                        line: 18,
+                        column: 71
+                    },
+                    end: {
+                        line: 18,
+                        column: 76
+                    }
+                }],
+                line: 18
+            },
+            '3': {
+                loc: {
+                    start: {
+                        line: 19,
+                        column: 35
+                    },
+                    end: {
+                        line: 19,
+                        column: 74
+                    }
+                },
+                type: 'cond-expr',
+                locations: [{
+                    start: {
+                        line: 19,
+                        column: 62
+                    },
+                    end: {
+                        line: 19,
+                        column: 66
+                    }
+                }, {
+                    start: {
+                        line: 19,
+                        column: 69
+                    },
+                    end: {
+                        line: 19,
+                        column: 74
+                    }
+                }],
+                line: 19
+            },
+            '4': {
+                loc: {
+                    start: {
+                        line: 21,
+                        column: 8
+                    },
+                    end: {
+                        line: 40,
+                        column: 9
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 21,
+                        column: 8
+                    },
+                    end: {
+                        line: 40,
+                        column: 9
+                    }
+                }, {
+                    start: {
+                        line: 21,
+                        column: 8
+                    },
+                    end: {
+                        line: 40,
+                        column: 9
+                    }
+                }],
+                line: 21
+            },
+            '5': {
+                loc: {
+                    start: {
+                        line: 21,
+                        column: 12
+                    },
+                    end: {
+                        line: 21,
+                        column: 99
+                    }
+                },
+                type: 'binary-expr',
+                locations: [{
+                    start: {
+                        line: 21,
+                        column: 12
+                    },
+                    end: {
+                        line: 21,
+                        column: 26
+                    }
+                }, {
+                    start: {
+                        line: 21,
+                        column: 30
+                    },
+                    end: {
+                        line: 21,
+                        column: 50
+                    }
+                }, {
+                    start: {
+                        line: 21,
+                        column: 54
+                    },
+                    end: {
+                        line: 21,
+                        column: 75
+                    }
+                }, {
+                    start: {
+                        line: 21,
+                        column: 79
+                    },
+                    end: {
+                        line: 21,
+                        column: 99
+                    }
+                }],
+                line: 21
+            },
+            '6': {
+                loc: {
+                    start: {
+                        line: 25,
+                        column: 12
+                    },
+                    end: {
+                        line: 27,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 25,
+                        column: 12
+                    },
+                    end: {
+                        line: 27,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 25,
+                        column: 12
+                    },
+                    end: {
+                        line: 27,
+                        column: 13
+                    }
+                }],
+                line: 25
+            },
+            '7': {
+                loc: {
+                    start: {
+                        line: 29,
+                        column: 12
+                    },
+                    end: {
+                        line: 31,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 29,
+                        column: 12
+                    },
+                    end: {
+                        line: 31,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 29,
+                        column: 12
+                    },
+                    end: {
+                        line: 31,
+                        column: 13
+                    }
+                }],
+                line: 29
+            },
+            '8': {
+                loc: {
+                    start: {
+                        line: 33,
+                        column: 12
+                    },
+                    end: {
+                        line: 35,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 33,
+                        column: 12
+                    },
+                    end: {
+                        line: 35,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 33,
+                        column: 12
+                    },
+                    end: {
+                        line: 35,
+                        column: 13
+                    }
+                }],
+                line: 33
+            },
+            '9': {
+                loc: {
+                    start: {
+                        line: 37,
+                        column: 12
+                    },
+                    end: {
+                        line: 39,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 37,
+                        column: 12
+                    },
+                    end: {
+                        line: 39,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 37,
+                        column: 12
+                    },
+                    end: {
+                        line: 39,
+                        column: 13
+                    }
+                }],
+                line: 37
+            }
+        },
         s: {
             '0': 0,
             '1': 0,
@@ -9353,13 +9874,34 @@ var cov_189tzbg59r = function () {
             '5': 0,
             '6': 0,
             '7': 0,
-            '8': 0
+            '8': 0,
+            '9': 0,
+            '10': 0,
+            '11': 0,
+            '12': 0,
+            '13': 0,
+            '14': 0,
+            '15': 0,
+            '16': 0,
+            '17': 0,
+            '18': 0
         },
         f: {
             '0': 0,
             '1': 0
         },
-        b: {},
+        b: {
+            '0': [0, 0],
+            '1': [0, 0],
+            '2': [0, 0],
+            '3': [0, 0],
+            '4': [0, 0],
+            '5': [0, 0, 0, 0],
+            '6': [0, 0],
+            '7': [0, 0],
+            '8': [0, 0],
+            '9': [0, 0]
+        },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
         coverage = global[gcv] || (global[gcv] = {});
@@ -9406,13 +9948,64 @@ var SignupController = function () {
             ++cov_189tzbg59r.s[7];
 
             e.preventDefault();
+            // check if form is valid
+            var passwordsMatch = (++cov_189tzbg59r.s[8], this.password === this.password2 ? (++cov_189tzbg59r.b[0][0], true) : (++cov_189tzbg59r.b[0][1], false));
+            var usernameIsLongEnough = (++cov_189tzbg59r.s[9], this.username.length > 3 ? (++cov_189tzbg59r.b[1][0], true) : (++cov_189tzbg59r.b[1][1], false));
+            var usernameIsShortEnough = (++cov_189tzbg59r.s[10], this.username.length < 25 ? (++cov_189tzbg59r.b[2][0], true) : (++cov_189tzbg59r.b[2][1], false));
+            var passwordIsLongEnough = (++cov_189tzbg59r.s[11], this.password.length > 6 ? (++cov_189tzbg59r.b[3][0], true) : (++cov_189tzbg59r.b[3][1], false));
+
+            ++cov_189tzbg59r.s[12];
+            if ((++cov_189tzbg59r.b[5][0], passwordsMatch) && (++cov_189tzbg59r.b[5][1], usernameIsLongEnough) && (++cov_189tzbg59r.b[5][2], usernameIsShortEnough) && (++cov_189tzbg59r.b[5][3], passwordIsLongEnough)) {
+                ++cov_189tzbg59r.b[4][0];
+                ++cov_189tzbg59r.s[13];
+
+                this.Auth.signup(this.username, this.password);
+            } else {
+                ++cov_189tzbg59r.b[4][1];
+                ++cov_189tzbg59r.s[14];
+
+                if (this.password.length === 0) {
+                    //show password too short message
+
+                    ++cov_189tzbg59r.b[6][0];
+                } else {
+                    ++cov_189tzbg59r.b[6][1];
+                }
+
+                ++cov_189tzbg59r.s[15];
+                if (!usernameIsLongEnough) {
+                    //show username too short message
+
+                    ++cov_189tzbg59r.b[7][0];
+                } else {
+                    ++cov_189tzbg59r.b[7][1];
+                }
+
+                ++cov_189tzbg59r.s[16];
+                if (!usernameIsShortEnough) {
+                    //show username too long message
+
+                    ++cov_189tzbg59r.b[8][0];
+                } else {
+                    ++cov_189tzbg59r.b[8][1];
+                }
+
+                ++cov_189tzbg59r.s[17];
+                if (!passwordsMatch) {
+                    //show passwords do not match message
+
+                    ++cov_189tzbg59r.b[9][0];
+                } else {
+                    ++cov_189tzbg59r.b[9][1];
+                }
+            }
         }
     }]);
 
     return SignupController;
 }();
 
-var Signup = exports.Signup = (++cov_189tzbg59r.s[8], {
+var Signup = exports.Signup = (++cov_189tzbg59r.s[18], {
     template: __webpack_require__(19),
     controller: SignupController
 });
@@ -43465,7 +44058,7 @@ module.exports = "<h1> {{$ctrl.message}} </h1>\n";
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = "<div ng-include=\"'app/components/navbar/navbar.html'\"></div>\n<div class=\"signup-view\">\n    <center>\n        <form class=\"auth-form\" ng-submit=\"$ctrl.signup($event)\">\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"text\" name=\"password\" placeholder=\"Password\">\n            <input ng-model=\"$ctrl.password2\" class=\"reed-input login-input\" type=\"text\" name=\"password\" placeholder=\"Re-type password\">\n            <input type=\"submit\" val=\"Sign up\">\n        </form>\n    </center>\n</div>\n";
+module.exports = "<div ng-include=\"'app/components/navbar/navbar.html'\"></div>\n<div class=\"signup-view\">\n    <center>\n        <form class=\"auth-form\" ng-submit=\"$ctrl.signup($event)\">\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Password\">\n            <input ng-model=\"$ctrl.password2\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Re-type password\">\n            <input type=\"submit\" val=\"Sign up\">\n        </form>\n    </center>\n</div>\n";
 
 /***/ }),
 /* 20 */
