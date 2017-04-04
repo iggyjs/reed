@@ -7,6 +7,7 @@ import {Login} from './app/states/login/login';
 import {Signup} from './app/states/signup/signup';
 import {Search} from './app/states/search/search';
 import {Profile} from './app/states/profile/profile';
+import {AuthService} from './app/services/auth.js';
 
 // node_modules
 import 'angular-ui-router';
@@ -24,4 +25,5 @@ angular
   .component('login', Login)
   .component('signup', Signup)
   .component('search', Search)
-  .component('profile', Profile);
+  .component('profile', Profile)
+  .service('Auth', AuthService);

@@ -1,2 +1,11 @@
 <div ng-include="'app/components/navbar/navbar.html'"></div>
-<h1> {{$ctrl.message}} </h1>
+<div class="signup-view">
+    <center>
+        <form class="auth-form" ng-submit="$ctrl.signup($event)">
+            <input ng-model="$ctrl.username" class="reed-input login-input" type="text" name="username" placeholder="Username">
+            <input ng-model="$ctrl.password" class="reed-input login-input" type="text" name="password" placeholder="Password">
+            <input ng-model="$ctrl.password2" class="reed-input login-input" type="text" name="password" placeholder="Re-type password">
+            <input type="submit" val="Sign up">
+        </form>
+    </center>
+</div>

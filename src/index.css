@@ -21,6 +21,10 @@ body {
     z-index: 1;
 }
 
+.reed-input {
+    outline: none;
+}
+
 /*Nav styles*/
 .reed-nav {
     background-color: #FFF;
@@ -29,10 +33,6 @@ body {
 
 .reed-nav-container-fluid {
     padding-right: 0;
-}
-
-.reed-nav-link {
-
 }
 
 .reed-nav-link:hover {
@@ -47,5 +47,25 @@ body {
 
 /*Login state styles*/
 .login-view {
-    padding:30px 10px 30px 10px;
+    padding:30px 30px 30px 30px;
+}
+
+.signup-view {
+    padding:30px 30px 30px 30px;
+}
+
+.auth-form {
+    max-width: 400px;
+    padding-top: 140px;
+}
+
+.login-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 4px;
+    margin-bottom: 20px;
+}
+
+.login-input:focus {
+    border: 1px solid  #4E56EE !important;
 }
