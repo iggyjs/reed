@@ -69,3 +69,12 @@ body {
 .login-input:focus {
     border: 1px solid  #4E56EE !important;
 }
+
+/*Signup*/
+#signupButton {
+    height: 40px;
+    width: 100%;
+    background-color: #FFF;
+    border: solid 1px #CCCCCC;
+    outline: none;
+}

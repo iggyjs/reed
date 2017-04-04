@@ -9,6 +9,7 @@ const config = require('../config');
 
 //logs a user in
 routes.post('/login', (req, res) => {
+    console.log(req.body);
     User.findOne({
         name: req.body.name
     }, (err, user) => {

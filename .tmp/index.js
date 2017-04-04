@@ -8444,14 +8444,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var cov_1ujy32kic8 = function () {
-	var path = "/Users/dstreuly/Sites/reed/reed/src/app/services/auth.js",
-	    hash = "697e9eb7172726aa416c219a758342a52fe48332",
+	var path = '/Users/dstreuly/Sites/reed/reed/src/app/services/auth.js',
+	    hash = 'e71cea4f220b1b1de7719b53b03dbeeba28787da',
 	    global = new Function('return this')(),
-	    gcv = "__coverage__",
+	    gcv = '__coverage__',
 	    coverageData = {
-		path: "/Users/dstreuly/Sites/reed/reed/src/app/services/auth.js",
+		path: '/Users/dstreuly/Sites/reed/reed/src/app/services/auth.js',
 		statementMap: {
-			"0": {
+			'0': {
 				start: {
 					line: 4,
 					column: 2
@@ -8460,11 +8460,81 @@ var cov_1ujy32kic8 = function () {
 					line: 4,
 					column: 21
 				}
+			},
+			'1': {
+				start: {
+					line: 10,
+					column: 16
+				},
+				end: {
+					line: 10,
+					column: 52
+				}
+			},
+			'2': {
+				start: {
+					line: 13,
+					column: 2
+				},
+				end: {
+					line: 25,
+					column: 5
+				}
+			},
+			'3': {
+				start: {
+					line: 15,
+					column: 16
+				},
+				end: {
+					line: 15,
+					column: 26
+				}
+			},
+			'4': {
+				start: {
+					line: 16,
+					column: 17
+				},
+				end: {
+					line: 16,
+					column: 33
+				}
+			},
+			'5': {
+				start: {
+					line: 18,
+					column: 3
+				},
+				end: {
+					line: 24,
+					column: 4
+				}
+			},
+			'6': {
+				start: {
+					line: 20,
+					column: 4
+				},
+				end: {
+					line: 20,
+					column: 45
+				}
+			},
+			'7': {
+				start: {
+					line: 23,
+					column: 4
+				},
+				end: {
+					line: 23,
+					column: 57
+				}
 			}
 		},
 		fnMap: {
-			"0": {
-				name: "(anonymous_0)",
+			'0': {
+				name: '(anonymous_0)',
 				decl: {
 					start: {
 						line: 3,
@@ -8487,8 +8557,8 @@ var cov_1ujy32kic8 = function () {
 				},
 				line: 3
 			},
-			"1": {
-				name: "(anonymous_1)",
+			'1': {
+				name: '(anonymous_1)',
 				decl: {
 					start: {
 						line: 9,
@@ -8502,51 +8572,153 @@ var cov_1ujy32kic8 = function () {
 				loc: {
 					start: {
 						line: 9,
-						column: 10
+						column: 28
 					},
 					end: {
-						line: 11,
+						line: 26,
 						column: 2
 					}
 				},
 				line: 9
 			},
-			"2": {
-				name: "(anonymous_2)",
+			'2': {
+				name: '(anonymous_2)',
 				decl: {
 					start: {
-						line: 13,
+						line: 14,
+						column: 8
+					},
+					end: {
+						line: 14,
+						column: 9
+					}
+				},
+				loc: {
+					start: {
+						line: 14,
+						column: 17
+					},
+					end: {
+						line: 25,
+						column: 3
+					}
+				},
+				line: 14
+			},
+			'3': {
+				name: '(anonymous_3)',
+				decl: {
+					start: {
+						line: 28,
 						column: 1
 					},
 					end: {
-						line: 13,
+						line: 28,
 						column: 2
 					}
 				},
 				loc: {
 					start: {
-						line: 13,
+						line: 28,
 						column: 9
 					},
 					end: {
-						line: 15,
+						line: 30,
 						column: 2
 					}
 				},
-				line: 13
+				line: 28
 			}
 		},
-		branchMap: {},
+		branchMap: {
+			'0': {
+				loc: {
+					start: {
+						line: 18,
+						column: 3
+					},
+					end: {
+						line: 24,
+						column: 4
+					}
+				},
+				type: 'if',
+				locations: [{
+					start: {
+						line: 18,
+						column: 3
+					},
+					end: {
+						line: 24,
+						column: 4
+					}
+				}, {
+					start: {
+						line: 18,
+						column: 3
+					},
+					end: {
+						line: 24,
+						column: 4
+					}
+				}],
+				line: 18
+			},
+			'1': {
+				loc: {
+					start: {
+						line: 18,
+						column: 7
+					},
+					end: {
+						line: 18,
+						column: 32
+					}
+				},
+				type: 'binary-expr',
+				locations: [{
+					start: {
+						line: 18,
+						column: 7
+					},
+					end: {
+						line: 18,
+						column: 21
+					}
+				}, {
+					start: {
+						line: 18,
+						column: 25
+					},
+					end: {
+						line: 18,
+						column: 32
+					}
+				}],
+				line: 18
+			}
+		},
 		s: {
-			"0": 0
+			'0': 0,
+			'1': 0,
+			'2': 0,
+			'3': 0,
+			'4': 0,
+			'5': 0,
+			'6': 0,
+			'7': 0
 		},
 		f: {
-			"0": 0,
-			"1": 0,
-			"2": 0
+			'0': 0,
+			'1': 0,
+			'2': 0,
+			'3': 0
 		},
-		b: {},
-		_coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+		b: {
+			'0': [0, 0],
+			'1': [0, 0]
+		},
+		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
 	},
 	    coverage = global[gcv] || (global[gcv] = {});
 
@@ -8578,14 +8750,40 @@ var AuthService = exports.AuthService = function () {
 
 
 	_createClass(AuthService, [{
-		key: "signup",
-		value: function signup() {
+		key: 'signup',
+		value: function signup(username, password) {
 			++cov_1ujy32kic8.f[1];
+
+			var payload = (++cov_1ujy32kic8.s[1], { name: username, password: password });
+
+			//execute post request to create a new user
+			++cov_1ujy32kic8.s[2];
+			this.$http.post('http://localhost:8000/api/signup', payload).then(function (res) {
+				++cov_1ujy32kic8.f[2];
+
+				var status = (++cov_1ujy32kic8.s[3], res.status);
+				var success = (++cov_1ujy32kic8.s[4], res.data.success);
+
+				++cov_1ujy32kic8.s[5];
+				if ((++cov_1ujy32kic8.b[1][0], status === 200) && (++cov_1ujy32kic8.b[1][1], success)) {
+					++cov_1ujy32kic8.b[0][0];
+					++cov_1ujy32kic8.s[6];
+
+					//store token
+					console.log('User successfully created');
+				} else {
+					++cov_1ujy32kic8.b[0][1];
+					++cov_1ujy32kic8.s[7];
+
+					//handle err
+					console.log('There was some error creating a user.');
+				}
+			});
 		}
 	}, {
-		key: "login",
+		key: 'login',
 		value: function login() {
-			++cov_1ujy32kic8.f[2];
+			++cov_1ujy32kic8.f[3];
 		}
 	}]);
 
@@ -9268,7 +9466,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_189tzbg59r = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/signup/signup.js',
-        hash = '529f3162141083c88f815ef0c6f6b8866a6bfc47',
+        hash = '96c6981a81c8ad924932193ca60d6f6a4eb68ecc',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -9356,111 +9554,31 @@ var cov_189tzbg59r = function () {
             },
             '8': {
                 start: {
-                    line: 16,
-                    column: 29
+                    line: 15,
+                    column: 8
                 },
                 end: {
-                    line: 16,
-                    column: 76
+                    line: 15,
+                    column: 30
                 }
             },
             '9': {
                 start: {
-                    line: 17,
-                    column: 35
+                    line: 16,
+                    column: 8
                 },
                 end: {
-                    line: 17,
-                    column: 74
+                    line: 16,
+                    column: 55
                 }
             },
             '10': {
                 start: {
-                    line: 18,
-                    column: 36
-                },
-                end: {
-                    line: 18,
-                    column: 76
-                }
-            },
-            '11': {
-                start: {
-                    line: 19,
-                    column: 35
-                },
-                end: {
-                    line: 19,
-                    column: 74
-                }
-            },
-            '12': {
-                start: {
-                    line: 21,
-                    column: 8
-                },
-                end: {
-                    line: 40,
-                    column: 9
-                }
-            },
-            '13': {
-                start: {
-                    line: 22,
-                    column: 12
-                },
-                end: {
-                    line: 22,
-                    column: 59
-                }
-            },
-            '14': {
-                start: {
-                    line: 25,
-                    column: 12
-                },
-                end: {
-                    line: 27,
-                    column: 13
-                }
-            },
-            '15': {
-                start: {
-                    line: 29,
-                    column: 12
-                },
-                end: {
-                    line: 31,
-                    column: 13
-                }
-            },
-            '16': {
-                start: {
-                    line: 33,
-                    column: 12
-                },
-                end: {
-                    line: 35,
-                    column: 13
-                }
-            },
-            '17': {
-                start: {
-                    line: 37,
-                    column: 12
-                },
-                end: {
-                    line: 39,
-                    column: 13
-                }
-            },
-            '18': {
-                start: {
-                    line: 44,
+                    line: 47,
                     column: 22
                 },
                 end: {
-                    line: 47,
+                    line: 50,
                     column: 1
                 }
             }
@@ -9508,363 +9626,14 @@ var cov_189tzbg59r = function () {
                         column: 14
                     },
                     end: {
-                        line: 41,
+                        line: 44,
                         column: 5
                     }
                 },
                 line: 13
             }
         },
-        branchMap: {
-            '0': {
-                loc: {
-                    start: {
-                        line: 16,
-                        column: 29
-                    },
-                    end: {
-                        line: 16,
-                        column: 76
-                    }
-                },
-                type: 'cond-expr',
-                locations: [{
-                    start: {
-                        line: 16,
-                        column: 64
-                    },
-                    end: {
-                        line: 16,
-                        column: 68
-                    }
-                }, {
-                    start: {
-                        line: 16,
-                        column: 71
-                    },
-                    end: {
-                        line: 16,
-                        column: 76
-                    }
-                }],
-                line: 16
-            },
-            '1': {
-                loc: {
-                    start: {
-                        line: 17,
-                        column: 35
-                    },
-                    end: {
-                        line: 17,
-                        column: 74
-                    }
-                },
-                type: 'cond-expr',
-                locations: [{
-                    start: {
-                        line: 17,
-                        column: 62
-                    },
-                    end: {
-                        line: 17,
-                        column: 66
-                    }
-                }, {
-                    start: {
-                        line: 17,
-                        column: 69
-                    },
-                    end: {
-                        line: 17,
-                        column: 74
-                    }
-                }],
-                line: 17
-            },
-            '2': {
-                loc: {
-                    start: {
-                        line: 18,
-                        column: 36
-                    },
-                    end: {
-                        line: 18,
-                        column: 76
-                    }
-                },
-                type: 'cond-expr',
-                locations: [{
-                    start: {
-                        line: 18,
-                        column: 64
-                    },
-                    end: {
-                        line: 18,
-                        column: 68
-                    }
-                }, {
-                    start: {
-                        line: 18,
-                        column: 71
-                    },
-                    end: {
-                        line: 18,
-                        column: 76
-                    }
-                }],
-                line: 18
-            },
-            '3': {
-                loc: {
-                    start: {
-                        line: 19,
-                        column: 35
-                    },
-                    end: {
-                        line: 19,
-                        column: 74
-                    }
-                },
-                type: 'cond-expr',
-                locations: [{
-                    start: {
-                        line: 19,
-                        column: 62
-                    },
-                    end: {
-                        line: 19,
-                        column: 66
-                    }
-                }, {
-                    start: {
-                        line: 19,
-                        column: 69
-                    },
-                    end: {
-                        line: 19,
-                        column: 74
-                    }
-                }],
-                line: 19
-            },
-            '4': {
-                loc: {
-                    start: {
-                        line: 21,
-                        column: 8
-                    },
-                    end: {
-                        line: 40,
-                        column: 9
-                    }
-                },
-                type: 'if',
-                locations: [{
-                    start: {
-                        line: 21,
-                        column: 8
-                    },
-                    end: {
-                        line: 40,
-                        column: 9
-                    }
-                }, {
-                    start: {
-                        line: 21,
-                        column: 8
-                    },
-                    end: {
-                        line: 40,
-                        column: 9
-                    }
-                }],
-                line: 21
-            },
-            '5': {
-                loc: {
-                    start: {
-                        line: 21,
-                        column: 12
-                    },
-                    end: {
-                        line: 21,
-                        column: 99
-                    }
-                },
-                type: 'binary-expr',
-                locations: [{
-                    start: {
-                        line: 21,
-                        column: 12
-                    },
-                    end: {
-                        line: 21,
-                        column: 26
-                    }
-                }, {
-                    start: {
-                        line: 21,
-                        column: 30
-                    },
-                    end: {
-                        line: 21,
-                        column: 50
-                    }
-                }, {
-                    start: {
-                        line: 21,
-                        column: 54
-                    },
-                    end: {
-                        line: 21,
-                        column: 75
-                    }
-                }, {
-                    start: {
-                        line: 21,
-                        column: 79
-                    },
-                    end: {
-                        line: 21,
-                        column: 99
-                    }
-                }],
-                line: 21
-            },
-            '6': {
-                loc: {
-                    start: {
-                        line: 25,
-                        column: 12
-                    },
-                    end: {
-                        line: 27,
-                        column: 13
-                    }
-                },
-                type: 'if',
-                locations: [{
-                    start: {
-                        line: 25,
-                        column: 12
-                    },
-                    end: {
-                        line: 27,
-                        column: 13
-                    }
-                }, {
-                    start: {
-                        line: 25,
-                        column: 12
-                    },
-                    end: {
-                        line: 27,
-                        column: 13
-                    }
-                }],
-                line: 25
-            },
-            '7': {
-                loc: {
-                    start: {
-                        line: 29,
-                        column: 12
-                    },
-                    end: {
-                        line: 31,
-                        column: 13
-                    }
-                },
-                type: 'if',
-                locations: [{
-                    start: {
-                        line: 29,
-                        column: 12
-                    },
-                    end: {
-                        line: 31,
-                        column: 13
-                    }
-                }, {
-                    start: {
-                        line: 29,
-                        column: 12
-                    },
-                    end: {
-                        line: 31,
-                        column: 13
-                    }
-                }],
-                line: 29
-            },
-            '8': {
-                loc: {
-                    start: {
-                        line: 33,
-                        column: 12
-                    },
-                    end: {
-                        line: 35,
-                        column: 13
-                    }
-                },
-                type: 'if',
-                locations: [{
-                    start: {
-                        line: 33,
-                        column: 12
-                    },
-                    end: {
-                        line: 35,
-                        column: 13
-                    }
-                }, {
-                    start: {
-                        line: 33,
-                        column: 12
-                    },
-                    end: {
-                        line: 35,
-                        column: 13
-                    }
-                }],
-                line: 33
-            },
-            '9': {
-                loc: {
-                    start: {
-                        line: 37,
-                        column: 12
-                    },
-                    end: {
-                        line: 39,
-                        column: 13
-                    }
-                },
-                type: 'if',
-                locations: [{
-                    start: {
-                        line: 37,
-                        column: 12
-                    },
-                    end: {
-                        line: 39,
-                        column: 13
-                    }
-                }, {
-                    start: {
-                        line: 37,
-                        column: 12
-                    },
-                    end: {
-                        line: 39,
-                        column: 13
-                    }
-                }],
-                line: 37
-            }
-        },
+        branchMap: {},
         s: {
             '0': 0,
             '1': 0,
@@ -9876,32 +9645,13 @@ var cov_189tzbg59r = function () {
             '7': 0,
             '8': 0,
             '9': 0,
-            '10': 0,
-            '11': 0,
-            '12': 0,
-            '13': 0,
-            '14': 0,
-            '15': 0,
-            '16': 0,
-            '17': 0,
-            '18': 0
+            '10': 0
         },
         f: {
             '0': 0,
             '1': 0
         },
-        b: {
-            '0': [0, 0],
-            '1': [0, 0],
-            '2': [0, 0],
-            '3': [0, 0],
-            '4': [0, 0],
-            '5': [0, 0, 0, 0],
-            '6': [0, 0],
-            '7': [0, 0],
-            '8': [0, 0],
-            '9': [0, 0]
-        },
+        b: {},
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
         coverage = global[gcv] || (global[gcv] = {});
@@ -9948,64 +9698,44 @@ var SignupController = function () {
             ++cov_189tzbg59r.s[7];
 
             e.preventDefault();
+            ++cov_189tzbg59r.s[8];
+            console.log('Called');
+            ++cov_189tzbg59r.s[9];
+            this.Auth.signup(this.username, this.password);
+
             // check if form is valid
-            var passwordsMatch = (++cov_189tzbg59r.s[8], this.password === this.password2 ? (++cov_189tzbg59r.b[0][0], true) : (++cov_189tzbg59r.b[0][1], false));
-            var usernameIsLongEnough = (++cov_189tzbg59r.s[9], this.username.length > 3 ? (++cov_189tzbg59r.b[1][0], true) : (++cov_189tzbg59r.b[1][1], false));
-            var usernameIsShortEnough = (++cov_189tzbg59r.s[10], this.username.length < 25 ? (++cov_189tzbg59r.b[2][0], true) : (++cov_189tzbg59r.b[2][1], false));
-            var passwordIsLongEnough = (++cov_189tzbg59r.s[11], this.password.length > 6 ? (++cov_189tzbg59r.b[3][0], true) : (++cov_189tzbg59r.b[3][1], false));
-
-            ++cov_189tzbg59r.s[12];
-            if ((++cov_189tzbg59r.b[5][0], passwordsMatch) && (++cov_189tzbg59r.b[5][1], usernameIsLongEnough) && (++cov_189tzbg59r.b[5][2], usernameIsShortEnough) && (++cov_189tzbg59r.b[5][3], passwordIsLongEnough)) {
-                ++cov_189tzbg59r.b[4][0];
-                ++cov_189tzbg59r.s[13];
-
-                this.Auth.signup(this.username, this.password);
-            } else {
-                ++cov_189tzbg59r.b[4][1];
-                ++cov_189tzbg59r.s[14];
-
-                if (this.password.length === 0) {
-                    //show password too short message
-
-                    ++cov_189tzbg59r.b[6][0];
-                } else {
-                    ++cov_189tzbg59r.b[6][1];
-                }
-
-                ++cov_189tzbg59r.s[15];
-                if (!usernameIsLongEnough) {
-                    //show username too short message
-
-                    ++cov_189tzbg59r.b[7][0];
-                } else {
-                    ++cov_189tzbg59r.b[7][1];
-                }
-
-                ++cov_189tzbg59r.s[16];
-                if (!usernameIsShortEnough) {
-                    //show username too long message
-
-                    ++cov_189tzbg59r.b[8][0];
-                } else {
-                    ++cov_189tzbg59r.b[8][1];
-                }
-
-                ++cov_189tzbg59r.s[17];
-                if (!passwordsMatch) {
-                    //show passwords do not match message
-
-                    ++cov_189tzbg59r.b[9][0];
-                } else {
-                    ++cov_189tzbg59r.b[9][1];
-                }
-            }
+            // let passwordsMatch = this.password === this.password2 ? true : false;
+            // let usernameIsLongEnough = this.username.length > 3 ? true : false
+            // let usernameIsShortEnough = this.username.length < 25 ? true : false
+            // let passwordIsLongEnough = this.password.length > 6 ? true : false;
+            //
+            // if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough) {
+            //     this.Auth.signup(this.username, this.password);
+            // }
+            // else {
+            //     if (this.password.length === 0) {
+            //         //show password too short message
+            //     }
+            //
+            //     if (!usernameIsLongEnough) {
+            //         //show username too short message
+            //     }
+            //
+            //     if (!usernameIsShortEnough) {
+            //         //show username too long message
+            //     }
+            //
+            //     if (!passwordsMatch) {
+            //         //show passwords do not match message
+            //     }
+            // }
         }
     }]);
 
     return SignupController;
 }();
 
-var Signup = exports.Signup = (++cov_189tzbg59r.s[18], {
+var Signup = exports.Signup = (++cov_189tzbg59r.s[10], {
     template: __webpack_require__(19),
     controller: SignupController
 });
@@ -43969,7 +43699,7 @@ exports = module.exports = __webpack_require__(14)();
 
 
 // module
-exports.push([module.i, "/*Global styles*/\n@font-face {\n  font-family: 'Noway';\n  src: url(" + __webpack_require__(23) + ");\n  src: url(" + __webpack_require__(26) + ") format('woff2'),\n       url(" + __webpack_require__(25) + ") format('woff'),\n       url(" + __webpack_require__(24) + ")  format('truetype')\n}\n\n@font-face {\n  font-family: 'ClearSans';\n  src: url(" + __webpack_require__(22) + ")  format('truetype')\n}\n\n.reed-app {\n    background-color: #FFF;\n}\n\nbody {\n    font-family:'ClearSans';\n    z-index: 1;\n}\n\n.reed-input {\n    outline: none;\n}\n\n/*Nav styles*/\n.reed-nav {\n    background-color: #FFF;\n    border: none;\n}\n\n.reed-nav-container-fluid {\n    padding-right: 0;\n}\n\n.reed-nav-link:hover {\n    background-color:#4E56EE !important;\n    color: #FFFFFF !important;\n}\n\n.reed-brand {\n    font-size: 20px;\n    color:#434343 !important;\n}\n\n/*Login state styles*/\n.login-view {\n    padding:30px 30px 30px 30px;\n}\n\n.signup-view {\n    padding:30px 30px 30px 30px;\n}\n\n.auth-form {\n    max-width: 400px;\n    padding-top: 140px;\n}\n\n.login-input {\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.login-input:focus {\n    border: 1px solid  #4E56EE !important;\n}\n", ""]);
+exports.push([module.i, "/*Global styles*/\n@font-face {\n  font-family: 'Noway';\n  src: url(" + __webpack_require__(23) + ");\n  src: url(" + __webpack_require__(26) + ") format('woff2'),\n       url(" + __webpack_require__(25) + ") format('woff'),\n       url(" + __webpack_require__(24) + ")  format('truetype')\n}\n\n@font-face {\n  font-family: 'ClearSans';\n  src: url(" + __webpack_require__(22) + ")  format('truetype')\n}\n\n.reed-app {\n    background-color: #FFF;\n}\n\nbody {\n    font-family:'ClearSans';\n    z-index: 1;\n}\n\n.reed-input {\n    outline: none;\n}\n\n/*Nav styles*/\n.reed-nav {\n    background-color: #FFF;\n    border: none;\n}\n\n.reed-nav-container-fluid {\n    padding-right: 0;\n}\n\n.reed-nav-link:hover {\n    background-color:#4E56EE !important;\n    color: #FFFFFF !important;\n}\n\n.reed-brand {\n    font-size: 20px;\n    color:#434343 !important;\n}\n\n/*Login state styles*/\n.login-view {\n    padding:30px 30px 30px 30px;\n}\n\n.signup-view {\n    padding:30px 30px 30px 30px;\n}\n\n.auth-form {\n    max-width: 400px;\n    padding-top: 140px;\n}\n\n.login-input {\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.login-input:focus {\n    border: 1px solid  #4E56EE !important;\n}\n\n/*Signup*/\n#signupButton {\n    height: 40px;\n    width: 100%;\n    background-color: #FFF;\n    border: solid 1px #CCCCCC;\n    outline: none;\n}\n", ""]);
 
 // exports
 
@@ -44058,7 +43788,7 @@ module.exports = "<h1> {{$ctrl.message}} </h1>\n";
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = "<div ng-include=\"'app/components/navbar/navbar.html'\"></div>\n<div class=\"signup-view\">\n    <center>\n        <form class=\"auth-form\" ng-submit=\"$ctrl.signup($event)\">\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Password\">\n            <input ng-model=\"$ctrl.password2\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Re-type password\">\n            <input type=\"submit\" val=\"Sign up\">\n        </form>\n    </center>\n</div>\n";
+module.exports = "<div ng-include=\"'app/components/navbar/navbar.html'\"></div>\n<div class=\"signup-view\">\n    <center>\n        <form class=\"auth-form\" ng-submit=\"$ctrl.signup($event)\">\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Password\">\n            <input ng-model=\"$ctrl.password2\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Re-type password\">\n            <input id=\"signupButton\" type=\"submit\" val=\"Sign up\">\n        </form>\n    </center>\n</div>\n";
 
 /***/ }),
 /* 20 */
