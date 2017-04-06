@@ -22,6 +22,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 			data: {
 				authRequired: false
 			}
+		}).state('logout', {
+			url: '/logout',
+			component: 'logout',
+			data: {
+				authRequired: false
+			}
 		}).state('signup', {
 			url: '/signup',
 			component: 'signup',

@@ -1,3 +1,10 @@
+/*Remove */
+.hide-chrome-autofill {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
 /*Global styles*/
 @font-face {
   font-family: 'Noway';
@@ -26,13 +33,17 @@ body {
 }
 
 /*Nav styles*/
+
 .reed-nav {
     background-color: #FFF;
     border: none;
 }
 
-.reed-nav-container-fluid {
-    padding-right: 0;
+
+@media only screen and (min-width: 768px) {
+    .reed-nav-container-fluid {
+        padding-right: 0;
+    }
 }
 
 .reed-nav-link:hover {
@@ -48,6 +59,14 @@ body {
 /*Login state styles*/
 .login-view {
     padding:30px 30px 30px 30px;
+}
+
+#loginButton {
+    height: 40px;
+    width: 100%;
+    background-color: #FFF;
+    border: solid 1px #CCCCCC;
+    outline: none;
 }
 
 .signup-view {
@@ -78,3 +97,6 @@ body {
     border: solid 1px #CCCCCC;
     outline: none;
 }
+
+
+/*Dashboard styles*/

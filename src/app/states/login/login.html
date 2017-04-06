@@ -1,9 +1,13 @@
 <div ng-include="'app/components/navbar/navbar.html'"></div>
 <div class="login-view">
     <center>
-        <form ng-sumbit="" class="auth-form" method="post">
-            <input class="reed-input login-input" type="text" name="username" placeholder="Username">
-            <input class="reed-input login-input" type="text" name="password" placeholder="Password">
+        <form class="auth-form" ng-submit="$ctrl.login($event)">
+            <input class="hide-chrome-autofill" type="text" name="" value="">
+            <input class="hide-chrome-autofill" type="password" name="" value="">
+
+            <input ng-model="$ctrl.username" class="reed-input login-input" type="text" name="username" placeholder="Username">
+            <input ng-model="$ctrl.password" class="reed-input login-input" type="password" name="password" placeholder="Password">
+            <input id="loginButton" type="submit" value="Login">
         </form>
     </center>
 </div>

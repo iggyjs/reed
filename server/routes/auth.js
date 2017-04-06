@@ -7,9 +7,10 @@ const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 const config = require('../config');
 
+
+// TODO: Sanitize input for both
 //logs a user in
 routes.post('/login', (req, res) => {
-    console.log(req.body);
     User.findOne({
         name: req.body.name
     }, (err, user) => {
@@ -46,8 +47,6 @@ routes.post('/signup', (req, res) => {
     let payload = req.body;
     let pw = req.body.password;
 
-    console.log(req.body);
-
     bcrypt.genSalt(saltRounds, (err, salt) => {
         bcrypt.hash(pw, salt, (err, hash) => {
             let user = new User({
@@ -57,11 +56,15 @@ routes.post('/signup', (req, res) => {
                 admin: true
             });
 
-            user.save((err) => {
+            user.save((err, user) => {
                 if (err) throw err;
 
+                let token = jwt.sign(user, config.secret, {
+                    expiresIn: '1d' // expires in 24 hours
+                });
+
                 console.log('User saved successfully');
-                res.json({ success: true });
+                res.json({ success: true, token: token });
             });
         });
     });

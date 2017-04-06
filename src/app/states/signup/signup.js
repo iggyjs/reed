@@ -12,9 +12,12 @@ class SignupController {
 
     signup(e) {
         e.preventDefault();
-        console.log('Called');
+
         this.Auth.signup(this.username, this.password);
 
+        //TODO: Ensure that usernames are unique
+
+        //FIXME: Uncomment when you're done testing APIs
         // check if form is valid
         // let passwordsMatch = this.password === this.password2 ? true : false;
         // let usernameIsLongEnough = this.username.length > 3 ? true : false

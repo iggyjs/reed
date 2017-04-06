@@ -4,6 +4,7 @@ import angular from 'angular';
 // import different possible states here
 import {Dashboard} from './app/states/dashboard/dashboard';
 import {Login} from './app/states/login/login';
+import {Logout} from './app/states/logout/logout';
 import {Signup} from './app/states/signup/signup';
 import {Search} from './app/states/search/search';
 import {Profile} from './app/states/profile/profile';
@@ -26,4 +27,5 @@ angular
   .component('signup', Signup)
   .component('search', Search)
   .component('profile', Profile)
+  .component('logout', Logout)
   .service('Auth', AuthService);

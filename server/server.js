@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const config = require('./config');
 const User = require('./models/user');
+const cors = require('cors');
 
 const PORT = process.env.PORT || 8000;
 mongoose.connect('mongodb://localhost/reed');
@@ -20,10 +21,12 @@ app.use(bodyParser.json());
 
 //temporary (I think?) middleware for development and having CORS header
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
 });
+
+app.options('*', cors())
 
 //middleware to log requests
 app.use((req, res, next) => {
@@ -38,7 +41,7 @@ app.get('/', (req, res) => {
 app.use(bodyParser.json());
 
 //apply our routes
-app.use('/api', auth, list, users);
+app.use('/api', users, auth, list);
 
 app.listen(PORT);
 console.log('Server running at port ' + PORT + '...');

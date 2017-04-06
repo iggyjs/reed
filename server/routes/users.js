@@ -6,16 +6,15 @@ const shortid = require('shortid');
 const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 const config = require('../config');
+const cors = require('cors');
 
 let userId = '';
 
 // routes to handle social features, following, getting follow requests, etc.
-
-
 //middleware to verify a tokens
+
 routes.use((req, res, next) => {
     let token = req.body.token || req.query.token || req.headers['x-access-token'];
-
     //decode token
     if (token) {
         jwt.verify(token, config.secret, (err, decoded) => {
@@ -36,6 +35,26 @@ routes.use((req, res, next) => {
         });
     }
 });
+
+var whitelist = ['http://localhost:3000'];
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+//gets a user by username
+routes.get('/user/:username', cors(corsOptions), (req, res) => {
+    let username = req.params.username;
+    User.find({name: username}, (err, user) => {
+        res.json(user);
+    });
+});
+
 
 //returns list of following
 routes.get('/following', (req, res) => {
@@ -157,7 +176,7 @@ routes.post('/followIgnore', (req, res) => {
             user.followRequests.splice(idx, 1);
             user.save();
         }
-        
+
         res.json({success: true});
     });
 });
