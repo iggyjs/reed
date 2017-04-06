@@ -36,22 +36,30 @@ routes.use((req, res, next) => {
     }
 });
 
-var whitelist = ['http://localhost:3000'];
-var corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
+//neccessary on all other routes
+routes.options('*', cors());
 
 //gets a user by username
-routes.get('/user/:username', cors(corsOptions), (req, res) => {
+routes.get('/user/:username', (req, res) => {
     let username = req.params.username;
     User.find({name: username}, (err, user) => {
-        res.json(user);
+        if (user.length > 0) {
+            //pass back only profile information
+            //exclude pw, other sensitive data
+            let profileUser = {
+                username: user[0].name,
+                followers: user[0].followers,
+                following: user[0].following,
+            }
+
+            res.json(profileUser);
+        }
+
+        else { //no user was found
+            res.json({userNotFound: true});
+        }
+
+
     });
 });
 

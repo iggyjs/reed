@@ -46,5 +46,11 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 			data: {
 				authRequired: true
 			}
+		}).state('notFound', {
+			url: '/404',
+			component: 'notFound',
+			data: {
+				authRequired: false
+			}
 		});
 }

@@ -9907,7 +9907,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_7j6odsrs9 = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = '762c2870f61f3c1ddba07439a4fb9b78980a2ca7',
+        hash = '91312f8ec515e6482876d14227de64233f53c7e0',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -10005,41 +10005,61 @@ var cov_7j6odsrs9 = function () {
             },
             '9': {
                 start: {
-                    line: 25,
+                    line: 19,
                     column: 23
                 },
                 end: {
-                    line: 25,
+                    line: 19,
                     column: 59
                 }
             },
             '10': {
                 start: {
-                    line: 36,
+                    line: 20,
                     column: 8
                 },
                 end: {
-                    line: 42,
+                    line: 33,
                     column: 5
                 }
             },
             '11': {
                 start: {
-                    line: 41,
-                    column: 3
+                    line: 25,
+                    column: 12
                 },
                 end: {
-                    line: 41,
-                    column: 20
+                    line: 32,
+                    column: 13
                 }
             },
             '12': {
                 start: {
-                    line: 47,
+                    line: 28,
+                    column: 16
+                },
+                end: {
+                    line: 28,
+                    column: 43
+                }
+            },
+            '13': {
+                start: {
+                    line: 31,
+                    column: 16
+                },
+                end: {
+                    line: 31,
+                    column: 44
+                }
+            },
+            '14': {
+                start: {
+                    line: 37,
                     column: 23
                 },
                 end: {
-                    line: 50,
+                    line: 40,
                     column: 1
                 }
             }
@@ -10087,7 +10107,7 @@ var cov_7j6odsrs9 = function () {
                         column: 15
                     },
                     end: {
-                        line: 44,
+                        line: 34,
                         column: 5
                     }
                 },
@@ -10097,28 +10117,62 @@ var cov_7j6odsrs9 = function () {
                 name: '(anonymous_2)',
                 decl: {
                     start: {
-                        line: 40,
+                        line: 24,
                         column: 16
                     },
                     end: {
-                        line: 40,
+                        line: 24,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 40,
+                        line: 24,
                         column: 25
                     },
                     end: {
-                        line: 42,
+                        line: 33,
                         column: 3
                     }
                 },
-                line: 40
+                line: 24
             }
         },
-        branchMap: {},
+        branchMap: {
+            '0': {
+                loc: {
+                    start: {
+                        line: 25,
+                        column: 12
+                    },
+                    end: {
+                        line: 32,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 25,
+                        column: 12
+                    },
+                    end: {
+                        line: 32,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 25,
+                        column: 12
+                    },
+                    end: {
+                        line: 32,
+                        column: 13
+                    }
+                }],
+                line: 25
+            }
+        },
         s: {
             '0': 0,
             '1': 0,
@@ -10132,14 +10186,18 @@ var cov_7j6odsrs9 = function () {
             '9': 0,
             '10': 0,
             '11': 0,
-            '12': 0
+            '12': 0,
+            '13': 0,
+            '14': 0
         },
         f: {
             '0': 0,
             '1': 0,
             '2': 0
         },
-        b: {},
+        b: {
+            '0': [0, 0]
+        },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
         coverage = global[gcv] || (global[gcv] = {});
@@ -10182,29 +10240,15 @@ var ProfileController = function () {
     _createClass(ProfileController, [{
         key: 'findUser',
         value: function findUser() {
+            var _this = this;
+
             ++cov_7j6odsrs9.f[1];
 
             var userId = (++cov_7j6odsrs9.s[7], this.$location.$$url);
             var parsedUserId = (++cov_7j6odsrs9.s[8], userId.substring(2, userId.length));
 
             // //search by user id
-            // let config = {
-            //     headers: {
-            //         'x-access-token': localStorage.getItem('reed-token')
-            //     }
-            // }
-
             var endpoint = (++cov_7j6odsrs9.s[9], SERVER + '/api/user/' + parsedUserId);
-
-            // let req = {
-            //     method: 'POST',
-            //     url: 'http://example.com',
-            //     headers: {
-            //     'Content-Type': undefined
-            //     },
-            //
-            // }
-
             ++cov_7j6odsrs9.s[10];
             this.$http.get(endpoint, {
                 headers: {
@@ -10214,7 +10258,19 @@ var ProfileController = function () {
                 ++cov_7j6odsrs9.f[2];
                 ++cov_7j6odsrs9.s[11];
 
-                console.log(res);
+                if (res.data.userNotFound) {
+                    ++cov_7j6odsrs9.b[0][0];
+                    ++cov_7j6odsrs9.s[12];
+
+                    //server returned no user found
+                    //handle redirect to 404 page
+                    _this.$state.go('notFound');
+                } else {
+                    ++cov_7j6odsrs9.b[0][1];
+                    ++cov_7j6odsrs9.s[13];
+
+                    _this.profileUser = res.data;
+                }
             });
         }
     }]);
@@ -10222,7 +10278,7 @@ var ProfileController = function () {
     return ProfileController;
 }();
 
-var Profile = exports.Profile = (++cov_7j6odsrs9.s[12], {
+var Profile = exports.Profile = (++cov_7j6odsrs9.s[14], {
     template: __webpack_require__(17),
     controller: ProfileController
 });
@@ -10662,7 +10718,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1ahuxh4hps = function () {
 	var path = '/Users/dstreuly/Sites/reed/reed/src/routes.js',
-	    hash = 'ceeae1334bee24032229f02bdc7982072478ae7e',
+	    hash = '89feb1814a39491f8d584d89384512fc605ea03e',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
@@ -10694,7 +10750,7 @@ var cov_1ahuxh4hps = function () {
 					column: 1
 				},
 				end: {
-					line: 49,
+					line: 55,
 					column: 5
 				}
 			}
@@ -10718,7 +10774,7 @@ var cov_1ahuxh4hps = function () {
 						column: 77
 					},
 					end: {
-						line: 50,
+						line: 56,
 						column: 1
 					}
 				},
@@ -10798,6 +10854,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 		component: 'profile',
 		data: {
 			authRequired: true
+		}
+	}).state('notFound', {
+		url: '/404',
+		component: 'notFound',
+		data: {
+			authRequired: false
 		}
 	});
 }
@@ -44690,7 +44752,7 @@ module.exports = "<div ng-include=\"'app/components/navbar/navbar.html'\"></div>
 /* 17 */
 /***/ (function(module, exports) {
 
-module.exports = "<div ng-include=\"'app/components/dashboardNavbar/dashboard_navbar.html'\"></div>\n<h1> {{$ctrl.message}} </h1>\n";
+module.exports = "<div ng-include=\"'app/components/dashboardNavbar/dashboard_navbar.html'\"></div>\n<h1> {{$ctrl.profileUser.username}} </h1>\n";
 
 /***/ }),
 /* 18 */
@@ -44713,7 +44775,7 @@ module.exports = "<div ng-include=\"'app/components/navbar/navbar.html'\"></div>
 
 var cov_1xfhihfxwp = function () {
   var path = '/Users/dstreuly/Sites/reed/reed/src/index.js',
-      hash = '34659eb4c8e285511c3d674fb8fda987dc07109b',
+      hash = 'cf29c35c42c05a43c02072f3172a6048945edee9',
       global = new Function('return this')(),
       gcv = '__coverage__',
       coverageData = {
@@ -44721,11 +44783,11 @@ var cov_1xfhihfxwp = function () {
     statementMap: {
       '0': {
         start: {
-          line: 22,
+          line: 24,
           column: 0
         },
         end: {
-          line: 31,
+          line: 34,
           column: 32
         }
       }
@@ -44775,6 +44837,8 @@ var _search = __webpack_require__(7);
 
 var _profile = __webpack_require__(6);
 
+var _notFound = __webpack_require__(29);
+
 var _auth = __webpack_require__(3);
 
 __webpack_require__(2);
@@ -44792,7 +44856,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 ++cov_1xfhihfxwp.s[0];
 
 
-_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('dashboard', _dashboard.Dashboard).component('login', _login.Login).component('signup', _signup.Signup).component('search', _search.Search).component('profile', _profile.Profile).component('logout', _logout.Logout).service('Auth', _auth.AuthService);
+_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('dashboard', _dashboard.Dashboard).component('login', _login.Login).component('signup', _signup.Signup).component('search', _search.Search).component('profile', _profile.Profile).component('logout', _logout.Logout).component('notFound', _notFound.NotFound).service('Auth', _auth.AuthService);
 
 /***/ }),
 /* 21 */
@@ -45289,6 +45353,168 @@ var Logout = exports.Logout = (++cov_15enclxs0d.s[6], {
 /***/ (function(module, exports) {
 
 module.exports = "";
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var cov_2p6joqts1s = function () {
+	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/notFound/notFound.js',
+	    hash = '9208828b9a5365ba686a797f9fe5b3df311c0cdf',
+	    global = new Function('return this')(),
+	    gcv = '__coverage__',
+	    coverageData = {
+		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/notFound/notFound.js',
+		statementMap: {
+			'0': {
+				start: {
+					line: 4,
+					column: 2
+				},
+				end: {
+					line: 4,
+					column: 23
+				}
+			},
+			'1': {
+				start: {
+					line: 5,
+					column: 8
+				},
+				end: {
+					line: 5,
+					column: 35
+				}
+			},
+			'2': {
+				start: {
+					line: 6,
+					column: 8
+				},
+				end: {
+					line: 6,
+					column: 33
+				}
+			},
+			'3': {
+				start: {
+					line: 7,
+					column: 2
+				},
+				end: {
+					line: 7,
+					column: 34
+				}
+			},
+			'4': {
+				start: {
+					line: 8,
+					column: 2
+				},
+				end: {
+					line: 8,
+					column: 21
+				}
+			},
+			'5': {
+				start: {
+					line: 13,
+					column: 24
+				},
+				end: {
+					line: 16,
+					column: 1
+				}
+			}
+		},
+		fnMap: {
+			'0': {
+				name: '(anonymous_0)',
+				decl: {
+					start: {
+						line: 3,
+						column: 3
+					},
+					end: {
+						line: 3,
+						column: 4
+					}
+				},
+				loc: {
+					start: {
+						line: 3,
+						column: 41
+					},
+					end: {
+						line: 9,
+						column: 2
+					}
+				},
+				line: 3
+			}
+		},
+		branchMap: {},
+		s: {
+			'0': 0,
+			'1': 0,
+			'2': 0,
+			'3': 0,
+			'4': 0,
+			'5': 0
+		},
+		f: {
+			'0': 0
+		},
+		b: {},
+		_coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+	},
+	    coverage = global[gcv] || (global[gcv] = {});
+
+	if (coverage[path] && coverage[path].hash === hash) {
+		return coverage[path];
+	}
+
+	coverageData.hash = hash;
+	return coverage[path] = coverageData;
+}();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* eslint-disable */
+var NotFoundController = function NotFoundController($http, $state, $location) {
+	_classCallCheck(this, NotFoundController);
+
+	++cov_2p6joqts1s.f[0];
+	++cov_2p6joqts1s.s[0];
+
+	this.$state = $state;
+	++cov_2p6joqts1s.s[1];
+	this.$location = $location;
+	++cov_2p6joqts1s.s[2];
+	this.message = 'profile';
+	++cov_2p6joqts1s.s[3];
+	this.data = $state.current.data;
+	++cov_2p6joqts1s.s[4];
+	this.$http = $http;
+};
+
+var NotFound = exports.NotFound = (++cov_2p6joqts1s.s[5], {
+	template: __webpack_require__(30),
+	controller: NotFoundController
+});
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>404</h1>\n";
 
 /***/ })
 /******/ ]);

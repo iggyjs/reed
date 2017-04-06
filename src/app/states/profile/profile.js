@@ -16,31 +16,21 @@ class ProfileController {
         let parsedUserId = userId.substring(2, userId.length);
 
         // //search by user id
-        // let config = {
-        //     headers: {
-        //         'x-access-token': localStorage.getItem('reed-token')
-        //     }
-        // }
-
         let endpoint = SERVER + '/api/user/' + parsedUserId;
-
-        // let req = {
-        //     method: 'POST',
-        //     url: 'http://example.com',
-        //     headers: {
-        //     'Content-Type': undefined
-        //     },
-        //
-        // }
-
         this.$http.get(endpoint, {
             headers : {
                 'x-access-token': localStorage.getItem('reed-token')
             }
         }).then((res) => {
-			console.log(res);
-		});
+            if (res.data.userNotFound) {
+                //server returned no user found
+                //handle redirect to 404 page
+                this.$state.go('notFound');
 
+            } else {
+                this.profileUser = res.data;
+            }
+		});
     }
 }
 

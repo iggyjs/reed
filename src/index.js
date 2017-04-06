@@ -8,6 +8,8 @@ import {Logout} from './app/states/logout/logout';
 import {Signup} from './app/states/signup/signup';
 import {Search} from './app/states/search/search';
 import {Profile} from './app/states/profile/profile';
+import {NotFound} from './app/states/notFound/notFound';
+
 import {AuthService} from './app/services/auth.js';
 
 // node_modules
@@ -28,4 +30,5 @@ angular
   .component('search', Search)
   .component('profile', Profile)
   .component('logout', Logout)
+  .component('notFound', NotFound)
   .service('Auth', AuthService);

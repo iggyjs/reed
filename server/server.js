@@ -18,7 +18,6 @@ const users = require('./routes/users');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-
 //temporary (I think?) middleware for development and having CORS header
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -26,7 +25,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.options('*', cors())
+app.options('*', cors());
 
 //middleware to log requests
 app.use((req, res, next) => {
