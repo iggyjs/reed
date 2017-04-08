@@ -8,7 +8,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider
 		.state('app', {
 			url: '/',
-			redirectTo: 'login'
+			redirectTo: 'tempHome'
 		})
 		.state('dashboard', {
 			url: '/dashboard',
@@ -40,17 +40,25 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 			data: {
 				authRequired: true
 			}
-		}).state('profile', {
-			url: '/:userId',
-			component: 'profile',
-			data: {
-				authRequired: true
-			}
 		}).state('notFound', {
 			url: '/404',
 			component: 'notFound',
 			data: {
 				authRequired: false
 			}
+		}).state('tempHome', {
+			url: '/tempHome',
+			component: 'tempHome',
+			data: {
+				authRequired: false
+			}
+		}).state('profile', {
+			url: '/:userId',
+			component: 'profile',
+			data: {
+				authRequired: true
+			}
 		});
+
+		//variable route needs to be last
 }

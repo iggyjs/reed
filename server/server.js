@@ -1,9 +1,11 @@
+// TODO: Add express, bcrypy jsonwebtoken, shortid to package.json
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
-const config = require('./config');
+//const config = require('./config');
 const User = require('./models/user');
 const cors = require('cors');
 
@@ -25,6 +27,8 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(express.static('dist'));
+
 app.options('*', cors());
 
 //middleware to log requests
@@ -33,15 +37,19 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', (req, res) => {
-    res.send('Here\'s our API!');
-});
-
 app.use(bodyParser.json());
 
 //apply our routes
 //ordering does matter
-app.use('/api', auth, users, list);
+app.use('/api', list, auth, users);
+
+const path = require('path');
+
+app.use('*', (req, res) => {
+  // Use res.sendfile, as it streams instead of reading the file into memory.
+  res.sendFile(path.resolve(__dirname + '/../dist/index.html'));
+});
+
 
 app.listen(PORT);
 console.log('Server running at port ' + PORT + '...');

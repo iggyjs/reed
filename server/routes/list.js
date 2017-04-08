@@ -18,29 +18,29 @@ let userId = '';
 routes.options('*', cors());
 
 //middleware to verify a tokens
-routes.use((req, res, next) => {
-    let token = req.body.token || req.query.token || req.headers['x-access-token'];
-
-    //decode token
-    if (token) {
-        jwt.verify(token, config.secret, (err, decoded) => {
-            if (err) {
-                return res.json({success: false, message: 'Failed to authenticate token. '});
-            } else {
-                req.decoded = decoded;
-                userId = decoded._doc._id;
-                next();
-            }
-        });
-    }
-    // if there is no token
-    else {
-        return res.status(403).send({
-            success: false,
-            message: 'No token provided.'
-        });
-    }
-});
+// routes.use((req, res, next) => {
+//     let token = req.body.token || req.query.token || req.headers['x-access-token'];
+//
+//     //decode token
+//     if (token) {
+//         jwt.verify(token, config.secret, (err, decoded) => {
+//             if (err) {
+//                 return res.json({success: false, message: 'Failed to authenticate token. '});
+//             } else {
+//                 req.decoded = decoded;
+//                 userId = decoded._doc._id;
+//                 next();
+//             }
+//         });
+//     }
+//     // if there is no token
+//     else {
+//         return res.status(403).send({
+//             success: false,
+//             message: 'No token provided.'
+//         });
+//     }
+// });
 
 
 //creates a new list associated with the current user
@@ -59,6 +59,13 @@ routes.post('/lists', (req, res) => {
         if (err) throw err;
 
         res.json({ success: true });
+    });
+});
+
+//returns all lists
+routes.get('/lists', (req, res) => {
+    List.find({}, (err, data) => {
+        res.json(data);
     });
 });
 

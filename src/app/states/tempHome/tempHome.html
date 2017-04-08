@@ -1,0 +1,10 @@
+<div id="tempIdArticles">
+    <p>Current list titles</p>
+
+    <p ng-repeat="list in $ctrl.lists"> {{list.listTitle}} </p>
+</div>
+
+<form class"auth-form" ng-submit="$ctrl.submit($event)" method="POST">
+    <input ng-model="$ctrl.title" class="login-input" type="text" placeholder="New list title">
+    <button id="loginButton" type="submit" name="button">Submit</button>
+</form>

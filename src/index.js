@@ -9,6 +9,7 @@ import {Signup} from './app/states/signup/signup';
 import {Search} from './app/states/search/search';
 import {Profile} from './app/states/profile/profile';
 import {NotFound} from './app/states/notFound/notFound';
+import {TempHome} from './app/states/tempHome/tempHome';
 
 import {AuthService} from './app/services/auth.js';
 
@@ -31,4 +32,5 @@ angular
   .component('profile', Profile)
   .component('logout', Logout)
   .component('notFound', NotFound)
+  .component('tempHome', TempHome)
   .service('Auth', AuthService);
