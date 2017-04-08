@@ -39,6 +39,15 @@ routes.use((req, res, next) => {
 //neccessary on all other routes
 routes.options('*', cors());
 
+
+//TODO: Modify to return non-sensitive information
+//for search page
+routes.get('/allUsers', (req, res) => {
+    User.find({}, (err, users) => {
+        res.json(users);
+    });
+});
+
 //gets a user by username
 routes.get('/user/:username', (req, res) => {
     let username = req.params.username;

@@ -7,11 +7,15 @@ const shortid = require('shortid');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const moment = require('moment');
+const cors = require('cors');
 
 const saltRounds = 10;
 const config = require('../config');
 
 let userId = '';
+
+//neccessary on all other routes
+routes.options('*', cors());
 
 //middleware to verify a tokens
 routes.use((req, res, next) => {
@@ -36,13 +40,6 @@ routes.use((req, res, next) => {
             message: 'No token provided.'
         });
     }
-});
-
-//test route to return all users
-routes.get('/allUsers', (req, res) => {
-    User.find({}, (err, users) => {
-        res.json(users);
-    });
 });
 
 

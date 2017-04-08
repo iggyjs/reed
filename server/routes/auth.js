@@ -6,7 +6,10 @@ const shortid = require('shortid');
 const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 const config = require('../config');
+const cors = require('cors');
 
+
+routes.options('*', cors());
 
 // TODO: Sanitize input for both
 //logs a user in

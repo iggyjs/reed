@@ -9,6 +9,7 @@ class ProfileController {
 		this.data = $state.current.data;
 		this.$http = $http;
         this.findUser();
+        // console.log($state);
 	}
 
     findUser() {

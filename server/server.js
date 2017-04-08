@@ -40,7 +40,8 @@ app.get('/', (req, res) => {
 app.use(bodyParser.json());
 
 //apply our routes
-app.use('/api', users, auth, list);
+//ordering does matter
+app.use('/api', auth, users, list);
 
 app.listen(PORT);
 console.log('Server running at port ' + PORT + '...');
