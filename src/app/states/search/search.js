@@ -1,9 +1,10 @@
 /* eslint-disable */
-/** @ngInject */
+
 const config = require('../../config');
 const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
 
 class SearchController {
+    /** @ngInject */
   	constructor($http, $state) {
 		this.$state = $state;
         this.searchQuery = '';
