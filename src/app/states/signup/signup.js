@@ -1,4 +1,8 @@
 /* eslint-disable */
+const config = require('../../config');
+const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
+
+/** @ngInject */
 class SignupController {
   	constructor($http, $state, Auth) {
 		this.$state = $state;

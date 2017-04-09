@@ -1,8 +1,8 @@
 /* eslint-disable */
+const config = require('../../config');
+const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
 
-const SERVER = 'http://52.203.252.83:8000';
-// const SERVER = 'http://localhost:8000';
-
+/** @ngInject */
 class TempHomeController {
   	constructor($http, $state, $location) {
 		this.$state = $state;

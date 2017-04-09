@@ -5,12 +5,21 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
-//const config = require('./config');
+const config = require('./config');
 const User = require('./models/user');
 const cors = require('cors');
-
+const path = require('path');
 const PORT = process.env.PORT || 8000;
-mongoose.connect('mongodb://localhost/reed');
+
+if (config.environment === 'DEV') {
+    process.env['NODE_ENV'] = 'development';
+    process.env['NODE_DB'] = config.development_database;
+} else {
+    process.env['NODE_ENV'] = 'production';
+    process.env['NODE_DB'] = config.production_database;
+}
+
+mongoose.connect(process.env['NODE_DB']);
 
 //routes
 const auth = require('./routes/auth');
@@ -27,7 +36,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(express.static('dist'));
+
 
 app.options('*', cors());
 
@@ -43,13 +52,15 @@ app.use(bodyParser.json());
 //ordering does matter
 app.use('/api', list, auth, users);
 
-const path = require('path');
+//server angular from express if in production
+if (process.env['NODE_ENV'] === 'production') {
+    app.use(express.static('dist'));
 
-app.use('*', (req, res) => {
-  // Use res.sendfile, as it streams instead of reading the file into memory.
-  res.sendFile(path.resolve(__dirname + '/../dist/index.html'));
-});
-
+    app.use('*', (req, res) => {
+      // Use res.sendfile, as it streams instead of reading the file into memory.
+      res.sendFile(path.resolve(__dirname + '/../dist/index.html'));
+    });
+}
 
 app.listen(PORT);
 console.log('Server running at port ' + PORT + '...');

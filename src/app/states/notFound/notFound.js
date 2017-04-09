@@ -1,4 +1,5 @@
 /* eslint-disable */
+/** @ngInject */
 class NotFoundController {
   	constructor($http, $state, $location) {
 		this.$state = $state;

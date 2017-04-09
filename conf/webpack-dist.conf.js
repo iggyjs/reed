@@ -30,7 +30,10 @@ module.exports = {
           use: 'css-loader?minimize!postcss-loader'
         })
       },
-      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -44,7 +47,8 @@ module.exports = {
         loaders: [
           'html-loader'
         ]
-      }
+      },
+
     ]
   },
   plugins: [

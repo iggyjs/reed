@@ -1,6 +1,8 @@
 /* eslint-disable */
-const SERVER = 'http://localhost:8000';
+const config = require('../../config');
+const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
 
+/** @ngInject */
 class ProfileController {
   	constructor($http, $state, $location) {
 		this.$state = $state;

@@ -1,5 +1,5 @@
 export function DashboardNavbarDirective() {
-  'ngInject';
+  /** @ngInject */
 
   let directive = {
     restrict: 'E',
@@ -16,7 +16,7 @@ export function DashboardNavbarDirective() {
 
 class DashboardNavbarController {
   constructor (moment) {
-    'ngInject';
+    /** @ngInject */
     console.log('Called');
   }
 

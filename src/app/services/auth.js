@@ -1,7 +1,10 @@
 /* eslint-disable */
-const SERVER = 'http://localhost:8000';
+const config = require('../config');
+const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
+
 
 export class AuthService {
+	/** @ngInject */
 	constructor($http, $state, jwtHelper) {
 		this.$http = $http;
 		this.$state = $state;

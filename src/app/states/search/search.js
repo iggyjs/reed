@@ -1,6 +1,7 @@
 /* eslint-disable */
-
-const SERVER = 'http://localhost:8000';
+/** @ngInject */
+const config = require('../../config');
+const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
 
 class SearchController {
   	constructor($http, $state) {
