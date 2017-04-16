@@ -5,16 +5,18 @@ const SERVER = config.environment === 'DEV' ? config.development_server : config
 /** @ngInject */
 class ProfileController {
   	constructor($http, $state, $location) {
+        console.log('Soemthings happening');
 		this.$state = $state;
         this.$location = $location;
         this.message = 'profile';
 		this.data = $state.current.data;
 		this.$http = $http;
-        this.findUser();
+        this.findUserByLocation();
+
         // console.log($state);
 	}
 
-    findUser() {
+    findUserByLocation() {
         let userId = this.$location.$$url;
         let parsedUserId = userId.substring(2, userId.length);
 

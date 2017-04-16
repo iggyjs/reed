@@ -55,8 +55,8 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 		}).state('profile', {
 			url: '/:userId',
 			component: 'profile',
-			data: {
-				authRequired: true
+			params: {
+				username: null
 			}
 		});
 

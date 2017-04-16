@@ -10590,7 +10590,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_7j6odsrs9 = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = '2bb941ddde56166d9f90446ea3ae0de7ad749fe4',
+        hash = '38e0b892169b4bd42474f7aee6e342e1f05a7734',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -10619,21 +10619,21 @@ var cov_7j6odsrs9 = function () {
             '2': {
                 start: {
                     line: 8,
-                    column: 2
+                    column: 8
                 },
                 end: {
                     line: 8,
-                    column: 23
+                    column: 44
                 }
             },
             '3': {
                 start: {
                     line: 9,
-                    column: 8
+                    column: 2
                 },
                 end: {
                     line: 9,
-                    column: 35
+                    column: 23
                 }
             },
             '4': {
@@ -10643,17 +10643,17 @@ var cov_7j6odsrs9 = function () {
                 },
                 end: {
                     line: 10,
-                    column: 33
+                    column: 35
                 }
             },
             '5': {
                 start: {
                     line: 11,
-                    column: 2
+                    column: 8
                 },
                 end: {
                     line: 11,
-                    column: 34
+                    column: 33
                 }
             },
             '6': {
@@ -10663,96 +10663,106 @@ var cov_7j6odsrs9 = function () {
                 },
                 end: {
                     line: 12,
-                    column: 21
+                    column: 34
                 }
             },
             '7': {
                 start: {
                     line: 13,
-                    column: 8
+                    column: 2
                 },
                 end: {
                     line: 13,
-                    column: 24
+                    column: 21
                 }
             },
             '8': {
                 start: {
-                    line: 18,
-                    column: 21
+                    line: 14,
+                    column: 8
                 },
                 end: {
-                    line: 18,
-                    column: 41
+                    line: 14,
+                    column: 34
                 }
             },
             '9': {
                 start: {
-                    line: 19,
-                    column: 27
+                    line: 20,
+                    column: 21
                 },
                 end: {
-                    line: 19,
-                    column: 61
+                    line: 20,
+                    column: 41
                 }
             },
             '10': {
                 start: {
-                    line: 22,
-                    column: 23
+                    line: 21,
+                    column: 27
                 },
                 end: {
-                    line: 22,
-                    column: 59
+                    line: 21,
+                    column: 61
                 }
             },
             '11': {
                 start: {
-                    line: 23,
-                    column: 8
+                    line: 24,
+                    column: 23
                 },
                 end: {
-                    line: 36,
-                    column: 5
+                    line: 24,
+                    column: 59
                 }
             },
             '12': {
                 start: {
-                    line: 28,
-                    column: 12
+                    line: 25,
+                    column: 8
                 },
                 end: {
-                    line: 35,
-                    column: 13
+                    line: 38,
+                    column: 5
                 }
             },
             '13': {
                 start: {
-                    line: 31,
-                    column: 16
+                    line: 30,
+                    column: 12
                 },
                 end: {
-                    line: 31,
-                    column: 43
+                    line: 37,
+                    column: 13
                 }
             },
             '14': {
                 start: {
-                    line: 34,
+                    line: 33,
                     column: 16
                 },
                 end: {
-                    line: 34,
-                    column: 44
+                    line: 33,
+                    column: 43
                 }
             },
             '15': {
                 start: {
-                    line: 40,
+                    line: 36,
+                    column: 16
+                },
+                end: {
+                    line: 36,
+                    column: 44
+                }
+            },
+            '16': {
+                start: {
+                    line: 42,
                     column: 23
                 },
                 end: {
-                    line: 43,
+                    line: 45,
                     column: 1
                 }
             }
@@ -10776,7 +10786,7 @@ var cov_7j6odsrs9 = function () {
                         column: 41
                     },
                     end: {
-                        line: 15,
+                        line: 17,
                         column: 2
                     }
                 },
@@ -10786,49 +10796,49 @@ var cov_7j6odsrs9 = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 17,
+                        line: 19,
                         column: 4
                     },
                     end: {
-                        line: 17,
+                        line: 19,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 17,
-                        column: 15
+                        line: 19,
+                        column: 25
                     },
                     end: {
-                        line: 37,
+                        line: 39,
                         column: 5
                     }
                 },
-                line: 17
+                line: 19
             },
             '2': {
                 name: '(anonymous_2)',
                 decl: {
                     start: {
-                        line: 27,
+                        line: 29,
                         column: 16
                     },
                     end: {
-                        line: 27,
+                        line: 29,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 27,
+                        line: 29,
                         column: 25
                     },
                     end: {
-                        line: 36,
+                        line: 38,
                         column: 3
                     }
                 },
-                line: 27
+                line: 29
             }
         },
         branchMap: {
@@ -10868,35 +10878,35 @@ var cov_7j6odsrs9 = function () {
             '1': {
                 loc: {
                     start: {
-                        line: 28,
+                        line: 30,
                         column: 12
                     },
                     end: {
-                        line: 35,
+                        line: 37,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 28,
+                        line: 30,
                         column: 12
                     },
                     end: {
-                        line: 35,
+                        line: 37,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 28,
+                        line: 30,
                         column: 12
                     },
                     end: {
-                        line: 35,
+                        line: 37,
                         column: 13
                     }
                 }],
-                line: 28
+                line: 30
             }
         },
         s: {
@@ -10915,7 +10925,8 @@ var cov_7j6odsrs9 = function () {
             '12': 0,
             '13': 0,
             '14': 0,
-            '15': 0
+            '15': 0,
+            '16': 0
         },
         f: {
             '0': 0,
@@ -10956,51 +10967,54 @@ var ProfileController = function () {
         ++cov_7j6odsrs9.f[0];
         ++cov_7j6odsrs9.s[2];
 
-        this.$state = $state;
+        console.log('Soemthings happening');
         ++cov_7j6odsrs9.s[3];
-        this.$location = $location;
+        this.$state = $state;
         ++cov_7j6odsrs9.s[4];
-        this.message = 'profile';
+        this.$location = $location;
         ++cov_7j6odsrs9.s[5];
-        this.data = $state.current.data;
+        this.message = 'profile';
         ++cov_7j6odsrs9.s[6];
-        this.$http = $http;
+        this.data = $state.current.data;
         ++cov_7j6odsrs9.s[7];
-        this.findUser();
+        this.$http = $http;
+        ++cov_7j6odsrs9.s[8];
+        this.findUserByLocation();
+
         // console.log($state);
     }
 
     _createClass(ProfileController, [{
-        key: 'findUser',
-        value: function findUser() {
+        key: 'findUserByLocation',
+        value: function findUserByLocation() {
             var _this = this;
 
             ++cov_7j6odsrs9.f[1];
 
-            var userId = (++cov_7j6odsrs9.s[8], this.$location.$$url);
-            var parsedUserId = (++cov_7j6odsrs9.s[9], userId.substring(2, userId.length));
+            var userId = (++cov_7j6odsrs9.s[9], this.$location.$$url);
+            var parsedUserId = (++cov_7j6odsrs9.s[10], userId.substring(2, userId.length));
 
             // //search by user id
-            var endpoint = (++cov_7j6odsrs9.s[10], SERVER + '/api/user/' + parsedUserId);
-            ++cov_7j6odsrs9.s[11];
+            var endpoint = (++cov_7j6odsrs9.s[11], SERVER + '/api/user/' + parsedUserId);
+            ++cov_7j6odsrs9.s[12];
             this.$http.get(endpoint, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
                 ++cov_7j6odsrs9.f[2];
-                ++cov_7j6odsrs9.s[12];
+                ++cov_7j6odsrs9.s[13];
 
                 if (res.data.userNotFound) {
                     ++cov_7j6odsrs9.b[1][0];
-                    ++cov_7j6odsrs9.s[13];
+                    ++cov_7j6odsrs9.s[14];
 
                     //server returned no user found
                     //handle redirect to 404 page
                     _this.$state.go('notFound');
                 } else {
                     ++cov_7j6odsrs9.b[1][1];
-                    ++cov_7j6odsrs9.s[14];
+                    ++cov_7j6odsrs9.s[15];
 
                     _this.profileUser = res.data;
                 }
@@ -11011,7 +11025,7 @@ var ProfileController = function () {
     return ProfileController;
 }();
 
-var Profile = exports.Profile = (++cov_7j6odsrs9.s[15], {
+var Profile = exports.Profile = (++cov_7j6odsrs9.s[16], {
     template: __webpack_require__(23),
     controller: ProfileController
 });
@@ -11029,7 +11043,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1lowflf3ss = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/search/search.js',
-        hash = '97e814ae00fd3b8fcf514812d39aa380e41b75ec',
+        hash = '9b04579746c132e7250604e695b21141c62f0c95',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -11057,32 +11071,32 @@ var cov_1lowflf3ss = function () {
             },
             '2': {
                 start: {
-                    line: 9,
-                    column: 2
+                    line: 5,
+                    column: 18
                 },
                 end: {
-                    line: 9,
-                    column: 23
+                    line: 5,
+                    column: 42
                 }
             },
             '3': {
                 start: {
                     line: 10,
-                    column: 8
+                    column: 2
                 },
                 end: {
                     line: 10,
-                    column: 30
+                    column: 23
                 }
             },
             '4': {
                 start: {
                     line: 11,
-                    column: 2
+                    column: 8
                 },
                 end: {
                     line: 11,
-                    column: 34
+                    column: 30
                 }
             },
             '5': {
@@ -11092,17 +11106,17 @@ var cov_1lowflf3ss = function () {
                 },
                 end: {
                     line: 12,
-                    column: 21
+                    column: 34
                 }
             },
             '6': {
                 start: {
                     line: 13,
-                    column: 8
+                    column: 2
                 },
                 end: {
                     line: 13,
-                    column: 27
+                    column: 21
                 }
             },
             '7': {
@@ -11117,41 +11131,51 @@ var cov_1lowflf3ss = function () {
             },
             '8': {
                 start: {
-                    line: 19,
+                    line: 15,
                     column: 8
                 },
                 end: {
-                    line: 25,
-                    column: 11
+                    line: 15,
+                    column: 27
                 }
             },
             '9': {
                 start: {
-                    line: 24,
-                    column: 12
+                    line: 20,
+                    column: 8
                 },
                 end: {
-                    line: 24,
-                    column: 37
+                    line: 26,
+                    column: 11
                 }
             },
             '10': {
                 start: {
-                    line: 29,
-                    column: 8
+                    line: 25,
+                    column: 12
                 },
                 end: {
-                    line: 29,
-                    column: 34
+                    line: 25,
+                    column: 37
                 }
             },
             '11': {
                 start: {
-                    line: 33,
+                    line: 31,
+                    column: 8
+                },
+                end: {
+                    line: 31,
+                    column: 59
+                }
+            },
+            '12': {
+                start: {
+                    line: 35,
                     column: 22
                 },
                 end: {
-                    line: 36,
+                    line: 38,
                     column: 1
                 }
             }
@@ -11161,97 +11185,97 @@ var cov_1lowflf3ss = function () {
                 name: '(anonymous_0)',
                 decl: {
                     start: {
-                        line: 8,
+                        line: 9,
                         column: 3
                     },
                     end: {
-                        line: 8,
+                        line: 9,
                         column: 4
                     }
                 },
                 loc: {
                     start: {
-                        line: 8,
+                        line: 9,
                         column: 30
                     },
                     end: {
-                        line: 15,
+                        line: 16,
                         column: 2
                     }
                 },
-                line: 8
+                line: 9
             },
             '1': {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 17,
+                        line: 18,
                         column: 4
                     },
                     end: {
-                        line: 17,
+                        line: 18,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 17,
+                        line: 18,
                         column: 18
                     },
                     end: {
-                        line: 26,
+                        line: 27,
                         column: 5
                     }
                 },
-                line: 17
+                line: 18
             },
             '2': {
                 name: '(anonymous_2)',
                 decl: {
                     start: {
-                        line: 23,
+                        line: 24,
                         column: 16
                     },
                     end: {
-                        line: 23,
+                        line: 24,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 23,
+                        line: 24,
                         column: 25
                     },
                     end: {
-                        line: 25,
+                        line: 26,
                         column: 9
                     }
                 },
-                line: 23
+                line: 24
             },
             '3': {
                 name: '(anonymous_3)',
                 decl: {
                     start: {
-                        line: 28,
+                        line: 29,
                         column: 4
                     },
                     end: {
-                        line: 28,
+                        line: 29,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 28,
+                        line: 29,
                         column: 22
                     },
                     end: {
-                        line: 30,
+                        line: 32,
                         column: 5
                     }
                 },
-                line: 28
+                line: 29
             }
         },
         branchMap: {
@@ -11301,7 +11325,8 @@ var cov_1lowflf3ss = function () {
             '8': 0,
             '9': 0,
             '10': 0,
-            '11': 0
+            '11': 0,
+            '12': 0
         },
         f: {
             '0': 0,
@@ -11332,6 +11357,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var config = (++cov_1lowflf3ss.s[0], __webpack_require__(0));
 var SERVER = (++cov_1lowflf3ss.s[1], config.environment === 'DEV' ? (++cov_1lowflf3ss.b[0][0], config.development_server) : (++cov_1lowflf3ss.b[0][1], config.production_server));
+var TEMP_HOST = (++cov_1lowflf3ss.s[2], 'http://localhost:3000/');
 
 var SearchController = function () {
     /** @ngInject */
@@ -11340,18 +11366,18 @@ var SearchController = function () {
         _classCallCheck(this, SearchController);
 
         ++cov_1lowflf3ss.f[0];
-        ++cov_1lowflf3ss.s[2];
+        ++cov_1lowflf3ss.s[3];
 
         this.$state = $state;
-        ++cov_1lowflf3ss.s[3];
-        this.searchQuery = '';
         ++cov_1lowflf3ss.s[4];
-        this.data = $state.current.data;
+        this.searchQuery = '';
         ++cov_1lowflf3ss.s[5];
-        this.$http = $http;
+        this.data = $state.current.data;
         ++cov_1lowflf3ss.s[6];
-        this.allUsers = [];
+        this.$http = $http;
         ++cov_1lowflf3ss.s[7];
+        this.allUsers = [];
+        ++cov_1lowflf3ss.s[8];
         this.getAllUsers();
     }
 
@@ -11361,7 +11387,7 @@ var SearchController = function () {
             var _this = this;
 
             ++cov_1lowflf3ss.f[1];
-            ++cov_1lowflf3ss.s[8];
+            ++cov_1lowflf3ss.s[9];
 
 
             this.$http.get(SERVER + '/api/allUsers', {
@@ -11370,7 +11396,7 @@ var SearchController = function () {
                 }
             }).then(function (res) {
                 ++cov_1lowflf3ss.f[2];
-                ++cov_1lowflf3ss.s[9];
+                ++cov_1lowflf3ss.s[10];
 
                 _this.allUsers = res.data;
             });
@@ -11379,16 +11405,17 @@ var SearchController = function () {
         key: 'goToProfile',
         value: function goToProfile(user) {
             ++cov_1lowflf3ss.f[3];
-            ++cov_1lowflf3ss.s[10];
+            ++cov_1lowflf3ss.s[11];
 
-            this.$state.go('profile');
+            // HACK: Need a better way to do this using $stateProvider
+            window.location.href = TEMP_HOST + '@' + user.name;
         }
     }]);
 
     return SearchController;
 }();
 
-var Search = exports.Search = (++cov_1lowflf3ss.s[11], {
+var Search = exports.Search = (++cov_1lowflf3ss.s[12], {
     template: __webpack_require__(24),
     controller: SearchController
 });
@@ -12413,8 +12440,8 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 	}).state('profile', {
 		url: '/:userId',
 		component: 'profile',
-		data: {
-			authRequired: true
+		params: {
+			username: null
 		}
 	});
 

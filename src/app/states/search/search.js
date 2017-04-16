@@ -2,6 +2,7 @@
 
 const config = require('../../config');
 const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
+const TEMP_HOST = 'http://localhost:3000/'
 
 class SearchController {
     /** @ngInject */
@@ -26,7 +27,8 @@ class SearchController {
     }
 
     goToProfile(user) {
-        this.$state.go('profile');
+        // HACK: Need a better way to do this using $stateProvider
+        window.location.href = TEMP_HOST + '@' + user.name;
     }
 }
 
