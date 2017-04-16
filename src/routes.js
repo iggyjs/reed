@@ -8,7 +8,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider
 		.state('app', {
 			url: '/',
-			redirectTo: 'tempHome'
+			redirectTo: 'login'
 		})
 		.state('dashboard', {
 			url: '/dashboard',
