@@ -55,8 +55,12 @@ routes.get('/user/:username', (req, res) => {
         if (user.length > 0) {
             //pass back only profile information
             //exclude pw, other sensitive data
+
+            // TODO: Add user current list to return
+
             let profileUser = {
                 username: user[0].name,
+                guid: user[0].guid,
                 followers: user[0].followers,
                 following: user[0].following,
             }

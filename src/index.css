@@ -1,3 +1,11 @@
+@import url('assets/css/ionicons.min.css');
+@import url('app/states/login/login.css');
+@import url('app/states/signup/signup.css');
+@import url('app/states/search/search.css');
+@import url('app/states/create/create.css');
+@import url('app/states/profile/profile.css');
+@import url('app/states/dashboard/dashboard.css');
+
 /*Remove */
 .hide-chrome-autofill {
     opacity: 0;
@@ -32,6 +40,65 @@ body {
     outline: none;
 }
 
+.reed-banner {
+    padding-top:10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom: 20px;
+    background-color: #F8F8F8;
+}
+
+
+.reed-btn {
+	border: none;
+	font-family: inherit;
+	font-size: 10px;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 6px 10px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.reed-btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.reed-btn-heavy-click {
+    border-radius: 0 0 5px 5px;
+    background: #cb4e4e;
+    color: #fff;
+    box-shadow: 0 6px #ab3c3c;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.reed-btn-heavy-click:hover {
+    box-shadow: 0 8px #ab3c3c;
+	top: -2px;
+}
+
+
+.reed-btn-heavy-click:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+
 /*Nav styles*/
 
 .reed-nav {
@@ -54,133 +121,4 @@ body {
 .reed-brand {
     font-size: 20px;
     color:#434343 !important;
-}
-
-/*Login state styles*/
-.login-view {
-    padding:30px 30px 30px 30px;
-}
-
-#loginButton {
-    height: 40px;
-    width: 100%;
-    background-color: #FFF;
-    border: solid 1px #CCCCCC;
-    outline: none;
-}
-
-.signup-view {
-    padding:30px 30px 30px 30px;
-}
-
-.auth-form {
-    max-width: 400px;
-    padding-top: 140px;
-}
-
-.login-input {
-    width: 100%;
-    height: 40px;
-    padding-left: 4px;
-    margin-bottom: 20px;
-}
-
-.login-input:focus {
-    border: 1px solid  #4E56EE !important;
-}
-
-/*Signup*/
-#signupButton {
-    height: 40px;
-    width: 100%;
-    background-color: #FFF;
-    border: solid 1px #CCCCCC;
-    outline: none;
-}
-
-
-/*Dashboard styles*/
-
-
-/*Search page styles*/
-.search-view {
-    padding: 40px;
-}
-
-#searchInput {
-    -webkit-transition: all 100ms linear;
-    -moz-transition: all 100ms linear;
-    -o-transition: all 100ms linear;
-    -ms-transition: all 100ms linear;
-    transition: all 100ms linear;
-
-    color:#434343;
-    height: 50px;
-    width: 100%;
-    outline:none;
-    font-size:20px;
-    padding-left: 10px;
-}
-
-#searchInput:focus {
-    border: 1px solid #CCCCCC;
-    border-left: 8px solid #4E56EE;
-}
-
-#searchInput::placeholder {
-    color: #D7D7D7;
-}
-
-#noResultsMessage {
-    font-size: 20px;
-    padding-top:30px;
-}
-
-.search-results {
-    padding-top:20px;
-}
-
-.search-results-banner   {
-    -webkit-transition: all 100ms linear;
-    -moz-transition: all 100ms linear;
-    -o-transition: all 100ms linear;
-    -ms-transition: all 100ms linear;
-    transition: all 100ms linear;
-    width: 100%;
-    cursor:pointer;
-    border-left: 1px solid #f1f1f1;
-    padding:13px 13px 13px 15px;
-}
-
-.search-results-banner:hover {
-    background-color: #F5F5F5;
-    border-left:5px solid #4E56EE;
-}
-
-
-/*Dashboard styles*/
-#notFollowingMessageDiv {
-    text-align: center;
-    width: 100%;
-    padding-top:100px;
-
-}
-
-#notFollowingMessageTitle {
-    font-size: 24px;
-}
-
-#notFollowingMessageDes{
-    font-size: 18px;
-}
-
-#notFollowingMessageDes > a{
-
-}
-
-#notFollowingMessageDes > a:hover{
-    background-color: #4E56EE;
-    color: #FFF;
-    text-decoration: none;
-    cursor: pointer;
 }

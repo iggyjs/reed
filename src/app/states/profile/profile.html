@@ -1,2 +1,60 @@
-<div ng-include="'app/components/dashboardNavbar/dashboard_navbar.html'"></div>
-<h1> {{$ctrl.profileUser.username}} </h1>
+<nav class="reed-nav navbar navbar-default">
+    <div class="reed-nav-container-fluid container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="reed-brand navbar-brand" href="#">Reed</a>
+        </div>
+
+
+        <div class="collapse navbar-collapse reed-navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- <ul class="nav navbar-nav">
+                <li><a href="#">Link</a></li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="reed-nav-link" ui-sref="dashboard">Feed</a></li>
+                <li><a class="reed-nav-link" ui-sref="create">Create</a></li>
+                <li><a class="reed-nav-link" ui-sref="search">Search</a></li>
+                <li><a class="reed-nav-link" ui-sref="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="profile-view">
+
+    <div class="profile-top-bar">
+        <h1 class="profile-header">{{$ctrl.profileUser.username}}</h1>
+        <button ng-if="!$ctrl.profileIsCurrentUser" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Follow  <i class="icon ion-android-add-circle"></i></button>
+    </div>
+
+    <!-- User's current list -->
+    <div class="profile-current-list">
+        <div class="reed-banner">
+            <h1 id="currentListHeader"><i class="icon ion-ios-book"></i> Today's Reading List</h1>
+        </div>
+
+        <!-- <div ng-repeat="$ctrl." class="reed-current-list-item">
+
+        </div> -->
+
+    </div>
+
+
+    <!-- User's own profile view -->
+    <div ng-if="$ctrl.profileIsCurrentUser" class="self-profile-view">
+        <p>Is self</p>
+    </div>
+
+
+    <!-- If it's someone else profile -->
+    <div ng-if="!$ctrl.profileIsCurrentUser" class="visitor-profile-view">
+
+
+    </div>
+
+</div>

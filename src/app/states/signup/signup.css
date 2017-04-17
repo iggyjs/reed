@@ -1,0 +1,8 @@
+/*Signup*/
+#signupButton {
+    height: 40px;
+    width: 100%;
+    background-color: #FFF;
+    border: solid 1px #CCCCCC;
+    outline: none;
+}

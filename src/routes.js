@@ -16,6 +16,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 			data: {
 				authRequired: true
 			}
+		}).state('create', {
+			url: '/create',
+			component: 'create',
+			data: {
+				authRequired: true
+			}
 		}).state('login', {
 			url: '/login',
 			component: 'login',

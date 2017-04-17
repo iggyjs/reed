@@ -1,0 +1,44 @@
+.profile-view {
+    padding: 10px 40px 40px 40px;
+}
+
+.profile-header {
+    font-size: 23px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background-color: #FBFBFB;
+    color:#434343;
+    display: inline;
+    padding-top:13px;
+    padding-bottom:18px;
+    padding-left: 18px;
+    padding-right: 40px;
+}
+
+.profile-top-bar {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.profile-follow-bar {
+    padding-right:20px;
+}
+
+
+#followButton{
+    margin-right:20px;
+    float: right;
+}
+
+
+.profile-current-list {
+    border-left:1px solid #F8F8F8;
+}
+
+#currentListHeader {
+    font-size: 17px;
+}
+
+#currentListHeader > i{
+    margin-right:7px;
+}

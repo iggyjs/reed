@@ -81,4 +81,23 @@ export class AuthService {
 		}
 	}
 
+	getUserToken() {
+		let token = localStorage.getItem('reed-token');
+
+		if (typeof token !== "undefined" && token !== null) {
+			// a token is present, but we need to validate it
+			let decoded = this.jwtHelper.decodeToken(token)._doc;
+
+			if (decoded) {
+				return decoded;
+			} else {
+				// redirect to login
+				return null;
+			}
+		} else {
+			// redirect to login
+			return null;
+		}
+	}
+
 }

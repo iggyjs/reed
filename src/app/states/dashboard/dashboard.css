@@ -1,0 +1,26 @@
+/*Dashboard styles*/
+#notFollowingMessageDiv {
+    text-align: center;
+    width: 100%;
+    padding-top:100px;
+
+}
+
+#notFollowingMessageTitle {
+    font-size: 24px;
+}
+
+#notFollowingMessageDes{
+    font-size: 18px;
+}
+
+#notFollowingMessageDes > a{
+
+}
+
+#notFollowingMessageDes > a:hover{
+    background-color: #4E56EE;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}

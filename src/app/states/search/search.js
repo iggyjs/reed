@@ -2,7 +2,7 @@
 
 const config = require('../../config');
 const SERVER = config.environment === 'DEV' ? config.development_server : config.production_server;
-const TEMP_HOST = 'http://localhost:3000/'
+const HOST = config.environment === 'DEV' ? config.development_host : config.production_host;
 
 class SearchController {
     /** @ngInject */
@@ -16,7 +16,6 @@ class SearchController {
 	}
 
     getAllUsers() {
-
         this.$http.get(SERVER + '/api/allUsers', {
             headers : {
                 'x-access-token': localStorage.getItem('reed-token')
@@ -28,7 +27,7 @@ class SearchController {
 
     goToProfile(user) {
         // HACK: Need a better way to do this using $stateProvider
-        window.location.href = TEMP_HOST + '@' + user.name;
+        window.location.href = HOST + '@' + user.name;
     }
 }
 

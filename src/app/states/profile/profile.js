@@ -4,16 +4,20 @@ const SERVER = config.environment === 'DEV' ? config.development_server : config
 
 /** @ngInject */
 class ProfileController {
-  	constructor($http, $state, $location) {
-        console.log('Soemthings happening');
+  	constructor($http, $state, $location, Auth) {
+
+        this.Auth = Auth;
 		this.$state = $state;
         this.$location = $location;
         this.message = 'profile';
 		this.data = $state.current.data;
 		this.$http = $http;
+        this.profileIsCurrentUser = false;
+
         this.findUserByLocation();
 
-        // console.log($state);
+        let user = this.Auth.getUserToken();
+        this.user = user;
 	}
 
     findUserByLocation() {
@@ -29,13 +33,24 @@ class ProfileController {
         }).then((res) => {
             if (res.data.userNotFound) {
                 //server returned no user found
-                //handle redirect to 404 page
                 this.$state.go('notFound');
+            }
 
-            } else {
+            else {
                 this.profileUser = res.data;
+                if (this.user !== null) {
+                    this.checkIfProfileIsCurrentUser();
+                }
             }
 		});
+    }
+
+    checkIfProfileIsCurrentUser() {
+        console.log(this.profileUser);
+
+        if ((this.user.name === this.profileUser.username) && (this.user.guid === this.profileUser.guid)) {
+            this.profileIsCurrentUser = true;
+        }
     }
 }
 
