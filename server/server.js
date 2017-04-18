@@ -34,8 +34,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
-
 app.options('*', cors());
 
 //middleware to log requests

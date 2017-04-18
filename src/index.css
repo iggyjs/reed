@@ -2,7 +2,6 @@
 @import url('app/states/login/login.css');
 @import url('app/states/signup/signup.css');
 @import url('app/states/search/search.css');
-@import url('app/states/create/create.css');
 @import url('app/states/profile/profile.css');
 @import url('app/states/dashboard/dashboard.css');
 
@@ -68,7 +67,7 @@ body {
 }
 
 .reed-btn {
-	border: none;
+	border: solid 1px #434343;
 	font-family: inherit;
 	font-size: 10px;
 	color: inherit;
@@ -96,6 +95,7 @@ body {
 }
 
 .reed-btn-heavy-click {
+    border: none;
     border-radius: 0 0 5px 5px;
     background: #cb4e4e;
     color: #fff;

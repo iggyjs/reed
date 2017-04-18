@@ -7,7 +7,6 @@ import {Login} from './app/states/login/login';
 import {Logout} from './app/states/logout/logout';
 import {Signup} from './app/states/signup/signup';
 import {Search} from './app/states/search/search';
-import {Create} from './app/states/create/create';
 import {Profile} from './app/states/profile/profile';
 import {NotFound} from './app/states/notFound/notFound';
 import {TempHome} from './app/states/tempHome/tempHome';
@@ -27,7 +26,6 @@ angular
   .module('app', ['ui.router', 'angular-jwt'])
   .config(routesConfig)
   .component('dashboard', Dashboard)
-  .component('create', Create)
   .component('login', Login)
   .component('signup', Signup)
   .component('search', Search)

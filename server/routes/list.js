@@ -104,6 +104,7 @@ routes.post('/addArticle', (req, res) => {
         list.save((err, list) => {
             if (err) throw err;
 
+            // TODO: Update current user list to reflect changes
             res.json({success: true, list: list});
 
         });

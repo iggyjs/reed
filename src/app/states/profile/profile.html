@@ -18,7 +18,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="reed-nav-link" ui-sref="dashboard">Feed</a></li>
                 <li><a class="reed-nav-link" ui-sref="profile({userId: '@' + $ctrl.user.name })">Profile</a></li>
-                <li><a class="reed-nav-link" ui-sref="create">Create</a></li>
                 <li><a class="reed-nav-link" ui-sref="search">Search</a></li>
                 <li><a class="reed-nav-link" ui-sref="logout">Logout</a></li>
             </ul>
@@ -48,7 +47,20 @@
 
     <!-- User's own profile view -->
     <div ng-if="$ctrl.profileIsCurrentUser" class="self-profile-view">
-        <p>Is self</p>
+
+        <button ng-if="!$ctrl.addingArticle"  ng-click="$ctrl.toggleAddArticle()" id="addArticleButtonSelfProfile" class="reed-btn" type="button" name="button">Add a new article <i class="icon ion-android-add-circle"></i></button>
+        <button ng-if="$ctrl.addingArticle"  ng-click="$ctrl.toggleAddArticle()" id="addArticleButtonSelfProfile" class="reed-btn" type="button" name="button">Nevermind <i class="icon ion-minus-circled"></i></button>
+
+
+        <div ng-if="$ctrl.addingArticle" class="create-page-view">
+            <form id="createListForm" class="reed-form" ng-submit="$ctrl.submitList($event)">
+                <input ng-model="$ctrl.articleTitle" class="reed-input" type="text" name="articleTitle" placeholder="Article title">
+                <input ng-model="$ctrl.articleLink" class="reed-input" type="text" name="articleLink" placeholder="Article link">
+                <textarea ng-model="$ctrl.articleDescription" class="reed-textarea" name="articleDes" placeholder="Article description (if any)"></textarea>
+
+                <input id="loginButton" type="submit" value="Add article to daily list">
+            </form>
+        </div>
     </div>
 
 

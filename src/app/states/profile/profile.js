@@ -14,6 +14,13 @@ class ProfileController {
 		this.$http = $http;
         this.profileIsCurrentUser = false;
 
+
+        // create article stuff
+        this.addingArticle = false;
+        this.articleTitle = '';
+        this.articleLink = '';
+        this.articleDescription = '';
+
         this.findUserByLocation();
         this.user = this.Auth.getUserToken();
 	}
@@ -46,9 +53,37 @@ class ProfileController {
     checkIfProfileIsCurrentUser() {
         console.log(this.profileUser);
 
+        if (typeof(this.profileUser.list[0].articles) === 'undefined') {
+            //TODO: Make sure to update user object
+            //Or, imbed the id of the list
+            
+        }
+
         if ((this.user.name === this.profileUser.username) && (this.user.guid === this.profileUser.guid)) {
             this.profileIsCurrentUser = true;
         }
+    }
+
+    toggleAddArticle() {
+        this.addingArticle = !this.addingArticle;
+
+    }
+
+    submitList($event) {
+        let payload = {
+            articleTitle: this.articleTitle,
+            articleDes: this.articleDescription,
+            articleLink: this.articleLink
+        };
+
+        this.$http.post(SERVER + '/api/addArticle', payload, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            console.log(res);
+        });
+
     }
 }
 

@@ -70,7 +70,7 @@ routes.post('/signup', (req, res) => {
                 if (err) throw err;
 
                 userId = user._id;
-                
+
                 let token = jwt.sign(user, config.secret, {
                     expiresIn: '2d' // expires in 48 hours
                 });
@@ -86,7 +86,13 @@ routes.post('/signup', (req, res) => {
                 list.save((err) => {
                     if (err) throw err;
 
-                    res.json({ success: true, token: token });
+                    user.list = list;
+
+                    user.save((err, user) => {
+                        if (err) throw err;
+
+                        res.json({ success: true, token: token });
+                    });
                 });
             });
         });

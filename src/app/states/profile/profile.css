@@ -42,3 +42,17 @@
 #currentListHeader > i{
     margin-right:7px;
 }
+
+.create-page-view {
+    padding:20px;
+}
+
+#createListForm {
+    max-width: 600px;
+}
+
+
+#addArticleButtonSelfProfile {
+    float: right;
+    margin-top: 14px;
+}
