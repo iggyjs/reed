@@ -1,5 +1,6 @@
 const User = require('../models/user');
 const List = require('../models/list');
+const Article = require('../models/article');
 const express = require('express');
 const routes = express.Router();
 
@@ -17,30 +18,30 @@ let userId = '';
 //neccessary on all other routes
 routes.options('*', cors());
 
-//middleware to verify a tokens
-// routes.use((req, res, next) => {
-//     let token = req.body.token || req.query.token || req.headers['x-access-token'];
-//
-//     //decode token
-//     if (token) {
-//         jwt.verify(token, config.secret, (err, decoded) => {
-//             if (err) {
-//                 return res.json({success: false, message: 'Failed to authenticate token. '});
-//             } else {
-//                 req.decoded = decoded;
-//                 userId = decoded._doc._id;
-//                 next();
-//             }
-//         });
-//     }
-//     // if there is no token
-//     else {
-//         return res.status(403).send({
-//             success: false,
-//             message: 'No token provided.'
-//         });
-//     }
-// });
+// middleware to verify a tokens
+routes.use((req, res, next) => {
+    let token = req.body.token || req.query.token || req.headers['x-access-token'];
+
+    //decode token
+    if (token) {
+        jwt.verify(token, config.secret, (err, decoded) => {
+            if (err) {
+                return res.json({success: false, message: 'Failed to authenticate token. '});
+            } else {
+                req.decoded = decoded;
+                userId = decoded._doc._id;
+                next();
+            }
+        });
+    }
+    // if there is no token
+    else {
+        return res.status(403).send({
+            success: false,
+            message: 'No token provided.'
+        });
+    }
+});
 
 
 //creates a new list associated with the current user
@@ -91,21 +92,22 @@ routes.post('/addArticle', (req, res) => {
     let payload = req.body;
 
     // TODO: Add image thumb
-    let article = {
-        title: payload.articleName,
-        description: payload.articleDescription,
-        link: payload.articleLink,
-    };
+    let article = new Article({
+        articleTitle: payload.articleTitle,
+        articleDescription: payload.articleDes,
+        articleLink: payload.articleLink,
+    });
 
     List.findOne({user_guid: userId, date: today}, (err, list) => {
         list.articles.push(article);
 
-        list.save((err) => {
+        list.save((err, list) => {
             if (err) throw err;
 
-            res.json({success: true});
+            res.json({success: true, list: list});
 
         });
+
     });
 
 });

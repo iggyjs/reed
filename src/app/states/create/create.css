@@ -1,4 +1,11 @@
 .create-page-view {
-    height: 200px;
-    background-color: pink
+    padding:20px;
+}
+
+#createListForm {
+    max-width: 600px;
+}
+
+#createHeader {
+    font-size: 18px;
 }

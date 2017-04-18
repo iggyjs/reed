@@ -26,5 +26,15 @@
 </nav>
 
 <div class="create-page-view">
-    <p>yo</p>
+    <center>
+        <h1 id="createHeader">Add an article to your daily list manually.</h1>
+
+        <form id="createListForm" class="reed-form" ng-submit="$ctrl.submitList($event)">
+            <input ng-model="$ctrl.articleTitle" class="reed-input" type="text" name="articleTitle" placeholder="Article title">
+            <input ng-model="$ctrl.articleLink" class="reed-input" type="text" name="articleLink" placeholder="Article link">
+            <textarea ng-model="$ctrl.articleDescription" class="reed-textarea" name="articleDes" placeholder="Article description (if any)"></textarea>
+
+            <input id="loginButton" type="submit" value="Add article to daily list">
+        </form>
+    </center>
 </div>

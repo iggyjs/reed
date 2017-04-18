@@ -48,7 +48,7 @@ app.use(bodyParser.json());
 
 //apply our routes
 //ordering does matter
-app.use('/api', list, auth, users);
+app.use('/api', auth, list, users);
 
 //server angular from express if in production
 if (process.env['NODE_ENV'] === 'production') {

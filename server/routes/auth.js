@@ -1,4 +1,6 @@
 const User = require('../models/user');
+const List = require('../models/list')
+
 const express = require('express');
 const routes = express.Router();
 const bcrypt = require('bcrypt');
@@ -7,6 +9,7 @@ const saltRounds = 10;
 const jwt = require('jsonwebtoken');
 const config = require('../config');
 const cors = require('cors');
+const moment = require('moment');
 
 
 routes.options('*', cors());
@@ -52,9 +55,13 @@ routes.post('/signup', (req, res) => {
 
     bcrypt.genSalt(saltRounds, (err, salt) => {
         bcrypt.hash(pw, salt, (err, hash) => {
+
+            let username = payload.name;
+            let userId  = '';
+
             let user = new User({
                 guid: shortid.generate(),
-                name: payload.name,
+                name: username,
                 password: hash,
                 admin: true
             });
@@ -62,12 +69,25 @@ routes.post('/signup', (req, res) => {
             user.save((err, user) => {
                 if (err) throw err;
 
+                userId = user._id;
+                
                 let token = jwt.sign(user, config.secret, {
-                    expiresIn: '1d' // expires in 24 hours
+                    expiresIn: '2d' // expires in 48 hours
                 });
 
-                console.log('User saved successfully');
-                res.json({ success: true, token: token });
+                // Make a new list for that user
+                let currDate = moment().format('MM:DD:YYYY');
+
+                let list = new List({
+                    user_guid: userId,
+                    date: currDate
+                });
+
+                list.save((err) => {
+                    if (err) throw err;
+
+                    res.json({ success: true, token: token });
+                });
             });
         });
     });
