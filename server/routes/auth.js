@@ -58,9 +58,10 @@ routes.post('/signup', (req, res) => {
 
             let username = payload.name;
             let userId  = '';
+            let userShortId = shortid.generate();
 
             let user = new User({
-                guid: shortid.generate(),
+                guid: userShortId,
                 name: username,
                 password: hash,
                 admin: true
@@ -79,7 +80,8 @@ routes.post('/signup', (req, res) => {
                 let currDate = moment().format('MM:DD:YYYY');
 
                 let list = new List({
-                    user_guid: userId,
+                    user_guid: userShortId,
+                    user_id: userId,
                     date: currDate
                 });
 

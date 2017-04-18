@@ -38,9 +38,9 @@
             <h1 id="currentListHeader"><i class="icon ion-ios-book"></i> Today's Reading List</h1>
         </div>
 
-        <!-- <div ng-repeat="$ctrl." class="reed-current-list-item">
-
-        </div> -->
+        <div ng-repeat="article in $ctrl.profileList.articles" class="reed-current-list-item">
+            {{article.articleTitle}}
+        </div>
 
     </div>
 

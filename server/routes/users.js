@@ -61,7 +61,6 @@ routes.get('/user/:username', (req, res) => {
             let profileUser = {
                 username: user[0].name,
                 guid: user[0].guid,
-                list: user[0].list,
                 followers: user[0].followers,
                 following: user[0].following,
             }

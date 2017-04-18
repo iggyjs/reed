@@ -79,9 +79,7 @@ routes.get('/lists', (req, res) => {
 
 //returns todays list by date and user id
 routes.get('/currList', (req, res) => {
-    let today = moment().format('MM:DD:YYYY');
-
-    List.findOne({user_guid: userId, date: today}, (err, list) => {
+    List.findOne({user_id: userId}, (err, list) => {
         res.json(list);
     });
 });
@@ -98,19 +96,13 @@ routes.post('/addArticle', (req, res) => {
         articleLink: payload.articleLink,
     });
 
-    List.findOne({user_guid: userId, date: today}, (err, list) => {
-        list.articles.push(article);
+    List.findOneAndUpdate({user_id: userId}, {$push: {articles: article}}, {new: true}, (err, newList) => {
 
-        list.save((err, list) => {
-            if (err) throw err;
+        if (err) throw err;
 
-            // TODO: Update current user list to reflect changes
-            res.json({success: true, list: list});
-
-        });
+        res.json({success: true, list: newList});
 
     });
-
 });
 
 module.exports = routes;
