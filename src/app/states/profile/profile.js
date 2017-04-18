@@ -15,9 +15,7 @@ class ProfileController {
         this.profileIsCurrentUser = false;
 
         this.findUserByLocation();
-
-        let user = this.Auth.getUserToken();
-        this.user = user;
+        this.user = this.Auth.getUserToken();
 	}
 
     findUserByLocation() {

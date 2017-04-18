@@ -60,10 +60,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 			}
 		}).state('profile', {
 			url: '/:userId',
-			component: 'profile',
-			params: {
-				username: null
-			}
+			component: 'profile'
 		});
 
 		//variable route needs to be last

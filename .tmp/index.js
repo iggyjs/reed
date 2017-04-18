@@ -11293,7 +11293,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_7j6odsrs9 = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = '8fea675c58104d258007a3366995f03e9b98f311',
+        hash = 'f5c2107bd554e7560473a570bc7be891039dc8ba',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -11401,112 +11401,112 @@ var cov_7j6odsrs9 = function () {
             },
             '10': {
                 start: {
-                    line: 19,
-                    column: 19
+                    line: 18,
+                    column: 8
                 },
                 end: {
-                    line: 19,
-                    column: 43
+                    line: 18,
+                    column: 45
                 }
             },
             '11': {
                 start: {
-                    line: 20,
-                    column: 8
+                    line: 22,
+                    column: 21
                 },
                 end: {
-                    line: 20,
-                    column: 25
+                    line: 22,
+                    column: 41
                 }
             },
             '12': {
                 start: {
-                    line: 24,
-                    column: 21
+                    line: 23,
+                    column: 27
                 },
                 end: {
-                    line: 24,
-                    column: 41
+                    line: 23,
+                    column: 61
                 }
             },
             '13': {
                 start: {
-                    line: 25,
-                    column: 27
+                    line: 26,
+                    column: 23
                 },
                 end: {
-                    line: 25,
-                    column: 61
+                    line: 26,
+                    column: 59
                 }
             },
             '14': {
                 start: {
-                    line: 28,
-                    column: 23
+                    line: 27,
+                    column: 8
                 },
                 end: {
-                    line: 28,
-                    column: 59
+                    line: 43,
+                    column: 5
                 }
             },
             '15': {
                 start: {
-                    line: 29,
-                    column: 8
+                    line: 32,
+                    column: 12
                 },
                 end: {
-                    line: 45,
-                    column: 5
+                    line: 42,
+                    column: 13
                 }
             },
             '16': {
                 start: {
                     line: 34,
-                    column: 12
+                    column: 16
                 },
                 end: {
-                    line: 44,
-                    column: 13
+                    line: 34,
+                    column: 43
                 }
             },
             '17': {
                 start: {
-                    line: 36,
+                    line: 38,
                     column: 16
                 },
                 end: {
-                    line: 36,
-                    column: 43
+                    line: 38,
+                    column: 44
                 }
             },
             '18': {
                 start: {
-                    line: 40,
+                    line: 39,
                     column: 16
                 },
                 end: {
-                    line: 40,
-                    column: 44
+                    line: 41,
+                    column: 17
                 }
             },
             '19': {
                 start: {
-                    line: 41,
-                    column: 16
+                    line: 40,
+                    column: 20
                 },
                 end: {
-                    line: 43,
-                    column: 17
+                    line: 40,
+                    column: 55
                 }
             },
             '20': {
                 start: {
-                    line: 42,
-                    column: 20
+                    line: 47,
+                    column: 8
                 },
                 end: {
-                    line: 42,
-                    column: 55
+                    line: 47,
+                    column: 38
                 }
             },
             '21': {
@@ -11515,37 +11515,27 @@ var cov_7j6odsrs9 = function () {
                     column: 8
                 },
                 end: {
-                    line: 49,
-                    column: 38
+                    line: 51,
+                    column: 9
                 }
             },
             '22': {
                 start: {
-                    line: 51,
-                    column: 8
+                    line: 50,
+                    column: 12
                 },
                 end: {
-                    line: 53,
-                    column: 9
+                    line: 50,
+                    column: 45
                 }
             },
             '23': {
                 start: {
-                    line: 52,
-                    column: 12
-                },
-                end: {
-                    line: 52,
-                    column: 45
-                }
-            },
-            '24': {
-                start: {
-                    line: 57,
+                    line: 55,
                     column: 23
                 },
                 end: {
-                    line: 60,
+                    line: 58,
                     column: 1
                 }
             }
@@ -11569,7 +11559,7 @@ var cov_7j6odsrs9 = function () {
                         column: 47
                     },
                     end: {
-                        line: 21,
+                        line: 19,
                         column: 2
                     }
                 },
@@ -11579,73 +11569,73 @@ var cov_7j6odsrs9 = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 23,
+                        line: 21,
                         column: 4
                     },
                     end: {
-                        line: 23,
+                        line: 21,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 23,
+                        line: 21,
                         column: 25
+                    },
+                    end: {
+                        line: 44,
+                        column: 5
+                    }
+                },
+                line: 21
+            },
+            '2': {
+                name: '(anonymous_2)',
+                decl: {
+                    start: {
+                        line: 31,
+                        column: 16
+                    },
+                    end: {
+                        line: 31,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 31,
+                        column: 25
+                    },
+                    end: {
+                        line: 43,
+                        column: 3
+                    }
+                },
+                line: 31
+            },
+            '3': {
+                name: '(anonymous_3)',
+                decl: {
+                    start: {
+                        line: 46,
+                        column: 4
                     },
                     end: {
                         line: 46,
                         column: 5
                     }
                 },
-                line: 23
-            },
-            '2': {
-                name: '(anonymous_2)',
-                decl: {
-                    start: {
-                        line: 33,
-                        column: 16
-                    },
-                    end: {
-                        line: 33,
-                        column: 17
-                    }
-                },
                 loc: {
                     start: {
-                        line: 33,
-                        column: 25
-                    },
-                    end: {
-                        line: 45,
-                        column: 3
-                    }
-                },
-                line: 33
-            },
-            '3': {
-                name: '(anonymous_3)',
-                decl: {
-                    start: {
-                        line: 48,
-                        column: 4
-                    },
-                    end: {
-                        line: 48,
-                        column: 5
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 48,
+                        line: 46,
                         column: 34
                     },
                     end: {
-                        line: 54,
+                        line: 52,
                         column: 5
                     }
                 },
-                line: 48
+                line: 46
             }
         },
         branchMap: {
@@ -11685,134 +11675,134 @@ var cov_7j6odsrs9 = function () {
             '1': {
                 loc: {
                     start: {
-                        line: 34,
+                        line: 32,
                         column: 12
                     },
                     end: {
-                        line: 44,
+                        line: 42,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 34,
+                        line: 32,
                         column: 12
                     },
                     end: {
-                        line: 44,
+                        line: 42,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 34,
+                        line: 32,
                         column: 12
                     },
                     end: {
-                        line: 44,
+                        line: 42,
                         column: 13
                     }
                 }],
-                line: 34
+                line: 32
             },
             '2': {
                 loc: {
                     start: {
-                        line: 41,
+                        line: 39,
                         column: 16
                     },
                     end: {
-                        line: 43,
+                        line: 41,
                         column: 17
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 41,
+                        line: 39,
                         column: 16
                     },
                     end: {
-                        line: 43,
+                        line: 41,
                         column: 17
                     }
                 }, {
                     start: {
-                        line: 41,
+                        line: 39,
                         column: 16
                     },
                     end: {
-                        line: 43,
+                        line: 41,
                         column: 17
                     }
                 }],
-                line: 41
+                line: 39
             },
             '3': {
                 loc: {
                     start: {
-                        line: 51,
+                        line: 49,
                         column: 8
                     },
                     end: {
-                        line: 53,
+                        line: 51,
                         column: 9
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 51,
+                        line: 49,
                         column: 8
                     },
                     end: {
-                        line: 53,
+                        line: 51,
                         column: 9
                     }
                 }, {
                     start: {
-                        line: 51,
+                        line: 49,
                         column: 8
                     },
                     end: {
-                        line: 53,
+                        line: 51,
                         column: 9
                     }
                 }],
-                line: 51
+                line: 49
             },
             '4': {
                 loc: {
                     start: {
-                        line: 51,
+                        line: 49,
                         column: 12
                     },
                     end: {
-                        line: 51,
+                        line: 49,
                         column: 104
                     }
                 },
                 type: 'binary-expr',
                 locations: [{
                     start: {
-                        line: 51,
+                        line: 49,
                         column: 13
                     },
                     end: {
-                        line: 51,
+                        line: 49,
                         column: 57
                     }
                 }, {
                     start: {
-                        line: 51,
+                        line: 49,
                         column: 63
                     },
                     end: {
-                        line: 51,
+                        line: 49,
                         column: 103
                     }
                 }],
-                line: 51
+                line: 49
             }
         },
         s: {
@@ -11839,8 +11829,7 @@ var cov_7j6odsrs9 = function () {
             '20': 0,
             '21': 0,
             '22': 0,
-            '23': 0,
-            '24': 0
+            '23': 0
         },
         f: {
             '0': 0,
@@ -11902,10 +11891,8 @@ var ProfileController = function () {
 
         ++cov_7j6odsrs9.s[9];
         this.findUserByLocation();
-
-        var user = (++cov_7j6odsrs9.s[10], this.Auth.getUserToken());
-        ++cov_7j6odsrs9.s[11];
-        this.user = user;
+        ++cov_7j6odsrs9.s[10];
+        this.user = this.Auth.getUserToken();
     }
 
     _createClass(ProfileController, [{
@@ -11915,35 +11902,35 @@ var ProfileController = function () {
 
             ++cov_7j6odsrs9.f[1];
 
-            var userId = (++cov_7j6odsrs9.s[12], this.$location.$$url);
-            var parsedUserId = (++cov_7j6odsrs9.s[13], userId.substring(2, userId.length));
+            var userId = (++cov_7j6odsrs9.s[11], this.$location.$$url);
+            var parsedUserId = (++cov_7j6odsrs9.s[12], userId.substring(2, userId.length));
 
             // //search by user id
-            var endpoint = (++cov_7j6odsrs9.s[14], SERVER + '/api/user/' + parsedUserId);
-            ++cov_7j6odsrs9.s[15];
+            var endpoint = (++cov_7j6odsrs9.s[13], SERVER + '/api/user/' + parsedUserId);
+            ++cov_7j6odsrs9.s[14];
             this.$http.get(endpoint, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
                 ++cov_7j6odsrs9.f[2];
-                ++cov_7j6odsrs9.s[16];
+                ++cov_7j6odsrs9.s[15];
 
                 if (res.data.userNotFound) {
                     ++cov_7j6odsrs9.b[1][0];
-                    ++cov_7j6odsrs9.s[17];
+                    ++cov_7j6odsrs9.s[16];
 
                     //server returned no user found
                     _this.$state.go('notFound');
                 } else {
                     ++cov_7j6odsrs9.b[1][1];
-                    ++cov_7j6odsrs9.s[18];
+                    ++cov_7j6odsrs9.s[17];
 
                     _this.profileUser = res.data;
-                    ++cov_7j6odsrs9.s[19];
+                    ++cov_7j6odsrs9.s[18];
                     if (_this.user !== null) {
                         ++cov_7j6odsrs9.b[2][0];
-                        ++cov_7j6odsrs9.s[20];
+                        ++cov_7j6odsrs9.s[19];
 
                         _this.checkIfProfileIsCurrentUser();
                     } else {
@@ -11956,14 +11943,14 @@ var ProfileController = function () {
         key: 'checkIfProfileIsCurrentUser',
         value: function checkIfProfileIsCurrentUser() {
             ++cov_7j6odsrs9.f[3];
-            ++cov_7j6odsrs9.s[21];
+            ++cov_7j6odsrs9.s[20];
 
             console.log(this.profileUser);
 
-            ++cov_7j6odsrs9.s[22];
+            ++cov_7j6odsrs9.s[21];
             if ((++cov_7j6odsrs9.b[4][0], this.user.name === this.profileUser.username) && (++cov_7j6odsrs9.b[4][1], this.user.guid === this.profileUser.guid)) {
                 ++cov_7j6odsrs9.b[3][0];
-                ++cov_7j6odsrs9.s[23];
+                ++cov_7j6odsrs9.s[22];
 
                 this.profileIsCurrentUser = true;
             } else {
@@ -11975,7 +11962,7 @@ var ProfileController = function () {
     return ProfileController;
 }();
 
-var Profile = exports.Profile = (++cov_7j6odsrs9.s[24], {
+var Profile = exports.Profile = (++cov_7j6odsrs9.s[23], {
     template: __webpack_require__(33),
     controller: ProfileController
 });
@@ -11993,7 +11980,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1lowflf3ss = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/search/search.js',
-        hash = '0ea80f2b6690bd5a6a9eee10af7c5ff7ea3d8513',
+        hash = '3d254f99e2d2407e8e4ae00755bd7fd614ba2abd',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -12001,45 +11988,55 @@ var cov_1lowflf3ss = function () {
         statementMap: {
             '0': {
                 start: {
-                    line: 3,
+                    line: 2,
                     column: 15
                 },
                 end: {
-                    line: 3,
+                    line: 2,
                     column: 38
                 }
             },
             '1': {
                 start: {
-                    line: 4,
+                    line: 3,
                     column: 15
                 },
                 end: {
-                    line: 4,
+                    line: 3,
                     column: 98
                 }
             },
             '2': {
                 start: {
-                    line: 5,
+                    line: 4,
                     column: 13
                 },
                 end: {
-                    line: 5,
+                    line: 4,
                     column: 92
                 }
             },
             '3': {
                 start: {
-                    line: 10,
+                    line: 9,
                     column: 2
                 },
                 end: {
-                    line: 10,
+                    line: 9,
                     column: 23
                 }
             },
             '4': {
+                start: {
+                    line: 10,
+                    column: 8
+                },
+                end: {
+                    line: 10,
+                    column: 25
+                }
+            },
+            '5': {
                 start: {
                     line: 11,
                     column: 8
@@ -12049,7 +12046,7 @@ var cov_1lowflf3ss = function () {
                     column: 30
                 }
             },
-            '5': {
+            '6': {
                 start: {
                     line: 12,
                     column: 2
@@ -12059,7 +12056,7 @@ var cov_1lowflf3ss = function () {
                     column: 34
                 }
             },
-            '6': {
+            '7': {
                 start: {
                     line: 13,
                     column: 2
@@ -12069,63 +12066,83 @@ var cov_1lowflf3ss = function () {
                     column: 21
                 }
             },
-            '7': {
-                start: {
-                    line: 14,
-                    column: 8
-                },
-                end: {
-                    line: 14,
-                    column: 27
-                }
-            },
             '8': {
                 start: {
-                    line: 15,
+                    line: 14,
                     column: 8
                 },
                 end: {
-                    line: 15,
+                    line: 14,
                     column: 27
                 }
             },
             '9': {
                 start: {
-                    line: 19,
+                    line: 15,
                     column: 8
                 },
                 end: {
-                    line: 25,
-                    column: 11
+                    line: 15,
+                    column: 27
                 }
             },
             '10': {
                 start: {
-                    line: 24,
-                    column: 12
+                    line: 16,
+                    column: 8
                 },
                 end: {
-                    line: 24,
-                    column: 37
+                    line: 16,
+                    column: 45
                 }
             },
             '11': {
                 start: {
-                    line: 30,
+                    line: 20,
                     column: 8
                 },
                 end: {
-                    line: 30,
-                    column: 54
+                    line: 26,
+                    column: 11
                 }
             },
             '12': {
                 start: {
-                    line: 34,
+                    line: 25,
+                    column: 12
+                },
+                end: {
+                    line: 25,
+                    column: 37
+                }
+            },
+            '13': {
+                start: {
+                    line: 30,
+                    column: 23
+                },
+                end: {
+                    line: 30,
+                    column: 38
+                }
+            },
+            '14': {
+                start: {
+                    line: 31,
+                    column: 8
+                },
+                end: {
+                    line: 31,
+                    column: 53
+                }
+            },
+            '15': {
+                start: {
+                    line: 35,
                     column: 22
                 },
                 end: {
-                    line: 37,
+                    line: 38,
                     column: 1
                 }
             }
@@ -12135,165 +12152,165 @@ var cov_1lowflf3ss = function () {
                 name: '(anonymous_0)',
                 decl: {
                     start: {
-                        line: 9,
+                        line: 8,
                         column: 3
                     },
                     end: {
-                        line: 9,
+                        line: 8,
                         column: 4
                     }
                 },
                 loc: {
                     start: {
-                        line: 9,
-                        column: 30
+                        line: 8,
+                        column: 36
                     },
                     end: {
-                        line: 16,
+                        line: 17,
                         column: 2
                     }
                 },
-                line: 9
+                line: 8
             },
             '1': {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 18,
+                        line: 19,
                         column: 4
                     },
                     end: {
-                        line: 18,
+                        line: 19,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 18,
+                        line: 19,
                         column: 18
                     },
                     end: {
-                        line: 26,
+                        line: 27,
                         column: 5
                     }
                 },
-                line: 18
+                line: 19
             },
             '2': {
                 name: '(anonymous_2)',
                 decl: {
                     start: {
-                        line: 23,
+                        line: 24,
                         column: 16
                     },
                     end: {
-                        line: 23,
+                        line: 24,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 23,
+                        line: 24,
                         column: 25
                     },
                     end: {
-                        line: 25,
+                        line: 26,
                         column: 9
                     }
                 },
-                line: 23
+                line: 24
             },
             '3': {
                 name: '(anonymous_3)',
                 decl: {
                     start: {
-                        line: 28,
+                        line: 29,
                         column: 4
                     },
                     end: {
-                        line: 28,
+                        line: 29,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 28,
+                        line: 29,
                         column: 22
                     },
                     end: {
-                        line: 31,
+                        line: 32,
                         column: 5
                     }
                 },
-                line: 28
+                line: 29
             }
         },
         branchMap: {
             '0': {
                 loc: {
                     start: {
-                        line: 4,
+                        line: 3,
                         column: 15
                     },
                     end: {
-                        line: 4,
+                        line: 3,
                         column: 98
                     }
                 },
                 type: 'cond-expr',
                 locations: [{
                     start: {
-                        line: 4,
+                        line: 3,
                         column: 46
                     },
                     end: {
-                        line: 4,
+                        line: 3,
                         column: 71
                     }
                 }, {
                     start: {
-                        line: 4,
+                        line: 3,
                         column: 74
                     },
                     end: {
-                        line: 4,
+                        line: 3,
                         column: 98
                     }
                 }],
-                line: 4
+                line: 3
             },
             '1': {
                 loc: {
                     start: {
-                        line: 5,
+                        line: 4,
                         column: 13
                     },
                     end: {
-                        line: 5,
+                        line: 4,
                         column: 92
                     }
                 },
                 type: 'cond-expr',
                 locations: [{
                     start: {
-                        line: 5,
+                        line: 4,
                         column: 44
                     },
                     end: {
-                        line: 5,
+                        line: 4,
                         column: 67
                     }
                 }, {
                     start: {
-                        line: 5,
+                        line: 4,
                         column: 70
                     },
                     end: {
-                        line: 5,
+                        line: 4,
                         column: 92
                     }
                 }],
-                line: 5
+                line: 4
             }
         },
         s: {
@@ -12309,7 +12326,10 @@ var cov_1lowflf3ss = function () {
             '9': 0,
             '10': 0,
             '11': 0,
-            '12': 0
+            '12': 0,
+            '13': 0,
+            '14': 0,
+            '15': 0
         },
         f: {
             '0': 0,
@@ -12338,15 +12358,14 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-
 var config = (++cov_1lowflf3ss.s[0], __webpack_require__(0));
 var SERVER = (++cov_1lowflf3ss.s[1], config.environment === 'DEV' ? (++cov_1lowflf3ss.b[0][0], config.development_server) : (++cov_1lowflf3ss.b[0][1], config.production_server));
 var HOST = (++cov_1lowflf3ss.s[2], config.environment === 'DEV' ? (++cov_1lowflf3ss.b[1][0], config.development_host) : (++cov_1lowflf3ss.b[1][1], config.production_host));
 
 var SearchController = function () {
     /** @ngInject */
-    SearchController.$inject = ["$http", "$state"];
-    function SearchController($http, $state) {
+    SearchController.$inject = ["$http", "$state", "Auth"];
+    function SearchController($http, $state, Auth) {
         _classCallCheck(this, SearchController);
 
         ++cov_1lowflf3ss.f[0];
@@ -12354,15 +12373,19 @@ var SearchController = function () {
 
         this.$state = $state;
         ++cov_1lowflf3ss.s[4];
-        this.searchQuery = '';
+        this.Auth = Auth;
         ++cov_1lowflf3ss.s[5];
-        this.data = $state.current.data;
+        this.searchQuery = '';
         ++cov_1lowflf3ss.s[6];
-        this.$http = $http;
+        this.data = $state.current.data;
         ++cov_1lowflf3ss.s[7];
-        this.allUsers = [];
+        this.$http = $http;
         ++cov_1lowflf3ss.s[8];
+        this.allUsers = [];
+        ++cov_1lowflf3ss.s[9];
         this.getAllUsers();
+        ++cov_1lowflf3ss.s[10];
+        this.user = this.Auth.getUserToken();
     }
 
     _createClass(SearchController, [{
@@ -12371,7 +12394,7 @@ var SearchController = function () {
             var _this = this;
 
             ++cov_1lowflf3ss.f[1];
-            ++cov_1lowflf3ss.s[9];
+            ++cov_1lowflf3ss.s[11];
 
             this.$http.get(SERVER + '/api/allUsers', {
                 headers: {
@@ -12379,7 +12402,7 @@ var SearchController = function () {
                 }
             }).then(function (res) {
                 ++cov_1lowflf3ss.f[2];
-                ++cov_1lowflf3ss.s[10];
+                ++cov_1lowflf3ss.s[12];
 
                 _this.allUsers = res.data;
             });
@@ -12388,17 +12411,17 @@ var SearchController = function () {
         key: 'goToProfile',
         value: function goToProfile(user) {
             ++cov_1lowflf3ss.f[3];
-            ++cov_1lowflf3ss.s[11];
 
-            // HACK: Need a better way to do this using $stateProvider
-            window.location.href = HOST + '@' + user.name;
+            var username = (++cov_1lowflf3ss.s[13], '@' + user.name);
+            ++cov_1lowflf3ss.s[14];
+            this.$state.go('profile', { userId: '@iggy' });
         }
     }]);
 
     return SearchController;
 }();
 
-var Search = exports.Search = (++cov_1lowflf3ss.s[12], {
+var Search = exports.Search = (++cov_1lowflf3ss.s[15], {
     template: __webpack_require__(34),
     controller: SearchController
 });
@@ -13277,7 +13300,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1ahuxh4hps = function () {
 	var path = '/Users/dstreuly/Sites/reed/reed/src/routes.js',
-	    hash = '84a1c7616dd691068fdc7d3f62ea8ff66b936654',
+	    hash = 'ee7d3d7254dd85cc50a286dd5308e98c64273005',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
@@ -13309,7 +13332,7 @@ var cov_1ahuxh4hps = function () {
 					column: 1
 				},
 				end: {
-					line: 67,
+					line: 64,
 					column: 5
 				}
 			}
@@ -13333,7 +13356,7 @@ var cov_1ahuxh4hps = function () {
 						column: 77
 					},
 					end: {
-						line: 70,
+						line: 67,
 						column: 1
 					}
 				},
@@ -13428,10 +13451,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 		}
 	}).state('profile', {
 		url: '/:userId',
-		component: 'profile',
-		params: {
-			username: null
-		}
+		component: 'profile'
 	});
 
 	//variable route needs to be last
@@ -47361,13 +47381,13 @@ exports.push([module.i, "@charset \"UTF-8\";/*!\n  Ionicons, v2.0.0\n  Created b
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"create-page-view\">\n    <center>\n        <h1 id=\"createHeader\">Add an article to your daily list manually.</h1>\n\n        <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n            <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n            <input ng-model=\"$ctrl.articleLink\" class=\"reed-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n            <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n            <input id=\"loginButton\" type=\"submit\" value=\"Add article to daily list\">\n        </form>\n    </center>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"create-page-view\">\n    <center>\n        <h1 id=\"createHeader\">Add an article to your daily list manually.</h1>\n\n        <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n            <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n            <input ng-model=\"$ctrl.articleLink\" class=\"reed-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n            <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n            <input id=\"loginButton\" type=\"submit\" value=\"Add article to daily list\">\n        </form>\n    </center>\n</div>\n";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.following.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.following.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 30 */
@@ -47385,19 +47405,19 @@ module.exports = "";
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>404</h1>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n<h1>404</h1>\n";
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n    </div>\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <!-- <div ng-repeat=\"$ctrl.\" class=\"reed-current-list-item\">\n\n        </div> -->\n\n    </div>\n\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <p>Is self</p>\n    </div>\n\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n    </div>\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <!-- <div ng-repeat=\"$ctrl.\" class=\"reed-current-list-item\">\n\n        </div> -->\n\n    </div>\n\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <p>Is self</p>\n    </div>\n\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
 
 /***/ }),
 /* 34 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"search-view\">\n    <input id=\"searchInput\" type=\"text\" name=\"search\" ng-model=\"$ctrl.searchQuery\" ng-change=\"$ctrl.searchForUsers()\" placeholder=\"Search\">\n\n    <div class=\"search-results\">\n\n        <center>\n            <p id=\"noResultsMessage\" ng-if=\"$ctrl.searchQuery.length > 0 && ($ctrl.allUsers | filter: $ctrl.searchQuery).length === 0\">No results.</p>\n        </center>\n\n        <!--  ng-if=\"$ctrl.searchQuery.length > 0\"  -->\n        <div ng-click=\"$ctrl.goToProfile(user)\" class=\"search-results-banner\" ng-repeat=\"user in $ctrl.allUsers | filter: $ctrl.searchQuery | limitTo : 15 \">\n            <p>@{{user.name}}</p>\n        </div>\n    </div>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"create\">Create</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n\n<div class=\"search-view\">\n    <input id=\"searchInput\" type=\"text\" name=\"search\" ng-model=\"$ctrl.searchQuery\" ng-change=\"$ctrl.searchForUsers()\" placeholder=\"Search\">\n\n    <div class=\"search-results\">\n\n        <center>\n            <p id=\"noResultsMessage\" ng-if=\"$ctrl.searchQuery.length > 0 && ($ctrl.allUsers | filter: $ctrl.searchQuery).length === 0\">No results.</p>\n        </center>\n\n        <!--  ng-if=\"$ctrl.searchQuery.length > 0\"  -->\n        <div ng-click=\"$ctrl.goToProfile(user)\" class=\"search-results-banner\" ng-repeat=\"user in $ctrl.allUsers | filter: $ctrl.searchQuery | limitTo : 15 \">\n            <p>@{{user.name}}</p>\n        </div>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 35 */
