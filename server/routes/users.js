@@ -63,6 +63,7 @@ routes.get('/user/:username', (req, res) => {
                 guid: user[0].guid,
                 followers: user[0].followers,
                 following: user[0].following,
+                followRequests: user[0].followRequests
             }
 
             res.json(profileUser);

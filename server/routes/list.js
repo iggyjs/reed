@@ -78,7 +78,7 @@ routes.get('/lists', (req, res) => {
 });
 
 //returns todays list by date and user id
-routes.get('/currList', (req, res) => {
+routes.get('/profileList', (req, res) => {
     let id = req.query.userGuid;
 
     List.findOne({user_guid: id}, (err, list) => {

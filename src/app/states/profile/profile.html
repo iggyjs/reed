@@ -29,7 +29,12 @@
 
     <div class="profile-top-bar">
         <h1 class="profile-header">{{$ctrl.profileUser.username}}</h1>
-        <button ng-if="!$ctrl.profileIsCurrentUser" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Follow  <i class="icon ion-android-add-circle"></i></button>
+
+        <button ng-if="!$ctrl.profileIsCurrentUser && $ctrl.followButtonShow" ng-click="$ctrl.requestFollow()" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Follow  <i class="icon ion-android-add-circle"></i></button>
+        <button ng-if="!$ctrl.profileIsCurrentUser && $ctrl.followRequestedShow" class="reed-btn" id="followRequestedButton" type="button" name="button">Follow Requested</button>
+        <button ng-if="!$ctrl.profileIsCurrentUser && $ctrl.unfollowButtonShow" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Unfollow </button>
+
+
 
         <button  ng-if="$ctrl.profileIsCurrentUser" ng-click="$ctrl.clearArticles()" id="clearArticlesButton" class="reed-btn" type="button" name="button">Clear articles <i class="icon ion-ios-trash"></i></button>
     </div>

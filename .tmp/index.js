@@ -10880,7 +10880,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_7j6odsrs9 = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = 'fe783882d933623c956b392ee631a36ae358603f',
+        hash = '9fd62a037c656bce88c5f5aebb3d690fa6a2f43a',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -11018,187 +11018,187 @@ var cov_7j6odsrs9 = function () {
             },
             '13': {
                 start: {
-                    line: 23,
+                    line: 24,
                     column: 8
                 },
                 end: {
-                    line: 23,
-                    column: 34
+                    line: 24,
+                    column: 38
                 }
             },
             '14': {
                 start: {
-                    line: 24,
+                    line: 25,
                     column: 8
                 },
                 end: {
-                    line: 24,
-                    column: 45
+                    line: 25,
+                    column: 41
                 }
             },
             '15': {
                 start: {
-                    line: 28,
-                    column: 21
+                    line: 26,
+                    column: 8
                 },
                 end: {
-                    line: 28,
-                    column: 41
+                    line: 26,
+                    column: 40
                 }
             },
             '16': {
                 start: {
                     line: 29,
-                    column: 27
+                    column: 8
                 },
                 end: {
                     line: 29,
-                    column: 61
+                    column: 34
                 }
             },
             '17': {
                 start: {
-                    line: 32,
-                    column: 23
+                    line: 30,
+                    column: 8
                 },
                 end: {
-                    line: 32,
-                    column: 59
+                    line: 30,
+                    column: 45
                 }
             },
             '18': {
                 start: {
-                    line: 33,
-                    column: 8
+                    line: 34,
+                    column: 21
                 },
                 end: {
-                    line: 51,
-                    column: 5
+                    line: 34,
+                    column: 41
                 }
             },
             '19': {
                 start: {
-                    line: 38,
-                    column: 12
+                    line: 35,
+                    column: 27
                 },
                 end: {
-                    line: 50,
-                    column: 13
+                    line: 35,
+                    column: 61
                 }
             },
             '20': {
                 start: {
-                    line: 40,
-                    column: 16
+                    line: 38,
+                    column: 23
                 },
                 end: {
-                    line: 40,
-                    column: 43
+                    line: 38,
+                    column: 59
                 }
             },
             '21': {
                 start: {
-                    line: 44,
-                    column: 16
+                    line: 39,
+                    column: 8
                 },
                 end: {
-                    line: 44,
-                    column: 44
+                    line: 57,
+                    column: 5
                 }
             },
             '22': {
                 start: {
-                    line: 45,
-                    column: 16
+                    line: 44,
+                    column: 12
                 },
                 end: {
-                    line: 45,
-                    column: 54
+                    line: 56,
+                    column: 13
                 }
             },
             '23': {
                 start: {
-                    line: 47,
+                    line: 46,
                     column: 16
                 },
                 end: {
-                    line: 49,
-                    column: 17
+                    line: 46,
+                    column: 43
                 }
             },
             '24': {
                 start: {
-                    line: 48,
-                    column: 20
+                    line: 50,
+                    column: 16
                 },
                 end: {
-                    line: 48,
-                    column: 55
+                    line: 50,
+                    column: 44
                 }
             },
             '25': {
                 start: {
-                    line: 55,
-                    column: 19
+                    line: 51,
+                    column: 16
                 },
                 end: {
-                    line: 55,
-                    column: 28
+                    line: 51,
+                    column: 54
                 }
             },
             '26': {
                 start: {
-                    line: 57,
-                    column: 8
+                    line: 53,
+                    column: 16
                 },
                 end: {
-                    line: 66,
-                    column: 5
+                    line: 55,
+                    column: 17
                 }
             },
             '27': {
                 start: {
-                    line: 65,
-                    column: 12
+                    line: 54,
+                    column: 20
                 },
                 end: {
-                    line: 65,
-                    column: 40
+                    line: 54,
+                    column: 55
                 }
             },
             '28': {
                 start: {
-                    line: 71,
-                    column: 8
+                    line: 61,
+                    column: 19
                 },
                 end: {
-                    line: 73,
-                    column: 9
+                    line: 61,
+                    column: 28
                 }
             },
             '29': {
                 start: {
-                    line: 72,
-                    column: 12
+                    line: 63,
+                    column: 8
                 },
                 end: {
                     line: 72,
-                    column: 45
+                    column: 5
                 }
             },
             '30': {
                 start: {
-                    line: 77,
-                    column: 8
+                    line: 71,
+                    column: 12
                 },
                 end: {
-                    line: 77,
-                    column: 49
+                    line: 71,
+                    column: 40
                 }
             },
             '31': {
                 start: {
-                    line: 79,
+                    line: 77,
                     column: 8
                 },
                 end: {
@@ -11208,12 +11208,12 @@ var cov_7j6odsrs9 = function () {
             },
             '32': {
                 start: {
-                    line: 80,
+                    line: 78,
                     column: 12
                 },
                 end: {
-                    line: 80,
-                    column: 35
+                    line: 78,
+                    column: 45
                 }
             },
             '33': {
@@ -11223,17 +11223,17 @@ var cov_7j6odsrs9 = function () {
                 },
                 end: {
                     line: 81,
-                    column: 34
+                    column: 58
                 }
             },
             '34': {
                 start: {
-                    line: 82,
-                    column: 12
+                    line: 87,
+                    column: 19
                 },
                 end: {
-                    line: 82,
-                    column: 41
+                    line: 87,
+                    column: 35
                 }
             },
             '35': {
@@ -11243,12 +11243,22 @@ var cov_7j6odsrs9 = function () {
                 },
                 end: {
                     line: 99,
-                    column: 11
+                    column: 9
                 }
             },
             '36': {
                 start: {
-                    line: 94,
+                    line: 90,
+                    column: 12
+                },
+                end: {
+                    line: 90,
+                    column: 44
+                }
+            },
+            '37': {
+                start: {
+                    line: 93,
                     column: 12
                 },
                 end: {
@@ -11256,83 +11266,203 @@ var cov_7j6odsrs9 = function () {
                     column: 13
                 }
             },
-            '37': {
+            '38': {
                 start: {
-                    line: 95,
+                    line: 94,
                     column: 16
                 },
                 end: {
-                    line: 95,
-                    column: 49
-                }
-            },
-            '38': {
-                start: {
-                    line: 103,
-                    column: 8
-                },
-                end: {
-                    line: 103,
-                    column: 29
+                    line: 94,
+                    column: 47
                 }
             },
             '39': {
                 start: {
-                    line: 108,
-                    column: 22
+                    line: 97,
+                    column: 16
                 },
                 end: {
-                    line: 112,
-                    column: 9
+                    line: 97,
+                    column: 45
                 }
             },
             '40': {
                 start: {
-                    line: 114,
+                    line: 109,
                     column: 8
                 },
                 end: {
-                    line: 125,
-                    column: 11
+                    line: 109,
+                    column: 49
                 }
             },
             '41': {
                 start: {
-                    line: 119,
-                    column: 12
+                    line: 111,
+                    column: 8
                 },
                 end: {
-                    line: 124,
-                    column: 13
+                    line: 115,
+                    column: 9
                 }
             },
             '42': {
                 start: {
-                    line: 120,
-                    column: 16
+                    line: 112,
+                    column: 12
                 },
                 end: {
-                    line: 120,
-                    column: 49
+                    line: 112,
+                    column: 35
                 }
             },
             '43': {
                 start: {
-                    line: 121,
-                    column: 16
+                    line: 113,
+                    column: 12
                 },
                 end: {
-                    line: 121,
-                    column: 40
+                    line: 113,
+                    column: 34
                 }
             },
             '44': {
                 start: {
+                    line: 114,
+                    column: 12
+                },
+                end: {
+                    line: 114,
+                    column: 41
+                }
+            },
+            '45': {
+                start: {
+                    line: 121,
+                    column: 8
+                },
+                end: {
+                    line: 131,
+                    column: 11
+                }
+            },
+            '46': {
+                start: {
+                    line: 126,
+                    column: 12
+                },
+                end: {
                     line: 130,
+                    column: 13
+                }
+            },
+            '47': {
+                start: {
+                    line: 127,
+                    column: 16
+                },
+                end: {
+                    line: 127,
+                    column: 49
+                }
+            },
+            '48': {
+                start: {
+                    line: 135,
+                    column: 8
+                },
+                end: {
+                    line: 135,
+                    column: 29
+                }
+            },
+            '49': {
+                start: {
+                    line: 140,
+                    column: 22
+                },
+                end: {
+                    line: 144,
+                    column: 9
+                }
+            },
+            '50': {
+                start: {
+                    line: 146,
+                    column: 8
+                },
+                end: {
+                    line: 157,
+                    column: 11
+                }
+            },
+            '51': {
+                start: {
+                    line: 151,
+                    column: 12
+                },
+                end: {
+                    line: 156,
+                    column: 13
+                }
+            },
+            '52': {
+                start: {
+                    line: 152,
+                    column: 16
+                },
+                end: {
+                    line: 152,
+                    column: 49
+                }
+            },
+            '53': {
+                start: {
+                    line: 153,
+                    column: 16
+                },
+                end: {
+                    line: 153,
+                    column: 40
+                }
+            },
+            '54': {
+                start: {
+                    line: 162,
+                    column: 22
+                },
+                end: {
+                    line: 162,
+                    column: 60
+                }
+            },
+            '55': {
+                start: {
+                    line: 164,
+                    column: 8
+                },
+                end: {
+                    line: 170,
+                    column: 11
+                }
+            },
+            '56': {
+                start: {
+                    line: 169,
+                    column: 12
+                },
+                end: {
+                    line: 169,
+                    column: 29
+                }
+            },
+            '57': {
+                start: {
+                    line: 174,
                     column: 23
                 },
                 end: {
-                    line: 133,
+                    line: 177,
                     column: 1
                 }
             }
@@ -11356,7 +11486,7 @@ var cov_7j6odsrs9 = function () {
                         column: 47
                     },
                     end: {
-                        line: 25,
+                        line: 31,
                         column: 2
                     }
                 },
@@ -11366,124 +11496,100 @@ var cov_7j6odsrs9 = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 27,
+                        line: 33,
                         column: 4
                     },
                     end: {
-                        line: 27,
+                        line: 33,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 27,
+                        line: 33,
                         column: 25
                     },
                     end: {
-                        line: 52,
+                        line: 58,
                         column: 5
                     }
                 },
-                line: 27
+                line: 33
             },
             '2': {
                 name: '(anonymous_2)',
                 decl: {
                     start: {
-                        line: 37,
+                        line: 43,
                         column: 16
                     },
                     end: {
-                        line: 37,
+                        line: 43,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 37,
+                        line: 43,
                         column: 25
                     },
                     end: {
-                        line: 51,
+                        line: 57,
                         column: 3
                     }
                 },
-                line: 37
+                line: 43
             },
             '3': {
                 name: '(anonymous_3)',
                 decl: {
                     start: {
-                        line: 54,
+                        line: 60,
                         column: 4
                     },
                     end: {
-                        line: 54,
+                        line: 60,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 54,
+                        line: 60,
                         column: 25
-                    },
-                    end: {
-                        line: 68,
-                        column: 5
-                    }
-                },
-                line: 54
-            },
-            '4': {
-                name: '(anonymous_4)',
-                decl: {
-                    start: {
-                        line: 64,
-                        column: 16
-                    },
-                    end: {
-                        line: 64,
-                        column: 17
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 64,
-                        column: 25
-                    },
-                    end: {
-                        line: 66,
-                        column: 3
-                    }
-                },
-                line: 64
-            },
-            '5': {
-                name: '(anonymous_5)',
-                decl: {
-                    start: {
-                        line: 70,
-                        column: 4
-                    },
-                    end: {
-                        line: 70,
-                        column: 5
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 70,
-                        column: 34
                     },
                     end: {
                         line: 74,
                         column: 5
                     }
                 },
+                line: 60
+            },
+            '4': {
+                name: '(anonymous_4)',
+                decl: {
+                    start: {
+                        line: 70,
+                        column: 16
+                    },
+                    end: {
+                        line: 70,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 70,
+                        column: 25
+                    },
+                    end: {
+                        line: 72,
+                        column: 3
+                    }
+                },
                 line: 70
             },
-            '6': {
-                name: '(anonymous_6)',
+            '5': {
+                name: '(anonymous_5)',
                 decl: {
                     start: {
                         line: 76,
@@ -11497,7 +11603,7 @@ var cov_7j6odsrs9 = function () {
                 loc: {
                     start: {
                         line: 76,
-                        column: 23
+                        column: 34
                     },
                     end: {
                         line: 84,
@@ -11506,125 +11612,221 @@ var cov_7j6odsrs9 = function () {
                 },
                 line: 76
             },
-            '7': {
-                name: '(anonymous_7)',
+            '6': {
+                name: '(anonymous_6)',
                 decl: {
                     start: {
-                        line: 88,
+                        line: 86,
                         column: 4
                     },
                     end: {
-                        line: 88,
+                        line: 86,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 88,
-                        column: 20
+                        line: 86,
+                        column: 47
                     },
                     end: {
-                        line: 100,
+                        line: 105,
                         column: 5
                     }
                 },
-                line: 88
+                line: 86
+            },
+            '7': {
+                name: '(anonymous_7)',
+                decl: {
+                    start: {
+                        line: 108,
+                        column: 4
+                    },
+                    end: {
+                        line: 108,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 108,
+                        column: 23
+                    },
+                    end: {
+                        line: 116,
+                        column: 5
+                    }
+                },
+                line: 108
             },
             '8': {
                 name: '(anonymous_8)',
                 decl: {
                     start: {
-                        line: 93,
-                        column: 16
+                        line: 120,
+                        column: 4
                     },
                     end: {
-                        line: 93,
-                        column: 17
+                        line: 120,
+                        column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 93,
-                        column: 25
+                        line: 120,
+                        column: 20
                     },
                     end: {
-                        line: 99,
-                        column: 9
+                        line: 132,
+                        column: 5
                     }
                 },
-                line: 93
+                line: 120
             },
             '9': {
                 name: '(anonymous_9)',
                 decl: {
                     start: {
-                        line: 102,
-                        column: 4
-                    },
-                    end: {
-                        line: 102,
-                        column: 5
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 102,
-                        column: 27
-                    },
-                    end: {
-                        line: 104,
-                        column: 5
-                    }
-                },
-                line: 102
-            },
-            '10': {
-                name: '(anonymous_10)',
-                decl: {
-                    start: {
-                        line: 107,
-                        column: 4
-                    },
-                    end: {
-                        line: 107,
-                        column: 5
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 107,
-                        column: 23
-                    },
-                    end: {
-                        line: 127,
-                        column: 5
-                    }
-                },
-                line: 107
-            },
-            '11': {
-                name: '(anonymous_11)',
-                decl: {
-                    start: {
-                        line: 118,
+                        line: 125,
                         column: 16
                     },
                     end: {
-                        line: 118,
+                        line: 125,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 118,
+                        line: 125,
                         column: 25
                     },
                     end: {
-                        line: 125,
+                        line: 131,
                         column: 9
                     }
                 },
-                line: 118
+                line: 125
+            },
+            '10': {
+                name: '(anonymous_10)',
+                decl: {
+                    start: {
+                        line: 134,
+                        column: 4
+                    },
+                    end: {
+                        line: 134,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 134,
+                        column: 27
+                    },
+                    end: {
+                        line: 136,
+                        column: 5
+                    }
+                },
+                line: 134
+            },
+            '11': {
+                name: '(anonymous_11)',
+                decl: {
+                    start: {
+                        line: 139,
+                        column: 4
+                    },
+                    end: {
+                        line: 139,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 139,
+                        column: 23
+                    },
+                    end: {
+                        line: 159,
+                        column: 5
+                    }
+                },
+                line: 139
+            },
+            '12': {
+                name: '(anonymous_12)',
+                decl: {
+                    start: {
+                        line: 150,
+                        column: 16
+                    },
+                    end: {
+                        line: 150,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 150,
+                        column: 25
+                    },
+                    end: {
+                        line: 157,
+                        column: 9
+                    }
+                },
+                line: 150
+            },
+            '13': {
+                name: '(anonymous_13)',
+                decl: {
+                    start: {
+                        line: 161,
+                        column: 4
+                    },
+                    end: {
+                        line: 161,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 161,
+                        column: 20
+                    },
+                    end: {
+                        line: 171,
+                        column: 5
+                    }
+                },
+                line: 161
+            },
+            '14': {
+                name: '(anonymous_14)',
+                decl: {
+                    start: {
+                        line: 168,
+                        column: 16
+                    },
+                    end: {
+                        line: 168,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 168,
+                        column: 25
+                    },
+                    end: {
+                        line: 170,
+                        column: 9
+                    }
+                },
+                line: 168
             }
         },
         branchMap: {
@@ -11664,172 +11866,172 @@ var cov_7j6odsrs9 = function () {
             '1': {
                 loc: {
                     start: {
-                        line: 38,
+                        line: 44,
                         column: 12
                     },
                     end: {
-                        line: 50,
+                        line: 56,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 38,
+                        line: 44,
                         column: 12
                     },
                     end: {
-                        line: 50,
+                        line: 56,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 38,
+                        line: 44,
                         column: 12
                     },
                     end: {
-                        line: 50,
+                        line: 56,
                         column: 13
                     }
                 }],
-                line: 38
+                line: 44
             },
             '2': {
                 loc: {
                     start: {
-                        line: 47,
+                        line: 53,
                         column: 16
                     },
                     end: {
-                        line: 49,
+                        line: 55,
                         column: 17
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 47,
+                        line: 53,
                         column: 16
                     },
                     end: {
-                        line: 49,
+                        line: 55,
                         column: 17
                     }
                 }, {
                     start: {
-                        line: 47,
+                        line: 53,
                         column: 16
                     },
                     end: {
-                        line: 49,
+                        line: 55,
                         column: 17
                     }
                 }],
-                line: 47
+                line: 53
             },
             '3': {
                 loc: {
                     start: {
-                        line: 71,
+                        line: 77,
                         column: 8
                     },
                     end: {
-                        line: 73,
+                        line: 83,
                         column: 9
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 71,
+                        line: 77,
                         column: 8
                     },
                     end: {
-                        line: 73,
+                        line: 83,
                         column: 9
                     }
                 }, {
                     start: {
-                        line: 71,
+                        line: 77,
                         column: 8
                     },
                     end: {
-                        line: 73,
+                        line: 83,
                         column: 9
                     }
                 }],
-                line: 71
+                line: 77
             },
             '4': {
                 loc: {
                     start: {
-                        line: 71,
+                        line: 77,
                         column: 12
                     },
                     end: {
-                        line: 71,
+                        line: 77,
                         column: 104
                     }
                 },
                 type: 'binary-expr',
                 locations: [{
                     start: {
-                        line: 71,
+                        line: 77,
                         column: 13
                     },
                     end: {
-                        line: 71,
+                        line: 77,
                         column: 57
                     }
                 }, {
                     start: {
-                        line: 71,
+                        line: 77,
                         column: 63
                     },
                     end: {
-                        line: 71,
+                        line: 77,
                         column: 103
                     }
                 }],
-                line: 71
+                line: 77
             },
             '5': {
                 loc: {
                     start: {
-                        line: 79,
+                        line: 89,
                         column: 8
                     },
                     end: {
-                        line: 83,
+                        line: 99,
                         column: 9
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 79,
+                        line: 89,
                         column: 8
                     },
                     end: {
-                        line: 83,
+                        line: 99,
                         column: 9
                     }
                 }, {
                     start: {
-                        line: 79,
+                        line: 89,
                         column: 8
                     },
                     end: {
-                        line: 83,
+                        line: 99,
                         column: 9
                     }
                 }],
-                line: 79
+                line: 89
             },
             '6': {
                 loc: {
                     start: {
-                        line: 94,
+                        line: 93,
                         column: 12
                     },
                     end: {
@@ -11840,7 +12042,7 @@ var cov_7j6odsrs9 = function () {
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 94,
+                        line: 93,
                         column: 12
                     },
                     end: {
@@ -11849,7 +12051,7 @@ var cov_7j6odsrs9 = function () {
                     }
                 }, {
                     start: {
-                        line: 94,
+                        line: 93,
                         column: 12
                     },
                     end: {
@@ -11857,40 +12059,106 @@ var cov_7j6odsrs9 = function () {
                         column: 13
                     }
                 }],
-                line: 94
+                line: 93
             },
             '7': {
                 loc: {
                     start: {
-                        line: 119,
+                        line: 111,
+                        column: 8
+                    },
+                    end: {
+                        line: 115,
+                        column: 9
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 111,
+                        column: 8
+                    },
+                    end: {
+                        line: 115,
+                        column: 9
+                    }
+                }, {
+                    start: {
+                        line: 111,
+                        column: 8
+                    },
+                    end: {
+                        line: 115,
+                        column: 9
+                    }
+                }],
+                line: 111
+            },
+            '8': {
+                loc: {
+                    start: {
+                        line: 126,
                         column: 12
                     },
                     end: {
-                        line: 124,
+                        line: 130,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 119,
+                        line: 126,
                         column: 12
                     },
                     end: {
-                        line: 124,
+                        line: 130,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 119,
+                        line: 126,
                         column: 12
                     },
                     end: {
-                        line: 124,
+                        line: 130,
                         column: 13
                     }
                 }],
-                line: 119
+                line: 126
+            },
+            '9': {
+                loc: {
+                    start: {
+                        line: 151,
+                        column: 12
+                    },
+                    end: {
+                        line: 156,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 151,
+                        column: 12
+                    },
+                    end: {
+                        line: 156,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 151,
+                        column: 12
+                    },
+                    end: {
+                        line: 156,
+                        column: 13
+                    }
+                }],
+                line: 151
             }
         },
         s: {
@@ -11938,7 +12206,20 @@ var cov_7j6odsrs9 = function () {
             '41': 0,
             '42': 0,
             '43': 0,
-            '44': 0
+            '44': 0,
+            '45': 0,
+            '46': 0,
+            '47': 0,
+            '48': 0,
+            '49': 0,
+            '50': 0,
+            '51': 0,
+            '52': 0,
+            '53': 0,
+            '54': 0,
+            '55': 0,
+            '56': 0,
+            '57': 0
         },
         f: {
             '0': 0,
@@ -11952,7 +12233,10 @@ var cov_7j6odsrs9 = function () {
             '8': 0,
             '9': 0,
             '10': 0,
-            '11': 0
+            '11': 0,
+            '12': 0,
+            '13': 0,
+            '14': 0
         },
         b: {
             '0': [0, 0],
@@ -11962,7 +12246,9 @@ var cov_7j6odsrs9 = function () {
             '4': [0, 0],
             '5': [0, 0],
             '6': [0, 0],
-            '7': [0, 0]
+            '7': [0, 0],
+            '8': [0, 0],
+            '9': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -12019,9 +12305,17 @@ var ProfileController = function () {
         ++cov_7j6odsrs9.s[12];
         this.articleDescription = '';
 
+        //visiting user stuff
         ++cov_7j6odsrs9.s[13];
-        this.findUserByLocation();
+        this.followButtonShow = false;
         ++cov_7j6odsrs9.s[14];
+        this.followRequestedShow = false;
+        ++cov_7j6odsrs9.s[15];
+        this.unfollowButtonShow = false;
+
+        ++cov_7j6odsrs9.s[16];
+        this.findUserByLocation();
+        ++cov_7j6odsrs9.s[17];
         this.user = this.Auth.getUserToken();
     }
 
@@ -12032,38 +12326,38 @@ var ProfileController = function () {
 
             ++cov_7j6odsrs9.f[1];
 
-            var userId = (++cov_7j6odsrs9.s[15], this.$location.$$url);
-            var parsedUserId = (++cov_7j6odsrs9.s[16], userId.substring(2, userId.length));
+            var userId = (++cov_7j6odsrs9.s[18], this.$location.$$url);
+            var parsedUserId = (++cov_7j6odsrs9.s[19], userId.substring(2, userId.length));
 
             // //search by user id
-            var endpoint = (++cov_7j6odsrs9.s[17], SERVER + '/api/user/' + parsedUserId);
-            ++cov_7j6odsrs9.s[18];
+            var endpoint = (++cov_7j6odsrs9.s[20], SERVER + '/api/user/' + parsedUserId);
+            ++cov_7j6odsrs9.s[21];
             this.$http.get(endpoint, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
                 ++cov_7j6odsrs9.f[2];
-                ++cov_7j6odsrs9.s[19];
+                ++cov_7j6odsrs9.s[22];
 
                 if (res.data.userNotFound) {
                     ++cov_7j6odsrs9.b[1][0];
-                    ++cov_7j6odsrs9.s[20];
+                    ++cov_7j6odsrs9.s[23];
 
                     //server returned no user found
                     _this.$state.go('notFound');
                 } else {
                     ++cov_7j6odsrs9.b[1][1];
-                    ++cov_7j6odsrs9.s[21];
+                    ++cov_7j6odsrs9.s[24];
 
                     _this.profileUser = res.data;
-                    ++cov_7j6odsrs9.s[22];
+                    ++cov_7j6odsrs9.s[25];
                     _this.getProfileData(_this.profileUser);
 
-                    ++cov_7j6odsrs9.s[23];
+                    ++cov_7j6odsrs9.s[26];
                     if (_this.user !== null) {
                         ++cov_7j6odsrs9.b[2][0];
-                        ++cov_7j6odsrs9.s[24];
+                        ++cov_7j6odsrs9.s[27];
 
                         _this.checkIfProfileIsCurrentUser();
                     } else {
@@ -12079,10 +12373,10 @@ var ProfileController = function () {
 
             ++cov_7j6odsrs9.f[3];
 
-            var guid = (++cov_7j6odsrs9.s[25], user.guid);
+            var guid = (++cov_7j6odsrs9.s[28], user.guid);
             // get this users listTitle
-            ++cov_7j6odsrs9.s[26];
-            this.$http.get(SERVER + '/api/currList', {
+            ++cov_7j6odsrs9.s[29];
+            this.$http.get(SERVER + '/api/profileList', {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 },
@@ -12091,7 +12385,7 @@ var ProfileController = function () {
                 }
             }).then(function (res) {
                 ++cov_7j6odsrs9.f[4];
-                ++cov_7j6odsrs9.s[27];
+                ++cov_7j6odsrs9.s[30];
 
                 _this2.profileList = res.data;
             });
@@ -12100,37 +12394,77 @@ var ProfileController = function () {
         key: 'checkIfProfileIsCurrentUser',
         value: function checkIfProfileIsCurrentUser() {
             ++cov_7j6odsrs9.f[5];
-            ++cov_7j6odsrs9.s[28];
+            ++cov_7j6odsrs9.s[31];
 
             if ((++cov_7j6odsrs9.b[4][0], this.user.name === this.profileUser.username) && (++cov_7j6odsrs9.b[4][1], this.user.guid === this.profileUser.guid)) {
                 ++cov_7j6odsrs9.b[3][0];
-                ++cov_7j6odsrs9.s[29];
+                ++cov_7j6odsrs9.s[32];
 
                 this.profileIsCurrentUser = true;
             } else {
                 ++cov_7j6odsrs9.b[3][1];
+                ++cov_7j6odsrs9.s[33];
+
+                // check if the user that's signed in, is following this user
+                this.checkIfCurrentUserIsFollowing(this.user);
             }
+        }
+    }, {
+        key: 'checkIfCurrentUserIsFollowing',
+        value: function checkIfCurrentUserIsFollowing(currentUser) {
+            ++cov_7j6odsrs9.f[6];
+
+            var guid = (++cov_7j6odsrs9.s[34], currentUser.guid);
+
+            ++cov_7j6odsrs9.s[35];
+            if (this.profileUser.followRequests.indexOf(guid) > -1) {
+                ++cov_7j6odsrs9.b[5][0];
+                ++cov_7j6odsrs9.s[36];
+
+                this.followRequestedShow = true;
+            } else {
+                ++cov_7j6odsrs9.b[5][1];
+                ++cov_7j6odsrs9.s[37];
+
+                //it's not in the requests, are they an accepted follower?
+                if (this.profileUser.followers.indexOf(guid) > -1) {
+                    ++cov_7j6odsrs9.b[6][0];
+                    ++cov_7j6odsrs9.s[38];
+
+                    this.unfollowButtonShow = true;
+                } else {
+                    ++cov_7j6odsrs9.b[6][1];
+                    ++cov_7j6odsrs9.s[39];
+
+                    //not an accepted follow / hasn't requested
+                    this.followButtonShow = true;
+                }
+            }
+
+            // this.followButtonShow = false;
+
+            // this.unfollowButtonShow = false;
         }
     }, {
         key: 'toggleAddArticle',
         value: function toggleAddArticle() {
-            ++cov_7j6odsrs9.f[6];
-            ++cov_7j6odsrs9.s[30];
+            ++cov_7j6odsrs9.f[7];
+            ++cov_7j6odsrs9.s[40];
 
             this.addingArticle = !this.addingArticle;
 
-            ++cov_7j6odsrs9.s[31];
+            ++cov_7j6odsrs9.s[41];
             if (!this.addingArticle) {
-                ++cov_7j6odsrs9.b[5][0];
-                ++cov_7j6odsrs9.s[32];
+                ++cov_7j6odsrs9.b[7][0];
+                ++cov_7j6odsrs9.s[42];
 
                 this.articleTitle = '';
-                ++cov_7j6odsrs9.s[33];
+                ++cov_7j6odsrs9.s[43];
                 this.articleLink = '';
-                ++cov_7j6odsrs9.s[34];
+                ++cov_7j6odsrs9.s[44];
                 this.articleDescription = '';
             } else {
-                ++cov_7j6odsrs9.b[5][1];
+                ++cov_7j6odsrs9.b[7][1];
             }
         }
 
@@ -12141,34 +12475,34 @@ var ProfileController = function () {
         value: function clearArticles() {
             var _this3 = this;
 
-            ++cov_7j6odsrs9.f[7];
-            ++cov_7j6odsrs9.s[35];
+            ++cov_7j6odsrs9.f[8];
+            ++cov_7j6odsrs9.s[45];
 
             this.$http.post(SERVER + '/api/clearCurrList', {}, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[8];
-                ++cov_7j6odsrs9.s[36];
+                ++cov_7j6odsrs9.f[9];
+                ++cov_7j6odsrs9.s[46];
 
                 if (res.status === 200) {
-                    ++cov_7j6odsrs9.b[6][0];
-                    ++cov_7j6odsrs9.s[37];
+                    ++cov_7j6odsrs9.b[8][0];
+                    ++cov_7j6odsrs9.s[47];
 
                     _this3.profileList = res.data.list;
                 } else {
                     //show error message
 
-                    ++cov_7j6odsrs9.b[6][1];
+                    ++cov_7j6odsrs9.b[8][1];
                 }
             });
         }
     }, {
         key: 'deleteArticle',
         value: function deleteArticle(article) {
-            ++cov_7j6odsrs9.f[9];
-            ++cov_7j6odsrs9.s[38];
+            ++cov_7j6odsrs9.f[10];
+            ++cov_7j6odsrs9.s[48];
 
             console.log(article);
         }
@@ -12180,35 +12514,54 @@ var ProfileController = function () {
         value: function submitList($event) {
             var _this4 = this;
 
-            ++cov_7j6odsrs9.f[10];
+            ++cov_7j6odsrs9.f[11];
 
-            var payload = (++cov_7j6odsrs9.s[39], {
+            var payload = (++cov_7j6odsrs9.s[49], {
                 articleTitle: this.articleTitle,
                 articleDes: this.articleDescription,
                 articleLink: this.articleLink
             });
 
-            ++cov_7j6odsrs9.s[40];
+            ++cov_7j6odsrs9.s[50];
             this.$http.post(SERVER + '/api/addArticle', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[11];
-                ++cov_7j6odsrs9.s[41];
+                ++cov_7j6odsrs9.f[12];
+                ++cov_7j6odsrs9.s[51];
 
                 if (res.status === 200) {
-                    ++cov_7j6odsrs9.b[7][0];
-                    ++cov_7j6odsrs9.s[42];
+                    ++cov_7j6odsrs9.b[9][0];
+                    ++cov_7j6odsrs9.s[52];
 
                     _this4.profileList = res.data.list;
-                    ++cov_7j6odsrs9.s[43];
+                    ++cov_7j6odsrs9.s[53];
                     _this4.toggleAddArticle();
                 } else {
                     //show error message
 
-                    ++cov_7j6odsrs9.b[7][1];
+                    ++cov_7j6odsrs9.b[9][1];
                 }
+            });
+        }
+    }, {
+        key: 'requestFollow',
+        value: function requestFollow() {
+            ++cov_7j6odsrs9.f[13];
+
+            var payload = (++cov_7j6odsrs9.s[54], { userGuidToAdd: this.profileUser.guid });
+
+            ++cov_7j6odsrs9.s[55];
+            this.$http.post(SERVER + '/api/followRequest', payload, {
+                headers: {
+                    'x-access-token': localStorage.getItem('reed-token')
+                }
+            }).then(function (res) {
+                ++cov_7j6odsrs9.f[14];
+                ++cov_7j6odsrs9.s[56];
+
+                console.log(res);
             });
         }
     }]);
@@ -12216,7 +12569,7 @@ var ProfileController = function () {
     return ProfileController;
 }();
 
-var Profile = exports.Profile = (++cov_7j6odsrs9.s[44], {
+var Profile = exports.Profile = (++cov_7j6odsrs9.s[57], {
     template: __webpack_require__(30),
     controller: ProfileController
 });
@@ -47563,7 +47916,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ".profile-view {\n    padding: 10px 40px 40px 40px;\n}\n\n.self-profile-view {\n    margin-bottom: 30px;\n}\n\n.profile-header {\n    font-size: 23px;\n    font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif;\n    font-weight: 300;\n    background-color: #FBFBFB;\n    color:#434343;\n    display: inline;\n    padding-top:13px;\n    padding-bottom:18px;\n    padding-left: 18px;\n    padding-right: 40px;\n}\n\n.profile-top-bar {\n    width: 100%;\n    margin-bottom: 50px;\n}\n\n.profile-follow-bar {\n    padding-right:20px;\n}\n\n\n#followButton{\n    margin-right:20px;\n    float: right;\n}\n\n\n.profile-current-list {\n    border-left:1px solid #F8F8F8;\n}\n\n#currentListHeader {\n    font-size: 17px;\n}\n\n#currentListHeader > i{\n    margin-right:7px;\n}\n\n.create-page-view {\n    padding:0 20px 20px 20px;\n}\n\n#createListForm > .create-input {\n    max-width: 600px;\n    display: block;\n}\n\n#clearArticlesButton {\n\n}\n\n#addArticleButtonSelfProfile {\n    margin-bottom: 10px;\n}\n\n#submitArticleButton {\n    text-align: left;\n    padding-left: 15px;\n    height: 40px;\n    width: 100%;\n    max-width: 800px;\n    background-color: #FFF;\n    border: solid 1px #4E56EE;\n    outline: none;\n}\n\n.reed-current-list-item {\n    width: 100%;\n    padding:15px;\n    padding-top:20px;\n}\n\n.reed-current-list-item > .reed-list-item-title {\n    font-size: 16px;\n}\n\n\n.reed-list-item-description {\n    font-size: 12px;\n}\n\n.reed-list-item-remove{\n    float: right;\n    cursor: pointer;\n    margin-top:-30px;\n    color: #434343;\n    border: 1px solid #434343;\n    padding:5px 13px 5px 13px;\n    border-radius: 50%;\n    font-size: 20px;\n}\n\n.reed-list-item-remove:hover{\n    background-color: #FF8A8A;\n    color: #FFF;\n    border: 1px solid #D26969;\n}\n", ""]);
+exports.push([module.i, ".profile-view {\n    padding: 10px 40px 40px 40px;\n}\n\n.self-profile-view {\n    margin-bottom: 30px;\n}\n\n.profile-header {\n    font-size: 23px;\n    font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif;\n    font-weight: 300;\n    background-color: #FBFBFB;\n    color:#434343;\n    display: inline;\n    padding-top:13px;\n    padding-bottom:18px;\n    padding-left: 18px;\n    padding-right: 40px;\n}\n\n.profile-top-bar {\n    width: 100%;\n    margin-bottom: 50px;\n}\n\n.profile-follow-bar {\n    padding-right:20px;\n}\n\n\n#followButton{\n    margin-right:20px;\n    float: right;\n}\n\n\n.profile-current-list {\n    border-left:1px solid #F8F8F8;\n}\n\n#currentListHeader {\n    font-size: 17px;\n}\n\n#currentListHeader > i{\n    margin-right:7px;\n}\n\n.create-page-view {\n    padding:0 20px 20px 20px;\n}\n\n#createListForm > .create-input {\n    max-width: 600px;\n    display: block;\n}\n\n#clearArticlesButton {\n\n}\n\n#addArticleButtonSelfProfile {\n    margin-bottom: 10px;\n}\n\n#submitArticleButton {\n    text-align: left;\n    padding-left: 15px;\n    height: 40px;\n    width: 100%;\n    max-width: 800px;\n    background-color: #FFF;\n    border: solid 1px #4E56EE;\n    outline: none;\n}\n\n.reed-current-list-item {\n    width: 100%;\n    padding:15px;\n    padding-top:20px;\n}\n\n.reed-current-list-item > .reed-list-item-title {\n    font-size: 16px;\n}\n\n\n.reed-list-item-description {\n    font-size: 12px;\n}\n\n.reed-list-item-remove{\n    float: right;\n    cursor: pointer;\n    margin-top:-30px;\n    color: #434343;\n    border: 1px solid #434343;\n    padding:5px 13px 5px 13px;\n    border-radius: 50%;\n    font-size: 20px;\n}\n\n.reed-list-item-remove:hover{\n    background-color: #FF8A8A;\n    color: #FFF;\n    border: 1px solid #D26969;\n}\n\n#followRequestedButton {\n    background-color:#C5C5C5;\n    pointer-events: none;\n    color: #FFF;\n    border:none;\n    float: right;\n}\n", ""]);
 
 // exports
 
@@ -47638,7 +47991,7 @@ module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n\n        <button  ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.clearArticles()\" id=\"clearArticlesButton\" class=\"reed-btn\" type=\"button\" name=\"button\">Clear articles <i class=\"icon ion-ios-trash\"></i></button>\n    </div>\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <button ng-if=\"!$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Add a new article <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Nevermind <i class=\"icon ion-minus-circled\"></i></button>\n\n\n        <div ng-if=\"$ctrl.addingArticle\" class=\"create-page-view\">\n            <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n                <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input create-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n                <input ng-model=\"$ctrl.articleLink\" class=\"reed-input create-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n                <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea create-input\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n                <button id=\"submitArticleButton\" type=\"submit\">Add article to profile </button>\n            </form>\n        </div>\n    </div>\n\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <div ng-repeat=\"article in $ctrl.profileList.articles\" class=\"reed-current-list-item\">\n            <p class=\"reed-list-item-title\">{{article.articleTitle}}</p>\n            <p class=\"reed-list-item-description\">{{article.articleDescription}}</p>\n            <a target=\"_blank\" class=\"reed-list-item-link reed-link\" href=\"{{article.articleLink}}\">Link <i class=\"icon ion-android-open\"></i></a>\n\n            <a ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.deleteArticle(article)\"><i class=\"icon ion-ios-trash reed-list-item-remove\"></i></a>\n        </div>\n\n    </div>\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.followButtonShow\" ng-click=\"$ctrl.requestFollow()\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.followRequestedShow\" class=\"reed-btn\" id=\"followRequestedButton\" type=\"button\" name=\"button\">Follow Requested</button>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.unfollowButtonShow\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Unfollow </button>\n\n\n\n        <button  ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.clearArticles()\" id=\"clearArticlesButton\" class=\"reed-btn\" type=\"button\" name=\"button\">Clear articles <i class=\"icon ion-ios-trash\"></i></button>\n    </div>\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <button ng-if=\"!$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Add a new article <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Nevermind <i class=\"icon ion-minus-circled\"></i></button>\n\n\n        <div ng-if=\"$ctrl.addingArticle\" class=\"create-page-view\">\n            <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n                <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input create-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n                <input ng-model=\"$ctrl.articleLink\" class=\"reed-input create-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n                <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea create-input\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n                <button id=\"submitArticleButton\" type=\"submit\">Add article to profile </button>\n            </form>\n        </div>\n    </div>\n\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <div ng-repeat=\"article in $ctrl.profileList.articles\" class=\"reed-current-list-item\">\n            <p class=\"reed-list-item-title\">{{article.articleTitle}}</p>\n            <p class=\"reed-list-item-description\">{{article.articleDescription}}</p>\n            <a target=\"_blank\" class=\"reed-list-item-link reed-link\" href=\"{{article.articleLink}}\">Link <i class=\"icon ion-android-open\"></i></a>\n\n            <a ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.deleteArticle(article)\"><i class=\"icon ion-ios-trash reed-list-item-remove\"></i></a>\n        </div>\n\n    </div>\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
 
 /***/ }),
 /* 31 */

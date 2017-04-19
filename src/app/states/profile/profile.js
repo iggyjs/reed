@@ -20,6 +20,12 @@ class ProfileController {
         this.articleLink = '';
         this.articleDescription = '';
 
+        //visiting user stuff
+        this.followButtonShow = false;
+        this.followRequestedShow = false;
+        this.unfollowButtonShow = false;
+
+
         this.findUserByLocation();
         this.user = this.Auth.getUserToken();
 	}
@@ -54,7 +60,7 @@ class ProfileController {
     getProfileData(user) {
         let guid = user.guid;
         // get this users listTitle
-        this.$http.get(SERVER + '/api/currList', {
+        this.$http.get(SERVER + '/api/profileList', {
             headers : {
                 'x-access-token': localStorage.getItem('reed-token')
             },
@@ -70,8 +76,34 @@ class ProfileController {
     checkIfProfileIsCurrentUser() {
         if ((this.user.name === this.profileUser.username) && (this.user.guid === this.profileUser.guid)) {
             this.profileIsCurrentUser = true;
+        } else {
+            // check if the user that's signed in, is following this user
+            this.checkIfCurrentUserIsFollowing(this.user);
+
         }
     }
+
+    checkIfCurrentUserIsFollowing(currentUser) {
+        let guid = currentUser.guid;
+
+        if (this.profileUser.followRequests.indexOf(guid) > -1) {
+            this.followRequestedShow = true;
+        } else {
+            //it's not in the requests, are they an accepted follower?
+            if (this.profileUser.followers.indexOf(guid) > -1) {
+                this.unfollowButtonShow = true;
+            } else {
+                //not an accepted follow / hasn't requested
+                this.followButtonShow = true;
+            }
+        }
+
+
+        // this.followButtonShow = false;
+
+        // this.unfollowButtonShow = false;
+    }
+
 
     toggleAddArticle() {
         this.addingArticle = !this.addingArticle;
@@ -124,6 +156,18 @@ class ProfileController {
             }
         });
 
+    }
+
+    requestFollow() {
+        let payload = {userGuidToAdd: this.profileUser.guid};
+
+        this.$http.post(SERVER + '/api/followRequest', payload, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            console.log(res);
+        });
     }
 }
 

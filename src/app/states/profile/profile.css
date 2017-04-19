@@ -106,3 +106,11 @@
     color: #FFF;
     border: 1px solid #D26969;
 }
+
+#followRequestedButton {
+    background-color:#C5C5C5;
+    pointer-events: none;
+    color: #FFF;
+    border:none;
+    float: right;
+}
