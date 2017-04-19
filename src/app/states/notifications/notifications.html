@@ -27,19 +27,8 @@
 </nav>
 
 
-
-<div class="search-view">
-    <input id="searchInput" type="text" name="search" ng-model="$ctrl.searchQuery" ng-change="$ctrl.searchForUsers()" placeholder="Search">
-
-    <div class="search-results">
-
-        <center>
-            <p id="noResultsMessage" ng-if="$ctrl.searchQuery.length > 0 && ($ctrl.allUsers | filter: $ctrl.searchQuery).length === 0">No results.</p>
-        </center>
-
-        <!--  ng-if="$ctrl.searchQuery.length > 0"  -->
-        <div ng-click="$ctrl.goToProfile(user)" class="search-results-banner" ng-repeat="user in $ctrl.allUsers | filter: $ctrl.searchQuery | limitTo : 15 ">
-            <p>@{{user.name}}</p>
-        </div>
-    </div>
+<div class="notifications-view">
+    <center>
+        <p>Notifications</p>
+    </center>
 </div>

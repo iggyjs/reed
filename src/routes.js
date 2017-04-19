@@ -16,6 +16,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 			data: {
 				authRequired: true
 			}
+		}).state('notifications', {
+			url: '/notifications',
+			component: 'notifications',
+			data: {
+				authRequired: true
+			}
 		}).state('login', {
 			url: '/login',
 			component: 'login',

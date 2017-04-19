@@ -13907,7 +13907,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1ahuxh4hps = function () {
 	var path = '/Users/dstreuly/Sites/reed/reed/src/routes.js',
-	    hash = 'b840d7f453687c22d3adfe96d6567f40f1b2d5d2',
+	    hash = 'ee7d3d7254dd85cc50a286dd5308e98c64273005',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
@@ -13939,7 +13939,7 @@ var cov_1ahuxh4hps = function () {
 					column: 1
 				},
 				end: {
-					line: 58,
+					line: 64,
 					column: 5
 				}
 			}
@@ -13963,7 +13963,7 @@ var cov_1ahuxh4hps = function () {
 						column: 77
 					},
 					end: {
-						line: 61,
+						line: 67,
 						column: 1
 					}
 				},
@@ -14011,6 +14011,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 	}).state('dashboard', {
 		url: '/dashboard',
 		component: 'dashboard',
+		data: {
+			authRequired: true
+		}
+	}).state('notifications', {
+		url: '/notifications',
+		component: 'notifications',
 		data: {
 			authRequired: true
 		}
@@ -47872,6 +47878,7 @@ exports.i(__webpack_require__(24), "");
 exports.i(__webpack_require__(23), "");
 exports.i(__webpack_require__(22), "");
 exports.i(__webpack_require__(20), "");
+exports.i(__webpack_require__(44), "");
 
 // module
 exports.push([module.i, "/*Remove */\n.hide-chrome-autofill {\n    opacity: 0;\n    height: 0;\n    width: 0;\n}\n\n/*Global styles*/\n@font-face {\n  font-family: 'Noway';\n  src: url(" + __webpack_require__(40) + ");\n  src: url(" + __webpack_require__(43) + ") format('woff2'),\n       url(" + __webpack_require__(42) + ") format('woff'),\n       url(" + __webpack_require__(41) + ")  format('truetype')\n}\n\n@font-face {\n  font-family: 'ClearSans';\n  src: url(" + __webpack_require__(36) + ")  format('truetype')\n}\n\n.reed-app {\n    background-color: #FFF;\n}\n\nbody {\n    font-family:'ClearSans';\n    z-index: 1;\n}\n\na:hover {\n    text-decoration: none;\n}\n\n.reed-link {\n    text-decoration: none;\n}\n\n.reed-link:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n\n.reed-input {\n    outline: none;\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.reed-textarea {\n    outline: none;\n    resize: none;\n    border: 1px solid #CCCCCC;\n    width: 100%;\n    height:150px;\n    padding-left: 6px;\n    padding-top: 6px;\n    margin-bottom: 20px;\n}\n\n.reed-banner {\n    padding-top:10px;\n    padding-left:20px;\n    padding-right:20px;\n    padding-bottom: 20px;\n    background-color: #F8F8F8;\n}\n\n.reed-form {\n    margin-top:40px;\n}\n\n.reed-btn {\n\tborder: solid 1px #434343;\n\tfont-family: inherit;\n\tfont-size: 10px;\n\tcolor: inherit;\n\tbackground: none;\n\tcursor: pointer;\n\tpadding: 6px 10px;\n\tdisplay: inline-block;\n\ttext-transform: uppercase;\n\tletter-spacing: 1px;\n\tfont-weight: 700;\n\toutline: none;\n\tposition: relative;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn:after {\n\tcontent: '';\n\tposition: absolute;\n\tz-index: -1;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn-heavy-click {\n    border: none;\n    border-radius: 0 0 5px 5px;\n    background: #cb4e4e;\n    color: #fff;\n    box-shadow: 0 6px #ab3c3c;\n    -webkit-transition: none;\n    transition: none;\n}\n\n.reed-btn-heavy-click:hover {\n    box-shadow: 0 8px #ab3c3c;\n\ttop: -2px;\n}\n\n\n.reed-btn-heavy-click:active {\n\tbox-shadow: 0 0 #ab3c3c;\n\ttop: 6px;\n}\n\n\n/*Nav styles*/\n\n.reed-nav {\n    background-color: #FFF;\n    border: none;\n}\n\n\n@media only screen and (min-width: 768px) {\n    .reed-nav-container-fluid {\n        padding-right: 0;\n    }\n}\n\n.reed-nav-link:hover {\n    background-color:#4E56EE !important;\n    color: #FFFFFF !important;\n}\n\n.reed-brand {\n    font-size: 20px;\n    color:#434343 !important;\n}\n", ""]);
@@ -47967,7 +47974,7 @@ exports.push([module.i, "@charset \"UTF-8\";/*!\n  Ionicons, v2.0.0\n  Created b
 /* 26 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.following.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.following.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 27 */
@@ -47991,13 +47998,13 @@ module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.followButtonShow\" ng-click=\"$ctrl.requestFollow()\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.followRequestedShow\" class=\"reed-btn\" id=\"followRequestedButton\" type=\"button\" name=\"button\">Follow Requested</button>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.unfollowButtonShow\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Unfollow </button>\n\n\n\n        <button  ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.clearArticles()\" id=\"clearArticlesButton\" class=\"reed-btn\" type=\"button\" name=\"button\">Clear articles <i class=\"icon ion-ios-trash\"></i></button>\n    </div>\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <button ng-if=\"!$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Add a new article <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Nevermind <i class=\"icon ion-minus-circled\"></i></button>\n\n\n        <div ng-if=\"$ctrl.addingArticle\" class=\"create-page-view\">\n            <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n                <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input create-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n                <input ng-model=\"$ctrl.articleLink\" class=\"reed-input create-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n                <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea create-input\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n                <button id=\"submitArticleButton\" type=\"submit\">Add article to profile </button>\n            </form>\n        </div>\n    </div>\n\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <div ng-repeat=\"article in $ctrl.profileList.articles\" class=\"reed-current-list-item\">\n            <p class=\"reed-list-item-title\">{{article.articleTitle}}</p>\n            <p class=\"reed-list-item-description\">{{article.articleDescription}}</p>\n            <a target=\"_blank\" class=\"reed-list-item-link reed-link\" href=\"{{article.articleLink}}\">Link <i class=\"icon ion-android-open\"></i></a>\n\n            <a ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.deleteArticle(article)\"><i class=\"icon ion-ios-trash reed-list-item-remove\"></i></a>\n        </div>\n\n    </div>\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.followButtonShow\" ng-click=\"$ctrl.requestFollow()\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.followRequestedShow\" class=\"reed-btn\" id=\"followRequestedButton\" type=\"button\" name=\"button\">Follow Requested</button>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser && $ctrl.unfollowButtonShow\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Unfollow </button>\n\n\n\n        <button  ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.clearArticles()\" id=\"clearArticlesButton\" class=\"reed-btn\" type=\"button\" name=\"button\">Clear articles <i class=\"icon ion-ios-trash\"></i></button>\n    </div>\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <button ng-if=\"!$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Add a new article <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Nevermind <i class=\"icon ion-minus-circled\"></i></button>\n\n\n        <div ng-if=\"$ctrl.addingArticle\" class=\"create-page-view\">\n            <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n                <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input create-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n                <input ng-model=\"$ctrl.articleLink\" class=\"reed-input create-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n                <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea create-input\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n                <button id=\"submitArticleButton\" type=\"submit\">Add article to profile </button>\n            </form>\n        </div>\n    </div>\n\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <div ng-repeat=\"article in $ctrl.profileList.articles\" class=\"reed-current-list-item\">\n            <p class=\"reed-list-item-title\">{{article.articleTitle}}</p>\n            <p class=\"reed-list-item-description\">{{article.articleDescription}}</p>\n            <a target=\"_blank\" class=\"reed-list-item-link reed-link\" href=\"{{article.articleLink}}\">Link <i class=\"icon ion-android-open\"></i></a>\n\n            <a ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.deleteArticle(article)\"><i class=\"icon ion-ios-trash reed-list-item-remove\"></i></a>\n        </div>\n\n    </div>\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
 
 /***/ }),
 /* 31 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n\n<div class=\"search-view\">\n    <input id=\"searchInput\" type=\"text\" name=\"search\" ng-model=\"$ctrl.searchQuery\" ng-change=\"$ctrl.searchForUsers()\" placeholder=\"Search\">\n\n    <div class=\"search-results\">\n\n        <center>\n            <p id=\"noResultsMessage\" ng-if=\"$ctrl.searchQuery.length > 0 && ($ctrl.allUsers | filter: $ctrl.searchQuery).length === 0\">No results.</p>\n        </center>\n\n        <!--  ng-if=\"$ctrl.searchQuery.length > 0\"  -->\n        <div ng-click=\"$ctrl.goToProfile(user)\" class=\"search-results-banner\" ng-repeat=\"user in $ctrl.allUsers | filter: $ctrl.searchQuery | limitTo : 15 \">\n            <p>@{{user.name}}</p>\n        </div>\n    </div>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n\n<div class=\"search-view\">\n    <input id=\"searchInput\" type=\"text\" name=\"search\" ng-model=\"$ctrl.searchQuery\" ng-change=\"$ctrl.searchForUsers()\" placeholder=\"Search\">\n\n    <div class=\"search-results\">\n\n        <center>\n            <p id=\"noResultsMessage\" ng-if=\"$ctrl.searchQuery.length > 0 && ($ctrl.allUsers | filter: $ctrl.searchQuery).length === 0\">No results.</p>\n        </center>\n\n        <!--  ng-if=\"$ctrl.searchQuery.length > 0\"  -->\n        <div ng-click=\"$ctrl.goToProfile(user)\" class=\"search-results-banner\" ng-repeat=\"user in $ctrl.allUsers | filter: $ctrl.searchQuery | limitTo : 15 \">\n            <p>@{{user.name}}</p>\n        </div>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 32 */
@@ -48020,7 +48027,7 @@ module.exports = "<div id=\"tempIdArticles\">\n    <p>Current list titles</p>\n\
 
 var cov_1xfhihfxwp = function () {
   var path = '/Users/dstreuly/Sites/reed/reed/src/index.js',
-      hash = 'e48617d5f2ba09cf31179e4b978c468771b37aa3',
+      hash = 'c43cdafabb1c625dc13593bf69016f1363f9011b',
       global = new Function('return this')(),
       gcv = '__coverage__',
       coverageData = {
@@ -48028,11 +48035,11 @@ var cov_1xfhihfxwp = function () {
     statementMap: {
       '0': {
         start: {
-          line: 25,
+          line: 26,
           column: 0
         },
         end: {
-          line: 36,
+          line: 38,
           column: 32
         }
       }
@@ -48072,6 +48079,8 @@ var _angular2 = _interopRequireDefault(_angular);
 
 var _dashboard = __webpack_require__(7);
 
+var _notifications = __webpack_require__(45);
+
 var _login = __webpack_require__(8);
 
 var _logout = __webpack_require__(9);
@@ -48103,7 +48112,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 ++cov_1xfhihfxwp.s[0];
 
 
-_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('dashboard', _dashboard.Dashboard).component('login', _login.Login).component('signup', _signup.Signup).component('search', _search.Search).component('profile', _profile.Profile).component('logout', _logout.Logout).component('notFound', _notFound.NotFound).component('tempHome', _tempHome.TempHome).service('Auth', _auth.AuthService);
+_angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('dashboard', _dashboard.Dashboard).component('notifications', _notifications.Notifications).component('login', _login.Login).component('signup', _signup.Signup).component('search', _search.Search).component('profile', _profile.Profile).component('logout', _logout.Logout).component('notFound', _notFound.NotFound).component('tempHome', _tempHome.TempHome).service('Auth', _auth.AuthService);
 
 /***/ }),
 /* 35 */
@@ -48404,6 +48413,392 @@ module.exports = "data:application/font-woff;base64,d09GRgABAAAAAKLIABMAAAABUyQA
 /***/ (function(module, exports) {
 
 module.exports = "data:application/font-woff2;base64,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"
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "/*Notification styles*/\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var cov_199a955sej = function () {
+    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/notifications/notifications.js',
+        hash = '6a8431af43cebdbd1a9ea1d53d8c55c105d9c99f',
+        global = new Function('return this')(),
+        gcv = '__coverage__',
+        coverageData = {
+        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/notifications/notifications.js',
+        statementMap: {
+            '0': {
+                start: {
+                    line: 2,
+                    column: 15
+                },
+                end: {
+                    line: 2,
+                    column: 38
+                }
+            },
+            '1': {
+                start: {
+                    line: 3,
+                    column: 15
+                },
+                end: {
+                    line: 3,
+                    column: 98
+                }
+            },
+            '2': {
+                start: {
+                    line: 8,
+                    column: 2
+                },
+                end: {
+                    line: 8,
+                    column: 23
+                }
+            },
+            '3': {
+                start: {
+                    line: 9,
+                    column: 8
+                },
+                end: {
+                    line: 9,
+                    column: 35
+                }
+            },
+            '4': {
+                start: {
+                    line: 10,
+                    column: 2
+                },
+                end: {
+                    line: 10,
+                    column: 34
+                }
+            },
+            '5': {
+                start: {
+                    line: 11,
+                    column: 2
+                },
+                end: {
+                    line: 11,
+                    column: 21
+                }
+            },
+            '6': {
+                start: {
+                    line: 12,
+                    column: 8
+                },
+                end: {
+                    line: 12,
+                    column: 25
+                }
+            },
+            '7': {
+                start: {
+                    line: 15,
+                    column: 8
+                },
+                end: {
+                    line: 19,
+                    column: 9
+                }
+            },
+            '8': {
+                start: {
+                    line: 17,
+                    column: 23
+                },
+                end: {
+                    line: 17,
+                    column: 52
+                }
+            },
+            '9': {
+                start: {
+                    line: 18,
+                    column: 12
+                },
+                end: {
+                    line: 18,
+                    column: 29
+                }
+            },
+            '10': {
+                start: {
+                    line: 21,
+                    column: 8
+                },
+                end: {
+                    line: 21,
+                    column: 29
+                }
+            },
+            '11': {
+                start: {
+                    line: 26,
+                    column: 8
+                },
+                end: {
+                    line: 26,
+                    column: 45
+                }
+            },
+            '12': {
+                start: {
+                    line: 32,
+                    column: 29
+                },
+                end: {
+                    line: 35,
+                    column: 1
+                }
+            }
+        },
+        fnMap: {
+            '0': {
+                name: '(anonymous_0)',
+                decl: {
+                    start: {
+                        line: 7,
+                        column: 3
+                    },
+                    end: {
+                        line: 7,
+                        column: 4
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 7,
+                        column: 36
+                    },
+                    end: {
+                        line: 23,
+                        column: 2
+                    }
+                },
+                line: 7
+            },
+            '1': {
+                name: '(anonymous_1)',
+                decl: {
+                    start: {
+                        line: 25,
+                        column: 4
+                    },
+                    end: {
+                        line: 25,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 25,
+                        column: 20
+                    },
+                    end: {
+                        line: 27,
+                        column: 5
+                    }
+                },
+                line: 25
+            }
+        },
+        branchMap: {
+            '0': {
+                loc: {
+                    start: {
+                        line: 3,
+                        column: 15
+                    },
+                    end: {
+                        line: 3,
+                        column: 98
+                    }
+                },
+                type: 'cond-expr',
+                locations: [{
+                    start: {
+                        line: 3,
+                        column: 46
+                    },
+                    end: {
+                        line: 3,
+                        column: 71
+                    }
+                }, {
+                    start: {
+                        line: 3,
+                        column: 74
+                    },
+                    end: {
+                        line: 3,
+                        column: 98
+                    }
+                }],
+                line: 3
+            },
+            '1': {
+                loc: {
+                    start: {
+                        line: 15,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 15,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                }, {
+                    start: {
+                        line: 15,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                }],
+                line: 15
+            }
+        },
+        s: {
+            '0': 0,
+            '1': 0,
+            '2': 0,
+            '3': 0,
+            '4': 0,
+            '5': 0,
+            '6': 0,
+            '7': 0,
+            '8': 0,
+            '9': 0,
+            '10': 0,
+            '11': 0,
+            '12': 0
+        },
+        f: {
+            '0': 0,
+            '1': 0
+        },
+        b: {
+            '0': [0, 0],
+            '1': [0, 0]
+        },
+        _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+    },
+        coverage = global[gcv] || (global[gcv] = {});
+
+    if (coverage[path] && coverage[path].hash === hash) {
+        return coverage[path];
+    }
+
+    coverageData.hash = hash;
+    return coverage[path] = coverageData;
+}();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* eslint-disable */
+var config = (++cov_199a955sej.s[0], __webpack_require__(0));
+var SERVER = (++cov_199a955sej.s[1], config.environment === 'DEV' ? (++cov_199a955sej.b[0][0], config.development_server) : (++cov_199a955sej.b[0][1], config.production_server));
+
+/** @ngInject */
+
+var NotificationsController = function () {
+    NotificationsController.$inject = ["$http", "$state", "Auth"];
+    function NotificationsController($http, $state, Auth) {
+        _classCallCheck(this, NotificationsController);
+
+        ++cov_199a955sej.f[0];
+        ++cov_199a955sej.s[2];
+
+        this.$state = $state;
+        ++cov_199a955sej.s[3];
+        this.message = 'dashboard';
+        ++cov_199a955sej.s[4];
+        this.data = $state.current.data;
+        ++cov_199a955sej.s[5];
+        this.$http = $http;
+        ++cov_199a955sej.s[6];
+        this.Auth = Auth;
+
+        //check if we need to validate
+        ++cov_199a955sej.s[7];
+        if (this.data.authRequired) {
+            ++cov_199a955sej.b[1][0];
+
+            //set the current user
+            var user = (++cov_199a955sej.s[8], this.Auth.validateUserToken());
+            ++cov_199a955sej.s[9];
+            this.user = user;
+        } else {
+            ++cov_199a955sej.b[1][1];
+        }
+
+        ++cov_199a955sej.s[10];
+        this.contentLoaded();
+    }
+
+    _createClass(NotificationsController, [{
+        key: 'contentLoaded',
+        value: function contentLoaded() {
+            ++cov_199a955sej.f[1];
+            ++cov_199a955sej.s[11];
+
+            this.following = this.user.following;
+        }
+    }]);
+
+    return NotificationsController;
+}();
+
+var Notifications = exports.Notifications = (++cov_199a955sej.s[12], {
+    template: __webpack_require__(46),
+    controller: NotificationsController
+});
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"notifications-view\">\n    <center>\n        <p>Notifications</p>\n    </center>\n</div>\n";
 
 /***/ })
 /******/ ]);

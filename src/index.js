@@ -3,6 +3,7 @@ import angular from 'angular';
 // import {TodoService} from './app/todos/todos';
 // import different possible states here
 import {Dashboard} from './app/states/dashboard/dashboard';
+import {Notifications} from './app/states/notifications/notifications';
 import {Login} from './app/states/login/login';
 import {Logout} from './app/states/logout/logout';
 import {Signup} from './app/states/signup/signup';
@@ -26,6 +27,7 @@ angular
   .module('app', ['ui.router', 'angular-jwt'])
   .config(routesConfig)
   .component('dashboard', Dashboard)
+  .component('notifications', Notifications)
   .component('login', Login)
   .component('signup', Signup)
   .component('search', Search)

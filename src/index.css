@@ -4,6 +4,7 @@
 @import url('app/states/search/search.css');
 @import url('app/states/profile/profile.css');
 @import url('app/states/dashboard/dashboard.css');
+@import url('app/states/notifications/notifications.css');
 
 /*Remove */
 .hide-chrome-autofill {
