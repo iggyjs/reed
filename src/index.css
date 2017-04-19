@@ -35,6 +35,22 @@ body {
     z-index: 1;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.reed-link {
+    text-decoration: none;
+}
+
+.reed-link:hover{
+    background-color: #4E56EE;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 .reed-input {
     outline: none;
     width: 100%;

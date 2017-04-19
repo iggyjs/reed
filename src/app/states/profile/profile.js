@@ -96,6 +96,9 @@ class ProfileController {
         });
     }
 
+    deleteArticle(article) {
+        console.log(article);
+    }
 
     // TODO: Add form validation
     submitList($event) {

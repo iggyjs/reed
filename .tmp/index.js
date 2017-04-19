@@ -10880,7 +10880,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_7j6odsrs9 = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = '6f1d18401370c951eb9a71931eff0eb11dd2c087',
+        hash = 'c6f44195f951492577960442ed5ed2d935c130d7',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -11268,61 +11268,71 @@ var cov_7j6odsrs9 = function () {
             },
             '38': {
                 start: {
-                    line: 102,
-                    column: 22
+                    line: 100,
+                    column: 8
                 },
                 end: {
-                    line: 106,
-                    column: 9
+                    line: 100,
+                    column: 29
                 }
             },
             '39': {
                 start: {
-                    line: 108,
-                    column: 8
+                    line: 105,
+                    column: 22
                 },
                 end: {
-                    line: 119,
-                    column: 11
+                    line: 109,
+                    column: 9
                 }
             },
             '40': {
                 start: {
-                    line: 113,
-                    column: 12
+                    line: 111,
+                    column: 8
                 },
                 end: {
-                    line: 118,
-                    column: 13
+                    line: 122,
+                    column: 11
                 }
             },
             '41': {
                 start: {
-                    line: 114,
-                    column: 16
+                    line: 116,
+                    column: 12
                 },
                 end: {
-                    line: 114,
-                    column: 49
+                    line: 121,
+                    column: 13
                 }
             },
             '42': {
                 start: {
-                    line: 115,
+                    line: 117,
                     column: 16
                 },
                 end: {
-                    line: 115,
-                    column: 40
+                    line: 117,
+                    column: 49
                 }
             },
             '43': {
                 start: {
-                    line: 124,
+                    line: 118,
+                    column: 16
+                },
+                end: {
+                    line: 118,
+                    column: 40
+                }
+            },
+            '44': {
+                start: {
+                    line: 127,
                     column: 23
                 },
                 end: {
-                    line: 127,
+                    line: 130,
                     column: 1
                 }
             }
@@ -11548,49 +11558,73 @@ var cov_7j6odsrs9 = function () {
                 name: '(anonymous_9)',
                 decl: {
                     start: {
-                        line: 101,
+                        line: 99,
                         column: 4
                     },
                     end: {
-                        line: 101,
+                        line: 99,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 101,
-                        column: 23
+                        line: 99,
+                        column: 27
                     },
                     end: {
-                        line: 121,
+                        line: 101,
                         column: 5
                     }
                 },
-                line: 101
+                line: 99
             },
             '10': {
                 name: '(anonymous_10)',
                 decl: {
                     start: {
-                        line: 112,
+                        line: 104,
+                        column: 4
+                    },
+                    end: {
+                        line: 104,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 104,
+                        column: 23
+                    },
+                    end: {
+                        line: 124,
+                        column: 5
+                    }
+                },
+                line: 104
+            },
+            '11': {
+                name: '(anonymous_11)',
+                decl: {
+                    start: {
+                        line: 115,
                         column: 16
                     },
                     end: {
-                        line: 112,
+                        line: 115,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 112,
+                        line: 115,
                         column: 25
                     },
                     end: {
-                        line: 119,
+                        line: 122,
                         column: 9
                     }
                 },
-                line: 112
+                line: 115
             }
         },
         branchMap: {
@@ -11828,35 +11862,35 @@ var cov_7j6odsrs9 = function () {
             '7': {
                 loc: {
                     start: {
-                        line: 113,
+                        line: 116,
                         column: 12
                     },
                     end: {
-                        line: 118,
+                        line: 121,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 113,
+                        line: 116,
                         column: 12
                     },
                     end: {
-                        line: 118,
+                        line: 121,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 113,
+                        line: 116,
                         column: 12
                     },
                     end: {
-                        line: 118,
+                        line: 121,
                         column: 13
                     }
                 }],
-                line: 113
+                line: 116
             }
         },
         s: {
@@ -11903,7 +11937,8 @@ var cov_7j6odsrs9 = function () {
             '40': 0,
             '41': 0,
             '42': 0,
-            '43': 0
+            '43': 0,
+            '44': 0
         },
         f: {
             '0': 0,
@@ -11916,7 +11951,8 @@ var cov_7j6odsrs9 = function () {
             '7': 0,
             '8': 0,
             '9': 0,
-            '10': 0
+            '10': 0,
+            '11': 0
         },
         b: {
             '0': [0, 0],
@@ -12125,6 +12161,14 @@ var ProfileController = function () {
                 }
             });
         }
+    }, {
+        key: 'deleteArticle',
+        value: function deleteArticle(article) {
+            ++cov_7j6odsrs9.f[9];
+            ++cov_7j6odsrs9.s[38];
+
+            console.log(article);
+        }
 
         // TODO: Add form validation
 
@@ -12133,29 +12177,29 @@ var ProfileController = function () {
         value: function submitList($event) {
             var _this4 = this;
 
-            ++cov_7j6odsrs9.f[9];
+            ++cov_7j6odsrs9.f[10];
 
-            var payload = (++cov_7j6odsrs9.s[38], {
+            var payload = (++cov_7j6odsrs9.s[39], {
                 articleTitle: this.articleTitle,
                 articleDes: this.articleDescription,
                 articleLink: this.articleLink
             });
 
-            ++cov_7j6odsrs9.s[39];
+            ++cov_7j6odsrs9.s[40];
             this.$http.post(SERVER + '/api/addArticle', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[10];
-                ++cov_7j6odsrs9.s[40];
+                ++cov_7j6odsrs9.f[11];
+                ++cov_7j6odsrs9.s[41];
 
                 if (res.status === 200) {
                     ++cov_7j6odsrs9.b[7][0];
-                    ++cov_7j6odsrs9.s[41];
+                    ++cov_7j6odsrs9.s[42];
 
                     _this4.profileList = res.data.list;
-                    ++cov_7j6odsrs9.s[42];
+                    ++cov_7j6odsrs9.s[43];
                     _this4.toggleAddArticle();
                 } else {
                     //show error message
@@ -12169,7 +12213,7 @@ var ProfileController = function () {
     return ProfileController;
 }();
 
-var Profile = exports.Profile = (++cov_7j6odsrs9.s[43], {
+var Profile = exports.Profile = (++cov_7j6odsrs9.s[44], {
     template: __webpack_require__(30),
     controller: ProfileController
 });
@@ -47474,7 +47518,7 @@ exports.i(__webpack_require__(22), "");
 exports.i(__webpack_require__(20), "");
 
 // module
-exports.push([module.i, "/*Remove */\n.hide-chrome-autofill {\n    opacity: 0;\n    height: 0;\n    width: 0;\n}\n\n/*Global styles*/\n@font-face {\n  font-family: 'Noway';\n  src: url(" + __webpack_require__(40) + ");\n  src: url(" + __webpack_require__(43) + ") format('woff2'),\n       url(" + __webpack_require__(42) + ") format('woff'),\n       url(" + __webpack_require__(41) + ")  format('truetype')\n}\n\n@font-face {\n  font-family: 'ClearSans';\n  src: url(" + __webpack_require__(36) + ")  format('truetype')\n}\n\n.reed-app {\n    background-color: #FFF;\n}\n\nbody {\n    font-family:'ClearSans';\n    z-index: 1;\n}\n\n.reed-input {\n    outline: none;\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.reed-textarea {\n    outline: none;\n    resize: none;\n    border: 1px solid #CCCCCC;\n    width: 100%;\n    height:150px;\n    padding-left: 6px;\n    padding-top: 6px;\n    margin-bottom: 20px;\n}\n\n.reed-banner {\n    padding-top:10px;\n    padding-left:20px;\n    padding-right:20px;\n    padding-bottom: 20px;\n    background-color: #F8F8F8;\n}\n\n.reed-form {\n    margin-top:40px;\n}\n\n.reed-btn {\n\tborder: solid 1px #434343;\n\tfont-family: inherit;\n\tfont-size: 10px;\n\tcolor: inherit;\n\tbackground: none;\n\tcursor: pointer;\n\tpadding: 6px 10px;\n\tdisplay: inline-block;\n\ttext-transform: uppercase;\n\tletter-spacing: 1px;\n\tfont-weight: 700;\n\toutline: none;\n\tposition: relative;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn:after {\n\tcontent: '';\n\tposition: absolute;\n\tz-index: -1;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn-heavy-click {\n    border: none;\n    border-radius: 0 0 5px 5px;\n    background: #cb4e4e;\n    color: #fff;\n    box-shadow: 0 6px #ab3c3c;\n    -webkit-transition: none;\n    transition: none;\n}\n\n.reed-btn-heavy-click:hover {\n    box-shadow: 0 8px #ab3c3c;\n\ttop: -2px;\n}\n\n\n.reed-btn-heavy-click:active {\n\tbox-shadow: 0 0 #ab3c3c;\n\ttop: 6px;\n}\n\n\n/*Nav styles*/\n\n.reed-nav {\n    background-color: #FFF;\n    border: none;\n}\n\n\n@media only screen and (min-width: 768px) {\n    .reed-nav-container-fluid {\n        padding-right: 0;\n    }\n}\n\n.reed-nav-link:hover {\n    background-color:#4E56EE !important;\n    color: #FFFFFF !important;\n}\n\n.reed-brand {\n    font-size: 20px;\n    color:#434343 !important;\n}\n", ""]);
+exports.push([module.i, "/*Remove */\n.hide-chrome-autofill {\n    opacity: 0;\n    height: 0;\n    width: 0;\n}\n\n/*Global styles*/\n@font-face {\n  font-family: 'Noway';\n  src: url(" + __webpack_require__(40) + ");\n  src: url(" + __webpack_require__(43) + ") format('woff2'),\n       url(" + __webpack_require__(42) + ") format('woff'),\n       url(" + __webpack_require__(41) + ")  format('truetype')\n}\n\n@font-face {\n  font-family: 'ClearSans';\n  src: url(" + __webpack_require__(36) + ")  format('truetype')\n}\n\n.reed-app {\n    background-color: #FFF;\n}\n\nbody {\n    font-family:'ClearSans';\n    z-index: 1;\n}\n\na:hover {\n    text-decoration: none;\n}\n\n.reed-link {\n    text-decoration: none;\n}\n\n.reed-link:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n\n.reed-input {\n    outline: none;\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.reed-textarea {\n    outline: none;\n    resize: none;\n    border: 1px solid #CCCCCC;\n    width: 100%;\n    height:150px;\n    padding-left: 6px;\n    padding-top: 6px;\n    margin-bottom: 20px;\n}\n\n.reed-banner {\n    padding-top:10px;\n    padding-left:20px;\n    padding-right:20px;\n    padding-bottom: 20px;\n    background-color: #F8F8F8;\n}\n\n.reed-form {\n    margin-top:40px;\n}\n\n.reed-btn {\n\tborder: solid 1px #434343;\n\tfont-family: inherit;\n\tfont-size: 10px;\n\tcolor: inherit;\n\tbackground: none;\n\tcursor: pointer;\n\tpadding: 6px 10px;\n\tdisplay: inline-block;\n\ttext-transform: uppercase;\n\tletter-spacing: 1px;\n\tfont-weight: 700;\n\toutline: none;\n\tposition: relative;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn:after {\n\tcontent: '';\n\tposition: absolute;\n\tz-index: -1;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn-heavy-click {\n    border: none;\n    border-radius: 0 0 5px 5px;\n    background: #cb4e4e;\n    color: #fff;\n    box-shadow: 0 6px #ab3c3c;\n    -webkit-transition: none;\n    transition: none;\n}\n\n.reed-btn-heavy-click:hover {\n    box-shadow: 0 8px #ab3c3c;\n\ttop: -2px;\n}\n\n\n.reed-btn-heavy-click:active {\n\tbox-shadow: 0 0 #ab3c3c;\n\ttop: 6px;\n}\n\n\n/*Nav styles*/\n\n.reed-nav {\n    background-color: #FFF;\n    border: none;\n}\n\n\n@media only screen and (min-width: 768px) {\n    .reed-nav-container-fluid {\n        padding-right: 0;\n    }\n}\n\n.reed-nav-link:hover {\n    background-color:#4E56EE !important;\n    color: #FFFFFF !important;\n}\n\n.reed-brand {\n    font-size: 20px;\n    color:#434343 !important;\n}\n", ""]);
 
 // exports
 
@@ -47516,7 +47560,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ".profile-view {\n    padding: 10px 40px 40px 40px;\n}\n\n.self-profile-view {\n    margin-bottom: 30px;\n}\n\n.profile-header {\n    font-size: 23px;\n    font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif;\n    font-weight: 300;\n    background-color: #FBFBFB;\n    color:#434343;\n    display: inline;\n    padding-top:13px;\n    padding-bottom:18px;\n    padding-left: 18px;\n    padding-right: 40px;\n}\n\n.profile-top-bar {\n    width: 100%;\n    margin-bottom: 50px;\n}\n\n.profile-follow-bar {\n    padding-right:20px;\n}\n\n\n#followButton{\n    margin-right:20px;\n    float: right;\n}\n\n\n.profile-current-list {\n    border-left:1px solid #F8F8F8;\n}\n\n#currentListHeader {\n    font-size: 17px;\n}\n\n#currentListHeader > i{\n    margin-right:7px;\n}\n\n.create-page-view {\n    padding:0 20px 20px 20px;\n}\n\n#createListForm > .create-input {\n    max-width: 600px;\n    display: block;\n}\n\n#clearArticlesButton {\n\n}\n\n#addArticleButtonSelfProfile {\n    margin-bottom: 10px;\n}\n\n#submitArticleButton {\n    text-align: left;\n    padding-left: 15px;\n    height: 40px;\n    width: 100%;\n    max-width: 800px;\n    background-color: #FFF;\n    border: solid 1px #4E56EE;\n    outline: none;\n}\n\n.reed-current-list-item {\n    width: 100%;\n    padding:15px;\n}\n\n.reed-current-list-item > .reed-list-item-title {\n    font-size: 16px;\n}\n", ""]);
+exports.push([module.i, ".profile-view {\n    padding: 10px 40px 40px 40px;\n}\n\n.self-profile-view {\n    margin-bottom: 30px;\n}\n\n.profile-header {\n    font-size: 23px;\n    font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif;\n    font-weight: 300;\n    background-color: #FBFBFB;\n    color:#434343;\n    display: inline;\n    padding-top:13px;\n    padding-bottom:18px;\n    padding-left: 18px;\n    padding-right: 40px;\n}\n\n.profile-top-bar {\n    width: 100%;\n    margin-bottom: 50px;\n}\n\n.profile-follow-bar {\n    padding-right:20px;\n}\n\n\n#followButton{\n    margin-right:20px;\n    float: right;\n}\n\n\n.profile-current-list {\n    border-left:1px solid #F8F8F8;\n}\n\n#currentListHeader {\n    font-size: 17px;\n}\n\n#currentListHeader > i{\n    margin-right:7px;\n}\n\n.create-page-view {\n    padding:0 20px 20px 20px;\n}\n\n#createListForm > .create-input {\n    max-width: 600px;\n    display: block;\n}\n\n#clearArticlesButton {\n\n}\n\n#addArticleButtonSelfProfile {\n    margin-bottom: 10px;\n}\n\n#submitArticleButton {\n    text-align: left;\n    padding-left: 15px;\n    height: 40px;\n    width: 100%;\n    max-width: 800px;\n    background-color: #FFF;\n    border: solid 1px #4E56EE;\n    outline: none;\n}\n\n.reed-current-list-item {\n    width: 100%;\n    padding:15px;\n    padding-top:20px;\n}\n\n.reed-current-list-item > .reed-list-item-title {\n    font-size: 16px;\n}\n\n\n.reed-list-item-description {\n    font-size: 12px;\n}\n\n.reed-list-item-remove{\n    float: right;\n    cursor: pointer;\n    margin-top:-30px;\n    color: #434343;\n    border: 1px solid #434343;\n    padding:5px 13px 5px 13px;\n    border-radius: 50%;\n    font-size: 20px;\n}\n\n.reed-list-item-remove:hover{\n    background-color: #FF8A8A;\n    color: #FFF;\n    border: 1px solid #D26969;\n}\n", ""]);
 
 // exports
 
@@ -47591,7 +47635,7 @@ module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n\n        <button  ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.clearArticles()\" id=\"clearArticlesButton\" class=\"reed-btn\" type=\"button\" name=\"button\">Clear articles <i class=\"icon ion-ios-trash\"></i></button>\n    </div>\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <button ng-if=\"!$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Add a new article <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Nevermind <i class=\"icon ion-minus-circled\"></i></button>\n\n\n        <div ng-if=\"$ctrl.addingArticle\" class=\"create-page-view\">\n            <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n                <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input create-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n                <input ng-model=\"$ctrl.articleLink\" class=\"reed-input create-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n                <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea create-input\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n                <button id=\"submitArticleButton\" type=\"submit\">Add article to profile <i class=\"icon ion-android-add-circle\"></i></button>\n            </form>\n        </div>\n    </div>\n\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <div ng-repeat=\"article in $ctrl.profileList.articles\" class=\"reed-current-list-item\">\n            <p class=\"reed-list-item-title\">{{article.articleTitle}}</p>\n\n        </div>\n\n    </div>\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"profile-view\">\n\n    <div class=\"profile-top-bar\">\n        <h1 class=\"profile-header\">{{$ctrl.profileUser.username}}</h1>\n        <button ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"reed-btn reed-btn-heavy-click\" id=\"followButton\" type=\"button\" name=\"button\">Follow  <i class=\"icon ion-android-add-circle\"></i></button>\n\n        <button  ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.clearArticles()\" id=\"clearArticlesButton\" class=\"reed-btn\" type=\"button\" name=\"button\">Clear articles <i class=\"icon ion-ios-trash\"></i></button>\n    </div>\n\n    <!-- User's own profile view -->\n    <div ng-if=\"$ctrl.profileIsCurrentUser\" class=\"self-profile-view\">\n        <button ng-if=\"!$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Add a new article <i class=\"icon ion-android-add-circle\"></i></button>\n        <button ng-if=\"$ctrl.addingArticle\"  ng-click=\"$ctrl.toggleAddArticle()\" id=\"addArticleButtonSelfProfile\" class=\"reed-btn\" type=\"button\" name=\"button\">Nevermind <i class=\"icon ion-minus-circled\"></i></button>\n\n\n        <div ng-if=\"$ctrl.addingArticle\" class=\"create-page-view\">\n            <form id=\"createListForm\" class=\"reed-form\" ng-submit=\"$ctrl.submitList($event)\">\n                <input ng-model=\"$ctrl.articleTitle\" class=\"reed-input create-input\" type=\"text\" name=\"articleTitle\" placeholder=\"Article title\">\n                <input ng-model=\"$ctrl.articleLink\" class=\"reed-input create-input\" type=\"text\" name=\"articleLink\" placeholder=\"Article link\">\n                <textarea ng-model=\"$ctrl.articleDescription\" class=\"reed-textarea create-input\" name=\"articleDes\" placeholder=\"Article description (if any)\"></textarea>\n\n                <button id=\"submitArticleButton\" type=\"submit\">Add article to profile </button>\n            </form>\n        </div>\n    </div>\n\n\n    <!-- User's current list -->\n    <div class=\"profile-current-list\">\n        <div class=\"reed-banner\">\n            <h1 id=\"currentListHeader\"><i class=\"icon ion-ios-book\"></i> Today's Reading List</h1>\n        </div>\n\n        <div ng-repeat=\"article in $ctrl.profileList.articles\" class=\"reed-current-list-item\">\n            <p class=\"reed-list-item-title\">{{article.articleTitle}}</p>\n            <p class=\"reed-list-item-description\">{{article.articleDescription}}</p>\n            <a target=\"_blank\" class=\"reed-list-item-link reed-link\" href=\"{{article.articleLink}}\">Link <i class=\"icon ion-android-open\"></i></a>\n\n            <a ng-if=\"$ctrl.profileIsCurrentUser\" ng-click=\"$ctrl.deleteArticle(article)\"><i class=\"icon ion-ios-trash reed-list-item-remove\"></i></a>\n        </div>\n\n    </div>\n\n    <!-- If it's someone else profile -->\n    <div ng-if=\"!$ctrl.profileIsCurrentUser\" class=\"visitor-profile-view\">\n\n\n    </div>\n\n</div>\n";
 
 /***/ }),
 /* 31 */
