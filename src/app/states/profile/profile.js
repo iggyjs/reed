@@ -60,8 +60,6 @@ class ProfileController {
             }
         }).then((res) => {
             this.profileList = res.data;
-            console.log(this.profileList);
-            console.log(this.profileList.articles);
 		});
 
     }
@@ -75,8 +73,31 @@ class ProfileController {
     toggleAddArticle() {
         this.addingArticle = !this.addingArticle;
 
+        if (!this.addingArticle) {
+            this.articleTitle = '';
+            this.articleLink = '';
+            this.articleDescription = '';
+        }
     }
 
+
+    // HACK: This is a development only method
+    clearArticles() {
+        this.$http.post(SERVER + '/api/clearCurrList', {}, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                this.profileList = res.data.list;
+            } else {
+                //show error message
+            }
+        });
+    }
+
+
+    // TODO: Add form validation
     submitList($event) {
         let payload = {
             articleTitle: this.articleTitle,
@@ -91,6 +112,7 @@ class ProfileController {
         }).then((res) => {
             if (res.status === 200) {
                 this.profileList = res.data.list;
+                this.toggleAddArticle();
             } else {
                 //show error message
             }

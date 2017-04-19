@@ -84,6 +84,18 @@ routes.get('/currList', (req, res) => {
     });
 });
 
+// clears current list
+routes.post('/clearCurrList', (req, res) => {
+    List.findOneAndUpdate({user_id: userId}, {$set: { articles: [] }}, {new: true}, (err, newList) => {
+        
+        if (err) throw err;
+
+        res.json({success: true, list: newList});
+
+    });
+});
+
+
 //adds a new article to the current list
 routes.post('/addArticle', (req, res) => {
     let today = moment().format('MM:DD:YYYY');

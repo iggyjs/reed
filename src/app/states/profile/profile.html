@@ -30,7 +30,27 @@
     <div class="profile-top-bar">
         <h1 class="profile-header">{{$ctrl.profileUser.username}}</h1>
         <button ng-if="!$ctrl.profileIsCurrentUser" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Follow  <i class="icon ion-android-add-circle"></i></button>
+
+        <button  ng-if="$ctrl.profileIsCurrentUser" ng-click="$ctrl.clearArticles()" id="clearArticlesButton" class="reed-btn" type="button" name="button">Clear articles <i class="icon ion-ios-trash"></i></button>
     </div>
+
+    <!-- User's own profile view -->
+    <div ng-if="$ctrl.profileIsCurrentUser" class="self-profile-view">
+        <button ng-if="!$ctrl.addingArticle"  ng-click="$ctrl.toggleAddArticle()" id="addArticleButtonSelfProfile" class="reed-btn" type="button" name="button">Add a new article <i class="icon ion-android-add-circle"></i></button>
+        <button ng-if="$ctrl.addingArticle"  ng-click="$ctrl.toggleAddArticle()" id="addArticleButtonSelfProfile" class="reed-btn" type="button" name="button">Nevermind <i class="icon ion-minus-circled"></i></button>
+
+
+        <div ng-if="$ctrl.addingArticle" class="create-page-view">
+            <form id="createListForm" class="reed-form" ng-submit="$ctrl.submitList($event)">
+                <input ng-model="$ctrl.articleTitle" class="reed-input create-input" type="text" name="articleTitle" placeholder="Article title">
+                <input ng-model="$ctrl.articleLink" class="reed-input create-input" type="text" name="articleLink" placeholder="Article link">
+                <textarea ng-model="$ctrl.articleDescription" class="reed-textarea create-input" name="articleDes" placeholder="Article description (if any)"></textarea>
+
+                <button id="submitArticleButton" type="submit">Add article to profile <i class="icon ion-android-add-circle"></i></button>
+            </form>
+        </div>
+    </div>
+
 
     <!-- User's current list -->
     <div class="profile-current-list">
@@ -39,30 +59,11 @@
         </div>
 
         <div ng-repeat="article in $ctrl.profileList.articles" class="reed-current-list-item">
-            {{article.articleTitle}}
+            <p class="reed-list-item-title">{{article.articleTitle}}</p>
+
         </div>
 
     </div>
-
-
-    <!-- User's own profile view -->
-    <div ng-if="$ctrl.profileIsCurrentUser" class="self-profile-view">
-
-        <button ng-if="!$ctrl.addingArticle"  ng-click="$ctrl.toggleAddArticle()" id="addArticleButtonSelfProfile" class="reed-btn" type="button" name="button">Add a new article <i class="icon ion-android-add-circle"></i></button>
-        <button ng-if="$ctrl.addingArticle"  ng-click="$ctrl.toggleAddArticle()" id="addArticleButtonSelfProfile" class="reed-btn" type="button" name="button">Nevermind <i class="icon ion-minus-circled"></i></button>
-
-
-        <div ng-if="$ctrl.addingArticle" class="create-page-view">
-            <form id="createListForm" class="reed-form" ng-submit="$ctrl.submitList($event)">
-                <input ng-model="$ctrl.articleTitle" class="reed-input" type="text" name="articleTitle" placeholder="Article title">
-                <input ng-model="$ctrl.articleLink" class="reed-input" type="text" name="articleLink" placeholder="Article link">
-                <textarea ng-model="$ctrl.articleDescription" class="reed-textarea" name="articleDes" placeholder="Article description (if any)"></textarea>
-
-                <input id="loginButton" type="submit" value="Add article to daily list">
-            </form>
-        </div>
-    </div>
-
 
     <!-- If it's someone else profile -->
     <div ng-if="!$ctrl.profileIsCurrentUser" class="visitor-profile-view">
