@@ -57,6 +57,9 @@ class ProfileController {
         this.$http.get(SERVER + '/api/currList', {
             headers : {
                 'x-access-token': localStorage.getItem('reed-token')
+            },
+            params: {
+                userGuid: guid
             }
         }).then((res) => {
             this.profileList = res.data;

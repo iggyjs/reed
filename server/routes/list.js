@@ -79,7 +79,9 @@ routes.get('/lists', (req, res) => {
 
 //returns todays list by date and user id
 routes.get('/currList', (req, res) => {
-    List.findOne({user_id: userId}, (err, list) => {
+    let id = req.query.userGuid;
+
+    List.findOne({user_guid: id}, (err, list) => {
         res.json(list);
     });
 });
@@ -87,7 +89,7 @@ routes.get('/currList', (req, res) => {
 // clears current list
 routes.post('/clearCurrList', (req, res) => {
     List.findOneAndUpdate({user_id: userId}, {$set: { articles: [] }}, {new: true}, (err, newList) => {
-        
+
         if (err) throw err;
 
         res.json({success: true, list: newList});

@@ -10880,7 +10880,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_7j6odsrs9 = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = 'c6f44195f951492577960442ed5ed2d935c130d7',
+        hash = 'fe783882d933623c956b392ee631a36ae358603f',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -11152,187 +11152,187 @@ var cov_7j6odsrs9 = function () {
                     column: 8
                 },
                 end: {
-                    line: 63,
+                    line: 66,
                     column: 5
                 }
             },
             '27': {
                 start: {
-                    line: 62,
+                    line: 65,
                     column: 12
                 },
                 end: {
-                    line: 62,
+                    line: 65,
                     column: 40
                 }
             },
             '28': {
                 start: {
-                    line: 68,
+                    line: 71,
                     column: 8
                 },
                 end: {
-                    line: 70,
+                    line: 73,
                     column: 9
                 }
             },
             '29': {
                 start: {
-                    line: 69,
+                    line: 72,
                     column: 12
                 },
                 end: {
-                    line: 69,
+                    line: 72,
                     column: 45
                 }
             },
             '30': {
                 start: {
-                    line: 74,
+                    line: 77,
                     column: 8
                 },
                 end: {
-                    line: 74,
+                    line: 77,
                     column: 49
                 }
             },
             '31': {
                 start: {
-                    line: 76,
+                    line: 79,
                     column: 8
                 },
                 end: {
-                    line: 80,
+                    line: 83,
                     column: 9
                 }
             },
             '32': {
                 start: {
-                    line: 77,
+                    line: 80,
                     column: 12
                 },
                 end: {
-                    line: 77,
+                    line: 80,
                     column: 35
                 }
             },
             '33': {
                 start: {
-                    line: 78,
+                    line: 81,
                     column: 12
                 },
                 end: {
-                    line: 78,
+                    line: 81,
                     column: 34
                 }
             },
             '34': {
                 start: {
-                    line: 79,
+                    line: 82,
                     column: 12
                 },
                 end: {
-                    line: 79,
+                    line: 82,
                     column: 41
                 }
             },
             '35': {
                 start: {
-                    line: 86,
+                    line: 89,
                     column: 8
                 },
                 end: {
-                    line: 96,
+                    line: 99,
                     column: 11
                 }
             },
             '36': {
                 start: {
-                    line: 91,
+                    line: 94,
                     column: 12
                 },
                 end: {
-                    line: 95,
+                    line: 98,
                     column: 13
                 }
             },
             '37': {
                 start: {
-                    line: 92,
+                    line: 95,
                     column: 16
                 },
                 end: {
-                    line: 92,
+                    line: 95,
                     column: 49
                 }
             },
             '38': {
                 start: {
-                    line: 100,
+                    line: 103,
                     column: 8
                 },
                 end: {
-                    line: 100,
+                    line: 103,
                     column: 29
                 }
             },
             '39': {
                 start: {
-                    line: 105,
+                    line: 108,
                     column: 22
                 },
                 end: {
-                    line: 109,
+                    line: 112,
                     column: 9
                 }
             },
             '40': {
                 start: {
-                    line: 111,
+                    line: 114,
                     column: 8
                 },
                 end: {
-                    line: 122,
+                    line: 125,
                     column: 11
                 }
             },
             '41': {
                 start: {
-                    line: 116,
+                    line: 119,
                     column: 12
                 },
                 end: {
-                    line: 121,
+                    line: 124,
                     column: 13
                 }
             },
             '42': {
                 start: {
-                    line: 117,
+                    line: 120,
                     column: 16
                 },
                 end: {
-                    line: 117,
+                    line: 120,
                     column: 49
                 }
             },
             '43': {
                 start: {
-                    line: 118,
+                    line: 121,
                     column: 16
                 },
                 end: {
-                    line: 118,
+                    line: 121,
                     column: 40
                 }
             },
             '44': {
                 start: {
-                    line: 127,
+                    line: 130,
                     column: 23
                 },
                 end: {
-                    line: 130,
+                    line: 133,
                     column: 1
                 }
             }
@@ -11428,7 +11428,7 @@ var cov_7j6odsrs9 = function () {
                         column: 25
                     },
                     end: {
-                        line: 65,
+                        line: 68,
                         column: 5
                     }
                 },
@@ -11438,193 +11438,193 @@ var cov_7j6odsrs9 = function () {
                 name: '(anonymous_4)',
                 decl: {
                     start: {
-                        line: 61,
+                        line: 64,
                         column: 16
                     },
                     end: {
-                        line: 61,
+                        line: 64,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 61,
+                        line: 64,
                         column: 25
                     },
                     end: {
-                        line: 63,
+                        line: 66,
                         column: 3
                     }
                 },
-                line: 61
+                line: 64
             },
             '5': {
                 name: '(anonymous_5)',
                 decl: {
                     start: {
-                        line: 67,
+                        line: 70,
                         column: 4
                     },
                     end: {
-                        line: 67,
+                        line: 70,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 67,
+                        line: 70,
                         column: 34
                     },
                     end: {
-                        line: 71,
+                        line: 74,
                         column: 5
                     }
                 },
-                line: 67
+                line: 70
             },
             '6': {
                 name: '(anonymous_6)',
                 decl: {
                     start: {
-                        line: 73,
+                        line: 76,
                         column: 4
                     },
                     end: {
-                        line: 73,
+                        line: 76,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 73,
+                        line: 76,
                         column: 23
                     },
                     end: {
-                        line: 81,
+                        line: 84,
                         column: 5
                     }
                 },
-                line: 73
+                line: 76
             },
             '7': {
                 name: '(anonymous_7)',
                 decl: {
                     start: {
-                        line: 85,
+                        line: 88,
                         column: 4
                     },
                     end: {
-                        line: 85,
+                        line: 88,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 85,
+                        line: 88,
                         column: 20
                     },
                     end: {
-                        line: 97,
+                        line: 100,
                         column: 5
                     }
                 },
-                line: 85
+                line: 88
             },
             '8': {
                 name: '(anonymous_8)',
                 decl: {
                     start: {
-                        line: 90,
+                        line: 93,
                         column: 16
                     },
                     end: {
-                        line: 90,
+                        line: 93,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 90,
+                        line: 93,
                         column: 25
                     },
                     end: {
-                        line: 96,
+                        line: 99,
                         column: 9
                     }
                 },
-                line: 90
+                line: 93
             },
             '9': {
                 name: '(anonymous_9)',
                 decl: {
                     start: {
-                        line: 99,
+                        line: 102,
                         column: 4
                     },
                     end: {
-                        line: 99,
+                        line: 102,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 99,
+                        line: 102,
                         column: 27
                     },
                     end: {
-                        line: 101,
+                        line: 104,
                         column: 5
                     }
                 },
-                line: 99
+                line: 102
             },
             '10': {
                 name: '(anonymous_10)',
                 decl: {
                     start: {
-                        line: 104,
+                        line: 107,
                         column: 4
                     },
                     end: {
-                        line: 104,
+                        line: 107,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 104,
+                        line: 107,
                         column: 23
                     },
                     end: {
-                        line: 124,
+                        line: 127,
                         column: 5
                     }
                 },
-                line: 104
+                line: 107
             },
             '11': {
                 name: '(anonymous_11)',
                 decl: {
                     start: {
-                        line: 115,
+                        line: 118,
                         column: 16
                     },
                     end: {
-                        line: 115,
+                        line: 118,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 115,
+                        line: 118,
                         column: 25
                     },
                     end: {
-                        line: 122,
+                        line: 125,
                         column: 9
                     }
                 },
-                line: 115
+                line: 118
             }
         },
         branchMap: {
@@ -11730,167 +11730,167 @@ var cov_7j6odsrs9 = function () {
             '3': {
                 loc: {
                     start: {
-                        line: 68,
+                        line: 71,
                         column: 8
                     },
                     end: {
-                        line: 70,
+                        line: 73,
                         column: 9
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 68,
+                        line: 71,
                         column: 8
                     },
                     end: {
-                        line: 70,
+                        line: 73,
                         column: 9
                     }
                 }, {
                     start: {
-                        line: 68,
+                        line: 71,
                         column: 8
                     },
                     end: {
-                        line: 70,
+                        line: 73,
                         column: 9
                     }
                 }],
-                line: 68
+                line: 71
             },
             '4': {
                 loc: {
                     start: {
-                        line: 68,
+                        line: 71,
                         column: 12
                     },
                     end: {
-                        line: 68,
+                        line: 71,
                         column: 104
                     }
                 },
                 type: 'binary-expr',
                 locations: [{
                     start: {
-                        line: 68,
+                        line: 71,
                         column: 13
                     },
                     end: {
-                        line: 68,
+                        line: 71,
                         column: 57
                     }
                 }, {
                     start: {
-                        line: 68,
+                        line: 71,
                         column: 63
                     },
                     end: {
-                        line: 68,
+                        line: 71,
                         column: 103
                     }
                 }],
-                line: 68
+                line: 71
             },
             '5': {
                 loc: {
                     start: {
-                        line: 76,
+                        line: 79,
                         column: 8
                     },
                     end: {
-                        line: 80,
+                        line: 83,
                         column: 9
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 76,
+                        line: 79,
                         column: 8
                     },
                     end: {
-                        line: 80,
+                        line: 83,
                         column: 9
                     }
                 }, {
                     start: {
-                        line: 76,
+                        line: 79,
                         column: 8
                     },
                     end: {
-                        line: 80,
+                        line: 83,
                         column: 9
                     }
                 }],
-                line: 76
+                line: 79
             },
             '6': {
                 loc: {
                     start: {
-                        line: 91,
+                        line: 94,
                         column: 12
                     },
                     end: {
-                        line: 95,
+                        line: 98,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 91,
+                        line: 94,
                         column: 12
                     },
                     end: {
-                        line: 95,
+                        line: 98,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 91,
+                        line: 94,
                         column: 12
                     },
                     end: {
-                        line: 95,
+                        line: 98,
                         column: 13
                     }
                 }],
-                line: 91
+                line: 94
             },
             '7': {
                 loc: {
                     start: {
-                        line: 116,
+                        line: 119,
                         column: 12
                     },
                     end: {
-                        line: 121,
+                        line: 124,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 116,
+                        line: 119,
                         column: 12
                     },
                     end: {
-                        line: 121,
+                        line: 124,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 116,
+                        line: 119,
                         column: 12
                     },
                     end: {
-                        line: 121,
+                        line: 124,
                         column: 13
                     }
                 }],
-                line: 116
+                line: 119
             }
         },
         s: {
@@ -12085,6 +12085,9 @@ var ProfileController = function () {
             this.$http.get(SERVER + '/api/currList', {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
+                },
+                params: {
+                    userGuid: guid
                 }
             }).then(function (res) {
                 ++cov_7j6odsrs9.f[4];
