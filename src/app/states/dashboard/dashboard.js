@@ -10,6 +10,7 @@ class DashboardController {
 		this.data = $state.current.data;
 		this.$http = $http;
         this.Auth = Auth;
+        this.followingList = [];
 
         //check if we need to validate
         if (this.data.authRequired) {
@@ -18,12 +19,8 @@ class DashboardController {
         }
 
         this.user = this.getCurrentUserFromDB();
-	}
 
-    contentLoaded() {
-        this.following = this.user.following;
-        console.log(this.user);
-    }
+	}
 
 
     getCurrentUserFromDB() {
@@ -36,7 +33,7 @@ class DashboardController {
         }).then((res) => {
             if (res.status === 200) {
                 this.user = res.data.user;
-                this.contentLoaded();
+                this.getFollowingFromDB();
             } else {
                 // TODO: Throw error notification and botch the whole process
             }
@@ -44,6 +41,49 @@ class DashboardController {
 
 
     }
+
+    getFollowingFromDB() {
+        let usersToGrab = this.user.following;
+        let users = [];
+
+        for (let i=0; i < usersToGrab.length; i++) {
+            let endpoint = SERVER + '/api/user/guid/' + usersToGrab[i];
+
+            this.$http.get(endpoint, {
+                headers : {
+                    'x-access-token': localStorage.getItem('reed-token')
+                }
+            }).then((res) => {
+                if (res.status === 200) {
+                    let user = res.data;
+
+                    //get associated list
+                    let tempGuid = res.data.guid
+                    this.$http.get(SERVER + '/api/profileList', {
+                        headers : {
+                            'x-access-token': localStorage.getItem('reed-token')
+                        },
+                        params: {
+                            userGuid: tempGuid
+                        }
+                    }).then((res) => {
+                        if (res.status === 200) {
+                            user.articles = res.data.articles;
+                            users.push(user);
+                        } else {
+                            // TODO: Throw error notification and botch the whole process
+                        }
+                    });
+
+                } else {
+                    // TODO: Throw error notification and botch the whole process
+                }
+            });
+        }
+
+        this.followingList = users;
+    }
+
 
 }
 

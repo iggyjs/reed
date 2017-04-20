@@ -28,8 +28,20 @@
 
 
 <div class="dashboard-view">
-    <div ng-if="$ctrl.following.length === 0" id="notFollowingMessageDiv">
+    <div ng-if="$ctrl.followingList.length === 0" id="notFollowingMessageDiv">
         <p id="notFollowingMessageTitle">Chirp, chirp.</p>
         <p id="notFollowingMessageDes">(The sound of crickets because you're not following anyone, hit that young <a ui-sref="search">search page</a>)</p>
+    </div>
+
+    <div class="reed-follower-articles">
+        <div ng-repeat="user in $ctrl.followingList" class="reed-follower-article-div">
+            <p>{{user.username}}</p>
+
+            <div ng-repeat="article in user.articles" class="reed-follower-articles">
+                {{article.articleTitle}}
+                {{article.articleDescription}}
+                {{article.articleLink}}
+            </div>
+        </div>
     </div>
 </div>

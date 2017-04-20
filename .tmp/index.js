@@ -9771,7 +9771,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_2ahlwblcat = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
-        hash = '8fae78ef372af80296707c0696a02e6080a47424',
+        hash = '0ce92db0083326675df36a9406a8a73a79668bc8',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -9849,111 +9849,231 @@ var cov_2ahlwblcat = function () {
             },
             '7': {
                 start: {
-                    line: 15,
+                    line: 13,
                     column: 8
                 },
                 end: {
-                    line: 18,
-                    column: 9
+                    line: 13,
+                    column: 32
                 }
             },
             '8': {
                 start: {
-                    line: 17,
-                    column: 23
+                    line: 16,
+                    column: 8
                 },
                 end: {
-                    line: 17,
-                    column: 52
+                    line: 19,
+                    column: 9
                 }
             },
             '9': {
                 start: {
-                    line: 20,
-                    column: 8
+                    line: 18,
+                    column: 23
                 },
                 end: {
-                    line: 20,
-                    column: 48
+                    line: 18,
+                    column: 52
                 }
             },
             '10': {
                 start: {
-                    line: 24,
+                    line: 21,
                     column: 8
                 },
                 end: {
-                    line: 24,
-                    column: 45
+                    line: 21,
+                    column: 48
                 }
             },
             '11': {
                 start: {
-                    line: 25,
-                    column: 8
+                    line: 28,
+                    column: 23
                 },
                 end: {
-                    line: 25,
-                    column: 31
+                    line: 28,
+                    column: 50
                 }
             },
             '12': {
                 start: {
-                    line: 31,
-                    column: 23
+                    line: 29,
+                    column: 8
                 },
                 end: {
-                    line: 31,
-                    column: 50
+                    line: 40,
+                    column: 11
                 }
             },
             '13': {
                 start: {
-                    line: 32,
-                    column: 8
+                    line: 34,
+                    column: 12
                 },
                 end: {
-                    line: 43,
-                    column: 11
+                    line: 39,
+                    column: 13
                 }
             },
             '14': {
                 start: {
-                    line: 37,
-                    column: 12
+                    line: 35,
+                    column: 16
                 },
                 end: {
-                    line: 42,
-                    column: 13
+                    line: 35,
+                    column: 42
                 }
             },
             '15': {
                 start: {
-                    line: 38,
+                    line: 36,
                     column: 16
                 },
                 end: {
-                    line: 38,
+                    line: 36,
                     column: 42
                 }
             },
             '16': {
                 start: {
-                    line: 39,
-                    column: 16
+                    line: 46,
+                    column: 26
                 },
                 end: {
-                    line: 39,
-                    column: 37
+                    line: 46,
+                    column: 45
                 }
             },
             '17': {
                 start: {
+                    line: 47,
+                    column: 20
+                },
+                end: {
+                    line: 47,
+                    column: 22
+                }
+            },
+            '18': {
+                start: {
+                    line: 49,
+                    column: 8
+                },
+                end: {
+                    line: 82,
+                    column: 9
+                }
+            },
+            '19': {
+                start: {
                     line: 50,
+                    column: 27
+                },
+                end: {
+                    line: 50,
+                    column: 70
+                }
+            },
+            '20': {
+                start: {
+                    line: 52,
+                    column: 12
+                },
+                end: {
+                    line: 81,
+                    column: 15
+                }
+            },
+            '21': {
+                start: {
+                    line: 57,
+                    column: 16
+                },
+                end: {
+                    line: 80,
+                    column: 17
+                }
+            },
+            '22': {
+                start: {
+                    line: 58,
+                    column: 31
+                },
+                end: {
+                    line: 58,
+                    column: 39
+                }
+            },
+            '23': {
+                start: {
+                    line: 61,
+                    column: 35
+                },
+                end: {
+                    line: 61,
+                    column: 48
+                }
+            },
+            '24': {
+                start: {
+                    line: 62,
+                    column: 20
+                },
+                end: {
+                    line: 76,
+                    column: 23
+                }
+            },
+            '25': {
+                start: {
+                    line: 70,
+                    column: 24
+                },
+                end: {
+                    line: 75,
+                    column: 25
+                }
+            },
+            '26': {
+                start: {
+                    line: 71,
+                    column: 28
+                },
+                end: {
+                    line: 71,
+                    column: 62
+                }
+            },
+            '27': {
+                start: {
+                    line: 72,
+                    column: 28
+                },
+                end: {
+                    line: 72,
+                    column: 45
+                }
+            },
+            '28': {
+                start: {
+                    line: 84,
+                    column: 8
+                },
+                end: {
+                    line: 84,
+                    column: 35
+                }
+            },
+            '29': {
+                start: {
+                    line: 90,
                     column: 25
                 },
                 end: {
-                    line: 53,
+                    line: 93,
                     column: 1
                 }
             }
@@ -9977,7 +10097,7 @@ var cov_2ahlwblcat = function () {
                         column: 36
                     },
                     end: {
-                        line: 21,
+                        line: 23,
                         column: 2
                     }
                 },
@@ -9987,73 +10107,121 @@ var cov_2ahlwblcat = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 23,
+                        line: 26,
                         column: 4
-                    },
-                    end: {
-                        line: 23,
-                        column: 5
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 23,
-                        column: 20
                     },
                     end: {
                         line: 26,
                         column: 5
                     }
                 },
-                line: 23
+                loc: {
+                    start: {
+                        line: 26,
+                        column: 27
+                    },
+                    end: {
+                        line: 43,
+                        column: 5
+                    }
+                },
+                line: 26
             },
             '2': {
                 name: '(anonymous_2)',
                 decl: {
                     start: {
-                        line: 29,
-                        column: 4
-                    },
-                    end: {
-                        line: 29,
-                        column: 5
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 29,
-                        column: 27
-                    },
-                    end: {
-                        line: 46,
-                        column: 5
-                    }
-                },
-                line: 29
-            },
-            '3': {
-                name: '(anonymous_3)',
-                decl: {
-                    start: {
-                        line: 36,
+                        line: 33,
                         column: 16
                     },
                     end: {
-                        line: 36,
+                        line: 33,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 36,
+                        line: 33,
                         column: 25
                     },
                     end: {
-                        line: 43,
+                        line: 40,
                         column: 9
                     }
                 },
-                line: 36
+                line: 33
+            },
+            '3': {
+                name: '(anonymous_3)',
+                decl: {
+                    start: {
+                        line: 45,
+                        column: 4
+                    },
+                    end: {
+                        line: 45,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 45,
+                        column: 25
+                    },
+                    end: {
+                        line: 85,
+                        column: 5
+                    }
+                },
+                line: 45
+            },
+            '4': {
+                name: '(anonymous_4)',
+                decl: {
+                    start: {
+                        line: 56,
+                        column: 20
+                    },
+                    end: {
+                        line: 56,
+                        column: 21
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 56,
+                        column: 29
+                    },
+                    end: {
+                        line: 81,
+                        column: 13
+                    }
+                },
+                line: 56
+            },
+            '5': {
+                name: '(anonymous_5)',
+                decl: {
+                    start: {
+                        line: 69,
+                        column: 28
+                    },
+                    end: {
+                        line: 69,
+                        column: 29
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 69,
+                        column: 37
+                    },
+                    end: {
+                        line: 76,
+                        column: 21
+                    }
+                },
+                line: 69
             }
         },
         branchMap: {
@@ -10093,68 +10261,134 @@ var cov_2ahlwblcat = function () {
             '1': {
                 loc: {
                     start: {
-                        line: 15,
+                        line: 16,
                         column: 8
                     },
                     end: {
-                        line: 18,
+                        line: 19,
                         column: 9
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 15,
+                        line: 16,
                         column: 8
                     },
                     end: {
-                        line: 18,
+                        line: 19,
                         column: 9
                     }
                 }, {
                     start: {
-                        line: 15,
+                        line: 16,
                         column: 8
                     },
                     end: {
-                        line: 18,
+                        line: 19,
                         column: 9
                     }
                 }],
-                line: 15
+                line: 16
             },
             '2': {
                 loc: {
                     start: {
-                        line: 37,
+                        line: 34,
                         column: 12
                     },
                     end: {
-                        line: 42,
+                        line: 39,
                         column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 37,
+                        line: 34,
                         column: 12
                     },
                     end: {
-                        line: 42,
+                        line: 39,
                         column: 13
                     }
                 }, {
                     start: {
-                        line: 37,
+                        line: 34,
                         column: 12
                     },
                     end: {
-                        line: 42,
+                        line: 39,
                         column: 13
                     }
                 }],
-                line: 37
+                line: 34
+            },
+            '3': {
+                loc: {
+                    start: {
+                        line: 57,
+                        column: 16
+                    },
+                    end: {
+                        line: 80,
+                        column: 17
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 57,
+                        column: 16
+                    },
+                    end: {
+                        line: 80,
+                        column: 17
+                    }
+                }, {
+                    start: {
+                        line: 57,
+                        column: 16
+                    },
+                    end: {
+                        line: 80,
+                        column: 17
+                    }
+                }],
+                line: 57
+            },
+            '4': {
+                loc: {
+                    start: {
+                        line: 70,
+                        column: 24
+                    },
+                    end: {
+                        line: 75,
+                        column: 25
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 70,
+                        column: 24
+                    },
+                    end: {
+                        line: 75,
+                        column: 25
+                    }
+                }, {
+                    start: {
+                        line: 70,
+                        column: 24
+                    },
+                    end: {
+                        line: 75,
+                        column: 25
+                    }
+                }],
+                line: 70
             }
         },
         s: {
@@ -10175,18 +10409,34 @@ var cov_2ahlwblcat = function () {
             '14': 0,
             '15': 0,
             '16': 0,
-            '17': 0
+            '17': 0,
+            '18': 0,
+            '19': 0,
+            '20': 0,
+            '21': 0,
+            '22': 0,
+            '23': 0,
+            '24': 0,
+            '25': 0,
+            '26': 0,
+            '27': 0,
+            '28': 0,
+            '29': 0
         },
         f: {
             '0': 0,
             '1': 0,
             '2': 0,
-            '3': 0
+            '3': 0,
+            '4': 0,
+            '5': 0
         },
         b: {
             '0': [0, 0],
             '1': [0, 0],
-            '2': [0, 0]
+            '2': [0, 0],
+            '3': [0, 0],
+            '4': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -10227,57 +10477,49 @@ var DashboardController = function () {
         this.$http = $http;
         ++cov_2ahlwblcat.s[6];
         this.Auth = Auth;
+        ++cov_2ahlwblcat.s[7];
+        this.followingList = [];
 
         //check if we need to validate
-        ++cov_2ahlwblcat.s[7];
+        ++cov_2ahlwblcat.s[8];
         if (this.data.authRequired) {
             ++cov_2ahlwblcat.b[1][0];
 
             //set the current user
-            var user = (++cov_2ahlwblcat.s[8], this.Auth.validateUserToken());
+            var user = (++cov_2ahlwblcat.s[9], this.Auth.validateUserToken());
         } else {
             ++cov_2ahlwblcat.b[1][1];
         }
 
-        ++cov_2ahlwblcat.s[9];
+        ++cov_2ahlwblcat.s[10];
         this.user = this.getCurrentUserFromDB();
     }
 
     _createClass(DashboardController, [{
-        key: 'contentLoaded',
-        value: function contentLoaded() {
-            ++cov_2ahlwblcat.f[1];
-            ++cov_2ahlwblcat.s[10];
-
-            this.following = this.user.following;
-            ++cov_2ahlwblcat.s[11];
-            console.log(this.user);
-        }
-    }, {
         key: 'getCurrentUserFromDB',
         value: function getCurrentUserFromDB() {
             var _this = this;
 
-            ++cov_2ahlwblcat.f[2];
+            ++cov_2ahlwblcat.f[1];
 
 
-            var endpoint = (++cov_2ahlwblcat.s[12], SERVER + '/api/currentUser');
-            ++cov_2ahlwblcat.s[13];
+            var endpoint = (++cov_2ahlwblcat.s[11], SERVER + '/api/currentUser');
+            ++cov_2ahlwblcat.s[12];
             this.$http.get(endpoint, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_2ahlwblcat.f[3];
-                ++cov_2ahlwblcat.s[14];
+                ++cov_2ahlwblcat.f[2];
+                ++cov_2ahlwblcat.s[13];
 
                 if (res.status === 200) {
                     ++cov_2ahlwblcat.b[2][0];
-                    ++cov_2ahlwblcat.s[15];
+                    ++cov_2ahlwblcat.s[14];
 
                     _this.user = res.data.user;
-                    ++cov_2ahlwblcat.s[16];
-                    _this.contentLoaded();
+                    ++cov_2ahlwblcat.s[15];
+                    _this.getFollowingFromDB();
                 } else {
                     // TODO: Throw error notification and botch the whole process
 
@@ -10285,12 +10527,78 @@ var DashboardController = function () {
                 }
             });
         }
+    }, {
+        key: 'getFollowingFromDB',
+        value: function getFollowingFromDB() {
+            var _this2 = this;
+
+            ++cov_2ahlwblcat.f[3];
+
+            var usersToGrab = (++cov_2ahlwblcat.s[16], this.user.following);
+            var users = (++cov_2ahlwblcat.s[17], []);
+
+            ++cov_2ahlwblcat.s[18];
+            for (var i = 0; i < usersToGrab.length; i++) {
+                var endpoint = (++cov_2ahlwblcat.s[19], SERVER + '/api/user/guid/' + usersToGrab[i]);
+
+                ++cov_2ahlwblcat.s[20];
+                this.$http.get(endpoint, {
+                    headers: {
+                        'x-access-token': localStorage.getItem('reed-token')
+                    }
+                }).then(function (res) {
+                    ++cov_2ahlwblcat.f[4];
+                    ++cov_2ahlwblcat.s[21];
+
+                    if (res.status === 200) {
+                        ++cov_2ahlwblcat.b[3][0];
+
+                        var user = (++cov_2ahlwblcat.s[22], res.data);
+
+                        //get associated list
+                        var tempGuid = (++cov_2ahlwblcat.s[23], res.data.guid);
+                        ++cov_2ahlwblcat.s[24];
+                        _this2.$http.get(SERVER + '/api/profileList', {
+                            headers: {
+                                'x-access-token': localStorage.getItem('reed-token')
+                            },
+                            params: {
+                                userGuid: tempGuid
+                            }
+                        }).then(function (res) {
+                            ++cov_2ahlwblcat.f[5];
+                            ++cov_2ahlwblcat.s[25];
+
+                            if (res.status === 200) {
+                                ++cov_2ahlwblcat.b[4][0];
+                                ++cov_2ahlwblcat.s[26];
+
+                                user.articles = res.data.articles;
+                                ++cov_2ahlwblcat.s[27];
+                                users.push(user);
+                            } else {
+                                // TODO: Throw error notification and botch the whole process
+
+                                ++cov_2ahlwblcat.b[4][1];
+                            }
+                        });
+                    } else {
+                            // TODO: Throw error notification and botch the whole process
+
+                            ++cov_2ahlwblcat.b[3][1];
+                        }
+                });
+            }
+
+            ++cov_2ahlwblcat.s[28];
+            this.followingList = users;
+        }
     }]);
 
     return DashboardController;
 }();
 
-var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[17], {
+var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[29], {
     template: __webpack_require__(28),
     controller: DashboardController
 });
@@ -49413,7 +49721,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "/*Dashboard styles*/\n#notFollowingMessageDiv {\n    text-align: center;\n    width: 100%;\n    padding-top:100px;\n\n}\n\n#notFollowingMessageTitle {\n    font-size: 24px;\n}\n\n#notFollowingMessageDes{\n    font-size: 18px;\n}\n\n#notFollowingMessageDes > a{\n\n}\n\n#notFollowingMessageDes > a:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "/*Dashboard styles*/\n#notFollowingMessageDiv {\n    text-align: center;\n    width: 100%;\n    padding-top:100px;\n\n}\n\n#notFollowingMessageTitle {\n    font-size: 24px;\n}\n\n#notFollowingMessageDes{\n    font-size: 18px;\n}\n\n#notFollowingMessageDes > a{\n\n}\n\n#notFollowingMessageDes > a:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n.reed-follower-article-div {\n    background-color: pink;\n}\n", ""]);
 
 // exports
 
@@ -49506,7 +49814,7 @@ exports.push([module.i, "@charset \"UTF-8\";/*!\n  Ionicons, v2.0.0\n  Created b
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.following.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.followingList.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n\n    <div class=\"reed-follower-articles\">\n        <div ng-repeat=\"user in $ctrl.followingList\" class=\"reed-follower-article-div\">\n            <p>{{user.username}}</p>\n\n            <div ng-repeat=\"article in user.articles\" class=\"reed-follower-articles\">\n                {{article.articleTitle}}\n                {{article.articleDescription}}\n                {{article.articleLink}}\n            </div>\n        </div>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 29 */

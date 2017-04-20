@@ -57,7 +57,17 @@ routes.get('/currentUser', (req, res) => {
             return res.json({success: false});
         }
 
-        res.json({user: user});
+        //omit password
+        let saferUser = {
+            guid: user.guid,
+            _id: user._id,
+            name: user.name,
+            followRequests: user.followRequests,
+            followers: user.followers,
+            following: user.following
+        }
+
+        res.json({user: saferUser});
     });
 })
 
@@ -98,6 +108,7 @@ routes.get('/user/guid/:guid', (req, res) => {
 
     User.findOne({guid: guid}, (err, user) => {
         if (err) throw err;
+
 
         let safeUserObj = {
             username: user.name,
