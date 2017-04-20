@@ -9771,7 +9771,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_2ahlwblcat = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
-        hash = 'de85550528038e410a59c8a9066adfea83fad89e',
+        hash = '8fae78ef372af80296707c0696a02e6080a47424',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -9853,7 +9853,7 @@ var cov_2ahlwblcat = function () {
                     column: 8
                 },
                 end: {
-                    line: 19,
+                    line: 18,
                     column: 9
                 }
             },
@@ -9869,51 +9869,91 @@ var cov_2ahlwblcat = function () {
             },
             '9': {
                 start: {
-                    line: 18,
-                    column: 12
+                    line: 20,
+                    column: 8
                 },
                 end: {
-                    line: 18,
-                    column: 29
+                    line: 20,
+                    column: 48
                 }
             },
             '10': {
                 start: {
-                    line: 21,
+                    line: 24,
                     column: 8
                 },
                 end: {
-                    line: 21,
-                    column: 29
+                    line: 24,
+                    column: 45
                 }
             },
             '11': {
                 start: {
-                    line: 26,
+                    line: 25,
                     column: 8
                 },
                 end: {
-                    line: 26,
-                    column: 45
+                    line: 25,
+                    column: 31
                 }
             },
             '12': {
                 start: {
-                    line: 27,
-                    column: 8
+                    line: 31,
+                    column: 23
                 },
                 end: {
-                    line: 27,
-                    column: 31
+                    line: 31,
+                    column: 50
                 }
             },
             '13': {
                 start: {
-                    line: 33,
+                    line: 32,
+                    column: 8
+                },
+                end: {
+                    line: 43,
+                    column: 11
+                }
+            },
+            '14': {
+                start: {
+                    line: 37,
+                    column: 12
+                },
+                end: {
+                    line: 42,
+                    column: 13
+                }
+            },
+            '15': {
+                start: {
+                    line: 38,
+                    column: 16
+                },
+                end: {
+                    line: 38,
+                    column: 42
+                }
+            },
+            '16': {
+                start: {
+                    line: 39,
+                    column: 16
+                },
+                end: {
+                    line: 39,
+                    column: 37
+                }
+            },
+            '17': {
+                start: {
+                    line: 50,
                     column: 25
                 },
                 end: {
-                    line: 36,
+                    line: 53,
                     column: 1
                 }
             }
@@ -9937,7 +9977,7 @@ var cov_2ahlwblcat = function () {
                         column: 36
                     },
                     end: {
-                        line: 23,
+                        line: 21,
                         column: 2
                     }
                 },
@@ -9947,25 +9987,73 @@ var cov_2ahlwblcat = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 25,
+                        line: 23,
                         column: 4
                     },
                     end: {
-                        line: 25,
+                        line: 23,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 25,
+                        line: 23,
                         column: 20
                     },
                     end: {
-                        line: 28,
+                        line: 26,
                         column: 5
                     }
                 },
-                line: 25
+                line: 23
+            },
+            '2': {
+                name: '(anonymous_2)',
+                decl: {
+                    start: {
+                        line: 29,
+                        column: 4
+                    },
+                    end: {
+                        line: 29,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 29,
+                        column: 27
+                    },
+                    end: {
+                        line: 46,
+                        column: 5
+                    }
+                },
+                line: 29
+            },
+            '3': {
+                name: '(anonymous_3)',
+                decl: {
+                    start: {
+                        line: 36,
+                        column: 16
+                    },
+                    end: {
+                        line: 36,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 36,
+                        column: 25
+                    },
+                    end: {
+                        line: 43,
+                        column: 9
+                    }
+                },
+                line: 36
             }
         },
         branchMap: {
@@ -10009,7 +10097,7 @@ var cov_2ahlwblcat = function () {
                         column: 8
                     },
                     end: {
-                        line: 19,
+                        line: 18,
                         column: 9
                     }
                 },
@@ -10020,7 +10108,7 @@ var cov_2ahlwblcat = function () {
                         column: 8
                     },
                     end: {
-                        line: 19,
+                        line: 18,
                         column: 9
                     }
                 }, {
@@ -10029,11 +10117,44 @@ var cov_2ahlwblcat = function () {
                         column: 8
                     },
                     end: {
-                        line: 19,
+                        line: 18,
                         column: 9
                     }
                 }],
                 line: 15
+            },
+            '2': {
+                loc: {
+                    start: {
+                        line: 37,
+                        column: 12
+                    },
+                    end: {
+                        line: 42,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 37,
+                        column: 12
+                    },
+                    end: {
+                        line: 42,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 37,
+                        column: 12
+                    },
+                    end: {
+                        line: 42,
+                        column: 13
+                    }
+                }],
+                line: 37
             }
         },
         s: {
@@ -10050,15 +10171,22 @@ var cov_2ahlwblcat = function () {
             '10': 0,
             '11': 0,
             '12': 0,
-            '13': 0
+            '13': 0,
+            '14': 0,
+            '15': 0,
+            '16': 0,
+            '17': 0
         },
         f: {
             '0': 0,
-            '1': 0
+            '1': 0,
+            '2': 0,
+            '3': 0
         },
         b: {
             '0': [0, 0],
-            '1': [0, 0]
+            '1': [0, 0],
+            '2': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -10107,32 +10235,62 @@ var DashboardController = function () {
 
             //set the current user
             var user = (++cov_2ahlwblcat.s[8], this.Auth.validateUserToken());
-            ++cov_2ahlwblcat.s[9];
-            this.user = user;
         } else {
             ++cov_2ahlwblcat.b[1][1];
         }
 
-        ++cov_2ahlwblcat.s[10];
-        this.contentLoaded();
+        ++cov_2ahlwblcat.s[9];
+        this.user = this.getCurrentUserFromDB();
     }
 
     _createClass(DashboardController, [{
         key: 'contentLoaded',
         value: function contentLoaded() {
             ++cov_2ahlwblcat.f[1];
-            ++cov_2ahlwblcat.s[11];
+            ++cov_2ahlwblcat.s[10];
 
             this.following = this.user.following;
-            ++cov_2ahlwblcat.s[12];
+            ++cov_2ahlwblcat.s[11];
             console.log(this.user);
+        }
+    }, {
+        key: 'getCurrentUserFromDB',
+        value: function getCurrentUserFromDB() {
+            var _this = this;
+
+            ++cov_2ahlwblcat.f[2];
+
+
+            var endpoint = (++cov_2ahlwblcat.s[12], SERVER + '/api/currentUser');
+            ++cov_2ahlwblcat.s[13];
+            this.$http.get(endpoint, {
+                headers: {
+                    'x-access-token': localStorage.getItem('reed-token')
+                }
+            }).then(function (res) {
+                ++cov_2ahlwblcat.f[3];
+                ++cov_2ahlwblcat.s[14];
+
+                if (res.status === 200) {
+                    ++cov_2ahlwblcat.b[2][0];
+                    ++cov_2ahlwblcat.s[15];
+
+                    _this.user = res.data.user;
+                    ++cov_2ahlwblcat.s[16];
+                    _this.contentLoaded();
+                } else {
+                    // TODO: Throw error notification and botch the whole process
+
+                    ++cov_2ahlwblcat.b[2][1];
+                }
+            });
         }
     }]);
 
     return DashboardController;
 }();
 
-var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[13], {
+var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[17], {
     template: __webpack_require__(26),
     controller: DashboardController
 });
@@ -10893,7 +11051,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_7j6odsrs9 = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = '9fd62a037c656bce88c5f5aebb3d690fa6a2f43a',
+        hash = 'd7d41493ac479c2fbbf710fc46a2b68cd5b7060e',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -11455,7 +11613,7 @@ var cov_7j6odsrs9 = function () {
                     column: 8
                 },
                 end: {
-                    line: 170,
+                    line: 172,
                     column: 11
                 }
             },
@@ -11466,16 +11624,36 @@ var cov_7j6odsrs9 = function () {
                 },
                 end: {
                     line: 169,
-                    column: 29
+                    column: 42
                 }
             },
             '57': {
                 start: {
-                    line: 174,
+                    line: 170,
+                    column: 12
+                },
+                end: {
+                    line: 170,
+                    column: 44
+                }
+            },
+            '58': {
+                start: {
+                    line: 171,
+                    column: 12
+                },
+                end: {
+                    line: 171,
+                    column: 29
+                }
+            },
+            '59': {
+                start: {
+                    line: 176,
                     column: 23
                 },
                 end: {
-                    line: 177,
+                    line: 179,
                     column: 1
                 }
             }
@@ -11811,7 +11989,7 @@ var cov_7j6odsrs9 = function () {
                         column: 20
                     },
                     end: {
-                        line: 171,
+                        line: 173,
                         column: 5
                     }
                 },
@@ -11835,7 +12013,7 @@ var cov_7j6odsrs9 = function () {
                         column: 25
                     },
                     end: {
-                        line: 170,
+                        line: 172,
                         column: 9
                     }
                 },
@@ -12232,7 +12410,9 @@ var cov_7j6odsrs9 = function () {
             '54': 0,
             '55': 0,
             '56': 0,
-            '57': 0
+            '57': 0,
+            '58': 0,
+            '59': 0
         },
         f: {
             '0': 0,
@@ -12561,6 +12741,8 @@ var ProfileController = function () {
     }, {
         key: 'requestFollow',
         value: function requestFollow() {
+            var _this5 = this;
+
             ++cov_7j6odsrs9.f[13];
 
             var payload = (++cov_7j6odsrs9.s[54], { userGuidToAdd: this.profileUser.guid });
@@ -12574,6 +12756,10 @@ var ProfileController = function () {
                 ++cov_7j6odsrs9.f[14];
                 ++cov_7j6odsrs9.s[56];
 
+                _this5.followButtonShow = false;
+                ++cov_7j6odsrs9.s[57];
+                _this5.followRequestedShow = true;
+                ++cov_7j6odsrs9.s[58];
                 console.log(res);
             });
         }
@@ -12582,7 +12768,7 @@ var ProfileController = function () {
     return ProfileController;
 }();
 
-var Profile = exports.Profile = (++cov_7j6odsrs9.s[57], {
+var Profile = exports.Profile = (++cov_7j6odsrs9.s[59], {
     template: __webpack_require__(30),
     controller: ProfileController
 });
@@ -48454,7 +48640,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_199a955sej = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/notifications/notifications.js',
-        hash = 'a0668179ff66361e665c0ee65b3d2c2fa4e01489',
+        hash = 'affc43b47c51aa2ae1939a040c613a990c01bc45',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -48536,191 +48722,161 @@ var cov_199a955sej = function () {
                     column: 8
                 },
                 end: {
-                    line: 19,
+                    line: 18,
                     column: 9
                 }
             },
             '8': {
                 start: {
                     line: 17,
-                    column: 23
+                    column: 12
                 },
                 end: {
                     line: 17,
-                    column: 52
+                    column: 42
                 }
             },
             '9': {
                 start: {
-                    line: 18,
-                    column: 12
+                    line: 20,
+                    column: 8
                 },
                 end: {
-                    line: 18,
-                    column: 29
+                    line: 20,
+                    column: 48
                 }
             },
             '10': {
                 start: {
-                    line: 22,
-                    column: 8
+                    line: 26,
+                    column: 23
                 },
                 end: {
-                    line: 22,
-                    column: 55
+                    line: 26,
+                    column: 50
                 }
             },
             '11': {
                 start: {
-                    line: 26,
-                    column: 19
+                    line: 27,
+                    column: 8
                 },
                 end: {
-                    line: 26,
-                    column: 43
+                    line: 40,
+                    column: 11
                 }
             },
             '12': {
                 start: {
-                    line: 28,
-                    column: 20
+                    line: 32,
+                    column: 12
                 },
                 end: {
-                    line: 28,
-                    column: 22
+                    line: 39,
+                    column: 13
                 }
             },
             '13': {
                 start: {
-                    line: 30,
-                    column: 8
+                    line: 33,
+                    column: 16
                 },
                 end: {
-                    line: 44,
-                    column: 9
+                    line: 33,
+                    column: 42
                 }
             },
             '14': {
                 start: {
-                    line: 31,
-                    column: 27
+                    line: 35,
+                    column: 16
                 },
                 end: {
-                    line: 31,
+                    line: 35,
                     column: 63
                 }
             },
             '15': {
                 start: {
-                    line: 33,
-                    column: 12
+                    line: 47,
+                    column: 19
                 },
                 end: {
-                    line: 43,
-                    column: 15
+                    line: 47,
+                    column: 43
                 }
             },
             '16': {
                 start: {
-                    line: 38,
-                    column: 16
+                    line: 49,
+                    column: 20
                 },
                 end: {
-                    line: 42,
-                    column: 17
+                    line: 49,
+                    column: 22
                 }
             },
             '17': {
                 start: {
-                    line: 39,
-                    column: 20
+                    line: 51,
+                    column: 8
                 },
                 end: {
-                    line: 39,
-                    column: 41
+                    line: 65,
+                    column: 9
                 }
             },
             '18': {
                 start: {
-                    line: 46,
-                    column: 8
+                    line: 52,
+                    column: 27
                 },
                 end: {
-                    line: 46,
-                    column: 21
+                    line: 52,
+                    column: 63
                 }
             },
             '19': {
                 start: {
-                    line: 51,
-                    column: 22
+                    line: 54,
+                    column: 12
                 },
                 end: {
-                    line: 51,
-                    column: 45
+                    line: 64,
+                    column: 15
                 }
             },
             '20': {
                 start: {
-                    line: 53,
-                    column: 8
+                    line: 59,
+                    column: 16
                 },
                 end: {
-                    line: 68,
-                    column: 11
+                    line: 63,
+                    column: 17
                 }
             },
             '21': {
                 start: {
-                    line: 58,
-                    column: 12
+                    line: 60,
+                    column: 20
                 },
                 end: {
-                    line: 67,
-                    column: 13
+                    line: 60,
+                    column: 41
                 }
             },
             '22': {
                 start: {
-                    line: 59,
-                    column: 26
+                    line: 67,
+                    column: 8
                 },
                 end: {
-                    line: 59,
-                    column: 62
+                    line: 67,
+                    column: 21
                 }
             },
             '23': {
-                start: {
-                    line: 60,
-                    column: 16
-                },
-                end: {
-                    line: 60,
-                    column: 51
-                }
-            },
-            '24': {
-                start: {
-                    line: 62,
-                    column: 16
-                },
-                end: {
-                    line: 62,
-                    column: 33
-                }
-            },
-            '25': {
-                start: {
-                    line: 63,
-                    column: 16
-                },
-                end: {
-                    line: 63,
-                    column: 52
-                }
-            },
-            '26': {
                 start: {
                     line: 72,
                     column: 22
@@ -48730,7 +48886,7 @@ var cov_199a955sej = function () {
                     column: 45
                 }
             },
-            '27': {
+            '24': {
                 start: {
                     line: 74,
                     column: 8
@@ -48740,7 +48896,7 @@ var cov_199a955sej = function () {
                     column: 11
                 }
             },
-            '28': {
+            '25': {
                 start: {
                     line: 79,
                     column: 12
@@ -48750,7 +48906,7 @@ var cov_199a955sej = function () {
                     column: 13
                 }
             },
-            '29': {
+            '26': {
                 start: {
                     line: 80,
                     column: 26
@@ -48760,7 +48916,7 @@ var cov_199a955sej = function () {
                     column: 62
                 }
             },
-            '30': {
+            '27': {
                 start: {
                     line: 81,
                     column: 16
@@ -48770,7 +48926,7 @@ var cov_199a955sej = function () {
                     column: 51
                 }
             },
-            '31': {
+            '28': {
                 start: {
                     line: 83,
                     column: 16
@@ -48780,23 +48936,93 @@ var cov_199a955sej = function () {
                     column: 33
                 }
             },
-            '32': {
+            '29': {
                 start: {
                     line: 84,
                     column: 16
                 },
                 end: {
                     line: 84,
-                    column: 51
+                    column: 52
+                }
+            },
+            '30': {
+                start: {
+                    line: 93,
+                    column: 22
+                },
+                end: {
+                    line: 93,
+                    column: 45
+                }
+            },
+            '31': {
+                start: {
+                    line: 95,
+                    column: 8
+                },
+                end: {
+                    line: 110,
+                    column: 11
+                }
+            },
+            '32': {
+                start: {
+                    line: 100,
+                    column: 12
+                },
+                end: {
+                    line: 109,
+                    column: 13
                 }
             },
             '33': {
                 start: {
-                    line: 94,
+                    line: 101,
+                    column: 26
+                },
+                end: {
+                    line: 101,
+                    column: 62
+                }
+            },
+            '34': {
+                start: {
+                    line: 102,
+                    column: 16
+                },
+                end: {
+                    line: 102,
+                    column: 51
+                }
+            },
+            '35': {
+                start: {
+                    line: 104,
+                    column: 16
+                },
+                end: {
+                    line: 104,
+                    column: 33
+                }
+            },
+            '36': {
+                start: {
+                    line: 105,
+                    column: 16
+                },
+                end: {
+                    line: 105,
+                    column: 51
+                }
+            },
+            '37': {
+                start: {
+                    line: 115,
                     column: 29
                 },
                 end: {
-                    line: 97,
+                    line: 118,
                     column: 1
                 }
             }
@@ -48820,7 +49046,7 @@ var cov_199a955sej = function () {
                         column: 36
                     },
                     end: {
-                        line: 23,
+                        line: 21,
                         column: 2
                     }
                 },
@@ -48830,97 +49056,97 @@ var cov_199a955sej = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 25,
+                        line: 24,
                         column: 4
                     },
                     end: {
-                        line: 25,
+                        line: 24,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 25,
-                        column: 24
+                        line: 24,
+                        column: 27
                     },
                     end: {
-                        line: 47,
+                        line: 43,
                         column: 5
                     }
                 },
-                line: 25
+                line: 24
             },
             '2': {
                 name: '(anonymous_2)',
                 decl: {
                     start: {
-                        line: 37,
-                        column: 20
-                    },
-                    end: {
-                        line: 37,
-                        column: 21
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 37,
-                        column: 29
-                    },
-                    end: {
-                        line: 43,
-                        column: 13
-                    }
-                },
-                line: 37
-            },
-            '3': {
-                name: '(anonymous_3)',
-                decl: {
-                    start: {
-                        line: 50,
-                        column: 4
-                    },
-                    end: {
-                        line: 50,
-                        column: 5
-                    }
-                },
-                loc: {
-                    start: {
-                        line: 50,
-                        column: 33
-                    },
-                    end: {
-                        line: 69,
-                        column: 5
-                    }
-                },
-                line: 50
-            },
-            '4': {
-                name: '(anonymous_4)',
-                decl: {
-                    start: {
-                        line: 57,
+                        line: 31,
                         column: 16
                     },
                     end: {
-                        line: 57,
+                        line: 31,
                         column: 17
                     }
                 },
                 loc: {
                     start: {
-                        line: 57,
+                        line: 31,
                         column: 25
                     },
                     end: {
-                        line: 68,
+                        line: 40,
                         column: 9
                     }
                 },
-                line: 57
+                line: 31
+            },
+            '3': {
+                name: '(anonymous_3)',
+                decl: {
+                    start: {
+                        line: 46,
+                        column: 4
+                    },
+                    end: {
+                        line: 46,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 46,
+                        column: 24
+                    },
+                    end: {
+                        line: 68,
+                        column: 5
+                    }
+                },
+                line: 46
+            },
+            '4': {
+                name: '(anonymous_4)',
+                decl: {
+                    start: {
+                        line: 58,
+                        column: 20
+                    },
+                    end: {
+                        line: 58,
+                        column: 21
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 58,
+                        column: 29
+                    },
+                    end: {
+                        line: 64,
+                        column: 13
+                    }
+                },
+                line: 58
             },
             '5': {
                 name: '(anonymous_5)',
@@ -48969,6 +49195,54 @@ var cov_199a955sej = function () {
                     }
                 },
                 line: 78
+            },
+            '7': {
+                name: '(anonymous_7)',
+                decl: {
+                    start: {
+                        line: 92,
+                        column: 4
+                    },
+                    end: {
+                        line: 92,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 92,
+                        column: 33
+                    },
+                    end: {
+                        line: 111,
+                        column: 5
+                    }
+                },
+                line: 92
+            },
+            '8': {
+                name: '(anonymous_8)',
+                decl: {
+                    start: {
+                        line: 99,
+                        column: 16
+                    },
+                    end: {
+                        line: 99,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 99,
+                        column: 25
+                    },
+                    end: {
+                        line: 110,
+                        column: 9
+                    }
+                },
+                line: 99
             }
         },
         branchMap: {
@@ -49012,7 +49286,7 @@ var cov_199a955sej = function () {
                         column: 8
                     },
                     end: {
-                        line: 19,
+                        line: 18,
                         column: 9
                     }
                 },
@@ -49023,7 +49297,7 @@ var cov_199a955sej = function () {
                         column: 8
                     },
                     end: {
-                        line: 19,
+                        line: 18,
                         column: 9
                     }
                 }, {
@@ -49032,7 +49306,7 @@ var cov_199a955sej = function () {
                         column: 8
                     },
                     end: {
-                        line: 19,
+                        line: 18,
                         column: 9
                     }
                 }],
@@ -49041,68 +49315,68 @@ var cov_199a955sej = function () {
             '2': {
                 loc: {
                     start: {
-                        line: 38,
-                        column: 16
+                        line: 32,
+                        column: 12
                     },
                     end: {
-                        line: 42,
-                        column: 17
+                        line: 39,
+                        column: 13
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 38,
-                        column: 16
+                        line: 32,
+                        column: 12
                     },
                     end: {
-                        line: 42,
-                        column: 17
+                        line: 39,
+                        column: 13
                     }
                 }, {
                     start: {
-                        line: 38,
-                        column: 16
+                        line: 32,
+                        column: 12
                     },
                     end: {
-                        line: 42,
-                        column: 17
+                        line: 39,
+                        column: 13
                     }
                 }],
-                line: 38
+                line: 32
             },
             '3': {
                 loc: {
                     start: {
-                        line: 58,
-                        column: 12
+                        line: 59,
+                        column: 16
                     },
                     end: {
-                        line: 67,
-                        column: 13
+                        line: 63,
+                        column: 17
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 58,
-                        column: 12
+                        line: 59,
+                        column: 16
                     },
                     end: {
-                        line: 67,
-                        column: 13
+                        line: 63,
+                        column: 17
                     }
                 }, {
                     start: {
-                        line: 58,
-                        column: 12
+                        line: 59,
+                        column: 16
                     },
                     end: {
-                        line: 67,
-                        column: 13
+                        line: 63,
+                        column: 17
                     }
                 }],
-                line: 58
+                line: 59
             },
             '4': {
                 loc: {
@@ -49136,6 +49410,39 @@ var cov_199a955sej = function () {
                     }
                 }],
                 line: 79
+            },
+            '5': {
+                loc: {
+                    start: {
+                        line: 100,
+                        column: 12
+                    },
+                    end: {
+                        line: 109,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 100,
+                        column: 12
+                    },
+                    end: {
+                        line: 109,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 100,
+                        column: 12
+                    },
+                    end: {
+                        line: 109,
+                        column: 13
+                    }
+                }],
+                line: 100
             }
         },
         s: {
@@ -49172,7 +49479,11 @@ var cov_199a955sej = function () {
             '30': 0,
             '31': 0,
             '32': 0,
-            '33': 0
+            '33': 0,
+            '34': 0,
+            '35': 0,
+            '36': 0,
+            '37': 0
         },
         f: {
             '0': 0,
@@ -49181,14 +49492,17 @@ var cov_199a955sej = function () {
             '3': 0,
             '4': 0,
             '5': 0,
-            '6': 0
+            '6': 0,
+            '7': 0,
+            '8': 0
         },
         b: {
             '0': [0, 0],
             '1': [0, 0],
             '2': [0, 0],
             '3': [0, 0],
-            '4': [0, 0]
+            '4': [0, 0],
+            '5': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -49234,127 +49548,158 @@ var NotificationsController = function () {
         ++cov_199a955sej.s[7];
         if (this.data.authRequired) {
             ++cov_199a955sej.b[1][0];
+            ++cov_199a955sej.s[8];
 
             //set the current user
-            var user = (++cov_199a955sej.s[8], this.Auth.validateUserToken());
-            ++cov_199a955sej.s[9];
-            this.user = user;
+            this.Auth.validateUserToken();
         } else {
             ++cov_199a955sej.b[1][1];
         }
 
-        // For now, the only thing that the notifications state contains is follow requests
-        ++cov_199a955sej.s[10];
-        this.followRequests = this.getFollowRequests();
+        ++cov_199a955sej.s[9];
+        this.user = this.getCurrentUserFromDB();
     }
 
     _createClass(NotificationsController, [{
-        key: 'getFollowRequests',
-        value: function getFollowRequests() {
+        key: 'getCurrentUserFromDB',
+        value: function getCurrentUserFromDB() {
+            var _this = this;
+
             ++cov_199a955sej.f[1];
 
-            var reqs = (++cov_199a955sej.s[11], this.user.followRequests);
+
+            var endpoint = (++cov_199a955sej.s[10], SERVER + '/api/currentUser');
+            ++cov_199a955sej.s[11];
+            this.$http.get(endpoint, {
+                headers: {
+                    'x-access-token': localStorage.getItem('reed-token')
+                }
+            }).then(function (res) {
+                ++cov_199a955sej.f[2];
+                ++cov_199a955sej.s[12];
+
+                if (res.status === 200) {
+                    ++cov_199a955sej.b[2][0];
+                    ++cov_199a955sej.s[13];
+
+                    _this.user = res.data.user;
+                    // For now, the only thing that the notifications state contains is follow requests
+                    ++cov_199a955sej.s[14];
+                    _this.followRequests = _this.getFollowRequests();
+                } else {
+                    // TODO: Throw error notification and botch the whole process
+
+                    ++cov_199a955sej.b[2][1];
+                }
+            });
+        }
+    }, {
+        key: 'getFollowRequests',
+        value: function getFollowRequests() {
+            ++cov_199a955sej.f[3];
+
+            var reqs = (++cov_199a955sej.s[15], this.user.followRequests);
             // we need the users for these requests
-            var users = (++cov_199a955sej.s[12], []);
+            var users = (++cov_199a955sej.s[16], []);
 
-            ++cov_199a955sej.s[13];
+            ++cov_199a955sej.s[17];
             for (var i = 0; i < reqs.length; i++) {
-                var endpoint = (++cov_199a955sej.s[14], SERVER + '/api/user/guid/' + reqs[i]);
+                var endpoint = (++cov_199a955sej.s[18], SERVER + '/api/user/guid/' + reqs[i]);
 
-                ++cov_199a955sej.s[15];
+                ++cov_199a955sej.s[19];
                 this.$http.get(endpoint, {
                     headers: {
                         'x-access-token': localStorage.getItem('reed-token')
                     }
                 }).then(function (res) {
-                    ++cov_199a955sej.f[2];
-                    ++cov_199a955sej.s[16];
+                    ++cov_199a955sej.f[4];
+                    ++cov_199a955sej.s[20];
 
                     if (res.status === 200) {
-                        ++cov_199a955sej.b[2][0];
-                        ++cov_199a955sej.s[17];
+                        ++cov_199a955sej.b[3][0];
+                        ++cov_199a955sej.s[21];
 
                         users.push(res.data);
                     } else {
                         // TODO: Throw error notification and botch the whole process
 
-                        ++cov_199a955sej.b[2][1];
+                        ++cov_199a955sej.b[3][1];
                     }
                 });
             }
 
-            ++cov_199a955sej.s[18];
+            ++cov_199a955sej.s[22];
             return users;
         }
     }, {
         key: 'acceptFollowRequest',
         value: function acceptFollowRequest(request) {
-            var _this = this;
+            var _this2 = this;
 
-            ++cov_199a955sej.f[3];
+            ++cov_199a955sej.f[5];
 
-            var payload = (++cov_199a955sej.s[19], { reqGuid: request.guid });
+            var payload = (++cov_199a955sej.s[23], { reqGuid: request.guid });
 
-            ++cov_199a955sej.s[20];
+            ++cov_199a955sej.s[24];
             this.$http.post(SERVER + '/api/followAccept', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_199a955sej.f[4];
-                ++cov_199a955sej.s[21];
+                ++cov_199a955sej.f[6];
+                ++cov_199a955sej.s[25];
 
                 if (res.status === 200) {
-                    ++cov_199a955sej.b[3][0];
+                    ++cov_199a955sej.b[4][0];
 
-                    var idx = (++cov_199a955sej.s[22], _this.followRequests.indexOf(request));
-                    ++cov_199a955sej.s[23];
-                    _this.followRequests.splice(idx, 1);
+                    var idx = (++cov_199a955sej.s[26], _this2.followRequests.indexOf(request));
+                    ++cov_199a955sej.s[27];
+                    _this2.followRequests.splice(idx, 1);
 
-                    ++cov_199a955sej.s[24];
+                    ++cov_199a955sej.s[28];
                     console.log(res);
-                    ++cov_199a955sej.s[25];
+                    ++cov_199a955sej.s[29];
                     console.log('User follow accepted');
                 } else {
                     //TODO: show error message
 
-                    ++cov_199a955sej.b[3][1];
+                    ++cov_199a955sej.b[4][1];
                 }
             });
         }
     }, {
         key: 'ignoreFollowRequest',
         value: function ignoreFollowRequest(request) {
-            var _this2 = this;
+            var _this3 = this;
 
-            ++cov_199a955sej.f[5];
+            ++cov_199a955sej.f[7];
 
-            var payload = (++cov_199a955sej.s[26], { reqGuid: request.guid });
+            var payload = (++cov_199a955sej.s[30], { reqGuid: request.guid });
 
-            ++cov_199a955sej.s[27];
+            ++cov_199a955sej.s[31];
             this.$http.post(SERVER + '/api/followIgnore', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_199a955sej.f[6];
-                ++cov_199a955sej.s[28];
+                ++cov_199a955sej.f[8];
+                ++cov_199a955sej.s[32];
 
                 if (res.status === 200) {
-                    ++cov_199a955sej.b[4][0];
+                    ++cov_199a955sej.b[5][0];
 
-                    var idx = (++cov_199a955sej.s[29], _this2.followRequests.indexOf(request));
-                    ++cov_199a955sej.s[30];
-                    _this2.followRequests.splice(idx, 1);
+                    var idx = (++cov_199a955sej.s[33], _this3.followRequests.indexOf(request));
+                    ++cov_199a955sej.s[34];
+                    _this3.followRequests.splice(idx, 1);
 
-                    ++cov_199a955sej.s[31];
+                    ++cov_199a955sej.s[35];
                     console.log(res);
-                    ++cov_199a955sej.s[32];
+                    ++cov_199a955sej.s[36];
                     console.log('User follow ignored');
                 } else {
                     //TODO: show error message
 
-                    ++cov_199a955sej.b[4][1];
+                    ++cov_199a955sej.b[5][1];
                 }
             });
         }
@@ -49363,7 +49708,7 @@ var NotificationsController = function () {
     return NotificationsController;
 }();
 
-var Notifications = exports.Notifications = (++cov_199a955sej.s[33], {
+var Notifications = exports.Notifications = (++cov_199a955sej.s[37], {
     template: __webpack_require__(46),
     controller: NotificationsController
 });

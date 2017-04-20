@@ -48,6 +48,20 @@ routes.get('/allUsers', (req, res) => {
     });
 });
 
+
+//gets the current user
+routes.get('/currentUser', (req, res) => {
+    User.findById(userId, (err, user) => {
+        if (err) {
+            console.log(err);
+            return res.json({success: false});
+        }
+
+        res.json({user: user});
+    });
+})
+
+
 //gets a user by username
 routes.get('/user/:username', (req, res) => {
     let username = req.params.username;
@@ -157,41 +171,46 @@ routes.post('/followAccept', (req, res) =>  {
     //find the current user
     User.findById(userId, (err, currUser) => {
         //make sure we have follow requests
+
+        console.log(currUser);
+
         if (currUser.followRequests.length === 0) {
-            res.json({success: false, message: 'Empty list of following requests.'});
+            return res.json({success: false, message: 'Empty list of following requests.'});
         }
 
         //find the requester
         User.find({guid: requesterGuid}, (err, requestUserReturn) => {
             if (err) {
                 console.log(err);
-                res.json({success: false});
             }
 
             if (requestUserReturn.length === 0) {
-                res.json({success: false, statusCode:4004, message: 'Requester not found'});
-            }
+                return res.json({success: false, statusCode:4004, message: 'Requester not found'});
+            } else {
+                //guid's assigned are unique, we know it's the first entry
+                let requestUser = requestUserReturn[0];
 
-            //guid's assigned are unique, we know it's the first entry
-            let requestUser = requestUserReturn[0];
+                //add the current user to the requestors `following`
+                requestUser.following.push(currUser.guid);
 
-            //add the current user to the requestors `following`
-            requestUser.following.push(currUser.guid);
+                requestUser.save((reqUserErr, reqUserSaved) => {
 
-            requestUser.save((err, saved) => {
-                //update the current user to include the newly accepted follower in 'followers'
-                currUser.followers.push(requestUser.guid);
+                    //update the current user to include the newly accepted follower in 'followers'
+                    currUser.followers.push(requestUser.guid);
 
-                //update follow requests
-                let idx = currUser.followRequests.indexOf(requestUser.guid);
-                currUser.followRequests.splice(idx, 1);
+                    //update follow requests
+                    let idx = currUser.followRequests.indexOf(requestUser.guid);
+                    currUser.followRequests.splice(idx, 1);
 
-                currUser.save((err) => {
-                    if (err) throw err;
+                    currUser.save((currUserErr) => {
+                        if (currUserErr) {
+                            console.log(currUserErr);
+                        }
 
-                    res.json({success: true});
+                        res.json({success: true});
+                    });
                 });
-            });
+            }
         });
 
     });

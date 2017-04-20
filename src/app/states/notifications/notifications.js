@@ -14,13 +14,34 @@ class NotificationsController {
         //check if we need to validate
         if (this.data.authRequired) {
             //set the current user
-            let user = this.Auth.validateUserToken();
-            this.user = user;
+            this.Auth.validateUserToken();
         }
 
-        // For now, the only thing that the notifications state contains is follow requests
-        this.followRequests = this.getFollowRequests();
+        this.user = this.getCurrentUserFromDB();
 	}
+
+
+    getCurrentUserFromDB() {
+
+        let endpoint = SERVER + '/api/currentUser';
+        this.$http.get(endpoint, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                this.user = res.data.user;
+                // For now, the only thing that the notifications state contains is follow requests
+                this.followRequests = this.getFollowRequests();
+
+            } else {
+                // TODO: Throw error notification and botch the whole process
+            }
+        });
+
+
+    }
+
 
     getFollowRequests() {
         let reqs = this.user.followRequests;

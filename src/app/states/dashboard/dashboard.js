@@ -15,11 +15,9 @@ class DashboardController {
         if (this.data.authRequired) {
             //set the current user
             let user = this.Auth.validateUserToken();
-            this.user = user;
         }
 
-        this.contentLoaded();
-
+        this.user = this.getCurrentUserFromDB();
 	}
 
     contentLoaded() {
@@ -27,6 +25,25 @@ class DashboardController {
         console.log(this.user);
     }
 
+
+    getCurrentUserFromDB() {
+
+        let endpoint = SERVER + '/api/currentUser';
+        this.$http.get(endpoint, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                this.user = res.data.user;
+                this.contentLoaded();
+            } else {
+                // TODO: Throw error notification and botch the whole process
+            }
+        });
+
+
+    }
 
 }
 

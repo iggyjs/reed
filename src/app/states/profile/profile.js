@@ -166,6 +166,8 @@ class ProfileController {
                 'x-access-token': localStorage.getItem('reed-token')
             }
         }).then((res) => {
+            this.followButtonShow = false;
+            this.followRequestedShow = true;
             console.log(res);
         });
     }
