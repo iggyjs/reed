@@ -28,7 +28,7 @@ class SearchController {
 
     goToProfile(user) {
         let username = '@' + user.name
-        this.$state.go('profile', {userId: '@iggy'});
+        this.$state.go('profile', {userId: username});
     }
 }
 

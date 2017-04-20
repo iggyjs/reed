@@ -9771,7 +9771,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_2ahlwblcat = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
-        hash = 'b8fdf2a4f44ff40893a9c819305e34804be65f0f',
+        hash = 'de85550528038e410a59c8a9066adfea83fad89e',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -9899,11 +9899,21 @@ var cov_2ahlwblcat = function () {
             },
             '12': {
                 start: {
-                    line: 32,
+                    line: 27,
+                    column: 8
+                },
+                end: {
+                    line: 27,
+                    column: 31
+                }
+            },
+            '13': {
+                start: {
+                    line: 33,
                     column: 25
                 },
                 end: {
-                    line: 35,
+                    line: 36,
                     column: 1
                 }
             }
@@ -9951,7 +9961,7 @@ var cov_2ahlwblcat = function () {
                         column: 20
                     },
                     end: {
-                        line: 27,
+                        line: 28,
                         column: 5
                     }
                 },
@@ -10039,7 +10049,8 @@ var cov_2ahlwblcat = function () {
             '9': 0,
             '10': 0,
             '11': 0,
-            '12': 0
+            '12': 0,
+            '13': 0
         },
         f: {
             '0': 0,
@@ -10113,13 +10124,15 @@ var DashboardController = function () {
             ++cov_2ahlwblcat.s[11];
 
             this.following = this.user.following;
+            ++cov_2ahlwblcat.s[12];
+            console.log(this.user);
         }
     }]);
 
     return DashboardController;
 }();
 
-var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[12], {
+var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[13], {
     template: __webpack_require__(26),
     controller: DashboardController
 });
@@ -12587,7 +12600,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_1lowflf3ss = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/search/search.js',
-        hash = '3d254f99e2d2407e8e4ae00755bd7fd614ba2abd',
+        hash = '3b281b61587988a52d6402496f1a079517f9ae30',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -12740,7 +12753,7 @@ var cov_1lowflf3ss = function () {
                 },
                 end: {
                     line: 31,
-                    column: 53
+                    column: 54
                 }
             },
             '15': {
@@ -13021,7 +13034,7 @@ var SearchController = function () {
 
             var username = (++cov_1lowflf3ss.s[13], '@' + user.name);
             ++cov_1lowflf3ss.s[14];
-            this.$state.go('profile', { userId: '@iggy' });
+            this.$state.go('profile', { userId: username });
         }
     }]);
 
@@ -48423,7 +48436,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "/*Notification styles*/\n", ""]);
+exports.push([module.i, "/*Notification styles*/\n.notifications-view {\n    padding: 20px 15px 40px 15px;\n}\n\n.reed-notification-panel {\n    margin: 0 auto;\n    display: block;\n    max-width: 700px;\n}\n\n#noNotificationsMessage {\n    font-size: 15px;\n    margin-top:150px;\n}\n\n.no-notifs-emoji {\n    margin-top: -5px;\n    margin-left:3px;\n}\n\n.reed-follow-request-banner {\n    padding: 20px 10px 10px 20px;\n    background-color: #F8F8F8;\n\n}\n\n.reed-follow-request-username {\n\n}\n\n.reed-follow-request-username > i{\n    margin-right: 4px;\n}\n\n#followRequestsHeader {\n    text-align: center;\n    display: block;\n    font-size: 16px;\n    padding-left: 5px;\n    padding-bottom: 10px;\n}\n\n.reed-follow-request-actions{\n    float: right;\n    margin-top: -30px;\n}\n\n.reed-accept-follow-link{\n    color:#6CAF91;\n    margin-right:5px;\n}\n\n.reed-ignore-follow-link {\n    color:#F65959;\n}\n", ""]);
 
 // exports
 
@@ -48441,7 +48454,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_199a955sej = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/notifications/notifications.js',
-        hash = '6a8431af43cebdbd1a9ea1d53d8c55c105d9c99f',
+        hash = 'a0668179ff66361e665c0ee65b3d2c2fa4e01489',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -48549,31 +48562,241 @@ var cov_199a955sej = function () {
             },
             '10': {
                 start: {
-                    line: 21,
+                    line: 22,
                     column: 8
                 },
                 end: {
-                    line: 21,
-                    column: 29
+                    line: 22,
+                    column: 55
                 }
             },
             '11': {
                 start: {
                     line: 26,
-                    column: 8
+                    column: 19
                 },
                 end: {
                     line: 26,
-                    column: 45
+                    column: 43
                 }
             },
             '12': {
                 start: {
-                    line: 32,
+                    line: 28,
+                    column: 20
+                },
+                end: {
+                    line: 28,
+                    column: 22
+                }
+            },
+            '13': {
+                start: {
+                    line: 30,
+                    column: 8
+                },
+                end: {
+                    line: 44,
+                    column: 9
+                }
+            },
+            '14': {
+                start: {
+                    line: 31,
+                    column: 27
+                },
+                end: {
+                    line: 31,
+                    column: 63
+                }
+            },
+            '15': {
+                start: {
+                    line: 33,
+                    column: 12
+                },
+                end: {
+                    line: 43,
+                    column: 15
+                }
+            },
+            '16': {
+                start: {
+                    line: 38,
+                    column: 16
+                },
+                end: {
+                    line: 42,
+                    column: 17
+                }
+            },
+            '17': {
+                start: {
+                    line: 39,
+                    column: 20
+                },
+                end: {
+                    line: 39,
+                    column: 41
+                }
+            },
+            '18': {
+                start: {
+                    line: 46,
+                    column: 8
+                },
+                end: {
+                    line: 46,
+                    column: 21
+                }
+            },
+            '19': {
+                start: {
+                    line: 51,
+                    column: 22
+                },
+                end: {
+                    line: 51,
+                    column: 45
+                }
+            },
+            '20': {
+                start: {
+                    line: 53,
+                    column: 8
+                },
+                end: {
+                    line: 68,
+                    column: 11
+                }
+            },
+            '21': {
+                start: {
+                    line: 58,
+                    column: 12
+                },
+                end: {
+                    line: 67,
+                    column: 13
+                }
+            },
+            '22': {
+                start: {
+                    line: 59,
+                    column: 26
+                },
+                end: {
+                    line: 59,
+                    column: 62
+                }
+            },
+            '23': {
+                start: {
+                    line: 60,
+                    column: 16
+                },
+                end: {
+                    line: 60,
+                    column: 51
+                }
+            },
+            '24': {
+                start: {
+                    line: 62,
+                    column: 16
+                },
+                end: {
+                    line: 62,
+                    column: 33
+                }
+            },
+            '25': {
+                start: {
+                    line: 63,
+                    column: 16
+                },
+                end: {
+                    line: 63,
+                    column: 52
+                }
+            },
+            '26': {
+                start: {
+                    line: 72,
+                    column: 22
+                },
+                end: {
+                    line: 72,
+                    column: 45
+                }
+            },
+            '27': {
+                start: {
+                    line: 74,
+                    column: 8
+                },
+                end: {
+                    line: 89,
+                    column: 11
+                }
+            },
+            '28': {
+                start: {
+                    line: 79,
+                    column: 12
+                },
+                end: {
+                    line: 88,
+                    column: 13
+                }
+            },
+            '29': {
+                start: {
+                    line: 80,
+                    column: 26
+                },
+                end: {
+                    line: 80,
+                    column: 62
+                }
+            },
+            '30': {
+                start: {
+                    line: 81,
+                    column: 16
+                },
+                end: {
+                    line: 81,
+                    column: 51
+                }
+            },
+            '31': {
+                start: {
+                    line: 83,
+                    column: 16
+                },
+                end: {
+                    line: 83,
+                    column: 33
+                }
+            },
+            '32': {
+                start: {
+                    line: 84,
+                    column: 16
+                },
+                end: {
+                    line: 84,
+                    column: 51
+                }
+            },
+            '33': {
+                start: {
+                    line: 94,
                     column: 29
                 },
                 end: {
-                    line: 35,
+                    line: 97,
                     column: 1
                 }
             }
@@ -48618,14 +48841,134 @@ var cov_199a955sej = function () {
                 loc: {
                     start: {
                         line: 25,
-                        column: 20
+                        column: 24
                     },
                     end: {
-                        line: 27,
+                        line: 47,
                         column: 5
                     }
                 },
                 line: 25
+            },
+            '2': {
+                name: '(anonymous_2)',
+                decl: {
+                    start: {
+                        line: 37,
+                        column: 20
+                    },
+                    end: {
+                        line: 37,
+                        column: 21
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 37,
+                        column: 29
+                    },
+                    end: {
+                        line: 43,
+                        column: 13
+                    }
+                },
+                line: 37
+            },
+            '3': {
+                name: '(anonymous_3)',
+                decl: {
+                    start: {
+                        line: 50,
+                        column: 4
+                    },
+                    end: {
+                        line: 50,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 50,
+                        column: 33
+                    },
+                    end: {
+                        line: 69,
+                        column: 5
+                    }
+                },
+                line: 50
+            },
+            '4': {
+                name: '(anonymous_4)',
+                decl: {
+                    start: {
+                        line: 57,
+                        column: 16
+                    },
+                    end: {
+                        line: 57,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 57,
+                        column: 25
+                    },
+                    end: {
+                        line: 68,
+                        column: 9
+                    }
+                },
+                line: 57
+            },
+            '5': {
+                name: '(anonymous_5)',
+                decl: {
+                    start: {
+                        line: 71,
+                        column: 4
+                    },
+                    end: {
+                        line: 71,
+                        column: 5
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 71,
+                        column: 33
+                    },
+                    end: {
+                        line: 90,
+                        column: 5
+                    }
+                },
+                line: 71
+            },
+            '6': {
+                name: '(anonymous_6)',
+                decl: {
+                    start: {
+                        line: 78,
+                        column: 16
+                    },
+                    end: {
+                        line: 78,
+                        column: 17
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 78,
+                        column: 25
+                    },
+                    end: {
+                        line: 89,
+                        column: 9
+                    }
+                },
+                line: 78
             }
         },
         branchMap: {
@@ -48694,6 +49037,105 @@ var cov_199a955sej = function () {
                     }
                 }],
                 line: 15
+            },
+            '2': {
+                loc: {
+                    start: {
+                        line: 38,
+                        column: 16
+                    },
+                    end: {
+                        line: 42,
+                        column: 17
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 38,
+                        column: 16
+                    },
+                    end: {
+                        line: 42,
+                        column: 17
+                    }
+                }, {
+                    start: {
+                        line: 38,
+                        column: 16
+                    },
+                    end: {
+                        line: 42,
+                        column: 17
+                    }
+                }],
+                line: 38
+            },
+            '3': {
+                loc: {
+                    start: {
+                        line: 58,
+                        column: 12
+                    },
+                    end: {
+                        line: 67,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 58,
+                        column: 12
+                    },
+                    end: {
+                        line: 67,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 58,
+                        column: 12
+                    },
+                    end: {
+                        line: 67,
+                        column: 13
+                    }
+                }],
+                line: 58
+            },
+            '4': {
+                loc: {
+                    start: {
+                        line: 79,
+                        column: 12
+                    },
+                    end: {
+                        line: 88,
+                        column: 13
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 79,
+                        column: 12
+                    },
+                    end: {
+                        line: 88,
+                        column: 13
+                    }
+                }, {
+                    start: {
+                        line: 79,
+                        column: 12
+                    },
+                    end: {
+                        line: 88,
+                        column: 13
+                    }
+                }],
+                line: 79
             }
         },
         s: {
@@ -48709,15 +49151,44 @@ var cov_199a955sej = function () {
             '9': 0,
             '10': 0,
             '11': 0,
-            '12': 0
+            '12': 0,
+            '13': 0,
+            '14': 0,
+            '15': 0,
+            '16': 0,
+            '17': 0,
+            '18': 0,
+            '19': 0,
+            '20': 0,
+            '21': 0,
+            '22': 0,
+            '23': 0,
+            '24': 0,
+            '25': 0,
+            '26': 0,
+            '27': 0,
+            '28': 0,
+            '29': 0,
+            '30': 0,
+            '31': 0,
+            '32': 0,
+            '33': 0
         },
         f: {
             '0': 0,
-            '1': 0
+            '1': 0,
+            '2': 0,
+            '3': 0,
+            '4': 0,
+            '5': 0,
+            '6': 0
         },
         b: {
             '0': [0, 0],
-            '1': [0, 0]
+            '1': [0, 0],
+            '2': [0, 0],
+            '3': [0, 0],
+            '4': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -48772,24 +49243,127 @@ var NotificationsController = function () {
             ++cov_199a955sej.b[1][1];
         }
 
+        // For now, the only thing that the notifications state contains is follow requests
         ++cov_199a955sej.s[10];
-        this.contentLoaded();
+        this.followRequests = this.getFollowRequests();
     }
 
     _createClass(NotificationsController, [{
-        key: 'contentLoaded',
-        value: function contentLoaded() {
+        key: 'getFollowRequests',
+        value: function getFollowRequests() {
             ++cov_199a955sej.f[1];
-            ++cov_199a955sej.s[11];
 
-            this.following = this.user.following;
+            var reqs = (++cov_199a955sej.s[11], this.user.followRequests);
+            // we need the users for these requests
+            var users = (++cov_199a955sej.s[12], []);
+
+            ++cov_199a955sej.s[13];
+            for (var i = 0; i < reqs.length; i++) {
+                var endpoint = (++cov_199a955sej.s[14], SERVER + '/api/user/guid/' + reqs[i]);
+
+                ++cov_199a955sej.s[15];
+                this.$http.get(endpoint, {
+                    headers: {
+                        'x-access-token': localStorage.getItem('reed-token')
+                    }
+                }).then(function (res) {
+                    ++cov_199a955sej.f[2];
+                    ++cov_199a955sej.s[16];
+
+                    if (res.status === 200) {
+                        ++cov_199a955sej.b[2][0];
+                        ++cov_199a955sej.s[17];
+
+                        users.push(res.data);
+                    } else {
+                        // TODO: Throw error notification and botch the whole process
+
+                        ++cov_199a955sej.b[2][1];
+                    }
+                });
+            }
+
+            ++cov_199a955sej.s[18];
+            return users;
+        }
+    }, {
+        key: 'acceptFollowRequest',
+        value: function acceptFollowRequest(request) {
+            var _this = this;
+
+            ++cov_199a955sej.f[3];
+
+            var payload = (++cov_199a955sej.s[19], { reqGuid: request.guid });
+
+            ++cov_199a955sej.s[20];
+            this.$http.post(SERVER + '/api/followAccept', payload, {
+                headers: {
+                    'x-access-token': localStorage.getItem('reed-token')
+                }
+            }).then(function (res) {
+                ++cov_199a955sej.f[4];
+                ++cov_199a955sej.s[21];
+
+                if (res.status === 200) {
+                    ++cov_199a955sej.b[3][0];
+
+                    var idx = (++cov_199a955sej.s[22], _this.followRequests.indexOf(request));
+                    ++cov_199a955sej.s[23];
+                    _this.followRequests.splice(idx, 1);
+
+                    ++cov_199a955sej.s[24];
+                    console.log(res);
+                    ++cov_199a955sej.s[25];
+                    console.log('User follow accepted');
+                } else {
+                    //TODO: show error message
+
+                    ++cov_199a955sej.b[3][1];
+                }
+            });
+        }
+    }, {
+        key: 'ignoreFollowRequest',
+        value: function ignoreFollowRequest(request) {
+            var _this2 = this;
+
+            ++cov_199a955sej.f[5];
+
+            var payload = (++cov_199a955sej.s[26], { reqGuid: request.guid });
+
+            ++cov_199a955sej.s[27];
+            this.$http.post(SERVER + '/api/followIgnore', payload, {
+                headers: {
+                    'x-access-token': localStorage.getItem('reed-token')
+                }
+            }).then(function (res) {
+                ++cov_199a955sej.f[6];
+                ++cov_199a955sej.s[28];
+
+                if (res.status === 200) {
+                    ++cov_199a955sej.b[4][0];
+
+                    var idx = (++cov_199a955sej.s[29], _this2.followRequests.indexOf(request));
+                    ++cov_199a955sej.s[30];
+                    _this2.followRequests.splice(idx, 1);
+
+                    ++cov_199a955sej.s[31];
+                    console.log(res);
+                    ++cov_199a955sej.s[32];
+                    console.log('User follow ignored');
+                } else {
+                    //TODO: show error message
+
+                    ++cov_199a955sej.b[4][1];
+                }
+            });
         }
     }]);
 
     return NotificationsController;
 }();
 
-var Notifications = exports.Notifications = (++cov_199a955sej.s[12], {
+var Notifications = exports.Notifications = (++cov_199a955sej.s[33], {
     template: __webpack_require__(46),
     controller: NotificationsController
 });
@@ -48798,7 +49372,7 @@ var Notifications = exports.Notifications = (++cov_199a955sej.s[12], {
 /* 46 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"notifications-view\">\n    <center>\n        <p>Notifications</p>\n    </center>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"notifications-view\">\n\n    <center>\n        <p id=\"noNotificationsMessage\" ng-if=\"$ctrl.followRequests.length === 0\">No new notifications <i class=\"em em-raised_hands no-notifs-emoji\"></i></p>\n    </center>\n\n    <div ng-if=\"$ctrl.followRequests.length > 0\" class=\"reed-notification-panel\">\n\n        <h1 id=\"followRequestsHeader\">Follow requests</h1>\n\n        <div class=\"reed-follow-request-banner\" ng-repeat=\"req in $ctrl.followRequests\">\n            <p class=\"reed-follow-request-username\"> <i class=\"icon ion-android-person\"></i> {{req.username}}</p>\n\n            <div class=\"reed-follow-request-actions\">\n                <a ng-click=\"$ctrl.acceptFollowRequest(req)\" class=\"reed-accept-follow-link\" href=\"#\"><i class=\"fa fa-check\"></i></a>\n                <a ng-click=\"$ctrl.ignoreFollowRequest(req)\" class=\"reed-ignore-follow-link\" href=\"#\"><i class=\"fa fa-close\"></i></a>\n\n            </div>\n        </div>\n    </div>\n\n</div>\n";
 
 /***/ })
 /******/ ]);

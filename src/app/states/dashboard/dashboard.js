@@ -24,6 +24,7 @@ class DashboardController {
 
     contentLoaded() {
         this.following = this.user.following;
+        console.log(this.user);
     }
 
 

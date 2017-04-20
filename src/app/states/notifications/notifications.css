@@ -1,1 +1,56 @@
 /*Notification styles*/
+.notifications-view {
+    padding: 20px 15px 40px 15px;
+}
+
+.reed-notification-panel {
+    margin: 0 auto;
+    display: block;
+    max-width: 700px;
+}
+
+#noNotificationsMessage {
+    font-size: 15px;
+    margin-top:150px;
+}
+
+.no-notifs-emoji {
+    margin-top: -5px;
+    margin-left:3px;
+}
+
+.reed-follow-request-banner {
+    padding: 20px 10px 10px 20px;
+    background-color: #F8F8F8;
+
+}
+
+.reed-follow-request-username {
+
+}
+
+.reed-follow-request-username > i{
+    margin-right: 4px;
+}
+
+#followRequestsHeader {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.reed-follow-request-actions{
+    float: right;
+    margin-top: -30px;
+}
+
+.reed-accept-follow-link{
+    color:#6CAF91;
+    margin-right:5px;
+}
+
+.reed-ignore-follow-link {
+    color:#F65959;
+}

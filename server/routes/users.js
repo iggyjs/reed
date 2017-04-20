@@ -78,6 +78,23 @@ routes.get('/user/:username', (req, res) => {
 });
 
 
+//gets a user by guid
+routes.get('/user/guid/:guid', (req, res) => {
+    let guid = req.params.guid;
+
+    User.findOne({guid: guid}, (err, user) => {
+        if (err) throw err;
+
+        let safeUserObj = {
+            username: user.name,
+            guid: user.guid
+        }
+
+        res.json(safeUserObj);
+    });
+});
+
+
 //returns list of following
 routes.get('/following', (req, res) => {
     // get the current user object
@@ -160,6 +177,7 @@ routes.post('/followAccept', (req, res) =>  {
 
             //add the current user to the requestors `following`
             requestUser.following.push(currUser.guid);
+
             requestUser.save((err, saved) => {
                 //update the current user to include the newly accepted follower in 'followers'
                 currUser.followers.push(requestUser.guid);
@@ -168,9 +186,11 @@ routes.post('/followAccept', (req, res) =>  {
                 let idx = currUser.followRequests.indexOf(requestUser.guid);
                 currUser.followRequests.splice(idx, 1);
 
-                currUser.save();
+                currUser.save((err) => {
+                    if (err) throw err;
 
-                res.json({success: true});
+                    res.json({success: true});
+                });
             });
         });
 
@@ -189,8 +209,6 @@ routes.post('/followIgnore', (req, res) => {
             res.json({success: false});
         }
 
-        console.log(user);
-
         //remove the users request from request list
         let idx = user.followRequests.indexOf(requesterGuid);
 
@@ -202,5 +220,8 @@ routes.post('/followIgnore', (req, res) => {
         res.json({success: true});
     });
 });
+
+
+// TODO: Add unfollow route
 
 module.exports = routes;

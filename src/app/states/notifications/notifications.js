@@ -18,14 +18,76 @@ class NotificationsController {
             this.user = user;
         }
 
-        this.contentLoaded();
-
+        // For now, the only thing that the notifications state contains is follow requests
+        this.followRequests = this.getFollowRequests();
 	}
 
-    contentLoaded() {
-        this.following = this.user.following;
+    getFollowRequests() {
+        let reqs = this.user.followRequests;
+        // we need the users for these requests
+        let users = [];
+
+        for (let i=0; i<reqs.length; i++) {
+            let endpoint = SERVER + '/api/user/guid/' + reqs[i];
+
+            this.$http.get(endpoint, {
+                headers : {
+                    'x-access-token': localStorage.getItem('reed-token')
+                }
+            }).then((res) => {
+                if (res.status === 200) {
+                    users.push(res.data);
+                } else {
+                    // TODO: Throw error notification and botch the whole process
+                }
+            });
+        }
+
+        return users;
     }
 
+
+    acceptFollowRequest(request) {
+        let payload = {reqGuid: request.guid};
+
+        this.$http.post(SERVER + '/api/followAccept', payload, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                let idx = this.followRequests.indexOf(request);
+                this.followRequests.splice(idx, 1);
+
+                console.log(res);
+                console.log('User follow accepted');
+
+            } else {
+                //TODO: show error message
+            }
+        });
+    }
+
+    ignoreFollowRequest(request) {
+        let payload = {reqGuid: request.guid};
+
+        this.$http.post(SERVER + '/api/followIgnore', payload, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                let idx = this.followRequests.indexOf(request);
+                this.followRequests.splice(idx, 1);
+
+                console.log(res);
+                console.log('User follow ignored');
+
+            } else {
+                //TODO: show error message
+            }
+        });
+    }
 
 }
 
