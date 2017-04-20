@@ -171,6 +171,28 @@ class ProfileController {
             console.log(res);
         });
     }
+
+    unfollowUser() {
+
+        let payload = {unfollowGuid: this.profileUser.guid};
+
+        this.$http.post(SERVER + '/api/unfollowUser', payload, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            console.log(res);
+
+            if (res.status === 200 && res.data.success) {
+                console.log('User unfollowed');
+                this.followButtonShow = true
+                this.unfollowButtonShow = false;
+            } else {
+                // TODO: show some error message
+            }
+
+        });
+    }
 }
 
 export const Profile = {

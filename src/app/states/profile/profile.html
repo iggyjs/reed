@@ -33,7 +33,7 @@
 
         <button ng-if="!$ctrl.profileIsCurrentUser && $ctrl.followButtonShow" ng-click="$ctrl.requestFollow()" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Follow  <i class="icon ion-android-add-circle"></i></button>
         <button ng-if="!$ctrl.profileIsCurrentUser && $ctrl.followRequestedShow" class="reed-btn" id="followRequestedButton" type="button" name="button">Follow Requested</button>
-        <button ng-if="!$ctrl.profileIsCurrentUser && $ctrl.unfollowButtonShow" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Unfollow </button>
+        <button ng-if="!$ctrl.profileIsCurrentUser && $ctrl.unfollowButtonShow" ng-click="$ctrl.unfollowUser()" class="reed-btn reed-btn-heavy-click" id="followButton" type="button" name="button">Unfollow <i class="icon ion-ios-minus"></i></button>
 
 
 
@@ -63,6 +63,8 @@
         <div class="reed-banner">
             <h1 id="currentListHeader"><i class="icon ion-ios-book"></i> Today's Reading List</h1>
         </div>
+
+        <p id="noArticlesMessage" ng-if="$ctrl.profileList.articles.length === 0">There will be some articles here someday, just you wait. <i id="noArticlesIcon" class="em em-seedling"></i></p>
 
         <div ng-repeat="article in $ctrl.profileList.articles" class="reed-current-list-item">
             <p class="reed-list-item-title">{{article.articleTitle}}</p>

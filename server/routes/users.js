@@ -241,6 +241,51 @@ routes.post('/followIgnore', (req, res) => {
 });
 
 
-// TODO: Add unfollow route
+//unfollows a user
+routes.post('/unfollowUser', (req, res) => {
+    let unfolloweeGuid = req.body.unfollowGuid;
+    // get the current user
+    User.findById(userId, (err, user) => {
+        if (err) {
+            return res.json({success: false});
+        }
+
+        //used in the next save operation
+        let currentUserGuid = user.guid;
+
+        let idx = user.following.indexOf(unfolloweeGuid);
+
+        if (idx > -1) {
+            user.following.splice(idx, 1);
+
+        }
+        user.save((err) => {
+            if (err) {
+                return res.json({success: false, error: err});
+            }
+
+            //Remove from the unfollowee's followers
+
+            User.findOne({guid: unfolloweeGuid}, (err, unfollowee) => {
+                let idx = unfollowee.followers.indexOf(currentUserGuid);
+
+                if (idx > -1) {
+                    unfollowee.followers.splice(idx, 1);
+                }
+
+                unfollowee.save((err) => {
+                    if (err) {
+                        return res.json({success: false, error: err});
+                    }
+
+                    res.json({success: true});
+                });
+            });
+
+        });
+
+    });
+
+});
 
 module.exports = routes;
