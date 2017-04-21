@@ -9771,7 +9771,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_2ahlwblcat = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
-        hash = '0ce92db0083326675df36a9406a8a73a79668bc8',
+        hash = 'c340424b7a00410c855af23827c3df3ccf58e7be',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -9963,7 +9963,7 @@ var cov_2ahlwblcat = function () {
                     column: 8
                 },
                 end: {
-                    line: 82,
+                    line: 81,
                     column: 9
                 }
             },
@@ -9983,7 +9983,7 @@ var cov_2ahlwblcat = function () {
                     column: 12
                 },
                 end: {
-                    line: 81,
+                    line: 80,
                     column: 15
                 }
             },
@@ -9993,7 +9993,7 @@ var cov_2ahlwblcat = function () {
                     column: 16
                 },
                 end: {
-                    line: 80,
+                    line: 79,
                     column: 17
                 }
             },
@@ -10009,71 +10009,71 @@ var cov_2ahlwblcat = function () {
             },
             '23': {
                 start: {
-                    line: 61,
+                    line: 60,
                     column: 35
                 },
                 end: {
-                    line: 61,
+                    line: 60,
                     column: 48
                 }
             },
             '24': {
                 start: {
-                    line: 62,
+                    line: 61,
                     column: 20
                 },
                 end: {
-                    line: 76,
+                    line: 75,
                     column: 23
                 }
             },
             '25': {
                 start: {
-                    line: 70,
+                    line: 69,
                     column: 24
                 },
                 end: {
-                    line: 75,
+                    line: 74,
                     column: 25
                 }
             },
             '26': {
                 start: {
-                    line: 71,
+                    line: 70,
                     column: 28
                 },
                 end: {
-                    line: 71,
+                    line: 70,
                     column: 62
                 }
             },
             '27': {
                 start: {
-                    line: 72,
+                    line: 71,
                     column: 28
                 },
                 end: {
-                    line: 72,
+                    line: 71,
                     column: 45
                 }
             },
             '28': {
                 start: {
-                    line: 84,
+                    line: 83,
                     column: 8
                 },
                 end: {
-                    line: 84,
+                    line: 83,
                     column: 35
                 }
             },
             '29': {
                 start: {
-                    line: 90,
+                    line: 89,
                     column: 25
                 },
                 end: {
-                    line: 93,
+                    line: 92,
                     column: 1
                 }
             }
@@ -10169,7 +10169,7 @@ var cov_2ahlwblcat = function () {
                         column: 25
                     },
                     end: {
-                        line: 85,
+                        line: 84,
                         column: 5
                     }
                 },
@@ -10193,7 +10193,7 @@ var cov_2ahlwblcat = function () {
                         column: 29
                     },
                     end: {
-                        line: 81,
+                        line: 80,
                         column: 13
                     }
                 },
@@ -10203,25 +10203,25 @@ var cov_2ahlwblcat = function () {
                 name: '(anonymous_5)',
                 decl: {
                     start: {
-                        line: 69,
+                        line: 68,
                         column: 28
                     },
                     end: {
-                        line: 69,
+                        line: 68,
                         column: 29
                     }
                 },
                 loc: {
                     start: {
-                        line: 69,
+                        line: 68,
                         column: 37
                     },
                     end: {
-                        line: 76,
+                        line: 75,
                         column: 21
                     }
                 },
-                line: 69
+                line: 68
             }
         },
         branchMap: {
@@ -10331,7 +10331,7 @@ var cov_2ahlwblcat = function () {
                         column: 16
                     },
                     end: {
-                        line: 80,
+                        line: 79,
                         column: 17
                     }
                 },
@@ -10342,7 +10342,7 @@ var cov_2ahlwblcat = function () {
                         column: 16
                     },
                     end: {
-                        line: 80,
+                        line: 79,
                         column: 17
                     }
                 }, {
@@ -10351,7 +10351,7 @@ var cov_2ahlwblcat = function () {
                         column: 16
                     },
                     end: {
-                        line: 80,
+                        line: 79,
                         column: 17
                     }
                 }],
@@ -10360,35 +10360,35 @@ var cov_2ahlwblcat = function () {
             '4': {
                 loc: {
                     start: {
-                        line: 70,
+                        line: 69,
                         column: 24
                     },
                     end: {
-                        line: 75,
+                        line: 74,
                         column: 25
                     }
                 },
                 type: 'if',
                 locations: [{
                     start: {
-                        line: 70,
+                        line: 69,
                         column: 24
                     },
                     end: {
-                        line: 75,
+                        line: 74,
                         column: 25
                     }
                 }, {
                     start: {
-                        line: 70,
+                        line: 69,
                         column: 24
                     },
                     end: {
-                        line: 75,
+                        line: 74,
                         column: 25
                     }
                 }],
-                line: 70
+                line: 69
             }
         },
         s: {
@@ -10554,7 +10554,6 @@ var DashboardController = function () {
                         ++cov_2ahlwblcat.b[3][0];
 
                         var user = (++cov_2ahlwblcat.s[22], res.data);
-
                         //get associated list
                         var tempGuid = (++cov_2ahlwblcat.s[23], res.data.guid);
                         ++cov_2ahlwblcat.s[24];
@@ -10616,7 +10615,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_l3is81mja = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/login/login.js',
-        hash = '60153a1261c8373fa99458a1985e0b66a7149c09',
+        hash = 'dc7b5e026b9a39dcceb939643430a6795c246d8e',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -10714,31 +10713,61 @@ var cov_l3is81mja = function () {
             },
             '9': {
                 start: {
-                    line: 18,
-                    column: 8
+                    line: 16,
+                    column: 19
                 },
                 end: {
-                    line: 18,
-                    column: 27
+                    line: 16,
+                    column: 48
                 }
             },
             '10': {
                 start: {
-                    line: 19,
+                    line: 17,
                     column: 8
                 },
                 end: {
                     line: 19,
-                    column: 54
+                    column: 9
                 }
             },
             '11': {
                 start: {
+                    line: 18,
+                    column: 12
+                },
+                end: {
+                    line: 18,
+                    column: 40
+                }
+            },
+            '12': {
+                start: {
+                    line: 24,
+                    column: 8
+                },
+                end: {
+                    line: 24,
+                    column: 27
+                }
+            },
+            '13': {
+                start: {
                     line: 25,
+                    column: 8
+                },
+                end: {
+                    line: 25,
+                    column: 54
+                }
+            },
+            '14': {
+                start: {
+                    line: 31,
                     column: 21
                 },
                 end: {
-                    line: 28,
+                    line: 34,
                     column: 1
                 }
             }
@@ -10762,7 +10791,7 @@ var cov_l3is81mja = function () {
                         column: 36
                     },
                     end: {
-                        line: 15,
+                        line: 21,
                         column: 2
                     }
                 },
@@ -10772,25 +10801,25 @@ var cov_l3is81mja = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 17,
+                        line: 23,
                         column: 4
                     },
                     end: {
-                        line: 17,
+                        line: 23,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 17,
+                        line: 23,
                         column: 13
                     },
                     end: {
-                        line: 22,
+                        line: 28,
                         column: 5
                     }
                 },
-                line: 17
+                line: 23
             }
         },
         branchMap: {
@@ -10826,6 +10855,39 @@ var cov_l3is81mja = function () {
                     }
                 }],
                 line: 3
+            },
+            '1': {
+                loc: {
+                    start: {
+                        line: 17,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 17,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                }, {
+                    start: {
+                        line: 17,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                }],
+                line: 17
             }
         },
         s: {
@@ -10840,14 +10902,18 @@ var cov_l3is81mja = function () {
             '8': 0,
             '9': 0,
             '10': 0,
-            '11': 0
+            '11': 0,
+            '12': 0,
+            '13': 0,
+            '14': 0
         },
         f: {
             '0': 0,
             '1': 0
         },
         b: {
-            '0': [0, 0]
+            '0': [0, 0],
+            '1': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -10892,16 +10958,27 @@ var LoginController = function () {
         this.$http = $http;
         ++cov_l3is81mja.s[8];
         this.Auth = Auth;
+
+        var user = (++cov_l3is81mja.s[9], this.Auth.validateUserToken());
+        ++cov_l3is81mja.s[10];
+        if (user) {
+            ++cov_l3is81mja.b[1][0];
+            ++cov_l3is81mja.s[11];
+
+            this.$state.go('dashboard');
+        } else {
+            ++cov_l3is81mja.b[1][1];
+        }
     }
 
     _createClass(LoginController, [{
         key: 'login',
         value: function login(e) {
             ++cov_l3is81mja.f[1];
-            ++cov_l3is81mja.s[9];
+            ++cov_l3is81mja.s[12];
 
             e.preventDefault();
-            ++cov_l3is81mja.s[10];
+            ++cov_l3is81mja.s[13];
             this.Auth.login(this.username, this.password);
 
             //TODO: Handle form validation
@@ -10911,7 +10988,7 @@ var LoginController = function () {
     return LoginController;
 }();
 
-var Login = exports.Login = (++cov_l3is81mja.s[11], {
+var Login = exports.Login = (++cov_l3is81mja.s[14], {
     template: __webpack_require__(29),
     controller: LoginController
 });
@@ -14872,7 +14949,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var cov_189tzbg59r = function () {
     var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/signup/signup.js',
-        hash = '94abc515fe433375894d733e265ba714e7419331',
+        hash = '75f69be8b167180503b2711e3a85f85a3270736e',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
@@ -14970,31 +15047,61 @@ var cov_189tzbg59r = function () {
             },
             '9': {
                 start: {
-                    line: 18,
-                    column: 8
+                    line: 16,
+                    column: 19
                 },
                 end: {
-                    line: 18,
-                    column: 27
+                    line: 16,
+                    column: 48
                 }
             },
             '10': {
                 start: {
-                    line: 20,
+                    line: 17,
                     column: 8
                 },
                 end: {
-                    line: 20,
-                    column: 55
+                    line: 19,
+                    column: 9
                 }
             },
             '11': {
                 start: {
-                    line: 54,
+                    line: 18,
+                    column: 12
+                },
+                end: {
+                    line: 18,
+                    column: 40
+                }
+            },
+            '12': {
+                start: {
+                    line: 23,
+                    column: 8
+                },
+                end: {
+                    line: 23,
+                    column: 27
+                }
+            },
+            '13': {
+                start: {
+                    line: 25,
+                    column: 8
+                },
+                end: {
+                    line: 25,
+                    column: 55
+                }
+            },
+            '14': {
+                start: {
+                    line: 59,
                     column: 22
                 },
                 end: {
-                    line: 57,
+                    line: 62,
                     column: 1
                 }
             }
@@ -15018,7 +15125,7 @@ var cov_189tzbg59r = function () {
                         column: 36
                     },
                     end: {
-                        line: 15,
+                        line: 20,
                         column: 2
                     }
                 },
@@ -15028,25 +15135,25 @@ var cov_189tzbg59r = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 17,
+                        line: 22,
                         column: 4
                     },
                     end: {
-                        line: 17,
+                        line: 22,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 17,
+                        line: 22,
                         column: 14
                     },
                     end: {
-                        line: 51,
+                        line: 56,
                         column: 5
                     }
                 },
-                line: 17
+                line: 22
             }
         },
         branchMap: {
@@ -15082,6 +15189,39 @@ var cov_189tzbg59r = function () {
                     }
                 }],
                 line: 3
+            },
+            '1': {
+                loc: {
+                    start: {
+                        line: 17,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                },
+                type: 'if',
+                locations: [{
+                    start: {
+                        line: 17,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                }, {
+                    start: {
+                        line: 17,
+                        column: 8
+                    },
+                    end: {
+                        line: 19,
+                        column: 9
+                    }
+                }],
+                line: 17
             }
         },
         s: {
@@ -15096,14 +15236,18 @@ var cov_189tzbg59r = function () {
             '8': 0,
             '9': 0,
             '10': 0,
-            '11': 0
+            '11': 0,
+            '12': 0,
+            '13': 0,
+            '14': 0
         },
         f: {
             '0': 0,
             '1': 0
         },
         b: {
-            '0': [0, 0]
+            '0': [0, 0],
+            '1': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -15148,17 +15292,28 @@ var SignupController = function () {
         this.data = $state.current.data;
         ++cov_189tzbg59r.s[8];
         this.$http = $http;
+
+        var user = (++cov_189tzbg59r.s[9], this.Auth.validateUserToken());
+        ++cov_189tzbg59r.s[10];
+        if (user) {
+            ++cov_189tzbg59r.b[1][0];
+            ++cov_189tzbg59r.s[11];
+
+            this.$state.go('dashboard');
+        } else {
+            ++cov_189tzbg59r.b[1][1];
+        }
     }
 
     _createClass(SignupController, [{
         key: 'signup',
         value: function signup(e) {
             ++cov_189tzbg59r.f[1];
-            ++cov_189tzbg59r.s[9];
+            ++cov_189tzbg59r.s[12];
 
             e.preventDefault();
 
-            ++cov_189tzbg59r.s[10];
+            ++cov_189tzbg59r.s[13];
             this.Auth.signup(this.username, this.password);
 
             //TODO: Ensure that usernames are unique
@@ -15196,7 +15351,7 @@ var SignupController = function () {
     return SignupController;
 }();
 
-var Signup = exports.Signup = (++cov_189tzbg59r.s[11], {
+var Signup = exports.Signup = (++cov_189tzbg59r.s[14], {
     template: __webpack_require__(35),
     controller: SignupController
 });
@@ -49721,7 +49876,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "/*Dashboard styles*/\n#notFollowingMessageDiv {\n    text-align: center;\n    width: 100%;\n    padding-top:100px;\n\n}\n\n#notFollowingMessageTitle {\n    font-size: 24px;\n}\n\n#notFollowingMessageDes{\n    font-size: 18px;\n}\n\n#notFollowingMessageDes > a{\n\n}\n\n#notFollowingMessageDes > a:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n.reed-follower-article-div {\n    background-color: pink;\n}\n", ""]);
+exports.push([module.i, "/*Dashboard styles*/\n#notFollowingMessageDiv {\n    text-align: center;\n    width: 100%;\n    padding-top:100px;\n\n}\n\n#notFollowingMessageTitle {\n    font-size: 24px;\n}\n\n#notFollowingMessageDes{\n    font-size: 18px;\n}\n\n#notFollowingMessageDes > a{\n\n}\n\n#notFollowingMessageDes > a:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n.reed-articles-container{\n\n}\n\n.reed-follower-articles {\n    padding: 10px 20px 10px 20px;\n\n}\n\n.reed-follower-article-div {\n    padding: 20px;\n}\n\n.reed-follower-article-user {\n    font-size: 23px;\n    font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif;\n    font-weight: 300;\n    background-color: #F7F7F7;\n    color:#434343;\n    display: block;\n    padding: 15px 0 15px 18px;\n}\n\n.reed-follower-article-user:hover {\n    text-decoration: underline;\n\n}\n\n.reed-follower-article-title {\n    color: #434343;\n    font-size: 18px;\n}\n\n.reed-follower-article-des {\n    font-style: italic;\n}\n", ""]);
 
 // exports
 
@@ -49814,7 +49969,7 @@ exports.push([module.i, "@charset \"UTF-8\";/*!\n  Ionicons, v2.0.0\n  Created b
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.followingList.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n\n    <div class=\"reed-follower-articles\">\n        <div ng-repeat=\"user in $ctrl.followingList\" class=\"reed-follower-article-div\">\n            <p>{{user.username}}</p>\n\n            <div ng-repeat=\"article in user.articles\" class=\"reed-follower-articles\">\n                {{article.articleTitle}}\n                {{article.articleDescription}}\n                {{article.articleLink}}\n            </div>\n        </div>\n    </div>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse reed-navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"dashboard\">Feed</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"notifications\">Notifications</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"profile({userId: '@' + $ctrl.user.name })\">Profile</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"search\">Search</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"logout\">Logout</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n\n<div class=\"dashboard-view\">\n    <div ng-if=\"$ctrl.followingList.length === 0\" id=\"notFollowingMessageDiv\">\n        <p id=\"notFollowingMessageTitle\">Chirp, chirp.</p>\n        <p id=\"notFollowingMessageDes\">(The sound of crickets because you're not following anyone, hit that young <a ui-sref=\"search\">search page</a>)</p>\n    </div>\n\n    <div class=\"reed-follower-articles\">\n        <div ng-repeat=\"user in $ctrl.followingList\" class=\"reed-follower-article-div\">\n            <a ui-sref=\"profile({userId: '@' + user.username })\" class=\"reed-follower-article-user\">{{user.username}}</a>\n\n            <div class=\"reed-articles-container\">\n                <div ng-repeat=\"article in user.articles\" class=\"reed-follower-articles\">\n                    <p class=\"reed-follower-article-title\">{{article.articleTitle}}</p>\n                    <p ng-if=\"article.articleDescription.length > 0\" class=\"reed-follower-article-des\">\"{{article.articleDescription}}\"</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 29 */

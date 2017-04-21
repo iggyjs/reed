@@ -108,8 +108,7 @@ routes.get('/user/guid/:guid', (req, res) => {
 
     User.findOne({guid: guid}, (err, user) => {
         if (err) throw err;
-
-
+        
         let safeUserObj = {
             username: user.name,
             guid: user.guid

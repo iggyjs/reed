@@ -12,6 +12,12 @@ class LoginController {
 		this.data = $state.current.data;
 		this.$http = $http;
         this.Auth = Auth;
+
+        let user = this.Auth.validateUserToken()
+        if (user) {
+            this.$state.go('dashboard');
+        }
+
 	}
 
     login(e) {

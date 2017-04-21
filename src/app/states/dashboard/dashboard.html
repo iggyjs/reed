@@ -35,12 +35,13 @@
 
     <div class="reed-follower-articles">
         <div ng-repeat="user in $ctrl.followingList" class="reed-follower-article-div">
-            <p>{{user.username}}</p>
+            <a ui-sref="profile({userId: '@' + user.username })" class="reed-follower-article-user">{{user.username}}</a>
 
-            <div ng-repeat="article in user.articles" class="reed-follower-articles">
-                {{article.articleTitle}}
-                {{article.articleDescription}}
-                {{article.articleLink}}
+            <div class="reed-articles-container">
+                <div ng-repeat="article in user.articles" class="reed-follower-articles">
+                    <p class="reed-follower-article-title">{{article.articleTitle}}</p>
+                    <p ng-if="article.articleDescription.length > 0" class="reed-follower-article-des">"{{article.articleDescription}}"</p>
+                </div>
             </div>
         </div>
     </div>

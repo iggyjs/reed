@@ -56,7 +56,6 @@ class DashboardController {
             }).then((res) => {
                 if (res.status === 200) {
                     let user = res.data;
-
                     //get associated list
                     let tempGuid = res.data.guid
                     this.$http.get(SERVER + '/api/profileList', {

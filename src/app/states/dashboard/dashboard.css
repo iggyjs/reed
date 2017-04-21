@@ -25,6 +25,39 @@
     cursor: pointer;
 }
 
+.reed-articles-container{
+
+}
+
+.reed-follower-articles {
+    padding: 10px 20px 10px 20px;
+
+}
+
 .reed-follower-article-div {
-    background-color: pink;
+    padding: 20px;
+}
+
+.reed-follower-article-user {
+    font-size: 23px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background-color: #F7F7F7;
+    color:#434343;
+    display: block;
+    padding: 15px 0 15px 18px;
+}
+
+.reed-follower-article-user:hover {
+    text-decoration: underline;
+
+}
+
+.reed-follower-article-title {
+    color: #434343;
+    font-size: 18px;
+}
+
+.reed-follower-article-des {
+    font-style: italic;
 }
