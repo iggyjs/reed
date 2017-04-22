@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/popup.css">
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/vue.min.js"></script>
         <script type="text/javascript" src="js/popup.js"></script>
     </head>
     <body>
@@ -17,13 +16,30 @@
 
         <div class="reed-popup-body">
             <!-- Programmatically filled in -->
-            <p id="pageTitle"></p>
-            <p id="pageDescription"></p>
-            <p id="pageThumb"></p>
+
+            <div class="reed-article-to-add-body">
+                <div class="reed-article-top-body">
+                    <img id="pageThumb" src="" alt="">
+
+                    <p id="pageTitle"></p>
+                    <input id="pageTitleInput" type="text" name="" value="">
+
+                </div>
+
+                <div class="reed-article-bottom-body">
+                    <center>
+                        <p id="pageDescription"></p>
+                        <textarea id="pageDescriptionInput" type="text" name="" value=""></textarea>
+
+                    </center>
+                </div>
+            </div>
+
+
         </div>
 
         <div class="reed-popup-footer">
-            <button class="reed-handle-scrape-button" id="reedRejectScrapedContent"><i id="reedRejectScrapedContentIcon" class="fa fa-close"></i></button>
+            <button class="reed-handle-scrape-button" id="reedRejectScrapedContent"><i id="reedRejectScrapedContentIcon" class="fa fa-pencil-square-o"></i></button>
 
             <button class="reed-handle-scrape-button" id="reedAcceptScrapedContent"><i id="reedAcceptScrapedContentIcon" class="fa fa-check"></i></button>
         </div>
