@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Reed",
+  "description": "",
+  "version": "0.1",
+  "browser_action": {
+   "default_popup": "popup/popup.html"
+ },
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ]
+  },
+  "content_scripts": [
+	{
+      "matches":[
+          "http://*/*",
+          "https://*/*"
+      ],
+	  "js": ["content_script/content_script.js"]
+	}
+  ],
+  "web_accessible_resources": [
+    "fonts/*.*"
+  ],
+  "permissions" : ["management", "tabs", "identity", "identity.email", "storage"]
+}
