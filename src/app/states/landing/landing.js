@@ -6,13 +6,25 @@ const SERVER = config.environment === 'DEV' ? config.development_server : config
 class LandingController {
   	constructor($http, $state, Auth) {
 		this.$state = $state;
-
+        this.Auth = Auth;
         this.bannerFourBackgroundChanged = false;
         this.alterUI();
 
         $(window).resize(() => {
             this.alterUI();
         });
+
+        let token = this.Auth.getUserToken();
+
+        if (token) {
+            //we have some token
+            // try redirecting to dashboard
+            //will send returning users to the login screen
+            let user = this.Auth.validateUserToken();
+            if (user) {
+                this.$state.go('dashboard');
+            }
+        }
 	}
 
 
