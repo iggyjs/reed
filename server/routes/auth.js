@@ -61,8 +61,6 @@ routes.post('/signup', (req, res) => {
 
             User.find({name: username}, (err, users) => {
                 if (users.length > 0) {
-                    console.log('Not unique');
-                    console.log(users);
                     return res.json({ success: false, message: 'Username already exists'});
                 }
                 // save the user

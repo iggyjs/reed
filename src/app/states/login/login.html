@@ -34,5 +34,7 @@
             <input ng-model="$ctrl.password" class="reed-input login-input" type="password" name="password" placeholder="Password">
             <input id="loginButton" type="submit" value="Login">
         </form>
+
+        <p ng-if="$ctrl.error" id="loginErrorMessage">{{$ctrl.errorMessage}}</p>
     </center>
 </div>

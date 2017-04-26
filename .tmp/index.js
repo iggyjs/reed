@@ -8540,54 +8540,6 @@ var AuthService = exports.AuthService = function () {
 	}
 
 	_createClass(AuthService, [{
-		key: 'signup',
-		value: function signup(username, password) {
-			var _this = this;
-
-			var payload = { name: username, password: password };
-
-			//execute post request to create a new user
-			this.$http.post(SERVER + '/api/signup', payload).then(function (res) {
-				var status = res.status;
-				var success = res.data.success;
-				var token = res.data.token;
-
-				if (status === 200 && success) {
-					//store token
-					localStorage.setItem('reed-token', token);
-					// go to dash
-					_this.$state.go('dashboard');
-				} else {
-					//handle err
-					console.log('There was some error creating a user.');
-				}
-			});
-		}
-	}, {
-		key: 'login',
-		value: function login(username, password) {
-			var _this2 = this;
-
-			var payload = { name: username, password: password };
-
-			this.$http.post(SERVER + '/api/login', payload).then(function (res) {
-				if (res.status === 200) {
-
-					if (res.data.success) {
-						//successful login
-						var token = res.data.token;
-						localStorage.setItem('reed-token', token);
-						// go to dash
-						_this2.$state.go('dashboard');
-					} else {
-						//show failed login notification
-					}
-				} else {
-						//handle HTTP Error
-					}
-			});
-		}
-	}, {
 		key: 'logout',
 		value: function logout() {
 			localStorage.removeItem('reed-token');
@@ -8883,10 +8835,12 @@ var LoginController = function () {
         this.$state = $state;
         this.username = '';
         this.password = '';
-        this.message = 'login';
         this.data = $state.current.data;
         this.$http = $http;
         this.Auth = Auth;
+
+        this.error = false;
+        this.errorMessage = '';
 
         var user = this.Auth.validateUserToken();
         if (user) {
@@ -8898,9 +8852,51 @@ var LoginController = function () {
         key: 'login',
         value: function login(e) {
             e.preventDefault();
-            this.Auth.login(this.username, this.password);
 
-            //TODO: Handle form validation
+            var usernameNotEmpty = this.username.length > 0 ? true : false;
+            var passwordNotEmpty = this.password.length > 0 ? true : false;
+
+            if (usernameNotEmpty && passwordNotEmpty) {
+                this.AuthLogin(this.username, this.password);
+            } else {
+                if (!usernameNotEmpty) {
+                    this.error = true;
+                    this.errorMessage = 'Empty usernames aren\'t a thing.';
+                }
+
+                if (!passwordNotEmpty) {
+                    this.error = true;
+                    this.errorMessage = 'Looks like you\'re missing something.';
+                }
+            }
+        }
+    }, {
+        key: 'AuthLogin',
+        value: function AuthLogin(username, password) {
+            var _this = this;
+
+            var payload = { name: username, password: password };
+
+            this.$http.post(SERVER + '/api/login', payload).then(function (res) {
+                if (res.status === 200) {
+
+                    if (res.data.success) {
+                        //successful login
+                        var token = res.data.token;
+                        localStorage.setItem('reed-token', token);
+                        // go to dash
+                        _this.$state.go('dashboard');
+                    } else {
+                        //show failed login notification
+                        _this.error = true;
+                        _this.errorMessage = 'Username or password lookup failed.';
+                    }
+                } else {
+                    //handle HTTP Error
+                    _this.error = true;
+                    _this.errorMessage = 'Server error. That\'s on us.';
+                }
+            });
         }
     }]);
 
@@ -9474,6 +9470,9 @@ var SignupController = function () {
         this.data = $state.current.data;
         this.$http = $http;
 
+        this.error = false;
+        this.errorMessage = '';
+
         var user = this.Auth.getUserToken();
 
         if (user) {
@@ -9489,33 +9488,72 @@ var SignupController = function () {
         value: function signup(e) {
             e.preventDefault();
 
-            //TODO: SUPER IMPORtant Ensure that usernames are unique
-
             // check if form is valid
             var passwordsMatch = this.password === this.password2 ? true : false;
-            var usernameIsLongEnough = this.username.length > 3 ? true : false;
+            var usernameIsLongEnough = this.username.length > 2 ? true : false;
             var usernameIsShortEnough = this.username.length < 25 ? true : false;
             var passwordIsLongEnough = this.password.length > 6 ? true : false;
 
             if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough) {
-                this.Auth.signup(this.username, this.password);
+                this.AuthSignup(this.username, this.password);
             } else {
                 if (this.password.length === 0) {
                     //show password too short message
+                    this.error = true;
+                    this.errorMessage = 'Password is too short.';
                 }
 
                 if (!usernameIsLongEnough) {
                     //show username too short message
+                    this.error = true;
+                    this.errorMessage = 'Username must be more than 2 characters.';
                 }
 
                 if (!usernameIsShortEnough) {
                     //show username too long message
+                    this.error = true;
+                    this.errorMessage = 'Way too long.';
                 }
 
                 if (!passwordsMatch) {
                     //show passwords do not match message
+                    this.error = true;
+                    this.errorMessage = 'Passwords don\'t match.';
+                }
+
+                if (!passwordIsLongEnough) {
+                    this.error = true;
+                    this.errorMessage = 'Password needs to be at least 6 characters.';
                 }
             }
+        }
+
+        // Moved out of service to handle errors
+
+    }, {
+        key: 'AuthSignup',
+        value: function AuthSignup(username, password) {
+            var _this = this;
+
+            var payload = { name: username, password: password };
+
+            //execute post request to create a new user
+            this.$http.post(SERVER + '/api/signup', payload).then(function (res) {
+                var status = res.status;
+                var success = res.data.success;
+                var token = res.data.token;
+
+                if (status === 200 && success) {
+                    //store token
+                    localStorage.setItem('reed-token', token);
+                    // go to dash
+                    _this.$state.go('dashboard');
+                } else {
+                    //handle err
+                    _this.error = true;
+                    _this.errorMessage = res.data.message;
+                }
+            });
         }
     }]);
 
@@ -43533,7 +43571,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "/*Login state styles*/\n.login-view {\n    padding:30px 30px 30px 30px;\n}\n\n#loginButton {\n    height: 40px;\n    width: 100%;\n    background-color: #FFF;\n    border: solid 1px #CCCCCC;\n    outline: none;\n}\n\n.signup-view {\n    padding:30px 30px 30px 30px;\n}\n\n.auth-form {\n    max-width: 400px;\n    padding-top: 140px;\n}\n\n.login-input {\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.login-input:focus {\n    border: 1px solid #4E56EE !important;\n}\n", ""]);
+exports.push([module.i, "/*Login state styles*/\n.login-view {\n    padding:30px 30px 30px 30px;\n}\n\n#loginButton {\n    height: 40px;\n    width: 100%;\n    background-color: #FFF;\n    border: solid 1px #CCCCCC;\n    outline: none;\n}\n\n.signup-view {\n    padding:30px 30px 30px 30px;\n}\n\n.auth-form {\n    max-width: 400px;\n    padding-top: 140px;\n}\n\n.login-input {\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.login-input:focus {\n    border: 1px solid #4E56EE !important;\n}\n\n#loginErrorMessage {\n    margin-top: 20px;\n    color: #B9454B;\n}\n", ""]);
 
 // exports
 
@@ -43589,7 +43627,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "/*Signup*/\n#signupButton {\n    height: 40px;\n    width: 100%;\n    background-color: #FFF;\n    border: solid 1px #CCCCCC;\n    outline: none;\n}\n", ""]);
+exports.push([module.i, "/*Signup*/\n#signupButton {\n    height: 40px;\n    width: 100%;\n    background-color: #FFF;\n    border: solid 1px #CCCCCC;\n    outline: none;\n}\n\n#signupErrorMessage {\n    margin-top: 20px;\n    color: #B9454B;\n}\n", ""]);
 
 // exports
 
@@ -43624,7 +43662,7 @@ module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"login\">Login</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"signup\">Signup</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"login-view\">\n    <center>\n        <form class=\"auth-form\" ng-submit=\"$ctrl.login($event)\">\n            <input class=\"hide-chrome-autofill\" type=\"text\" name=\"\" value=\"\">\n            <input class=\"hide-chrome-autofill\" type=\"password\" name=\"\" value=\"\">\n\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Password\">\n            <input id=\"loginButton\" type=\"submit\" value=\"Login\">\n        </form>\n    </center>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"login\">Login</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"signup\">Signup</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"login-view\">\n    <center>\n        <form class=\"auth-form\" ng-submit=\"$ctrl.login($event)\">\n            <input class=\"hide-chrome-autofill\" type=\"text\" name=\"\" value=\"\">\n            <input class=\"hide-chrome-autofill\" type=\"password\" name=\"\" value=\"\">\n\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Password\">\n            <input id=\"loginButton\" type=\"submit\" value=\"Login\">\n        </form>\n\n        <p ng-if=\"$ctrl.error\" id=\"loginErrorMessage\">{{$ctrl.errorMessage}}</p>\n    </center>\n</div>\n";
 
 /***/ }),
 /* 33 */
@@ -43660,7 +43698,7 @@ module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class
 /* 38 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"login\">Login</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"signup\">Signup</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"signup-view\">\n    <center>\n        <form class=\"auth-form\" ng-submit=\"$ctrl.signup($event)\">\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Password\">\n            <input ng-model=\"$ctrl.password2\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Re-type password\">\n            <input id=\"signupButton\" type=\"submit\" value=\"Sign up\">\n        </form>\n    </center>\n</div>\n";
+module.exports = "<nav class=\"reed-nav navbar navbar-default\">\n    <div class=\"reed-nav-container-fluid container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"reed-brand navbar-brand\" href=\"#\">Reed</a>\n        </div>\n\n\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n            <!-- <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Link</a></li>\n            </ul> -->\n\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li><a class=\"reed-nav-link\" ui-sref=\"login\">Login</a></li>\n                <li><a class=\"reed-nav-link\" ui-sref=\"signup\">Signup</a></li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<div class=\"signup-view\">\n    <center>\n\n        <form class=\"auth-form\" ng-submit=\"$ctrl.signup($event)\">\n            <input ng-model=\"$ctrl.username\" class=\"reed-input login-input\" type=\"text\" name=\"username\" placeholder=\"Username\">\n            <input ng-model=\"$ctrl.password\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Password\">\n            <input ng-model=\"$ctrl.password2\" class=\"reed-input login-input\" type=\"password\" name=\"password\" placeholder=\"Re-type password\">\n            <input id=\"signupButton\" type=\"submit\" value=\"Sign up\">\n        </form>\n        <p ng-if=\"$ctrl.error\" id=\"signupErrorMessage\">{{$ctrl.errorMessage}}</p>\n    </center>\n</div>\n";
 
 /***/ }),
 /* 39 */

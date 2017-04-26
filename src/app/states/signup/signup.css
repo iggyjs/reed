@@ -6,3 +6,8 @@
     border: solid 1px #CCCCCC;
     outline: none;
 }
+
+#signupErrorMessage {
+    margin-top: 20px;
+    color: #B9454B;
+}

@@ -26,11 +26,13 @@
 
 <div class="signup-view">
     <center>
+
         <form class="auth-form" ng-submit="$ctrl.signup($event)">
             <input ng-model="$ctrl.username" class="reed-input login-input" type="text" name="username" placeholder="Username">
             <input ng-model="$ctrl.password" class="reed-input login-input" type="password" name="password" placeholder="Password">
             <input ng-model="$ctrl.password2" class="reed-input login-input" type="password" name="password" placeholder="Re-type password">
             <input id="signupButton" type="submit" value="Sign up">
         </form>
+        <p ng-if="$ctrl.error" id="signupErrorMessage">{{$ctrl.errorMessage}}</p>
     </center>
 </div>
