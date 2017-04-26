@@ -26,8 +26,6 @@ class SignupController {
     signup(e) {
         e.preventDefault();
 
-        this.Auth.signup(this.username, this.password);
-
         //TODO: SUPER IMPORtant Ensure that usernames are unique
 
         // check if form is valid

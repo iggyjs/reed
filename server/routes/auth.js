@@ -57,40 +57,53 @@ routes.post('/signup', (req, res) => {
         bcrypt.hash(pw, salt, (err, hash) => {
 
             let username = payload.name;
-            let userId  = '';
-            let userShortId = shortid.generate();
+            // make sure id is unique
 
-            let user = new User({
-                guid: userShortId,
-                name: username,
-                password: hash,
-                admin: true
+            User.find({name: username}, (err, users) => {
+                if (users.length > 0) {
+                    console.log('Not unique');
+                    console.log(users);
+                    return res.json({ success: false, message: 'Username already exists'});
+                }
+                // save the user
+                else {
+                    let userId  = '';
+                    let userShortId = shortid.generate();
+
+                    let user = new User({
+                        guid: userShortId,
+                        name: username,
+                        password: hash,
+                        admin: true
+                    });
+
+                    user.save((err, user) => {
+                        if (err) throw err;
+
+                        userId = user._id;
+
+                        let token = jwt.sign(user, config.secret, {
+                            expiresIn: '2d' // expires in 48 hours
+                        });
+
+                        // Make a new list for that user
+                        let currDate = moment().format('MM:DD:YYYY');
+
+                        let list = new List({
+                            user_guid: userShortId,
+                            user_id: userId,
+                            date: currDate
+                        });
+
+                        list.save((err) => {
+                            if (err) throw err;
+
+                            res.json({ success: true, token: token });
+                        });
+                    });
+                }
             });
 
-            user.save((err, user) => {
-                if (err) throw err;
-
-                userId = user._id;
-
-                let token = jwt.sign(user, config.secret, {
-                    expiresIn: '2d' // expires in 48 hours
-                });
-
-                // Make a new list for that user
-                let currDate = moment().format('MM:DD:YYYY');
-
-                let list = new List({
-                    user_guid: userShortId,
-                    user_id: userId,
-                    date: currDate
-                });
-
-                list.save((err) => {
-                    if (err) throw err;
-
-                    res.json({ success: true, token: token });
-                });
-            });
         });
     });
 });
