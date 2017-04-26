@@ -49890,7 +49890,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "/*Login state styles*/\n.login-view {\n    padding:30px 30px 30px 30px;\n}\n\n#loginButton {\n    height: 40px;\n    width: 100%;\n    background-color: #FFF;\n    border: solid 1px #CCCCCC;\n    outline: none;\n}\n\n.signup-view {\n    padding:30px 30px 30px 30px;\n}\n\n.auth-form {\n    max-width: 400px;\n    padding-top: 140px;\n}\n\n.login-input {\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.login-input:focus {\n    border: 1px solid  #4E56EE !important;\n}\n", ""]);
+exports.push([module.i, "/*Login state styles*/\n.login-view {\n    padding:30px 30px 30px 30px;\n}\n\n#loginButton {\n    height: 40px;\n    width: 100%;\n    background-color: #FFF;\n    border: solid 1px #CCCCCC;\n    outline: none;\n}\n\n.signup-view {\n    padding:30px 30px 30px 30px;\n}\n\n.auth-form {\n    max-width: 400px;\n    padding-top: 140px;\n}\n\n.login-input {\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.login-input:focus {\n    border: 1px solid #4E56EE !important;\n}\n", ""]);
 
 // exports
 

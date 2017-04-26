@@ -10,39 +10,68 @@
         <script type="text/javascript" src="js/popup.js"></script>
     </head>
     <body>
-        <div class="reed-popup-top-bar">
-            <p id="reedPopupHeader">Reed</p>
-        </div>
 
-        <div class="reed-popup-body">
-            <!-- Programmatically filled in -->
-
-            <div class="reed-article-to-add-body">
-                <div class="reed-article-top-body">
-                    <img id="pageThumb" src="" alt="">
-
-                    <p id="pageTitle"></p>
-                    <input id="pageTitleInput" type="text" name="" value="">
-
-                </div>
-
-                <div class="reed-article-bottom-body">
-                    <center>
-                        <p id="pageDescription"></p>
-                        <textarea id="pageDescriptionInput" type="text" name="" value=""></textarea>
-
-                    </center>
-                </div>
+        <div class="reed-logged-out-view">
+            <div class="reed-popup-top-bar">
+                <p id="reedPopupHeader">Reed</p>
             </div>
 
+            <div class="reed-popup-body">
 
+                <center>
+                <p id="loginFailedMessage"></p>
+                <form id="reedLoginForm" method="post">
+                    <input id="reedUsername" class="reed-input" type="text" name="username" placeholder="Username">
+                    <input id="reedPassword" class="reed-input" type="password" name="password" placeholder="Password">
+                    <input id="loginButton" type="submit" name="" value="Login">
+                </form>
+
+                <!-- TODO: change to live server -->
+                <a class="reed-link" target="_blank" href="http://localhost:3000/signup">Need an account? Sign up</a>
+                </center>
+            </div>
         </div>
 
-        <div class="reed-popup-footer">
-            <button class="reed-handle-scrape-button" id="reedRejectScrapedContent"><i id="reedRejectScrapedContentIcon" class="fa fa-pencil-square-o"></i></button>
 
-            <button class="reed-handle-scrape-button" id="reedAcceptScrapedContent"><i id="reedAcceptScrapedContentIcon" class="fa fa-check"></i></button>
+        <div class="reed-logged-in-view">
+            <div class="reed-popup-top-bar">
+                <p id="reedPopupHeader">Reed</p>
+            </div>
+
+            <div class="reed-popup-body">
+                <!-- Programmatically filled in -->
+
+                <div class="reed-article-to-add-body">
+                    <div class="reed-article-top-body">
+                        <center>
+                            <p id="postArticleFailed"></p>
+                            <p id="postArticleSucceeded"></p>
+                        </center>
+
+                        <img id="pageThumb" src="" alt="">
+
+                        <p id="pageTitle"></p>
+                        <input id="pageTitleInput" type="text" name="" value="">
+
+                    </div>
+
+                    <div class="reed-article-bottom-body">
+                        <center>
+                            <p id="pageDescription"></p>
+                            <textarea id="pageDescriptionInput" type="text" name="" value=""></textarea>
+
+                        </center>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="reed-popup-footer">
+                <button class="reed-handle-scrape-button" id="reedRejectScrapedContent"><i id="reedRejectScrapedContentIcon" class="fa fa-pencil-square-o"></i></button>
+
+                <button class="reed-handle-scrape-button" id="reedAcceptScrapedContent"><i id="reedAcceptScrapedContentIcon" class="fa fa-paper-plane-o"></i></button>
+            </div>
         </div>
-
     </body>
 </html>

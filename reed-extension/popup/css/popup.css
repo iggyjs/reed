@@ -15,6 +15,67 @@ body {
     padding-left: 17px;
 }
 
+.reed-input {
+    font-family: 'ClearSans';
+    outline: none;
+    width: 90%;
+    height: 30px;
+    padding-left: 4px;
+    margin-bottom: 20px;
+    color: #434343;
+    font-size: 13logipx;
+}
+
+.reed-input:focus {
+    border: 1px solid #4E56EE !important;
+}
+
+.reed-link {
+    display: inline-block;
+    font-family: 'ClearSans';
+    margin-top:14px;
+    text-decoration: none;
+}
+
+.reed-link:hover{
+    background-color: #4E56EE;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#loginFailedMessage {
+    margin-top: -10px;
+    font-family: 'ClearSans';
+    display: none;
+    color: #de2727;
+}
+
+#postArticleFailed {
+    margin-top: -4px;
+    font-family: 'ClearSans';
+    display: none;
+    color: #de2727;
+}
+
+#postArticleSucceeded {
+    margin-top: -4px;
+    font-family: 'ClearSans';
+    display: none;
+    color: #0AD067;
+}
+
+#loginButton {
+    font-family: 'ClearSans';
+    height: 40px;
+    width: 90%;
+    background-color: #FFF;
+    border: solid 1px #CCCCCC;
+    outline: none;
+}
+
+
 .reed-popup-top-bar {
     border-bottom: 1px solid #EEE;
 }
@@ -46,7 +107,7 @@ body {
 
 .reed-handle-scrape-button:hover {
     background-color: #434343;
-    color: #FFF;
+    color: #FFF !important;
 }
 
 .reed-article-to-add-body {
@@ -91,7 +152,6 @@ body {
 
 #reedRejectScrapedContent {
     border-right: 1px solid #EEE;
-    color: #888888;
 }
 
 
@@ -102,4 +162,28 @@ body {
 
 #reedAcceptScrapedContentIcon {
     /*color: #608969;*/
+}
+
+
+#pageTitleInput {
+    outline:none;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    margin-left: 12px;
+    border: 1px solid #EEEEEE;
+    padding-left: 4px;
+}
+
+
+#pageDescriptionInput {
+    outline: none;
+    width: 370px;
+    margin-left: 4px;
+    margin-top: 10px;
+    height: 60px;
+    border: 1px solid #EEEEEE;
+    font-size: 11px;
+    padding: 7px 3px 0 6px;
+    resize: none;
 }
