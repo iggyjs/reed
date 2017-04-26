@@ -88,13 +88,7 @@ routes.post('/signup', (req, res) => {
                 list.save((err) => {
                     if (err) throw err;
 
-                    user.list = list;
-
-                    user.save((err, user) => {
-                        if (err) throw err;
-
-                        res.json({ success: true, token: token });
-                    });
+                    res.json({ success: true, token: token });
                 });
             });
         });
