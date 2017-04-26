@@ -3,7 +3,7 @@
 
   "name": "Reed",
   "description": "",
-  "version": "0.1",
+  "version": "0.2",
   "browser_action": {
    "default_popup": "popup/popup.html"
  },

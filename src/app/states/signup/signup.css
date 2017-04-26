@@ -7,6 +7,15 @@
     outline: none;
 }
 
+#downloadExtensionButton {
+    height: 40px;
+    margin-top:20px;
+    width: 400px;
+    background-color: #FFF;
+    border: solid 1px #CCCCCC;
+    outline: none;
+}
+
 #signupErrorMessage {
     margin-top: 20px;
     color: #B9454B;

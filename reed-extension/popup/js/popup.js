@@ -1,7 +1,7 @@
 let pageTitle, pageDescription, pageThumb = '';
 let openInputs = false;
 
-const SERVER = 'http:localhost:8000'
+const SERVER = 'http://52.203.252.83:8000'
 
 $(function() {
 

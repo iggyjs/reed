@@ -38,11 +38,19 @@
 }
 
 #firstContainer {
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #secondContainer {
     color: #FFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#fourthContainer {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #thirdContainer{
