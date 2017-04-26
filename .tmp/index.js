@@ -74,7 +74,7 @@
 
 
 module.exports = {
-	'environment': 'PROD',
+	'environment': 'DEV',
 	'development_server': 'http://localhost:8000',
 	'development_host': 'http://localhost:3000/',
 	'production_server': 'http://52.203.252.83:8000',
