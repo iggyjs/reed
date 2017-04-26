@@ -13,9 +13,13 @@ class SignupController {
 		this.data = $state.current.data;
 		this.$http = $http;
 
-        let user = this.Auth.validateUserToken()
+        let user = this.Auth.getUserToken();
+
         if (user) {
-            this.$state.go('dashboard');
+            //we have some token
+            // try redirecting to dashboard
+            //will send returning users to the login screen
+            this.Auth.validateUserToken();
         }
 	}
 

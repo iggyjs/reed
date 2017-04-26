@@ -23,6 +23,7 @@ mongoose.connect(process.env['NODE_DB']);
 const auth = require('./routes/auth');
 const list = require('./routes/list');
 const users = require('./routes/users');
+const profile = require('./routes/profile');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -46,7 +47,7 @@ app.use(bodyParser.json());
 
 //apply our routes
 //ordering does matter
-app.use('/api', auth, list, users);
+app.use('/api', auth, profile, list, users);
 
 //server angular from express if in production
 if (process.env['NODE_ENV'] === 'production') {

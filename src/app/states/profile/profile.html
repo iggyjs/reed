@@ -16,11 +16,14 @@
                 <li><a href="#">Link</a></li>
             </ul> -->
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="reed-nav-link" ui-sref="dashboard">Feed</a></li>
-                <li><a class="reed-nav-link" ui-sref="notifications">Notifications</a></li>
-                <li><a class="reed-nav-link" ui-sref="profile({userId: '@' + $ctrl.user.name })">Profile</a></li>
-                <li><a class="reed-nav-link" ui-sref="search">Search</a></li>
-                <li><a class="reed-nav-link" ui-sref="logout">Logout</a></li>
+                <li ng-if="$ctrl.isLoggedIn"><a class="reed-nav-link" ui-sref="dashboard">Feed</a></li>
+                <li ng-if="$ctrl.isLoggedIn"><a class="reed-nav-link" ui-sref="notifications">Notifications</a></li>
+                <li ng-if="$ctrl.isLoggedIn"><a class="reed-nav-link" ui-sref="profile({userId: '@' + $ctrl.user.name })">Profile</a></li>
+                <li ng-if="$ctrl.isLoggedIn"><a class="reed-nav-link" ui-sref="search">Search</a></li>
+                <li ng-if="$ctrl.isLoggedIn"><a class="reed-nav-link" ui-sref="logout">Logout</a></li>
+
+                <li ng-if="!$ctrl.isLoggedIn"><a class="reed-nav-link" ui-sref="login">Login</a></li>
+                <li ng-if="!$ctrl.isLoggedIn"><a class="reed-nav-link" ui-sref="signup">Signup</a></li>
             </ul>
         </div>
     </div>

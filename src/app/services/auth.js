@@ -39,6 +39,7 @@ export class AuthService {
 		this.$http.post(SERVER + '/api/login', payload)
 		.then((res) => {
 			if (res.status === 200) {
+
 				if (res.data.success) {
 					//successful login
 					let token = res.data.token;

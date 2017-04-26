@@ -77,14 +77,6 @@ routes.get('/lists', (req, res) => {
     });
 });
 
-//returns todays list by date and user id
-routes.get('/profileList', (req, res) => {
-    let id = req.query.userGuid;
-
-    List.findOne({user_guid: id}, (err, list) => {
-        res.json(list);
-    });
-});
 
 // clears current list
 routes.post('/clearCurrList', (req, res) => {
