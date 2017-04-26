@@ -28,35 +28,34 @@ class SignupController {
 
         this.Auth.signup(this.username, this.password);
 
-        //TODO: Ensure that usernames are unique
+        //TODO: SUPER IMPORtant Ensure that usernames are unique
 
-        //FIXME: Uncomment when you're done testing APIs
         // check if form is valid
-        // let passwordsMatch = this.password === this.password2 ? true : false;
-        // let usernameIsLongEnough = this.username.length > 3 ? true : false
-        // let usernameIsShortEnough = this.username.length < 25 ? true : false
-        // let passwordIsLongEnough = this.password.length > 6 ? true : false;
-        //
-        // if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough) {
-        //     this.Auth.signup(this.username, this.password);
-        // }
-        // else {
-        //     if (this.password.length === 0) {
-        //         //show password too short message
-        //     }
-        //
-        //     if (!usernameIsLongEnough) {
-        //         //show username too short message
-        //     }
-        //
-        //     if (!usernameIsShortEnough) {
-        //         //show username too long message
-        //     }
-        //
-        //     if (!passwordsMatch) {
-        //         //show passwords do not match message
-        //     }
-        // }
+        let passwordsMatch = this.password === this.password2 ? true : false;
+        let usernameIsLongEnough = this.username.length > 3 ? true : false
+        let usernameIsShortEnough = this.username.length < 25 ? true : false
+        let passwordIsLongEnough = this.password.length > 6 ? true : false;
+
+        if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough) {
+            this.Auth.signup(this.username, this.password);
+        }
+        else {
+            if (this.password.length === 0) {
+                //show password too short message
+            }
+
+            if (!usernameIsLongEnough) {
+                //show username too short message
+            }
+
+            if (!usernameIsShortEnough) {
+                //show username too long message
+            }
+
+            if (!passwordsMatch) {
+                //show passwords do not match message
+            }
+        }
     }
 }
 

@@ -8,7 +8,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider
 		.state('app', {
 			url: '/',
-			redirectTo: 'login'
+			component: 'landing'
 		})
 		.state('dashboard', {
 			url: '/dashboard',
