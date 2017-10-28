@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="666f6586-ab0e-4252-9bac-0475808febaa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/24712f6c47821394fba7942fbb52c3b2.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/2c2ae068be3b089e0a5b59abb1831550.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/621bd386841f74e0053cb8e67f8a0604.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app-2bf2d47592988ceba44b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/b9bdac589c0d3aac828fd3a15108b61a.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index-1dde83685055f7c0619c43093cae2813.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/vendor-2bf2d47592988ceba44b.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/index.js" afterPath="$PROJECT_DIR$/.tmp/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/states/signup/signup.js" afterPath="$PROJECT_DIR$/src/app/states/signup/signup.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +19,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-79">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1509220431000" expanded="true" signature="124:1280" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,8 +40,21 @@
         <entry file="file://$PROJECT_DIR$/src/app/services/auth.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-              <folding />
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <folding>
+                <marker date="1509220431000" expanded="true" signature="185:1241" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="337:425" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="448:846" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="555:780" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="684:710" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="716:776" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="786:843" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="864:1238" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="971:1184" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="1100:1126" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="1132:1180" ph="{...}" />
+                <marker date="1509220431000" expanded="true" signature="1190:1235" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,6 +62,9 @@
     </leaf>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>build</find>
+    </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
     </dirStrings>
@@ -66,6 +76,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/app/states/signup/signup.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -112,34 +123,6 @@
               <item name="reed" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="reed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reed" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reed" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reed" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reed" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -154,6 +137,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/istreuly/Sites/reed/src/app/states/signup/signup.js" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,14 +203,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/gulp.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -239,14 +215,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-79">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1509220431000" expanded="true" signature="124:1280" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/services/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <marker date="1509220431000" expanded="true" signature="185:1241" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="337:425" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="448:846" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="555:780" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="684:710" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="716:776" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="786:843" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="864:1238" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="971:1184" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="1100:1126" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="1132:1180" ph="{...}" />
+            <marker date="1509220431000" expanded="true" signature="1190:1235" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="48" />
           <folding />
         </state>
       </provider>
