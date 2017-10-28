@@ -12,11 +12,10 @@ class SignupController {
         this.Auth = Auth;
 		this.data = $state.current.data;
 		this.$http = $http;
-
-        let user = this.Auth.validateUserToken()
-        if (user) {
-            this.$state.go('dashboard');
-        }
+        //let user = this.Auth.validateUserToken()
+        // if (user) {
+        //     this.$state.go('dashboard');
+        // }
 	}
 
     signup(e) {

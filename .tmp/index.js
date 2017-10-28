@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -73,13 +73,13 @@
 "use strict";
 
 
-var cov_ys7yb8wve = function () {
-	var path = '/Users/dstreuly/Sites/reed/reed/src/app/config.js',
-	    hash = 'fedcde6648e0d007d3ff54d3f1cf32c2981b966a',
+var cov_2ozu70m5nd = function () {
+	var path = '/Users/istreuly/Sites/reed/src/app/config.js',
+	    hash = '36280044b83b57d294bb5b97bef4b98cb6a23a72',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
-		path: '/Users/dstreuly/Sites/reed/reed/src/app/config.js',
+		path: '/Users/istreuly/Sites/reed/src/app/config.js',
 		statementMap: {
 			'0': {
 				start: {
@@ -111,7 +111,7 @@ var cov_ys7yb8wve = function () {
 	return coverage[path] = coverageData;
 }();
 
-++cov_ys7yb8wve.s[0];
+cov_2ozu70m5nd.s[0]++;
 module.exports = {
 	'environment': 'DEV',
 	'development_server': 'http://localhost:8000',
@@ -8559,13 +8559,13 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var cov_1ujy32kic8 = function () {
-	var path = '/Users/dstreuly/Sites/reed/reed/src/app/services/auth.js',
-	    hash = '6be6763fdb8a71df799301cc22e8e0c2716ee663',
+var cov_t6gc8crl5 = function () {
+	var path = '/Users/istreuly/Sites/reed/src/app/services/auth.js',
+	    hash = 'f79821b0c3365d1617c5388f2a82d9fd0bedfcbc',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
-		path: '/Users/dstreuly/Sites/reed/reed/src/app/services/auth.js',
+		path: '/Users/istreuly/Sites/reed/src/app/services/auth.js',
 		statementMap: {
 			'0': {
 				start: {
@@ -9576,8 +9576,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_1ujy32kic8.s[0], __webpack_require__(0));
-var SERVER = (++cov_1ujy32kic8.s[1], config.environment === 'DEV' ? (++cov_1ujy32kic8.b[0][0], config.development_server) : (++cov_1ujy32kic8.b[0][1], config.production_server));
+var config = (cov_t6gc8crl5.s[0]++, __webpack_require__(0));
+var SERVER = (cov_t6gc8crl5.s[1]++, config.environment === 'DEV' ? (cov_t6gc8crl5.b[0][0]++, config.development_server) : (cov_t6gc8crl5.b[0][1]++, config.production_server));
 
 var AuthService = exports.AuthService = function () {
 	/** @ngInject */
@@ -9585,13 +9585,13 @@ var AuthService = exports.AuthService = function () {
 	function AuthService($http, $state, jwtHelper) {
 		_classCallCheck(this, AuthService);
 
-		++cov_1ujy32kic8.f[0];
-		++cov_1ujy32kic8.s[2];
+		cov_t6gc8crl5.f[0]++;
+		cov_t6gc8crl5.s[2]++;
 
 		this.$http = $http;
-		++cov_1ujy32kic8.s[3];
+		cov_t6gc8crl5.s[3]++;
 		this.$state = $state;
-		++cov_1ujy32kic8.s[4];
+		cov_t6gc8crl5.s[4]++;
 		this.jwtHelper = jwtHelper;
 	}
 
@@ -9600,32 +9600,32 @@ var AuthService = exports.AuthService = function () {
 		value: function signup(username, password) {
 			var _this = this;
 
-			++cov_1ujy32kic8.f[1];
+			cov_t6gc8crl5.f[1]++;
 
-			var payload = (++cov_1ujy32kic8.s[5], { name: username, password: password });
+			var payload = (cov_t6gc8crl5.s[5]++, { name: username, password: password });
 
 			//execute post request to create a new user
-			++cov_1ujy32kic8.s[6];
+			cov_t6gc8crl5.s[6]++;
 			this.$http.post(SERVER + '/api/signup', payload).then(function (res) {
-				++cov_1ujy32kic8.f[2];
+				cov_t6gc8crl5.f[2]++;
 
-				var status = (++cov_1ujy32kic8.s[7], res.status);
-				var success = (++cov_1ujy32kic8.s[8], res.data.success);
-				var token = (++cov_1ujy32kic8.s[9], res.data.token);
+				var status = (cov_t6gc8crl5.s[7]++, res.status);
+				var success = (cov_t6gc8crl5.s[8]++, res.data.success);
+				var token = (cov_t6gc8crl5.s[9]++, res.data.token);
 
-				++cov_1ujy32kic8.s[10];
-				if ((++cov_1ujy32kic8.b[2][0], status === 200) && (++cov_1ujy32kic8.b[2][1], success)) {
-					++cov_1ujy32kic8.b[1][0];
-					++cov_1ujy32kic8.s[11];
+				cov_t6gc8crl5.s[10]++;
+				if ((cov_t6gc8crl5.b[2][0]++, status === 200) && (cov_t6gc8crl5.b[2][1]++, success)) {
+					cov_t6gc8crl5.b[1][0]++;
+					cov_t6gc8crl5.s[11]++;
 
 					//store token
 					localStorage.setItem('reed-token', token);
 					// go to dash
-					++cov_1ujy32kic8.s[12];
+					cov_t6gc8crl5.s[12]++;
 					_this.$state.go('dashboard');
 				} else {
-					++cov_1ujy32kic8.b[1][1];
-					++cov_1ujy32kic8.s[13];
+					cov_t6gc8crl5.b[1][1]++;
+					cov_t6gc8crl5.s[13]++;
 
 					//handle err
 					console.log('There was some error creating a user.');
@@ -9637,82 +9637,82 @@ var AuthService = exports.AuthService = function () {
 		value: function login(username, password) {
 			var _this2 = this;
 
-			++cov_1ujy32kic8.f[3];
+			cov_t6gc8crl5.f[3]++;
 
-			var payload = (++cov_1ujy32kic8.s[14], { name: username, password: password });
+			var payload = (cov_t6gc8crl5.s[14]++, { name: username, password: password });
 
-			++cov_1ujy32kic8.s[15];
+			cov_t6gc8crl5.s[15]++;
 			this.$http.post(SERVER + '/api/login', payload).then(function (res) {
-				++cov_1ujy32kic8.f[4];
-				++cov_1ujy32kic8.s[16];
+				cov_t6gc8crl5.f[4]++;
+				cov_t6gc8crl5.s[16]++;
 
 				if (res.status === 200) {
-					++cov_1ujy32kic8.b[3][0];
-					++cov_1ujy32kic8.s[17];
+					cov_t6gc8crl5.b[3][0]++;
+					cov_t6gc8crl5.s[17]++;
 
 					if (res.data.success) {
-						++cov_1ujy32kic8.b[4][0];
+						cov_t6gc8crl5.b[4][0]++;
 
 						//successful login
-						var token = (++cov_1ujy32kic8.s[18], res.data.token);
-						++cov_1ujy32kic8.s[19];
+						var token = (cov_t6gc8crl5.s[18]++, res.data.token);
+						cov_t6gc8crl5.s[19]++;
 						localStorage.setItem('reed-token', token);
 						// go to dash
-						++cov_1ujy32kic8.s[20];
+						cov_t6gc8crl5.s[20]++;
 						_this2.$state.go('dashboard');
 					} else {
 						//show failed login notification
 
-						++cov_1ujy32kic8.b[4][1];
+						cov_t6gc8crl5.b[4][1]++;
 					}
 				} else {
 						//handle HTTP Error
 
-						++cov_1ujy32kic8.b[3][1];
+						cov_t6gc8crl5.b[3][1]++;
 					}
 			});
 		}
 	}, {
 		key: 'logout',
 		value: function logout() {
-			++cov_1ujy32kic8.f[5];
-			++cov_1ujy32kic8.s[21];
+			cov_t6gc8crl5.f[5]++;
+			cov_t6gc8crl5.s[21]++;
 
 			localStorage.removeItem('reed-token');
 			// go to dash
-			++cov_1ujy32kic8.s[22];
+			cov_t6gc8crl5.s[22]++;
 			this.$state.go('login');
 		}
 	}, {
 		key: 'validateUserToken',
 		value: function validateUserToken() {
-			++cov_1ujy32kic8.f[6];
+			cov_t6gc8crl5.f[6]++;
 
-			var token = (++cov_1ujy32kic8.s[23], localStorage.getItem('reed-token'));
+			var token = (cov_t6gc8crl5.s[23]++, localStorage.getItem('reed-token'));
 
-			++cov_1ujy32kic8.s[24];
-			if ((++cov_1ujy32kic8.b[6][0], typeof token !== "undefined") && (++cov_1ujy32kic8.b[6][1], token !== null)) {
-				++cov_1ujy32kic8.b[5][0];
+			cov_t6gc8crl5.s[24]++;
+			if ((cov_t6gc8crl5.b[6][0]++, typeof token !== "undefined") && (cov_t6gc8crl5.b[6][1]++, token !== null)) {
+				cov_t6gc8crl5.b[5][0]++;
 
 				// a token is present, but we need to validate it
-				var decoded = (++cov_1ujy32kic8.s[25], this.jwtHelper.decodeToken(token)._doc);
+				var decoded = (cov_t6gc8crl5.s[25]++, this.jwtHelper.decodeToken(token)._doc);
 
-				++cov_1ujy32kic8.s[26];
+				cov_t6gc8crl5.s[26]++;
 				if (decoded) {
-					++cov_1ujy32kic8.b[7][0];
-					++cov_1ujy32kic8.s[27];
+					cov_t6gc8crl5.b[7][0]++;
+					cov_t6gc8crl5.s[27]++;
 
 					return decoded;
 				} else {
-					++cov_1ujy32kic8.b[7][1];
-					++cov_1ujy32kic8.s[28];
+					cov_t6gc8crl5.b[7][1]++;
+					cov_t6gc8crl5.s[28]++;
 
 					// redirect to login
 					this.$state.go('login');
 				}
 			} else {
-				++cov_1ujy32kic8.b[5][1];
-				++cov_1ujy32kic8.s[29];
+				cov_t6gc8crl5.b[5][1]++;
+				cov_t6gc8crl5.s[29]++;
 
 				// redirect to login
 				this.$state.go('login');
@@ -9721,33 +9721,33 @@ var AuthService = exports.AuthService = function () {
 	}, {
 		key: 'getUserToken',
 		value: function getUserToken() {
-			++cov_1ujy32kic8.f[7];
+			cov_t6gc8crl5.f[7]++;
 
-			var token = (++cov_1ujy32kic8.s[30], localStorage.getItem('reed-token'));
+			var token = (cov_t6gc8crl5.s[30]++, localStorage.getItem('reed-token'));
 
-			++cov_1ujy32kic8.s[31];
-			if ((++cov_1ujy32kic8.b[9][0], typeof token !== "undefined") && (++cov_1ujy32kic8.b[9][1], token !== null)) {
-				++cov_1ujy32kic8.b[8][0];
+			cov_t6gc8crl5.s[31]++;
+			if ((cov_t6gc8crl5.b[9][0]++, typeof token !== "undefined") && (cov_t6gc8crl5.b[9][1]++, token !== null)) {
+				cov_t6gc8crl5.b[8][0]++;
 
 				// a token is present, but we need to validate it
-				var decoded = (++cov_1ujy32kic8.s[32], this.jwtHelper.decodeToken(token)._doc);
+				var decoded = (cov_t6gc8crl5.s[32]++, this.jwtHelper.decodeToken(token)._doc);
 
-				++cov_1ujy32kic8.s[33];
+				cov_t6gc8crl5.s[33]++;
 				if (decoded) {
-					++cov_1ujy32kic8.b[10][0];
-					++cov_1ujy32kic8.s[34];
+					cov_t6gc8crl5.b[10][0]++;
+					cov_t6gc8crl5.s[34]++;
 
 					return decoded;
 				} else {
-					++cov_1ujy32kic8.b[10][1];
-					++cov_1ujy32kic8.s[35];
+					cov_t6gc8crl5.b[10][1]++;
+					cov_t6gc8crl5.s[35]++;
 
 					// redirect to login
 					return null;
 				}
 			} else {
-				++cov_1ujy32kic8.b[8][1];
-				++cov_1ujy32kic8.s[36];
+				cov_t6gc8crl5.b[8][1]++;
+				cov_t6gc8crl5.s[36]++;
 
 				// redirect to login
 				return null;
@@ -9769,13 +9769,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_2ahlwblcat = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
-        hash = 'c340424b7a00410c855af23827c3df3ccf58e7be',
+var cov_1zm2p1jzn7 = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/dashboard/dashboard.js',
+        hash = '639da3302076adcab17b92f599e8bff654a7e5a0',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/dashboard/dashboard.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/dashboard/dashboard.js',
         statementMap: {
             '0': {
                 start: {
@@ -10455,8 +10455,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_2ahlwblcat.s[0], __webpack_require__(0));
-var SERVER = (++cov_2ahlwblcat.s[1], config.environment === 'DEV' ? (++cov_2ahlwblcat.b[0][0], config.development_server) : (++cov_2ahlwblcat.b[0][1], config.production_server));
+var config = (cov_1zm2p1jzn7.s[0]++, __webpack_require__(0));
+var SERVER = (cov_1zm2p1jzn7.s[1]++, config.environment === 'DEV' ? (cov_1zm2p1jzn7.b[0][0]++, config.development_server) : (cov_1zm2p1jzn7.b[0][1]++, config.production_server));
 
 /** @ngInject */
 
@@ -10465,33 +10465,33 @@ var DashboardController = function () {
     function DashboardController($http, $state, Auth) {
         _classCallCheck(this, DashboardController);
 
-        ++cov_2ahlwblcat.f[0];
-        ++cov_2ahlwblcat.s[2];
+        cov_1zm2p1jzn7.f[0]++;
+        cov_1zm2p1jzn7.s[2]++;
 
         this.$state = $state;
-        ++cov_2ahlwblcat.s[3];
+        cov_1zm2p1jzn7.s[3]++;
         this.message = 'dashboard';
-        ++cov_2ahlwblcat.s[4];
+        cov_1zm2p1jzn7.s[4]++;
         this.data = $state.current.data;
-        ++cov_2ahlwblcat.s[5];
+        cov_1zm2p1jzn7.s[5]++;
         this.$http = $http;
-        ++cov_2ahlwblcat.s[6];
+        cov_1zm2p1jzn7.s[6]++;
         this.Auth = Auth;
-        ++cov_2ahlwblcat.s[7];
+        cov_1zm2p1jzn7.s[7]++;
         this.followingList = [];
 
         //check if we need to validate
-        ++cov_2ahlwblcat.s[8];
+        cov_1zm2p1jzn7.s[8]++;
         if (this.data.authRequired) {
-            ++cov_2ahlwblcat.b[1][0];
+            cov_1zm2p1jzn7.b[1][0]++;
 
             //set the current user
-            var user = (++cov_2ahlwblcat.s[9], this.Auth.validateUserToken());
+            var user = (cov_1zm2p1jzn7.s[9]++, this.Auth.validateUserToken());
         } else {
-            ++cov_2ahlwblcat.b[1][1];
+            cov_1zm2p1jzn7.b[1][1]++;
         }
 
-        ++cov_2ahlwblcat.s[10];
+        cov_1zm2p1jzn7.s[10]++;
         this.user = this.getCurrentUserFromDB();
     }
 
@@ -10500,30 +10500,30 @@ var DashboardController = function () {
         value: function getCurrentUserFromDB() {
             var _this = this;
 
-            ++cov_2ahlwblcat.f[1];
+            cov_1zm2p1jzn7.f[1]++;
 
 
-            var endpoint = (++cov_2ahlwblcat.s[11], SERVER + '/api/currentUser');
-            ++cov_2ahlwblcat.s[12];
+            var endpoint = (cov_1zm2p1jzn7.s[11]++, SERVER + '/api/currentUser');
+            cov_1zm2p1jzn7.s[12]++;
             this.$http.get(endpoint, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_2ahlwblcat.f[2];
-                ++cov_2ahlwblcat.s[13];
+                cov_1zm2p1jzn7.f[2]++;
+                cov_1zm2p1jzn7.s[13]++;
 
                 if (res.status === 200) {
-                    ++cov_2ahlwblcat.b[2][0];
-                    ++cov_2ahlwblcat.s[14];
+                    cov_1zm2p1jzn7.b[2][0]++;
+                    cov_1zm2p1jzn7.s[14]++;
 
                     _this.user = res.data.user;
-                    ++cov_2ahlwblcat.s[15];
+                    cov_1zm2p1jzn7.s[15]++;
                     _this.getFollowingFromDB();
                 } else {
                     // TODO: Throw error notification and botch the whole process
 
-                    ++cov_2ahlwblcat.b[2][1];
+                    cov_1zm2p1jzn7.b[2][1]++;
                 }
             });
         }
@@ -10532,31 +10532,31 @@ var DashboardController = function () {
         value: function getFollowingFromDB() {
             var _this2 = this;
 
-            ++cov_2ahlwblcat.f[3];
+            cov_1zm2p1jzn7.f[3]++;
 
-            var usersToGrab = (++cov_2ahlwblcat.s[16], this.user.following);
-            var users = (++cov_2ahlwblcat.s[17], []);
+            var usersToGrab = (cov_1zm2p1jzn7.s[16]++, this.user.following);
+            var users = (cov_1zm2p1jzn7.s[17]++, []);
 
-            ++cov_2ahlwblcat.s[18];
+            cov_1zm2p1jzn7.s[18]++;
             for (var i = 0; i < usersToGrab.length; i++) {
-                var endpoint = (++cov_2ahlwblcat.s[19], SERVER + '/api/user/guid/' + usersToGrab[i]);
+                var endpoint = (cov_1zm2p1jzn7.s[19]++, SERVER + '/api/user/guid/' + usersToGrab[i]);
 
-                ++cov_2ahlwblcat.s[20];
+                cov_1zm2p1jzn7.s[20]++;
                 this.$http.get(endpoint, {
                     headers: {
                         'x-access-token': localStorage.getItem('reed-token')
                     }
                 }).then(function (res) {
-                    ++cov_2ahlwblcat.f[4];
-                    ++cov_2ahlwblcat.s[21];
+                    cov_1zm2p1jzn7.f[4]++;
+                    cov_1zm2p1jzn7.s[21]++;
 
                     if (res.status === 200) {
-                        ++cov_2ahlwblcat.b[3][0];
+                        cov_1zm2p1jzn7.b[3][0]++;
 
-                        var user = (++cov_2ahlwblcat.s[22], res.data);
+                        var user = (cov_1zm2p1jzn7.s[22]++, res.data);
                         //get associated list
-                        var tempGuid = (++cov_2ahlwblcat.s[23], res.data.guid);
-                        ++cov_2ahlwblcat.s[24];
+                        var tempGuid = (cov_1zm2p1jzn7.s[23]++, res.data.guid);
+                        cov_1zm2p1jzn7.s[24]++;
                         _this2.$http.get(SERVER + '/api/profileList', {
                             headers: {
                                 'x-access-token': localStorage.getItem('reed-token')
@@ -10565,31 +10565,31 @@ var DashboardController = function () {
                                 userGuid: tempGuid
                             }
                         }).then(function (res) {
-                            ++cov_2ahlwblcat.f[5];
-                            ++cov_2ahlwblcat.s[25];
+                            cov_1zm2p1jzn7.f[5]++;
+                            cov_1zm2p1jzn7.s[25]++;
 
                             if (res.status === 200) {
-                                ++cov_2ahlwblcat.b[4][0];
-                                ++cov_2ahlwblcat.s[26];
+                                cov_1zm2p1jzn7.b[4][0]++;
+                                cov_1zm2p1jzn7.s[26]++;
 
                                 user.articles = res.data.articles;
-                                ++cov_2ahlwblcat.s[27];
+                                cov_1zm2p1jzn7.s[27]++;
                                 users.push(user);
                             } else {
                                 // TODO: Throw error notification and botch the whole process
 
-                                ++cov_2ahlwblcat.b[4][1];
+                                cov_1zm2p1jzn7.b[4][1]++;
                             }
                         });
                     } else {
-                            // TODO: Throw error notification and botch the whole process
+                        // TODO: Throw error notification and botch the whole process
 
-                            ++cov_2ahlwblcat.b[3][1];
-                        }
+                        cov_1zm2p1jzn7.b[3][1]++;
+                    }
                 });
             }
 
-            ++cov_2ahlwblcat.s[28];
+            cov_1zm2p1jzn7.s[28]++;
             this.followingList = users;
         }
     }]);
@@ -10597,7 +10597,7 @@ var DashboardController = function () {
     return DashboardController;
 }();
 
-var Dashboard = exports.Dashboard = (++cov_2ahlwblcat.s[29], {
+var Dashboard = exports.Dashboard = (cov_1zm2p1jzn7.s[29]++, {
     template: __webpack_require__(28),
     controller: DashboardController
 });
@@ -10613,13 +10613,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_l3is81mja = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/login/login.js',
-        hash = 'dc7b5e026b9a39dcceb939643430a6795c246d8e',
+var cov_qs2824m75 = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/login/login.js',
+        hash = '55cb279f3fd609f477195ddaca37f3dfee151669',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/login/login.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/login/login.js',
         statementMap: {
             '0': {
                 start: {
@@ -10932,8 +10932,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_l3is81mja.s[0], __webpack_require__(0));
-var SERVER = (++cov_l3is81mja.s[1], config.environment === 'DEV' ? (++cov_l3is81mja.b[0][0], config.development_server) : (++cov_l3is81mja.b[0][1], config.production_server));
+var config = (cov_qs2824m75.s[0]++, __webpack_require__(0));
+var SERVER = (cov_qs2824m75.s[1]++, config.environment === 'DEV' ? (cov_qs2824m75.b[0][0]++, config.development_server) : (cov_qs2824m75.b[0][1]++, config.production_server));
 
 /** @ngInject */
 
@@ -10942,43 +10942,43 @@ var LoginController = function () {
     function LoginController($http, $state, Auth) {
         _classCallCheck(this, LoginController);
 
-        ++cov_l3is81mja.f[0];
-        ++cov_l3is81mja.s[2];
+        cov_qs2824m75.f[0]++;
+        cov_qs2824m75.s[2]++;
 
         this.$state = $state;
-        ++cov_l3is81mja.s[3];
+        cov_qs2824m75.s[3]++;
         this.username = '';
-        ++cov_l3is81mja.s[4];
+        cov_qs2824m75.s[4]++;
         this.password = '';
-        ++cov_l3is81mja.s[5];
+        cov_qs2824m75.s[5]++;
         this.message = 'login';
-        ++cov_l3is81mja.s[6];
+        cov_qs2824m75.s[6]++;
         this.data = $state.current.data;
-        ++cov_l3is81mja.s[7];
+        cov_qs2824m75.s[7]++;
         this.$http = $http;
-        ++cov_l3is81mja.s[8];
+        cov_qs2824m75.s[8]++;
         this.Auth = Auth;
 
-        var user = (++cov_l3is81mja.s[9], this.Auth.validateUserToken());
-        ++cov_l3is81mja.s[10];
+        var user = (cov_qs2824m75.s[9]++, this.Auth.validateUserToken());
+        cov_qs2824m75.s[10]++;
         if (user) {
-            ++cov_l3is81mja.b[1][0];
-            ++cov_l3is81mja.s[11];
+            cov_qs2824m75.b[1][0]++;
+            cov_qs2824m75.s[11]++;
 
             this.$state.go('dashboard');
         } else {
-            ++cov_l3is81mja.b[1][1];
+            cov_qs2824m75.b[1][1]++;
         }
     }
 
     _createClass(LoginController, [{
         key: 'login',
         value: function login(e) {
-            ++cov_l3is81mja.f[1];
-            ++cov_l3is81mja.s[12];
+            cov_qs2824m75.f[1]++;
+            cov_qs2824m75.s[12]++;
 
             e.preventDefault();
-            ++cov_l3is81mja.s[13];
+            cov_qs2824m75.s[13]++;
             this.Auth.login(this.username, this.password);
 
             //TODO: Handle form validation
@@ -10988,7 +10988,7 @@ var LoginController = function () {
     return LoginController;
 }();
 
-var Login = exports.Login = (++cov_l3is81mja.s[14], {
+var Login = exports.Login = (cov_qs2824m75.s[14]++, {
     template: __webpack_require__(29),
     controller: LoginController
 });
@@ -11004,13 +11004,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_15enclxs0d = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/logout/logout.js',
-        hash = '7ccc3516528bdac3c18092e932d249382163b714',
+var cov_1b5nrrd9a9 = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/logout/logout.js',
+        hash = 'f38cb9eb8e5f8e5d7d8426c76705e7ec4f860251',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/logout/logout.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/logout/logout.js',
         statementMap: {
             '0': {
                 start: {
@@ -11223,8 +11223,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_15enclxs0d.s[0], __webpack_require__(0));
-var SERVER = (++cov_15enclxs0d.s[1], config.environment === 'DEV' ? (++cov_15enclxs0d.b[0][0], config.development_server) : (++cov_15enclxs0d.b[0][1], config.production_server));
+var config = (cov_1b5nrrd9a9.s[0]++, __webpack_require__(0));
+var SERVER = (cov_1b5nrrd9a9.s[1]++, config.environment === 'DEV' ? (cov_1b5nrrd9a9.b[0][0]++, config.development_server) : (cov_1b5nrrd9a9.b[0][1]++, config.production_server));
 
 /** @ngInject */
 
@@ -11233,25 +11233,25 @@ var LogoutController = function () {
     function LogoutController($state, Auth) {
         _classCallCheck(this, LogoutController);
 
-        ++cov_15enclxs0d.f[0];
-        ++cov_15enclxs0d.s[2];
+        cov_1b5nrrd9a9.f[0]++;
+        cov_1b5nrrd9a9.s[2]++;
 
         this.$state = $state;
-        ++cov_15enclxs0d.s[3];
+        cov_1b5nrrd9a9.s[3]++;
         this.message = 'logout';
-        ++cov_15enclxs0d.s[4];
+        cov_1b5nrrd9a9.s[4]++;
         this.data = $state.current.data;
-        ++cov_15enclxs0d.s[5];
+        cov_1b5nrrd9a9.s[5]++;
         this.Auth = Auth;
-        ++cov_15enclxs0d.s[6];
+        cov_1b5nrrd9a9.s[6]++;
         this.logout();
     }
 
     _createClass(LogoutController, [{
         key: 'logout',
         value: function logout() {
-            ++cov_15enclxs0d.f[1];
-            ++cov_15enclxs0d.s[7];
+            cov_1b5nrrd9a9.f[1]++;
+            cov_1b5nrrd9a9.s[7]++;
 
             this.Auth.logout();
         }
@@ -11260,7 +11260,7 @@ var LogoutController = function () {
     return LogoutController;
 }();
 
-var Logout = exports.Logout = (++cov_15enclxs0d.s[8], {
+var Logout = exports.Logout = (cov_1b5nrrd9a9.s[8]++, {
     template: __webpack_require__(30),
     controller: LogoutController
 });
@@ -11276,13 +11276,13 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var cov_2p6joqts1s = function () {
-	var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/notFound/notFound.js',
-	    hash = '559e9d8d68cefed1793dc9e324fe596f90d945c1',
+var cov_229qa4wmkb = function () {
+	var path = '/Users/istreuly/Sites/reed/src/app/states/notFound/notFound.js',
+	    hash = 'a10046facf3f331868f3cdc8d370b7a4e07a9db3',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
-		path: '/Users/dstreuly/Sites/reed/reed/src/app/states/notFound/notFound.js',
+		path: '/Users/istreuly/Sites/reed/src/app/states/notFound/notFound.js',
 		statementMap: {
 			'0': {
 				start: {
@@ -11403,22 +11403,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var NotFoundController = function NotFoundController($http, $state, $location) {
 	_classCallCheck(this, NotFoundController);
 
-	++cov_2p6joqts1s.f[0];
-	++cov_2p6joqts1s.s[0];
+	cov_229qa4wmkb.f[0]++;
+	cov_229qa4wmkb.s[0]++;
 
 	this.$state = $state;
-	++cov_2p6joqts1s.s[1];
+	cov_229qa4wmkb.s[1]++;
 	this.$location = $location;
-	++cov_2p6joqts1s.s[2];
+	cov_229qa4wmkb.s[2]++;
 	this.message = 'profile';
-	++cov_2p6joqts1s.s[3];
+	cov_229qa4wmkb.s[3]++;
 	this.data = $state.current.data;
-	++cov_2p6joqts1s.s[4];
+	cov_229qa4wmkb.s[4]++;
 	this.$http = $http;
 };
 NotFoundController.$inject = ["$http", "$state", "$location"];
 
-var NotFound = exports.NotFound = (++cov_2p6joqts1s.s[5], {
+var NotFound = exports.NotFound = (cov_229qa4wmkb.s[5]++, {
 	template: __webpack_require__(31),
 	controller: NotFoundController
 });
@@ -11434,13 +11434,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_199a955sej = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/notifications/notifications.js',
-        hash = 'affc43b47c51aa2ae1939a040c613a990c01bc45',
+var cov_2534ft5an2 = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/notifications/notifications.js',
+        hash = '6d034ede0d412ec840be240dfd521e10875a0ef0',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/notifications/notifications.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/notifications/notifications.js',
         statementMap: {
             '0': {
                 start: {
@@ -12317,8 +12317,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_199a955sej.s[0], __webpack_require__(0));
-var SERVER = (++cov_199a955sej.s[1], config.environment === 'DEV' ? (++cov_199a955sej.b[0][0], config.development_server) : (++cov_199a955sej.b[0][1], config.production_server));
+var config = (cov_2534ft5an2.s[0]++, __webpack_require__(0));
+var SERVER = (cov_2534ft5an2.s[1]++, config.environment === 'DEV' ? (cov_2534ft5an2.b[0][0]++, config.development_server) : (cov_2534ft5an2.b[0][1]++, config.production_server));
 
 /** @ngInject */
 
@@ -12327,32 +12327,32 @@ var NotificationsController = function () {
     function NotificationsController($http, $state, Auth) {
         _classCallCheck(this, NotificationsController);
 
-        ++cov_199a955sej.f[0];
-        ++cov_199a955sej.s[2];
+        cov_2534ft5an2.f[0]++;
+        cov_2534ft5an2.s[2]++;
 
         this.$state = $state;
-        ++cov_199a955sej.s[3];
+        cov_2534ft5an2.s[3]++;
         this.message = 'dashboard';
-        ++cov_199a955sej.s[4];
+        cov_2534ft5an2.s[4]++;
         this.data = $state.current.data;
-        ++cov_199a955sej.s[5];
+        cov_2534ft5an2.s[5]++;
         this.$http = $http;
-        ++cov_199a955sej.s[6];
+        cov_2534ft5an2.s[6]++;
         this.Auth = Auth;
 
         //check if we need to validate
-        ++cov_199a955sej.s[7];
+        cov_2534ft5an2.s[7]++;
         if (this.data.authRequired) {
-            ++cov_199a955sej.b[1][0];
-            ++cov_199a955sej.s[8];
+            cov_2534ft5an2.b[1][0]++;
+            cov_2534ft5an2.s[8]++;
 
             //set the current user
             this.Auth.validateUserToken();
         } else {
-            ++cov_199a955sej.b[1][1];
+            cov_2534ft5an2.b[1][1]++;
         }
 
-        ++cov_199a955sej.s[9];
+        cov_2534ft5an2.s[9]++;
         this.user = this.getCurrentUserFromDB();
     }
 
@@ -12361,70 +12361,70 @@ var NotificationsController = function () {
         value: function getCurrentUserFromDB() {
             var _this = this;
 
-            ++cov_199a955sej.f[1];
+            cov_2534ft5an2.f[1]++;
 
 
-            var endpoint = (++cov_199a955sej.s[10], SERVER + '/api/currentUser');
-            ++cov_199a955sej.s[11];
+            var endpoint = (cov_2534ft5an2.s[10]++, SERVER + '/api/currentUser');
+            cov_2534ft5an2.s[11]++;
             this.$http.get(endpoint, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_199a955sej.f[2];
-                ++cov_199a955sej.s[12];
+                cov_2534ft5an2.f[2]++;
+                cov_2534ft5an2.s[12]++;
 
                 if (res.status === 200) {
-                    ++cov_199a955sej.b[2][0];
-                    ++cov_199a955sej.s[13];
+                    cov_2534ft5an2.b[2][0]++;
+                    cov_2534ft5an2.s[13]++;
 
                     _this.user = res.data.user;
                     // For now, the only thing that the notifications state contains is follow requests
-                    ++cov_199a955sej.s[14];
+                    cov_2534ft5an2.s[14]++;
                     _this.followRequests = _this.getFollowRequests();
                 } else {
                     // TODO: Throw error notification and botch the whole process
 
-                    ++cov_199a955sej.b[2][1];
+                    cov_2534ft5an2.b[2][1]++;
                 }
             });
         }
     }, {
         key: 'getFollowRequests',
         value: function getFollowRequests() {
-            ++cov_199a955sej.f[3];
+            cov_2534ft5an2.f[3]++;
 
-            var reqs = (++cov_199a955sej.s[15], this.user.followRequests);
+            var reqs = (cov_2534ft5an2.s[15]++, this.user.followRequests);
             // we need the users for these requests
-            var users = (++cov_199a955sej.s[16], []);
+            var users = (cov_2534ft5an2.s[16]++, []);
 
-            ++cov_199a955sej.s[17];
+            cov_2534ft5an2.s[17]++;
             for (var i = 0; i < reqs.length; i++) {
-                var endpoint = (++cov_199a955sej.s[18], SERVER + '/api/user/guid/' + reqs[i]);
+                var endpoint = (cov_2534ft5an2.s[18]++, SERVER + '/api/user/guid/' + reqs[i]);
 
-                ++cov_199a955sej.s[19];
+                cov_2534ft5an2.s[19]++;
                 this.$http.get(endpoint, {
                     headers: {
                         'x-access-token': localStorage.getItem('reed-token')
                     }
                 }).then(function (res) {
-                    ++cov_199a955sej.f[4];
-                    ++cov_199a955sej.s[20];
+                    cov_2534ft5an2.f[4]++;
+                    cov_2534ft5an2.s[20]++;
 
                     if (res.status === 200) {
-                        ++cov_199a955sej.b[3][0];
-                        ++cov_199a955sej.s[21];
+                        cov_2534ft5an2.b[3][0]++;
+                        cov_2534ft5an2.s[21]++;
 
                         users.push(res.data);
                     } else {
                         // TODO: Throw error notification and botch the whole process
 
-                        ++cov_199a955sej.b[3][1];
+                        cov_2534ft5an2.b[3][1]++;
                     }
                 });
             }
 
-            ++cov_199a955sej.s[22];
+            cov_2534ft5an2.s[22]++;
             return users;
         }
     }, {
@@ -12432,34 +12432,34 @@ var NotificationsController = function () {
         value: function acceptFollowRequest(request) {
             var _this2 = this;
 
-            ++cov_199a955sej.f[5];
+            cov_2534ft5an2.f[5]++;
 
-            var payload = (++cov_199a955sej.s[23], { reqGuid: request.guid });
+            var payload = (cov_2534ft5an2.s[23]++, { reqGuid: request.guid });
 
-            ++cov_199a955sej.s[24];
+            cov_2534ft5an2.s[24]++;
             this.$http.post(SERVER + '/api/followAccept', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_199a955sej.f[6];
-                ++cov_199a955sej.s[25];
+                cov_2534ft5an2.f[6]++;
+                cov_2534ft5an2.s[25]++;
 
                 if (res.status === 200) {
-                    ++cov_199a955sej.b[4][0];
+                    cov_2534ft5an2.b[4][0]++;
 
-                    var idx = (++cov_199a955sej.s[26], _this2.followRequests.indexOf(request));
-                    ++cov_199a955sej.s[27];
+                    var idx = (cov_2534ft5an2.s[26]++, _this2.followRequests.indexOf(request));
+                    cov_2534ft5an2.s[27]++;
                     _this2.followRequests.splice(idx, 1);
 
-                    ++cov_199a955sej.s[28];
+                    cov_2534ft5an2.s[28]++;
                     console.log(res);
-                    ++cov_199a955sej.s[29];
+                    cov_2534ft5an2.s[29]++;
                     console.log('User follow accepted');
                 } else {
                     //TODO: show error message
 
-                    ++cov_199a955sej.b[4][1];
+                    cov_2534ft5an2.b[4][1]++;
                 }
             });
         }
@@ -12468,34 +12468,34 @@ var NotificationsController = function () {
         value: function ignoreFollowRequest(request) {
             var _this3 = this;
 
-            ++cov_199a955sej.f[7];
+            cov_2534ft5an2.f[7]++;
 
-            var payload = (++cov_199a955sej.s[30], { reqGuid: request.guid });
+            var payload = (cov_2534ft5an2.s[30]++, { reqGuid: request.guid });
 
-            ++cov_199a955sej.s[31];
+            cov_2534ft5an2.s[31]++;
             this.$http.post(SERVER + '/api/followIgnore', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_199a955sej.f[8];
-                ++cov_199a955sej.s[32];
+                cov_2534ft5an2.f[8]++;
+                cov_2534ft5an2.s[32]++;
 
                 if (res.status === 200) {
-                    ++cov_199a955sej.b[5][0];
+                    cov_2534ft5an2.b[5][0]++;
 
-                    var idx = (++cov_199a955sej.s[33], _this3.followRequests.indexOf(request));
-                    ++cov_199a955sej.s[34];
+                    var idx = (cov_2534ft5an2.s[33]++, _this3.followRequests.indexOf(request));
+                    cov_2534ft5an2.s[34]++;
                     _this3.followRequests.splice(idx, 1);
 
-                    ++cov_199a955sej.s[35];
+                    cov_2534ft5an2.s[35]++;
                     console.log(res);
-                    ++cov_199a955sej.s[36];
+                    cov_2534ft5an2.s[36]++;
                     console.log('User follow ignored');
                 } else {
                     //TODO: show error message
 
-                    ++cov_199a955sej.b[5][1];
+                    cov_2534ft5an2.b[5][1]++;
                 }
             });
         }
@@ -12504,7 +12504,7 @@ var NotificationsController = function () {
     return NotificationsController;
 }();
 
-var Notifications = exports.Notifications = (++cov_199a955sej.s[37], {
+var Notifications = exports.Notifications = (cov_2534ft5an2.s[37]++, {
     template: __webpack_require__(32),
     controller: NotificationsController
 });
@@ -12520,13 +12520,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_7j6odsrs9 = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
-        hash = 'fad0b563ca5ebc42d0d0dcbca8c5a2123e625501',
+var cov_2bgkhipcid = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/profile/profile.js',
+        hash = 'bc937e570e4486b1a024a185b4af43467c77a9e6',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/profile/profile.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/profile/profile.js',
         statementMap: {
             '0': {
                 start: {
@@ -14126,8 +14126,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_7j6odsrs9.s[0], __webpack_require__(0));
-var SERVER = (++cov_7j6odsrs9.s[1], config.environment === 'DEV' ? (++cov_7j6odsrs9.b[0][0], config.development_server) : (++cov_7j6odsrs9.b[0][1], config.production_server));
+var config = (cov_2bgkhipcid.s[0]++, __webpack_require__(0));
+var SERVER = (cov_2bgkhipcid.s[1]++, config.environment === 'DEV' ? (cov_2bgkhipcid.b[0][0]++, config.development_server) : (cov_2bgkhipcid.b[0][1]++, config.production_server));
 
 /** @ngInject */
 
@@ -14136,45 +14136,45 @@ var ProfileController = function () {
     function ProfileController($http, $state, $location, Auth) {
         _classCallCheck(this, ProfileController);
 
-        ++cov_7j6odsrs9.f[0];
-        ++cov_7j6odsrs9.s[2];
+        cov_2bgkhipcid.f[0]++;
+        cov_2bgkhipcid.s[2]++;
 
 
         this.Auth = Auth;
-        ++cov_7j6odsrs9.s[3];
+        cov_2bgkhipcid.s[3]++;
         this.$state = $state;
-        ++cov_7j6odsrs9.s[4];
+        cov_2bgkhipcid.s[4]++;
         this.$location = $location;
-        ++cov_7j6odsrs9.s[5];
+        cov_2bgkhipcid.s[5]++;
         this.message = 'profile';
-        ++cov_7j6odsrs9.s[6];
+        cov_2bgkhipcid.s[6]++;
         this.data = $state.current.data;
-        ++cov_7j6odsrs9.s[7];
+        cov_2bgkhipcid.s[7]++;
         this.$http = $http;
-        ++cov_7j6odsrs9.s[8];
+        cov_2bgkhipcid.s[8]++;
         this.profileIsCurrentUser = false;
 
         // create article stuff
-        ++cov_7j6odsrs9.s[9];
+        cov_2bgkhipcid.s[9]++;
         this.addingArticle = false;
-        ++cov_7j6odsrs9.s[10];
+        cov_2bgkhipcid.s[10]++;
         this.articleTitle = '';
-        ++cov_7j6odsrs9.s[11];
+        cov_2bgkhipcid.s[11]++;
         this.articleLink = '';
-        ++cov_7j6odsrs9.s[12];
+        cov_2bgkhipcid.s[12]++;
         this.articleDescription = '';
 
         //visiting user stuff
-        ++cov_7j6odsrs9.s[13];
+        cov_2bgkhipcid.s[13]++;
         this.followButtonShow = false;
-        ++cov_7j6odsrs9.s[14];
+        cov_2bgkhipcid.s[14]++;
         this.followRequestedShow = false;
-        ++cov_7j6odsrs9.s[15];
+        cov_2bgkhipcid.s[15]++;
         this.unfollowButtonShow = false;
 
-        ++cov_7j6odsrs9.s[16];
+        cov_2bgkhipcid.s[16]++;
         this.findUserByLocation();
-        ++cov_7j6odsrs9.s[17];
+        cov_2bgkhipcid.s[17]++;
         this.user = this.Auth.getUserToken();
     }
 
@@ -14183,44 +14183,44 @@ var ProfileController = function () {
         value: function findUserByLocation() {
             var _this = this;
 
-            ++cov_7j6odsrs9.f[1];
+            cov_2bgkhipcid.f[1]++;
 
-            var userId = (++cov_7j6odsrs9.s[18], this.$location.$$url);
-            var parsedUserId = (++cov_7j6odsrs9.s[19], userId.substring(2, userId.length));
+            var userId = (cov_2bgkhipcid.s[18]++, this.$location.$$url);
+            var parsedUserId = (cov_2bgkhipcid.s[19]++, userId.substring(2, userId.length));
 
             // //search by user id
-            var endpoint = (++cov_7j6odsrs9.s[20], SERVER + '/api/user/' + parsedUserId);
-            ++cov_7j6odsrs9.s[21];
+            var endpoint = (cov_2bgkhipcid.s[20]++, SERVER + '/api/user/' + parsedUserId);
+            cov_2bgkhipcid.s[21]++;
             this.$http.get(endpoint, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[2];
-                ++cov_7j6odsrs9.s[22];
+                cov_2bgkhipcid.f[2]++;
+                cov_2bgkhipcid.s[22]++;
 
                 if (res.data.userNotFound) {
-                    ++cov_7j6odsrs9.b[1][0];
-                    ++cov_7j6odsrs9.s[23];
+                    cov_2bgkhipcid.b[1][0]++;
+                    cov_2bgkhipcid.s[23]++;
 
                     //server returned no user found
                     _this.$state.go('notFound');
                 } else {
-                    ++cov_7j6odsrs9.b[1][1];
-                    ++cov_7j6odsrs9.s[24];
+                    cov_2bgkhipcid.b[1][1]++;
+                    cov_2bgkhipcid.s[24]++;
 
                     _this.profileUser = res.data;
-                    ++cov_7j6odsrs9.s[25];
+                    cov_2bgkhipcid.s[25]++;
                     _this.getProfileData(_this.profileUser);
 
-                    ++cov_7j6odsrs9.s[26];
+                    cov_2bgkhipcid.s[26]++;
                     if (_this.user !== null) {
-                        ++cov_7j6odsrs9.b[2][0];
-                        ++cov_7j6odsrs9.s[27];
+                        cov_2bgkhipcid.b[2][0]++;
+                        cov_2bgkhipcid.s[27]++;
 
                         _this.checkIfProfileIsCurrentUser();
                     } else {
-                        ++cov_7j6odsrs9.b[2][1];
+                        cov_2bgkhipcid.b[2][1]++;
                     }
                 }
             });
@@ -14230,11 +14230,11 @@ var ProfileController = function () {
         value: function getProfileData(user) {
             var _this2 = this;
 
-            ++cov_7j6odsrs9.f[3];
+            cov_2bgkhipcid.f[3]++;
 
-            var guid = (++cov_7j6odsrs9.s[28], user.guid);
+            var guid = (cov_2bgkhipcid.s[28]++, user.guid);
             // get this users listTitle
-            ++cov_7j6odsrs9.s[29];
+            cov_2bgkhipcid.s[29]++;
             this.$http.get(SERVER + '/api/profileList', {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
@@ -14243,8 +14243,8 @@ var ProfileController = function () {
                     userGuid: guid
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[4];
-                ++cov_7j6odsrs9.s[30];
+                cov_2bgkhipcid.f[4]++;
+                cov_2bgkhipcid.s[30]++;
 
                 _this2.profileList = res.data;
             });
@@ -14252,17 +14252,17 @@ var ProfileController = function () {
     }, {
         key: 'checkIfProfileIsCurrentUser',
         value: function checkIfProfileIsCurrentUser() {
-            ++cov_7j6odsrs9.f[5];
-            ++cov_7j6odsrs9.s[31];
+            cov_2bgkhipcid.f[5]++;
+            cov_2bgkhipcid.s[31]++;
 
-            if ((++cov_7j6odsrs9.b[4][0], this.user.name === this.profileUser.username) && (++cov_7j6odsrs9.b[4][1], this.user.guid === this.profileUser.guid)) {
-                ++cov_7j6odsrs9.b[3][0];
-                ++cov_7j6odsrs9.s[32];
+            if ((cov_2bgkhipcid.b[4][0]++, this.user.name === this.profileUser.username) && (cov_2bgkhipcid.b[4][1]++, this.user.guid === this.profileUser.guid)) {
+                cov_2bgkhipcid.b[3][0]++;
+                cov_2bgkhipcid.s[32]++;
 
                 this.profileIsCurrentUser = true;
             } else {
-                ++cov_7j6odsrs9.b[3][1];
-                ++cov_7j6odsrs9.s[33];
+                cov_2bgkhipcid.b[3][1]++;
+                cov_2bgkhipcid.s[33]++;
 
                 // check if the user that's signed in, is following this user
                 this.checkIfCurrentUserIsFollowing(this.user);
@@ -14271,29 +14271,29 @@ var ProfileController = function () {
     }, {
         key: 'checkIfCurrentUserIsFollowing',
         value: function checkIfCurrentUserIsFollowing(currentUser) {
-            ++cov_7j6odsrs9.f[6];
+            cov_2bgkhipcid.f[6]++;
 
-            var guid = (++cov_7j6odsrs9.s[34], currentUser.guid);
+            var guid = (cov_2bgkhipcid.s[34]++, currentUser.guid);
 
-            ++cov_7j6odsrs9.s[35];
+            cov_2bgkhipcid.s[35]++;
             if (this.profileUser.followRequests.indexOf(guid) > -1) {
-                ++cov_7j6odsrs9.b[5][0];
-                ++cov_7j6odsrs9.s[36];
+                cov_2bgkhipcid.b[5][0]++;
+                cov_2bgkhipcid.s[36]++;
 
                 this.followRequestedShow = true;
             } else {
-                ++cov_7j6odsrs9.b[5][1];
-                ++cov_7j6odsrs9.s[37];
+                cov_2bgkhipcid.b[5][1]++;
+                cov_2bgkhipcid.s[37]++;
 
                 //it's not in the requests, are they an accepted follower?
                 if (this.profileUser.followers.indexOf(guid) > -1) {
-                    ++cov_7j6odsrs9.b[6][0];
-                    ++cov_7j6odsrs9.s[38];
+                    cov_2bgkhipcid.b[6][0]++;
+                    cov_2bgkhipcid.s[38]++;
 
                     this.unfollowButtonShow = true;
                 } else {
-                    ++cov_7j6odsrs9.b[6][1];
-                    ++cov_7j6odsrs9.s[39];
+                    cov_2bgkhipcid.b[6][1]++;
+                    cov_2bgkhipcid.s[39]++;
 
                     //not an accepted follow / hasn't requested
                     this.followButtonShow = true;
@@ -14307,23 +14307,23 @@ var ProfileController = function () {
     }, {
         key: 'toggleAddArticle',
         value: function toggleAddArticle() {
-            ++cov_7j6odsrs9.f[7];
-            ++cov_7j6odsrs9.s[40];
+            cov_2bgkhipcid.f[7]++;
+            cov_2bgkhipcid.s[40]++;
 
             this.addingArticle = !this.addingArticle;
 
-            ++cov_7j6odsrs9.s[41];
+            cov_2bgkhipcid.s[41]++;
             if (!this.addingArticle) {
-                ++cov_7j6odsrs9.b[7][0];
-                ++cov_7j6odsrs9.s[42];
+                cov_2bgkhipcid.b[7][0]++;
+                cov_2bgkhipcid.s[42]++;
 
                 this.articleTitle = '';
-                ++cov_7j6odsrs9.s[43];
+                cov_2bgkhipcid.s[43]++;
                 this.articleLink = '';
-                ++cov_7j6odsrs9.s[44];
+                cov_2bgkhipcid.s[44]++;
                 this.articleDescription = '';
             } else {
-                ++cov_7j6odsrs9.b[7][1];
+                cov_2bgkhipcid.b[7][1]++;
             }
         }
 
@@ -14334,34 +14334,34 @@ var ProfileController = function () {
         value: function clearArticles() {
             var _this3 = this;
 
-            ++cov_7j6odsrs9.f[8];
-            ++cov_7j6odsrs9.s[45];
+            cov_2bgkhipcid.f[8]++;
+            cov_2bgkhipcid.s[45]++;
 
             this.$http.post(SERVER + '/api/clearCurrList', {}, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[9];
-                ++cov_7j6odsrs9.s[46];
+                cov_2bgkhipcid.f[9]++;
+                cov_2bgkhipcid.s[46]++;
 
                 if (res.status === 200) {
-                    ++cov_7j6odsrs9.b[8][0];
-                    ++cov_7j6odsrs9.s[47];
+                    cov_2bgkhipcid.b[8][0]++;
+                    cov_2bgkhipcid.s[47]++;
 
                     _this3.profileList = res.data.list;
                 } else {
                     //show error message
 
-                    ++cov_7j6odsrs9.b[8][1];
+                    cov_2bgkhipcid.b[8][1]++;
                 }
             });
         }
     }, {
         key: 'deleteArticle',
         value: function deleteArticle(article) {
-            ++cov_7j6odsrs9.f[10];
-            ++cov_7j6odsrs9.s[48];
+            cov_2bgkhipcid.f[10]++;
+            cov_2bgkhipcid.s[48]++;
 
             console.log(article);
         }
@@ -14373,34 +14373,34 @@ var ProfileController = function () {
         value: function submitList($event) {
             var _this4 = this;
 
-            ++cov_7j6odsrs9.f[11];
+            cov_2bgkhipcid.f[11]++;
 
-            var payload = (++cov_7j6odsrs9.s[49], {
+            var payload = (cov_2bgkhipcid.s[49]++, {
                 articleTitle: this.articleTitle,
                 articleDes: this.articleDescription,
                 articleLink: this.articleLink
             });
 
-            ++cov_7j6odsrs9.s[50];
+            cov_2bgkhipcid.s[50]++;
             this.$http.post(SERVER + '/api/addArticle', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[12];
-                ++cov_7j6odsrs9.s[51];
+                cov_2bgkhipcid.f[12]++;
+                cov_2bgkhipcid.s[51]++;
 
                 if (res.status === 200) {
-                    ++cov_7j6odsrs9.b[9][0];
-                    ++cov_7j6odsrs9.s[52];
+                    cov_2bgkhipcid.b[9][0]++;
+                    cov_2bgkhipcid.s[52]++;
 
                     _this4.profileList = res.data.list;
-                    ++cov_7j6odsrs9.s[53];
+                    cov_2bgkhipcid.s[53]++;
                     _this4.toggleAddArticle();
                 } else {
                     //show error message
 
-                    ++cov_7j6odsrs9.b[9][1];
+                    cov_2bgkhipcid.b[9][1]++;
                 }
             });
         }
@@ -14409,23 +14409,23 @@ var ProfileController = function () {
         value: function requestFollow() {
             var _this5 = this;
 
-            ++cov_7j6odsrs9.f[13];
+            cov_2bgkhipcid.f[13]++;
 
-            var payload = (++cov_7j6odsrs9.s[54], { userGuidToAdd: this.profileUser.guid });
+            var payload = (cov_2bgkhipcid.s[54]++, { userGuidToAdd: this.profileUser.guid });
 
-            ++cov_7j6odsrs9.s[55];
+            cov_2bgkhipcid.s[55]++;
             this.$http.post(SERVER + '/api/followRequest', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[14];
-                ++cov_7j6odsrs9.s[56];
+                cov_2bgkhipcid.f[14]++;
+                cov_2bgkhipcid.s[56]++;
 
                 _this5.followButtonShow = false;
-                ++cov_7j6odsrs9.s[57];
+                cov_2bgkhipcid.s[57]++;
                 _this5.followRequestedShow = true;
-                ++cov_7j6odsrs9.s[58];
+                cov_2bgkhipcid.s[58]++;
                 console.log(res);
             });
         }
@@ -14434,36 +14434,36 @@ var ProfileController = function () {
         value: function unfollowUser() {
             var _this6 = this;
 
-            ++cov_7j6odsrs9.f[15];
+            cov_2bgkhipcid.f[15]++;
 
 
-            var payload = (++cov_7j6odsrs9.s[59], { unfollowGuid: this.profileUser.guid });
+            var payload = (cov_2bgkhipcid.s[59]++, { unfollowGuid: this.profileUser.guid });
 
-            ++cov_7j6odsrs9.s[60];
+            cov_2bgkhipcid.s[60]++;
             this.$http.post(SERVER + '/api/unfollowUser', payload, {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_7j6odsrs9.f[16];
-                ++cov_7j6odsrs9.s[61];
+                cov_2bgkhipcid.f[16]++;
+                cov_2bgkhipcid.s[61]++;
 
                 console.log(res);
 
-                ++cov_7j6odsrs9.s[62];
-                if ((++cov_7j6odsrs9.b[11][0], res.status === 200) && (++cov_7j6odsrs9.b[11][1], res.data.success)) {
-                    ++cov_7j6odsrs9.b[10][0];
-                    ++cov_7j6odsrs9.s[63];
+                cov_2bgkhipcid.s[62]++;
+                if ((cov_2bgkhipcid.b[11][0]++, res.status === 200) && (cov_2bgkhipcid.b[11][1]++, res.data.success)) {
+                    cov_2bgkhipcid.b[10][0]++;
+                    cov_2bgkhipcid.s[63]++;
 
                     console.log('User unfollowed');
-                    ++cov_7j6odsrs9.s[64];
+                    cov_2bgkhipcid.s[64]++;
                     _this6.followButtonShow = true;
-                    ++cov_7j6odsrs9.s[65];
+                    cov_2bgkhipcid.s[65]++;
                     _this6.unfollowButtonShow = false;
                 } else {
                     // TODO: show some error message
 
-                    ++cov_7j6odsrs9.b[10][1];
+                    cov_2bgkhipcid.b[10][1]++;
                 }
             });
         }
@@ -14472,7 +14472,7 @@ var ProfileController = function () {
     return ProfileController;
 }();
 
-var Profile = exports.Profile = (++cov_7j6odsrs9.s[66], {
+var Profile = exports.Profile = (cov_2bgkhipcid.s[66]++, {
     template: __webpack_require__(33),
     controller: ProfileController
 });
@@ -14488,13 +14488,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_1lowflf3ss = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/search/search.js',
-        hash = '3b281b61587988a52d6402496f1a079517f9ae30',
+var cov_1tjdudc841 = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/search/search.js',
+        hash = '3d7bdbbbe485d30e6808ae69ce40392da79a31db',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/search/search.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/search/search.js',
         statementMap: {
             '0': {
                 start: {
@@ -14868,9 +14868,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_1lowflf3ss.s[0], __webpack_require__(0));
-var SERVER = (++cov_1lowflf3ss.s[1], config.environment === 'DEV' ? (++cov_1lowflf3ss.b[0][0], config.development_server) : (++cov_1lowflf3ss.b[0][1], config.production_server));
-var HOST = (++cov_1lowflf3ss.s[2], config.environment === 'DEV' ? (++cov_1lowflf3ss.b[1][0], config.development_host) : (++cov_1lowflf3ss.b[1][1], config.production_host));
+var config = (cov_1tjdudc841.s[0]++, __webpack_require__(0));
+var SERVER = (cov_1tjdudc841.s[1]++, config.environment === 'DEV' ? (cov_1tjdudc841.b[0][0]++, config.development_server) : (cov_1tjdudc841.b[0][1]++, config.production_server));
+var HOST = (cov_1tjdudc841.s[2]++, config.environment === 'DEV' ? (cov_1tjdudc841.b[1][0]++, config.development_host) : (cov_1tjdudc841.b[1][1]++, config.production_host));
 
 var SearchController = function () {
     /** @ngInject */
@@ -14878,23 +14878,23 @@ var SearchController = function () {
     function SearchController($http, $state, Auth) {
         _classCallCheck(this, SearchController);
 
-        ++cov_1lowflf3ss.f[0];
-        ++cov_1lowflf3ss.s[3];
+        cov_1tjdudc841.f[0]++;
+        cov_1tjdudc841.s[3]++;
 
         this.$state = $state;
-        ++cov_1lowflf3ss.s[4];
+        cov_1tjdudc841.s[4]++;
         this.Auth = Auth;
-        ++cov_1lowflf3ss.s[5];
+        cov_1tjdudc841.s[5]++;
         this.searchQuery = '';
-        ++cov_1lowflf3ss.s[6];
+        cov_1tjdudc841.s[6]++;
         this.data = $state.current.data;
-        ++cov_1lowflf3ss.s[7];
+        cov_1tjdudc841.s[7]++;
         this.$http = $http;
-        ++cov_1lowflf3ss.s[8];
+        cov_1tjdudc841.s[8]++;
         this.allUsers = [];
-        ++cov_1lowflf3ss.s[9];
+        cov_1tjdudc841.s[9]++;
         this.getAllUsers();
-        ++cov_1lowflf3ss.s[10];
+        cov_1tjdudc841.s[10]++;
         this.user = this.Auth.getUserToken();
     }
 
@@ -14903,16 +14903,16 @@ var SearchController = function () {
         value: function getAllUsers() {
             var _this = this;
 
-            ++cov_1lowflf3ss.f[1];
-            ++cov_1lowflf3ss.s[11];
+            cov_1tjdudc841.f[1]++;
+            cov_1tjdudc841.s[11]++;
 
             this.$http.get(SERVER + '/api/allUsers', {
                 headers: {
                     'x-access-token': localStorage.getItem('reed-token')
                 }
             }).then(function (res) {
-                ++cov_1lowflf3ss.f[2];
-                ++cov_1lowflf3ss.s[12];
+                cov_1tjdudc841.f[2]++;
+                cov_1tjdudc841.s[12]++;
 
                 _this.allUsers = res.data;
             });
@@ -14920,10 +14920,10 @@ var SearchController = function () {
     }, {
         key: 'goToProfile',
         value: function goToProfile(user) {
-            ++cov_1lowflf3ss.f[3];
+            cov_1tjdudc841.f[3]++;
 
-            var username = (++cov_1lowflf3ss.s[13], '@' + user.name);
-            ++cov_1lowflf3ss.s[14];
+            var username = (cov_1tjdudc841.s[13]++, '@' + user.name);
+            cov_1tjdudc841.s[14]++;
             this.$state.go('profile', { userId: username });
         }
     }]);
@@ -14931,7 +14931,7 @@ var SearchController = function () {
     return SearchController;
 }();
 
-var Search = exports.Search = (++cov_1lowflf3ss.s[15], {
+var Search = exports.Search = (cov_1tjdudc841.s[15]++, {
     template: __webpack_require__(34),
     controller: SearchController
 });
@@ -14947,13 +14947,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_189tzbg59r = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/signup/signup.js',
-        hash = '75f69be8b167180503b2711e3a85f85a3270736e',
+var cov_1wcsmvt2u0 = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/signup/signup.js',
+        hash = '6b780e25ec965f6a2683cd07df051076b4d16da0',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/signup/signup.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/signup/signup.js',
         statementMap: {
             '0': {
                 start: {
@@ -15047,61 +15047,31 @@ var cov_189tzbg59r = function () {
             },
             '9': {
                 start: {
-                    line: 16,
-                    column: 19
+                    line: 22,
+                    column: 8
                 },
                 end: {
-                    line: 16,
-                    column: 48
+                    line: 22,
+                    column: 27
                 }
             },
             '10': {
                 start: {
-                    line: 17,
+                    line: 24,
                     column: 8
                 },
                 end: {
-                    line: 19,
-                    column: 9
+                    line: 24,
+                    column: 55
                 }
             },
             '11': {
                 start: {
-                    line: 18,
-                    column: 12
-                },
-                end: {
-                    line: 18,
-                    column: 40
-                }
-            },
-            '12': {
-                start: {
-                    line: 23,
-                    column: 8
-                },
-                end: {
-                    line: 23,
-                    column: 27
-                }
-            },
-            '13': {
-                start: {
-                    line: 25,
-                    column: 8
-                },
-                end: {
-                    line: 25,
-                    column: 55
-                }
-            },
-            '14': {
-                start: {
-                    line: 59,
+                    line: 58,
                     column: 22
                 },
                 end: {
-                    line: 62,
+                    line: 61,
                     column: 1
                 }
             }
@@ -15125,7 +15095,7 @@ var cov_189tzbg59r = function () {
                         column: 36
                     },
                     end: {
-                        line: 20,
+                        line: 19,
                         column: 2
                     }
                 },
@@ -15135,25 +15105,25 @@ var cov_189tzbg59r = function () {
                 name: '(anonymous_1)',
                 decl: {
                     start: {
-                        line: 22,
+                        line: 21,
                         column: 4
                     },
                     end: {
-                        line: 22,
+                        line: 21,
                         column: 5
                     }
                 },
                 loc: {
                     start: {
-                        line: 22,
+                        line: 21,
                         column: 14
                     },
                     end: {
-                        line: 56,
+                        line: 55,
                         column: 5
                     }
                 },
-                line: 22
+                line: 21
             }
         },
         branchMap: {
@@ -15189,39 +15159,6 @@ var cov_189tzbg59r = function () {
                     }
                 }],
                 line: 3
-            },
-            '1': {
-                loc: {
-                    start: {
-                        line: 17,
-                        column: 8
-                    },
-                    end: {
-                        line: 19,
-                        column: 9
-                    }
-                },
-                type: 'if',
-                locations: [{
-                    start: {
-                        line: 17,
-                        column: 8
-                    },
-                    end: {
-                        line: 19,
-                        column: 9
-                    }
-                }, {
-                    start: {
-                        line: 17,
-                        column: 8
-                    },
-                    end: {
-                        line: 19,
-                        column: 9
-                    }
-                }],
-                line: 17
             }
         },
         s: {
@@ -15236,18 +15173,14 @@ var cov_189tzbg59r = function () {
             '8': 0,
             '9': 0,
             '10': 0,
-            '11': 0,
-            '12': 0,
-            '13': 0,
-            '14': 0
+            '11': 0
         },
         f: {
             '0': 0,
             '1': 0
         },
         b: {
-            '0': [0, 0],
-            '1': [0, 0]
+            '0': [0, 0]
         },
         _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
     },
@@ -15266,8 +15199,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_189tzbg59r.s[0], __webpack_require__(0));
-var SERVER = (++cov_189tzbg59r.s[1], config.environment === 'DEV' ? (++cov_189tzbg59r.b[0][0], config.development_server) : (++cov_189tzbg59r.b[0][1], config.production_server));
+var config = (cov_1wcsmvt2u0.s[0]++, __webpack_require__(0));
+var SERVER = (cov_1wcsmvt2u0.s[1]++, config.environment === 'DEV' ? (cov_1wcsmvt2u0.b[0][0]++, config.development_server) : (cov_1wcsmvt2u0.b[0][1]++, config.production_server));
 
 /** @ngInject */
 
@@ -15276,44 +15209,37 @@ var SignupController = function () {
     function SignupController($http, $state, Auth) {
         _classCallCheck(this, SignupController);
 
-        ++cov_189tzbg59r.f[0];
-        ++cov_189tzbg59r.s[2];
+        cov_1wcsmvt2u0.f[0]++;
+        cov_1wcsmvt2u0.s[2]++;
 
         this.$state = $state;
-        ++cov_189tzbg59r.s[3];
+        cov_1wcsmvt2u0.s[3]++;
         this.username = '';
-        ++cov_189tzbg59r.s[4];
+        cov_1wcsmvt2u0.s[4]++;
         this.password = '';
-        ++cov_189tzbg59r.s[5];
+        cov_1wcsmvt2u0.s[5]++;
         this.password2 = '';
-        ++cov_189tzbg59r.s[6];
+        cov_1wcsmvt2u0.s[6]++;
         this.Auth = Auth;
-        ++cov_189tzbg59r.s[7];
+        cov_1wcsmvt2u0.s[7]++;
         this.data = $state.current.data;
-        ++cov_189tzbg59r.s[8];
+        cov_1wcsmvt2u0.s[8]++;
         this.$http = $http;
-
-        var user = (++cov_189tzbg59r.s[9], this.Auth.validateUserToken());
-        ++cov_189tzbg59r.s[10];
-        if (user) {
-            ++cov_189tzbg59r.b[1][0];
-            ++cov_189tzbg59r.s[11];
-
-            this.$state.go('dashboard');
-        } else {
-            ++cov_189tzbg59r.b[1][1];
-        }
+        //let user = this.Auth.validateUserToken()
+        // if (user) {
+        //     this.$state.go('dashboard');
+        // }
     }
 
     _createClass(SignupController, [{
         key: 'signup',
         value: function signup(e) {
-            ++cov_189tzbg59r.f[1];
-            ++cov_189tzbg59r.s[12];
+            cov_1wcsmvt2u0.f[1]++;
+            cov_1wcsmvt2u0.s[9]++;
 
             e.preventDefault();
 
-            ++cov_189tzbg59r.s[13];
+            cov_1wcsmvt2u0.s[10]++;
             this.Auth.signup(this.username, this.password);
 
             //TODO: Ensure that usernames are unique
@@ -15351,7 +15277,7 @@ var SignupController = function () {
     return SignupController;
 }();
 
-var Signup = exports.Signup = (++cov_189tzbg59r.s[14], {
+var Signup = exports.Signup = (cov_1wcsmvt2u0.s[11]++, {
     template: __webpack_require__(35),
     controller: SignupController
 });
@@ -15367,13 +15293,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var cov_r7kic8rsb = function () {
-    var path = '/Users/dstreuly/Sites/reed/reed/src/app/states/tempHome/tempHome.js',
-        hash = '6c4ad2fc8f0e95104b16e888d95d1213f4514f0d',
+var cov_gm5qclnrl = function () {
+    var path = '/Users/istreuly/Sites/reed/src/app/states/tempHome/tempHome.js',
+        hash = 'c63cd32473cb80e034183c210670b23bf8c0622c',
         global = new Function('return this')(),
         gcv = '__coverage__',
         coverageData = {
-        path: '/Users/dstreuly/Sites/reed/reed/src/app/states/tempHome/tempHome.js',
+        path: '/Users/istreuly/Sites/reed/src/app/states/tempHome/tempHome.js',
         statementMap: {
             '0': {
                 start: {
@@ -15794,8 +15720,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable */
-var config = (++cov_r7kic8rsb.s[0], __webpack_require__(0));
-var SERVER = (++cov_r7kic8rsb.s[1], config.environment === 'DEV' ? (++cov_r7kic8rsb.b[0][0], config.development_server) : (++cov_r7kic8rsb.b[0][1], config.production_server));
+var config = (cov_gm5qclnrl.s[0]++, __webpack_require__(0));
+var SERVER = (cov_gm5qclnrl.s[1]++, config.environment === 'DEV' ? (cov_gm5qclnrl.b[0][0]++, config.development_server) : (cov_gm5qclnrl.b[0][1]++, config.production_server));
 
 /** @ngInject */
 
@@ -15804,19 +15730,19 @@ var TempHomeController = function () {
     function TempHomeController($http, $state, $location) {
         _classCallCheck(this, TempHomeController);
 
-        ++cov_r7kic8rsb.f[0];
-        ++cov_r7kic8rsb.s[2];
+        cov_gm5qclnrl.f[0]++;
+        cov_gm5qclnrl.s[2]++;
 
         this.$state = $state;
-        ++cov_r7kic8rsb.s[3];
+        cov_gm5qclnrl.s[3]++;
         this.title = '';
-        ++cov_r7kic8rsb.s[4];
+        cov_gm5qclnrl.s[4]++;
         this.$location = $location;
-        ++cov_r7kic8rsb.s[5];
+        cov_gm5qclnrl.s[5]++;
         this.$http = $http;
-        ++cov_r7kic8rsb.s[6];
+        cov_gm5qclnrl.s[6]++;
         this.lists = [];
-        ++cov_r7kic8rsb.s[7];
+        cov_gm5qclnrl.s[7]++;
         this.getLists();
     }
 
@@ -15825,42 +15751,42 @@ var TempHomeController = function () {
         value: function getLists() {
             var _this = this;
 
-            ++cov_r7kic8rsb.f[1];
-            ++cov_r7kic8rsb.s[8];
+            cov_gm5qclnrl.f[1]++;
+            cov_gm5qclnrl.s[8]++;
 
             this.$http.get(SERVER + '/api/lists').then(function (res) {
-                ++cov_r7kic8rsb.f[2];
-                ++cov_r7kic8rsb.s[9];
+                cov_gm5qclnrl.f[2]++;
+                cov_gm5qclnrl.s[9]++;
 
                 console.log(res);
-                ++cov_r7kic8rsb.s[10];
+                cov_gm5qclnrl.s[10]++;
                 _this.lists = res.data;
             });
         }
     }, {
         key: 'submit',
         value: function submit(e) {
-            ++cov_r7kic8rsb.f[3];
-            ++cov_r7kic8rsb.s[11];
+            cov_gm5qclnrl.f[3]++;
+            cov_gm5qclnrl.s[11]++;
 
             e.preventDefault();
             //execute post request to create a new list
-            var payload = (++cov_r7kic8rsb.s[12], { title: this.title });
+            var payload = (cov_gm5qclnrl.s[12]++, { title: this.title });
 
-            ++cov_r7kic8rsb.s[13];
+            cov_gm5qclnrl.s[13]++;
             this.$http.post(SERVER + '/api/lists', payload).then(function (res) {
-                ++cov_r7kic8rsb.f[4];
-                ++cov_r7kic8rsb.s[14];
+                cov_gm5qclnrl.f[4]++;
+                cov_gm5qclnrl.s[14]++;
 
                 if (res.data.success) {
-                    ++cov_r7kic8rsb.b[1][0];
-                    ++cov_r7kic8rsb.s[15];
+                    cov_gm5qclnrl.b[1][0]++;
+                    cov_gm5qclnrl.s[15]++;
 
                     alert('List saved!');
-                    ++cov_r7kic8rsb.s[16];
+                    cov_gm5qclnrl.s[16]++;
                     location.reload();
                 } else {
-                    ++cov_r7kic8rsb.b[1][1];
+                    cov_gm5qclnrl.b[1][1]++;
                 }
             });
         }
@@ -15869,7 +15795,7 @@ var TempHomeController = function () {
     return TempHomeController;
 }();
 
-var TempHome = exports.TempHome = (++cov_r7kic8rsb.s[17], {
+var TempHome = exports.TempHome = (cov_gm5qclnrl.s[17]++, {
     template: __webpack_require__(36),
     controller: TempHomeController
 });
@@ -15886,13 +15812,13 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var cov_1ahuxh4hps = function () {
-	var path = '/Users/dstreuly/Sites/reed/reed/src/routes.js',
-	    hash = 'ee7d3d7254dd85cc50a286dd5308e98c64273005',
+var cov_2ovmf1incb = function () {
+	var path = '/Users/istreuly/Sites/reed/src/routes.js',
+	    hash = '51c18e0a0dd68e5f4cb424d10c6da7edb5f8b9c9',
 	    global = new Function('return this')(),
 	    gcv = '__coverage__',
 	    coverageData = {
-		path: '/Users/dstreuly/Sites/reed/reed/src/routes.js',
+		path: '/Users/istreuly/Sites/reed/src/routes.js',
 		statementMap: {
 			'0': {
 				start: {
@@ -15978,14 +15904,14 @@ exports.default = routesConfig;
 /** @ngInject */
 
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
-	++cov_1ahuxh4hps.f[0];
-	++cov_1ahuxh4hps.s[0];
+	cov_2ovmf1incb.f[0]++;
+	cov_2ovmf1incb.s[0]++;
 
 	$locationProvider.html5Mode(true).hashPrefix('!');
-	++cov_1ahuxh4hps.s[1];
+	cov_2ovmf1incb.s[1]++;
 	$urlRouterProvider.otherwise('/');
 
-	++cov_1ahuxh4hps.s[2];
+	cov_2ovmf1incb.s[2]++;
 	$stateProvider.state('app', {
 		url: '/',
 		redirectTo: 'login'
@@ -16475,11 +16401,61 @@ angular.module('angular-jwt.options', [])
 /***/ (function(module, exports) {
 
 /**
- * @license AngularJS v1.6.4
+ * @license AngularJS v1.6.6
  * (c) 2010-2017 Google, Inc. http://angularjs.org
  * License: MIT
  */
 (function(window) {'use strict';
+
+/* exported
+  minErrConfig,
+  errorHandlingConfig,
+  isValidObjectMaxDepth
+*/
+
+var minErrConfig = {
+  objectMaxDepth: 5
+};
+
+/**
+ * @ngdoc function
+ * @name angular.errorHandlingConfig
+ * @module ng
+ * @kind function
+ *
+ * @description
+ * Configure several aspects of error handling in AngularJS if used as a setter or return the
+ * current configuration if used as a getter. The following options are supported:
+ *
+ * - **objectMaxDepth**: The maximum depth to which objects are traversed when stringified for error messages.
+ *
+ * Omitted or undefined options will leave the corresponding configuration values unchanged.
+ *
+ * @param {Object=} config - The configuration object. May only contain the options that need to be
+ *     updated. Supported keys:
+ *
+ * * `objectMaxDepth`  **{Number}** - The max depth for stringifying objects. Setting to a
+ *   non-positive or non-numeric value, removes the max depth limit.
+ *   Default: 5
+ */
+function errorHandlingConfig(config) {
+  if (isObject(config)) {
+    if (isDefined(config.objectMaxDepth)) {
+      minErrConfig.objectMaxDepth = isValidObjectMaxDepth(config.objectMaxDepth) ? config.objectMaxDepth : NaN;
+    }
+  } else {
+    return minErrConfig;
+  }
+}
+
+/**
+ * @private
+ * @param {Number} maxDepth
+ * @return {boolean}
+ */
+function isValidObjectMaxDepth(maxDepth) {
+  return isNumber(maxDepth) && maxDepth > 0;
+}
 
 /**
  * @description
@@ -16532,7 +16508,7 @@ function minErr(module, ErrorConstructor) {
       return match;
     });
 
-    message += '\nhttp://errors.angularjs.org/1.6.4/' +
+    message += '\nhttp://errors.angularjs.org/1.6.6/' +
       (module ? module + '/' : '') + code;
 
     for (i = 0, paramPrefix = '?'; i < templateArgs.length; i++, paramPrefix = '&') {
@@ -16588,6 +16564,7 @@ function minErr(module, ErrorConstructor) {
   isNumber,
   isNumberNaN,
   isDate,
+  isError,
   isArray,
   isFunction,
   isRegExp,
@@ -16671,50 +16648,6 @@ var VALIDITY_STATE_PROPERTY = 'validity';
 
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-var minErrConfig = {
-  objectMaxDepth: 5
-};
-
- /**
- * @ngdoc function
- * @name angular.errorHandlingConfig
- * @module ng
- * @kind function
- *
- * @description
- * Configure several aspects of error handling in AngularJS if used as a setter or return the
- * current configuration if used as a getter. The following options are supported:
- *
- * - **objectMaxDepth**: The maximum depth to which objects are traversed when stringified for error messages.
- *
- * Omitted or undefined options will leave the corresponding configuration values unchanged.
- *
- * @param {Object=} config - The configuration object. May only contain the options that need to be
- *     updated. Supported keys:
- *
- * * `objectMaxDepth`  **{Number}** - The max depth for stringifying objects. Setting to a
- *   non-positive or non-numeric value, removes the max depth limit.
- *   Default: 5
- */
-function errorHandlingConfig(config) {
-  if (isObject(config)) {
-    if (isDefined(config.objectMaxDepth)) {
-      minErrConfig.objectMaxDepth = isValidObjectMaxDepth(config.objectMaxDepth) ? config.objectMaxDepth : NaN;
-    }
-  } else {
-    return minErrConfig;
-  }
-}
-
-/**
- * @private
- * @param {Number} maxDepth
- * @return {boolean}
- */
-function isValidObjectMaxDepth(maxDepth) {
-  return isNumber(maxDepth) && maxDepth > 0;
-}
 
 /**
  * @ngdoc function
@@ -17023,6 +16956,20 @@ function extend(dst) {
 * Unlike {@link angular.extend extend()}, `merge()` recursively descends into object properties of source
 * objects, performing a deep copy.
 *
+* @deprecated
+* sinceVersion="1.6.5"
+* This function is deprecated, but will not be removed in the 1.x lifecycle.
+* There are edge cases (see {@link angular.merge#known-issues known issues}) that are not
+* supported by this function. We suggest
+* using [lodash's merge()](https://lodash.com/docs/4.17.4#merge) instead.
+*
+* @knownIssue
+* This is a list of (known) object types that are not handled correctly by this function:
+* - [`Blob`](https://developer.mozilla.org/docs/Web/API/Blob)
+* - [`MediaStream`](https://developer.mozilla.org/docs/Web/API/MediaStream)
+* - [`CanvasGradient`](https://developer.mozilla.org/docs/Web/API/CanvasGradient)
+* - AngularJS {@link $rootScope.Scope scopes};
+*
 * @param {Object} dst Destination object.
 * @param {...Object} src Source object(s).
 * @returns {Object} Reference to `dst`.
@@ -17231,6 +17178,24 @@ function isDate(value) {
  * @returns {boolean} True if `value` is an `Array`.
  */
 var isArray = Array.isArray;
+
+/**
+ * @description
+ * Determines if a reference is an `Error`.
+ * Loosely based on https://www.npmjs.com/package/iserror
+ *
+ * @param {*} value Reference to check.
+ * @returns {boolean} True if `value` is an `Error`.
+ */
+function isError(value) {
+  var tag = toString.call(value);
+  switch (tag) {
+    case '[object Error]': return true;
+    case '[object Exception]': return true;
+    case '[object DOMException]': return true;
+    default: return value instanceof Error;
+  }
+}
 
 /**
  * @ngdoc function
@@ -17912,7 +17877,7 @@ function fromJson(json) {
 
 var ALL_COLONS = /:/g;
 function timezoneToOffset(timezone, fallback) {
-  // Support: IE 9-11 only, Edge 13-14+
+  // Support: IE 9-11 only, Edge 13-15+
   // IE/Edge do not "understand" colon (`:`) in timezone
   timezone = timezone.replace(ALL_COLONS, '');
   var requestedTimezoneOffset = Date.parse('Jan 01, 1970 00:00:00 ' + timezone) / 60000;
@@ -17939,12 +17904,7 @@ function convertTimezoneToLocal(date, timezone, reverse) {
  * @returns {string} Returns the string representation of the element.
  */
 function startingTag(element) {
-  element = jqLite(element).clone();
-  try {
-    // turns out IE does not let you set .html() on elements which
-    // are not allowed to have children. So we just ignore it.
-    element.empty();
-  } catch (e) { /* empty */ }
+  element = jqLite(element).clone().empty();
   var elemHtml = jqLite('<div>').append(element).html();
   try {
     return element[0].nodeType === NODE_TYPE_TEXT ? lowercase(elemHtml) :
@@ -18082,6 +18042,7 @@ function allowAutoBootstrap(document) {
   var script = document.currentScript;
 
   if (!script) {
+    // Support: IE 9-11 only
     // IE does not have `document.currentScript`
     return true;
   }
@@ -19073,7 +19034,7 @@ function shallowCopy(src, dst) {
   return dst || src;
 }
 
-/* global toDebugString: true */
+/* exported toDebugString */
 
 function serializeObject(obj, maxDepth) {
   var seen = [];
@@ -19082,7 +19043,9 @@ function serializeObject(obj, maxDepth) {
   // and a very deep object can cause a performance issue, so we copy the object
   // based on this specific depth and then stringify it.
   if (isValidObjectMaxDepth(maxDepth)) {
-    obj = copy(obj, null, maxDepth);
+    // This file is also included in `angular-loader`, so `copy()` might not always be available in
+    // the closure. Therefore, it is lazily retrieved as `angular.copy()` when needed.
+    obj = angular.copy(obj, null, maxDepth);
   }
   return JSON.stringify(obj, function(key, val) {
     val = toJsonReplacer(key, val);
@@ -19223,11 +19186,11 @@ function toDebugString(obj, maxDepth) {
 var version = {
   // These placeholder strings will be replaced by grunt's `build` task.
   // They need to be double- or single-quoted.
-  full: '1.6.4',
+  full: '1.6.6',
   major: 1,
   minor: 6,
-  dot: 4,
-  codeName: 'phenomenal-footnote'
+  dot: 6,
+  codeName: 'interdimensional-cable'
 };
 
 
@@ -19373,7 +19336,7 @@ function publishExternalAPI(angular) {
       });
     }
   ])
-  .info({ angularVersion: '1.6.4' });
+  .info({ angularVersion: '1.6.6' });
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -21962,6 +21925,7 @@ var $$CoreAnimateQueueProvider = /** @this */ function() {
 var $AnimateProvider = ['$provide', /** @this */ function($provide) {
   var provider = this;
   var classNameFilter = null;
+  var customFilter = null;
 
   this.$$registeredAnimations = Object.create(null);
 
@@ -22016,6 +21980,51 @@ var $AnimateProvider = ['$provide', /** @this */ function($provide) {
 
   /**
    * @ngdoc method
+   * @name $animateProvider#customFilter
+   *
+   * @description
+   * Sets and/or returns the custom filter function that is used to "filter" animations, i.e.
+   * determine if an animation is allowed or not. When no filter is specified (the default), no
+   * animation will be blocked. Setting the `customFilter` value will only allow animations for
+   * which the filter function's return value is truthy.
+   *
+   * This allows to easily create arbitrarily complex rules for filtering animations, such as
+   * allowing specific events only, or enabling animations on specific subtrees of the DOM, etc.
+   * Filtering animations can also boost performance for low-powered devices, as well as
+   * applications containing a lot of structural operations.
+   *
+   * <div class="alert alert-success">
+   *   **Best Practice:**
+   *   Keep the filtering function as lean as possible, because it will be called for each DOM
+   *   action (e.g. insertion, removal, class change) performed by "animation-aware" directives.
+   *   See {@link guide/animations#which-directives-support-animations- here} for a list of built-in
+   *   directives that support animations.
+   *   Performing computationally expensive or time-consuming operations on each call of the
+   *   filtering function can make your animations sluggish.
+   * </div>
+   *
+   * **Note:** If present, `customFilter` will be checked before
+   * {@link $animateProvider#classNameFilter classNameFilter}.
+   *
+   * @param {Function=} filterFn - The filter function which will be used to filter all animations.
+   *   If a falsy value is returned, no animation will be performed. The function will be called
+   *   with the following arguments:
+   *   - **node** `{DOMElement}` - The DOM element to be animated.
+   *   - **event** `{String}` - The name of the animation event (e.g. `enter`, `leave`, `addClass`
+   *     etc).
+   *   - **options** `{Object}` - A collection of options/styles used for the animation.
+   * @return {Function} The current filter function or `null` if there is none set.
+   */
+  this.customFilter = function(filterFn) {
+    if (arguments.length === 1) {
+      customFilter = isFunction(filterFn) ? filterFn : null;
+    }
+
+    return customFilter;
+  };
+
+  /**
+   * @ngdoc method
    * @name $animateProvider#classNameFilter
    *
    * @description
@@ -22025,6 +22034,11 @@ var $AnimateProvider = ['$provide', /** @this */ function($provide) {
    * When setting the `classNameFilter` value, animations will only be performed on elements
    * that successfully match the filter expression. This in turn can boost performance
    * for low-powered devices as well as applications containing a lot of structural operations.
+   *
+   * **Note:** If present, `classNameFilter` will be checked after
+   * {@link $animateProvider#customFilter customFilter}. If `customFilter` is present and returns
+   * false, `classNameFilter` will not be checked.
+   *
    * @param {RegExp=} expression The className expression which will be checked against all animations
    * @return {RegExp} The current CSS className expression value. If null then there is no expression value
    */
@@ -24614,7 +24628,8 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    * @ngdoc method
    * @name $compileProvider#component
    * @module ng
-   * @param {string} name Name of the component in camelCase (i.e. `myComp` which will match `<my-comp>`)
+   * @param {string|Object} name Name of the component in camelCase (i.e. `myComp` which will match `<my-comp>`),
+   *    or an object map of components where the keys are the names and the values are the component definition objects.
    * @param {Object} options Component definition object (a simplified
    *    {@link ng.$compile#directive-definition-object directive definition object}),
    *    with the following properties (all optional):
@@ -24697,6 +24712,11 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    * See also {@link ng.$compileProvider#directive $compileProvider.directive()}.
    */
   this.component = function registerComponent(name, options) {
+    if (!isString(name)) {
+      forEach(name, reverseParams(bind(this, registerComponent)));
+      return this;
+    }
+
     var controller = options.controller || function() {};
 
     function factory($injector) {
@@ -24878,6 +24898,31 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
     return preAssignBindingsEnabled;
   };
 
+  /**
+   * @ngdoc method
+   * @name  $compileProvider#strictComponentBindingsEnabled
+   *
+   * @param {boolean=} enabled update the strictComponentBindingsEnabled state if provided, otherwise just return the
+   * current strictComponentBindingsEnabled state
+   * @returns {*} current value if used as getter or itself (chaining) if used as setter
+   *
+   * @kind function
+   *
+   * @description
+   * Call this method to enable/disable strict component bindings check. If enabled, the compiler will enforce that
+   * for all bindings of a component that are not set as optional with `?`, an attribute needs to be provided
+   * on the component's HTML tag.
+   *
+   * The default value is false.
+   */
+  var strictComponentBindingsEnabled = false;
+  this.strictComponentBindingsEnabled = function(enabled) {
+    if (isDefined(enabled)) {
+      strictComponentBindingsEnabled = enabled;
+      return this;
+    }
+    return strictComponentBindingsEnabled;
+  };
 
   var TTL = 10;
   /**
@@ -26632,7 +26677,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
           }
           linkQueue = null;
         }).catch(function(error) {
-          if (error instanceof Error) {
+          if (isError(error)) {
             $exceptionHandler(error);
           }
         });
@@ -26905,12 +26950,20 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
       }
     }
 
+    function strictBindingsCheck(attrName, directiveName) {
+      if (strictComponentBindingsEnabled) {
+        throw $compileMinErr('missingattr',
+          'Attribute \'{0}\' of \'{1}\' is non-optional and must be set!',
+          attrName, directiveName);
+      }
+    }
 
     // Set up $watches for isolate scope and controller bindings.
     function initializeDirectiveBindings(scope, attrs, destination, bindings, directive) {
       var removeWatchCollection = [];
       var initialChanges = {};
       var changes;
+
       forEach(bindings, function initializeBinding(definition, scopeName) {
         var attrName = definition.attrName,
         optional = definition.optional,
@@ -26922,7 +26975,9 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
           case '@':
             if (!optional && !hasOwnProperty.call(attrs, attrName)) {
+              strictBindingsCheck(attrName, directive.name);
               destination[scopeName] = attrs[attrName] = undefined;
+
             }
             removeWatch = attrs.$observe(attrName, function(value) {
               if (isString(value) || isBoolean(value)) {
@@ -26949,6 +27004,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
           case '=':
             if (!hasOwnProperty.call(attrs, attrName)) {
               if (optional) break;
+              strictBindingsCheck(attrName, directive.name);
               attrs[attrName] = undefined;
             }
             if (optional && !attrs[attrName]) break;
@@ -26993,6 +27049,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
           case '<':
             if (!hasOwnProperty.call(attrs, attrName)) {
               if (optional) break;
+              strictBindingsCheck(attrName, directive.name);
               attrs[attrName] = undefined;
             }
             if (optional && !attrs[attrName]) break;
@@ -27018,6 +27075,9 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
             break;
 
           case '&':
+            if (!optional && !hasOwnProperty.call(attrs, attrName)) {
+              strictBindingsCheck(attrName, directive.name);
+            }
             // Don't assign Object.prototype method to scope
             parentGet = attrs.hasOwnProperty(attrName) ? $parse(attrs[attrName]) : noop;
 
@@ -27550,7 +27610,7 @@ function $HttpParamSerializerProvider() {
       if (!params) return '';
       var parts = [];
       forEachSorted(params, function(value, key) {
-        if (value === null || isUndefined(value)) return;
+        if (value === null || isUndefined(value) || isFunction(value)) return;
         if (isArray(value)) {
           forEach(value, function(v) {
             parts.push(encodeUriQuery(key)  + '=' + encodeUriQuery(serializeValue(v)));
@@ -27646,10 +27706,15 @@ function defaultHttpResponseTransform(data, headers) {
 
     if (tempData) {
       var contentType = headers('Content-Type');
-      if ((contentType && (contentType.indexOf(APPLICATION_JSON) === 0)) || isJsonLike(tempData)) {
+      var hasJsonContentType = contentType && (contentType.indexOf(APPLICATION_JSON) === 0);
+
+      if (hasJsonContentType || isJsonLike(tempData)) {
         try {
           data = fromJson(tempData);
         } catch (e) {
+          if (!hasJsonContentType) {
+            return data;
+          }
           throw $httpMinErr('baddata', 'Data must be a valid JSON object. Received: "{0}". ' +
           'Parse error: "{1}"', data, e);
         }
@@ -27775,12 +27840,6 @@ function $HttpProvider() {
    * {@link ng.$cacheFactory `$cacheFactory`} to enable or disable caching of HTTP responses
    * by default. See {@link $http#caching $http Caching} for more information.
    *
-   * - **`defaults.xsrfCookieName`** - {string} - Name of cookie containing the XSRF token.
-   * Defaults value is `'XSRF-TOKEN'`.
-   *
-   * - **`defaults.xsrfHeaderName`** - {string} - Name of HTTP header to populate with the
-   * XSRF token. Defaults value is `'X-XSRF-TOKEN'`.
-   *
    * - **`defaults.headers`** - {Object} - Default headers for all $http requests.
    * Refer to {@link ng.$http#setting-http-headers $http} for documentation on
    * setting default headers.
@@ -27789,15 +27848,38 @@ function $HttpProvider() {
    *     - **`defaults.headers.put`**
    *     - **`defaults.headers.patch`**
    *
+   * - **`defaults.jsonpCallbackParam`** - `{string}` - the name of the query parameter that passes the name of the
+   * callback in a JSONP request. The value of this parameter will be replaced with the expression generated by the
+   * {@link $jsonpCallbacks} service. Defaults to `'callback'`.
    *
    * - **`defaults.paramSerializer`** - `{string|function(Object<string,string>):string}` - A function
    *  used to the prepare string representation of request parameters (specified as an object).
    *  If specified as string, it is interpreted as a function registered with the {@link auto.$injector $injector}.
    *  Defaults to {@link ng.$httpParamSerializer $httpParamSerializer}.
    *
-   * - **`defaults.jsonpCallbackParam`** - `{string}` - the name of the query parameter that passes the name of the
-   * callback in a JSONP request. The value of this parameter will be replaced with the expression generated by the
-   * {@link $jsonpCallbacks} service. Defaults to `'callback'`.
+   * - **`defaults.transformRequest`** -
+   * `{Array<function(data, headersGetter)>|function(data, headersGetter)}` -
+   * An array of functions (or a single function) which are applied to the request data.
+   * By default, this is an array with one request transformation function:
+   *
+   *   - If the `data` property of the request configuration object contains an object, serialize it
+   *     into JSON format.
+   *
+   * - **`defaults.transformResponse`** -
+   * `{Array<function(data, headersGetter, status)>|function(data, headersGetter, status)}` -
+   * An array of functions (or a single function) which are applied to the response data. By default,
+   * this is an array which applies one response transformation function that does two things:
+   *
+   *  - If XSRF prefix is detected, strip it
+   *    (see {@link ng.$http#security-considerations Security Considerations in the $http docs}).
+   *  - If the `Content-Type` is `application/json` or the response looks like JSON,
+   *    deserialize it using a JSON parser.
+   *
+   * - **`defaults.xsrfCookieName`** - {string} - Name of cookie containing the XSRF token.
+   * Defaults value is `'XSRF-TOKEN'`.
+   *
+   * - **`defaults.xsrfHeaderName`** - {string} - Name of HTTP header to populate with the
+   * XSRF token. Defaults value is `'X-XSRF-TOKEN'`.
    *
    **/
   var defaults = this.defaults = {
@@ -27945,6 +28027,7 @@ function $HttpProvider() {
      *   - **headers** – `{function([headerName])}` – Header getter function.
      *   - **config** – `{Object}` – The configuration object that was used to generate the request.
      *   - **statusText** – `{string}` – HTTP status text of the response.
+     *   - **xhrStatus** – `{string}` – Status of the XMLHttpRequest (`complete`, `error`, `timeout` or `abort`).
      *
      * A response status code between 200 and 299 is considered a success status and will result in
      * the success callback being called. Any response status code outside of that range is
@@ -28061,15 +28144,18 @@ function $HttpProvider() {
      *
      * Angular provides the following default transformations:
      *
-     * Request transformations (`$httpProvider.defaults.transformRequest` and `$http.defaults.transformRequest`):
+     * Request transformations (`$httpProvider.defaults.transformRequest` and `$http.defaults.transformRequest`) is
+     * an array with one function that does the following:
      *
      * - If the `data` property of the request configuration object contains an object, serialize it
      *   into JSON format.
      *
-     * Response transformations (`$httpProvider.defaults.transformResponse` and `$http.defaults.transformResponse`):
+     * Response transformations (`$httpProvider.defaults.transformResponse` and `$http.defaults.transformResponse`) is
+     * an array with one function that does the following:
      *
      *  - If XSRF prefix is detected, strip it (see Security Considerations section below).
-     *  - If JSON response is detected, deserialize it using a JSON parser.
+     *  - If the `Content-Type` is `application/json` or the response looks like JSON,
+   *      deserialize it using a JSON parser.
      *
      *
      * ### Overriding the Default Transformations Per Request
@@ -28783,9 +28869,9 @@ function $HttpProvider() {
           } else {
             // serving from cache
             if (isArray(cachedResp)) {
-              resolvePromise(cachedResp[1], cachedResp[0], shallowCopy(cachedResp[2]), cachedResp[3]);
+              resolvePromise(cachedResp[1], cachedResp[0], shallowCopy(cachedResp[2]), cachedResp[3], cachedResp[4]);
             } else {
-              resolvePromise(cachedResp, 200, {}, 'OK');
+              resolvePromise(cachedResp, 200, {}, 'OK', 'complete');
             }
           }
         } else {
@@ -28842,10 +28928,10 @@ function $HttpProvider() {
        *  - resolves the raw $http promise
        *  - calls $apply
        */
-      function done(status, response, headersString, statusText) {
+      function done(status, response, headersString, statusText, xhrStatus) {
         if (cache) {
           if (isSuccess(status)) {
-            cache.put(url, [status, response, parseHeaders(headersString), statusText]);
+            cache.put(url, [status, response, parseHeaders(headersString), statusText, xhrStatus]);
           } else {
             // remove promise from the cache
             cache.remove(url);
@@ -28853,7 +28939,7 @@ function $HttpProvider() {
         }
 
         function resolveHttpPromise() {
-          resolvePromise(response, status, headersString, statusText);
+          resolvePromise(response, status, headersString, statusText, xhrStatus);
         }
 
         if (useApplyAsync) {
@@ -28868,7 +28954,7 @@ function $HttpProvider() {
       /**
        * Resolves the raw $http promise.
        */
-      function resolvePromise(response, status, headers, statusText) {
+      function resolvePromise(response, status, headers, statusText, xhrStatus) {
         //status: HTTP response status code, 0, -1 (aborted by timeout / promise)
         status = status >= -1 ? status : 0;
 
@@ -28877,12 +28963,13 @@ function $HttpProvider() {
           status: status,
           headers: headersGetter(headers),
           config: config,
-          statusText: statusText
+          statusText: statusText,
+          xhrStatus: xhrStatus
         });
       }
 
       function resolvePromiseWithResult(result) {
-        resolvePromise(result.data, result.status, shallowCopy(result.headers()), result.statusText);
+        resolvePromise(result.data, result.status, shallowCopy(result.headers()), result.statusText, result.xhrStatus);
       }
 
       function removePendingReq() {
@@ -28983,7 +29070,7 @@ function createHttpBackend($browser, createXhr, $browserDefer, callbacks, rawDoc
       var jsonpDone = jsonpReq(url, callbackPath, function(status, text) {
         // jsonpReq only ever sets status to 200 (OK), 404 (ERROR) or -1 (WAITING)
         var response = (status === 200) && callbacks.getResponse(callbackPath);
-        completeRequest(callback, status, response, '', text);
+        completeRequest(callback, status, response, '', text, 'complete');
         callbacks.removeCallback(callbackPath);
       });
     } else {
@@ -29018,18 +29105,29 @@ function createHttpBackend($browser, createXhr, $browserDefer, callbacks, rawDoc
             status,
             response,
             xhr.getAllResponseHeaders(),
-            statusText);
+            statusText,
+            'complete');
       };
 
       var requestError = function() {
         // The response is always empty
         // See https://xhr.spec.whatwg.org/#request-error-steps and https://fetch.spec.whatwg.org/#concept-network-error
-        completeRequest(callback, -1, null, null, '');
+        completeRequest(callback, -1, null, null, '', 'error');
+      };
+
+      var requestAborted = function() {
+        completeRequest(callback, -1, null, null, '', 'abort');
+      };
+
+      var requestTimeout = function() {
+        // The response is always empty
+        // See https://xhr.spec.whatwg.org/#request-error-steps and https://fetch.spec.whatwg.org/#concept-network-error
+        completeRequest(callback, -1, null, null, '', 'timeout');
       };
 
       xhr.onerror = requestError;
-      xhr.onabort = requestError;
-      xhr.ontimeout = requestError;
+      xhr.onabort = requestAborted;
+      xhr.ontimeout = requestTimeout;
 
       forEach(eventHandlers, function(value, key) {
           xhr.addEventListener(key, value);
@@ -29079,14 +29177,14 @@ function createHttpBackend($browser, createXhr, $browserDefer, callbacks, rawDoc
       }
     }
 
-    function completeRequest(callback, status, response, headersString, statusText) {
+    function completeRequest(callback, status, response, headersString, statusText, xhrStatus) {
       // cancel timeout and subsequent timeout promise resolution
       if (isDefined(timeoutId)) {
         $browserDefer.cancel(timeoutId);
       }
       jsonpDone = xhr = null;
 
-      callback(status, response, headersString, statusText);
+      callback(status, response, headersString, statusText, xhrStatus);
     }
   };
 
@@ -29706,7 +29804,7 @@ function $IntervalProvider() {
     interval.cancel = function(promise) {
       if (promise && promise.$$intervalId in intervals) {
         // Interval cancels should not report as unhandled promise.
-        intervals[promise.$$intervalId].promise.catch(noop);
+        markQExceptionHandled(intervals[promise.$$intervalId].promise);
         intervals[promise.$$intervalId].reject('canceled');
         $window.clearInterval(promise.$$intervalId);
         delete intervals[promise.$$intervalId];
@@ -30848,6 +30946,14 @@ function $LocationProvider() {
  *
  * The main purpose of this service is to simplify debugging and troubleshooting.
  *
+ * To reveal the location of the calls to `$log` in the JavaScript console,
+ * you can "blackbox" the AngularJS source in your browser:
+ *
+ * [Mozilla description of blackboxing](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Black_box_a_source).
+ * [Chrome description of blackboxing](https://developer.chrome.com/devtools/docs/blackboxing).
+ *
+ * Note: Not all browsers support blackboxing.
+ *
  * The default is to log `debug` messages. You can use
  * {@link ng.$logProvider ng.$logProvider#debugEnabled} to change this.
  *
@@ -30969,7 +31075,7 @@ function $LogProvider() {
     };
 
     function formatError(arg) {
-      if (arg instanceof Error) {
+      if (isError(arg)) {
         if (arg.stack && formatStackTrace) {
           arg = (arg.message && arg.stack.indexOf(arg.message) === -1)
               ? 'Error: ' + arg.message + '\n' + arg.stack
@@ -30983,29 +31089,17 @@ function $LogProvider() {
 
     function consoleLog(type) {
       var console = $window.console || {},
-          logFn = console[type] || console.log || noop,
-          hasApply = false;
+          logFn = console[type] || console.log || noop;
 
-      // Note: reading logFn.apply throws an error in IE11 in IE8 document mode.
-      // The reason behind this is that console.log has type "object" in IE8...
-      try {
-        hasApply = !!logFn.apply;
-      } catch (e) { /* empty */ }
-
-      if (hasApply) {
-        return function() {
-          var args = [];
-          forEach(arguments, function(arg) {
-            args.push(formatError(arg));
-          });
-          return logFn.apply(console, args);
-        };
-      }
-
-      // we are IE which either doesn't have window.console => this is noop and we do nothing,
-      // or we are IE where console.log doesn't have apply so we log at least first 2 args
-      return function(arg1, arg2) {
-        logFn(arg1, arg2 == null ? '' : arg2);
+      return function() {
+        var args = [];
+        forEach(arguments, function(arg) {
+          args.push(formatError(arg));
+        });
+        // Support: IE 9 only
+        // console methods don't inherit from Function.prototype in IE 9 so we can't
+        // call `logFn.apply(console, args)` directly.
+        return Function.prototype.apply.call(logFn, console, args);
       };
     }
   }];
@@ -31633,15 +31727,47 @@ function isStateless($filter, filterName) {
   return !fn.$stateful;
 }
 
-function findConstantAndWatchExpressions(ast, $filter) {
+var PURITY_ABSOLUTE = 1;
+var PURITY_RELATIVE = 2;
+
+// Detect nodes which could depend on non-shallow state of objects
+function isPure(node, parentIsPure) {
+  switch (node.type) {
+    // Computed members might invoke a stateful toString()
+    case AST.MemberExpression:
+      if (node.computed) {
+        return false;
+      }
+      break;
+
+    // Unary always convert to primative
+    case AST.UnaryExpression:
+      return PURITY_ABSOLUTE;
+
+    // The binary + operator can invoke a stateful toString().
+    case AST.BinaryExpression:
+      return node.operator !== '+' ? PURITY_ABSOLUTE : false;
+
+    // Functions / filters probably read state from within objects
+    case AST.CallExpression:
+      return false;
+  }
+
+  return (undefined === parentIsPure) ? PURITY_RELATIVE : parentIsPure;
+}
+
+function findConstantAndWatchExpressions(ast, $filter, parentIsPure) {
   var allConstants;
   var argsToWatch;
   var isStatelessFilter;
+
+  var astIsPure = ast.isPure = isPure(ast, parentIsPure);
+
   switch (ast.type) {
   case AST.Program:
     allConstants = true;
     forEach(ast.body, function(expr) {
-      findConstantAndWatchExpressions(expr.expression, $filter);
+      findConstantAndWatchExpressions(expr.expression, $filter, astIsPure);
       allConstants = allConstants && expr.expression.constant;
     });
     ast.constant = allConstants;
@@ -31651,26 +31777,26 @@ function findConstantAndWatchExpressions(ast, $filter) {
     ast.toWatch = [];
     break;
   case AST.UnaryExpression:
-    findConstantAndWatchExpressions(ast.argument, $filter);
+    findConstantAndWatchExpressions(ast.argument, $filter, astIsPure);
     ast.constant = ast.argument.constant;
     ast.toWatch = ast.argument.toWatch;
     break;
   case AST.BinaryExpression:
-    findConstantAndWatchExpressions(ast.left, $filter);
-    findConstantAndWatchExpressions(ast.right, $filter);
+    findConstantAndWatchExpressions(ast.left, $filter, astIsPure);
+    findConstantAndWatchExpressions(ast.right, $filter, astIsPure);
     ast.constant = ast.left.constant && ast.right.constant;
     ast.toWatch = ast.left.toWatch.concat(ast.right.toWatch);
     break;
   case AST.LogicalExpression:
-    findConstantAndWatchExpressions(ast.left, $filter);
-    findConstantAndWatchExpressions(ast.right, $filter);
+    findConstantAndWatchExpressions(ast.left, $filter, astIsPure);
+    findConstantAndWatchExpressions(ast.right, $filter, astIsPure);
     ast.constant = ast.left.constant && ast.right.constant;
     ast.toWatch = ast.constant ? [] : [ast];
     break;
   case AST.ConditionalExpression:
-    findConstantAndWatchExpressions(ast.test, $filter);
-    findConstantAndWatchExpressions(ast.alternate, $filter);
-    findConstantAndWatchExpressions(ast.consequent, $filter);
+    findConstantAndWatchExpressions(ast.test, $filter, astIsPure);
+    findConstantAndWatchExpressions(ast.alternate, $filter, astIsPure);
+    findConstantAndWatchExpressions(ast.consequent, $filter, astIsPure);
     ast.constant = ast.test.constant && ast.alternate.constant && ast.consequent.constant;
     ast.toWatch = ast.constant ? [] : [ast];
     break;
@@ -31679,30 +31805,28 @@ function findConstantAndWatchExpressions(ast, $filter) {
     ast.toWatch = [ast];
     break;
   case AST.MemberExpression:
-    findConstantAndWatchExpressions(ast.object, $filter);
+    findConstantAndWatchExpressions(ast.object, $filter, astIsPure);
     if (ast.computed) {
-      findConstantAndWatchExpressions(ast.property, $filter);
+      findConstantAndWatchExpressions(ast.property, $filter, astIsPure);
     }
     ast.constant = ast.object.constant && (!ast.computed || ast.property.constant);
-    ast.toWatch = [ast];
+    ast.toWatch = ast.constant ? [] : [ast];
     break;
   case AST.CallExpression:
     isStatelessFilter = ast.filter ? isStateless($filter, ast.callee.name) : false;
     allConstants = isStatelessFilter;
     argsToWatch = [];
     forEach(ast.arguments, function(expr) {
-      findConstantAndWatchExpressions(expr, $filter);
+      findConstantAndWatchExpressions(expr, $filter, astIsPure);
       allConstants = allConstants && expr.constant;
-      if (!expr.constant) {
-        argsToWatch.push.apply(argsToWatch, expr.toWatch);
-      }
+      argsToWatch.push.apply(argsToWatch, expr.toWatch);
     });
     ast.constant = allConstants;
     ast.toWatch = isStatelessFilter ? argsToWatch : [ast];
     break;
   case AST.AssignmentExpression:
-    findConstantAndWatchExpressions(ast.left, $filter);
-    findConstantAndWatchExpressions(ast.right, $filter);
+    findConstantAndWatchExpressions(ast.left, $filter, astIsPure);
+    findConstantAndWatchExpressions(ast.right, $filter, astIsPure);
     ast.constant = ast.left.constant && ast.right.constant;
     ast.toWatch = [ast];
     break;
@@ -31710,11 +31834,9 @@ function findConstantAndWatchExpressions(ast, $filter) {
     allConstants = true;
     argsToWatch = [];
     forEach(ast.elements, function(expr) {
-      findConstantAndWatchExpressions(expr, $filter);
+      findConstantAndWatchExpressions(expr, $filter, astIsPure);
       allConstants = allConstants && expr.constant;
-      if (!expr.constant) {
-        argsToWatch.push.apply(argsToWatch, expr.toWatch);
-      }
+      argsToWatch.push.apply(argsToWatch, expr.toWatch);
     });
     ast.constant = allConstants;
     ast.toWatch = argsToWatch;
@@ -31723,18 +31845,15 @@ function findConstantAndWatchExpressions(ast, $filter) {
     allConstants = true;
     argsToWatch = [];
     forEach(ast.properties, function(property) {
-      findConstantAndWatchExpressions(property.value, $filter);
-      allConstants = allConstants && property.value.constant && !property.computed;
-      if (!property.value.constant) {
-        argsToWatch.push.apply(argsToWatch, property.value.toWatch);
-      }
+      findConstantAndWatchExpressions(property.value, $filter, astIsPure);
+      allConstants = allConstants && property.value.constant;
+      argsToWatch.push.apply(argsToWatch, property.value.toWatch);
       if (property.computed) {
-        findConstantAndWatchExpressions(property.key, $filter);
-        if (!property.key.constant) {
-          argsToWatch.push.apply(argsToWatch, property.key.toWatch);
-        }
+        //`{[key]: value}` implicitly does `key.toString()` which may be non-pure
+        findConstantAndWatchExpressions(property.key, $filter, /*parentIsPure=*/false);
+        allConstants = allConstants && property.key.constant;
+        argsToWatch.push.apply(argsToWatch, property.key.toWatch);
       }
-
     });
     ast.constant = allConstants;
     ast.toWatch = argsToWatch;
@@ -31814,7 +31933,7 @@ ASTCompiler.prototype = {
       var intoId = self.nextId();
       self.recurse(watch, intoId);
       self.return_(intoId);
-      self.state.inputs.push(fnKey);
+      self.state.inputs.push({name: fnKey, isPure: watch.isPure});
       watch.watchId = key;
     });
     this.state.computing = 'fn';
@@ -31850,13 +31969,16 @@ ASTCompiler.prototype = {
 
   watchFns: function() {
     var result = [];
-    var fns = this.state.inputs;
+    var inputs = this.state.inputs;
     var self = this;
-    forEach(fns, function(name) {
-      result.push('var ' + name + '=' + self.generateFunction(name, 's'));
+    forEach(inputs, function(input) {
+      result.push('var ' + input.name + '=' + self.generateFunction(input.name, 's'));
+      if (input.isPure) {
+        result.push(input.name, '.isPure=' + JSON.stringify(input.isPure) + ';');
+      }
     });
-    if (fns.length) {
-      result.push('fn.inputs=[' + fns.join(',') + '];');
+    if (inputs.length) {
+      result.push('fn.inputs=[' + inputs.map(function(i) { return i.name; }).join(',') + '];');
     }
     return result.join('');
   },
@@ -32262,6 +32384,7 @@ ASTInterpreter.prototype = {
       inputs = [];
       forEach(toWatch, function(watch, key) {
         var input = self.recurse(watch);
+        input.isPure = watch.isPure;
         watch.input = input;
         inputs.push(input);
         watch.watchId = key;
@@ -32776,8 +32899,8 @@ function $ParseProvider() {
             if (parsedExpression.constant) {
               parsedExpression.$$watchDelegate = constantWatchDelegate;
             } else if (oneTime) {
-              parsedExpression.oneTime = true;
-              parsedExpression.$$watchDelegate = oneTimeWatchDelegate;
+              parsedExpression.$$watchDelegate = parsedExpression.literal ?
+                  oneTimeLiteralWatchDelegate : oneTimeWatchDelegate;
             } else if (parsedExpression.inputs) {
               parsedExpression.$$watchDelegate = inputsWatchDelegate;
             }
@@ -32828,7 +32951,7 @@ function $ParseProvider() {
         inputExpressions = inputExpressions[0];
         return scope.$watch(function expressionInputWatch(scope) {
           var newInputValue = inputExpressions(scope);
-          if (!expressionInputDirtyCheck(newInputValue, oldInputValueOf, parsedExpression.literal)) {
+          if (!expressionInputDirtyCheck(newInputValue, oldInputValueOf, inputExpressions.isPure)) {
             lastResult = parsedExpression(scope, undefined, undefined, [newInputValue]);
             oldInputValueOf = newInputValue && getValueOf(newInputValue);
           }
@@ -32848,7 +32971,7 @@ function $ParseProvider() {
 
         for (var i = 0, ii = inputExpressions.length; i < ii; i++) {
           var newInputValue = inputExpressions[i](scope);
-          if (changed || (changed = !expressionInputDirtyCheck(newInputValue, oldInputValueOfValues[i], parsedExpression.literal))) {
+          if (changed || (changed = !expressionInputDirtyCheck(newInputValue, oldInputValueOfValues[i], inputExpressions[i].isPure))) {
             oldInputValues[i] = newInputValue;
             oldInputValueOfValues[i] = newInputValue && getValueOf(newInputValue);
           }
@@ -32863,7 +32986,6 @@ function $ParseProvider() {
     }
 
     function oneTimeWatchDelegate(scope, listener, objectEquality, parsedExpression, prettyPrintExpression) {
-      var isDone = parsedExpression.literal ? isAllDefined : isDefined;
       var unwatch, lastValue;
       if (parsedExpression.inputs) {
         unwatch = inputsWatchDelegate(scope, oneTimeListener, objectEquality, parsedExpression, prettyPrintExpression);
@@ -32880,9 +33002,9 @@ function $ParseProvider() {
         if (isFunction(listener)) {
           listener(value, old, scope);
         }
-        if (isDone(value)) {
+        if (isDefined(value)) {
           scope.$$postDigest(function() {
-            if (isDone(lastValue)) {
+            if (isDefined(lastValue)) {
               unwatch();
             }
           });
@@ -32890,12 +33012,31 @@ function $ParseProvider() {
       }
     }
 
-    function isAllDefined(value) {
-      var allDefined = true;
-      forEach(value, function(val) {
-        if (!isDefined(val)) allDefined = false;
-      });
-      return allDefined;
+    function oneTimeLiteralWatchDelegate(scope, listener, objectEquality, parsedExpression) {
+      var unwatch, lastValue;
+      unwatch = scope.$watch(function oneTimeWatch(scope) {
+        return parsedExpression(scope);
+      }, function oneTimeListener(value, old, scope) {
+        lastValue = value;
+        if (isFunction(listener)) {
+          listener(value, old, scope);
+        }
+        if (isAllDefined(value)) {
+          scope.$$postDigest(function() {
+            if (isAllDefined(lastValue)) unwatch();
+          });
+        }
+      }, objectEquality);
+
+      return unwatch;
+
+      function isAllDefined(value) {
+        var allDefined = true;
+        forEach(value, function(val) {
+          if (!isDefined(val)) allDefined = false;
+        });
+        return allDefined;
+      }
     }
 
     function constantWatchDelegate(scope, listener, objectEquality, parsedExpression) {
@@ -32911,37 +33052,41 @@ function $ParseProvider() {
       var watchDelegate = parsedExpression.$$watchDelegate;
       var useInputs = false;
 
-      var isDone = parsedExpression.literal ? isAllDefined : isDefined;
+      var regularWatch =
+          watchDelegate !== oneTimeLiteralWatchDelegate &&
+          watchDelegate !== oneTimeWatchDelegate;
 
-      function regularInterceptedExpression(scope, locals, assign, inputs) {
+      var fn = regularWatch ? function regularInterceptedExpression(scope, locals, assign, inputs) {
         var value = useInputs && inputs ? inputs[0] : parsedExpression(scope, locals, assign, inputs);
         return interceptorFn(value, scope, locals);
-      }
-
-      function oneTimeInterceptedExpression(scope, locals, assign, inputs) {
-        var value = useInputs && inputs ? inputs[0] : parsedExpression(scope, locals, assign, inputs);
+      } : function oneTimeInterceptedExpression(scope, locals, assign, inputs) {
+        var value = parsedExpression(scope, locals, assign, inputs);
         var result = interceptorFn(value, scope, locals);
         // we only return the interceptor's result if the
         // initial value is defined (for bind-once)
-        return isDone(value) ? result : value;
-      }
+        return isDefined(value) ? result : value;
+      };
 
-      var fn = parsedExpression.oneTime ? oneTimeInterceptedExpression : regularInterceptedExpression;
-
-      // Propogate the literal/oneTime attributes
-      fn.literal = parsedExpression.literal;
-      fn.oneTime = parsedExpression.oneTime;
-
-      // Propagate or create inputs / $$watchDelegates
+      // Propagate $$watchDelegates other then inputsWatchDelegate
       useInputs = !parsedExpression.inputs;
       if (watchDelegate && watchDelegate !== inputsWatchDelegate) {
         fn.$$watchDelegate = watchDelegate;
         fn.inputs = parsedExpression.inputs;
       } else if (!interceptorFn.$stateful) {
-        // If there is an interceptor, but no watchDelegate then treat the interceptor like
-        // we treat filters - it is assumed to be a pure function unless flagged with $stateful
+        // Treat interceptor like filters - assume non-stateful by default and use the inputsWatchDelegate
         fn.$$watchDelegate = inputsWatchDelegate;
         fn.inputs = parsedExpression.inputs ? parsedExpression.inputs : [parsedExpression];
+      }
+
+      if (fn.inputs) {
+        fn.inputs = fn.inputs.map(function(e) {
+              // Remove the isPure flag of inputs when it is not absolute because they are now wrapped in a
+              // potentially non-pure interceptor function.
+              if (e.isPure === PURITY_RELATIVE) {
+                return function depurifier(s) { return e(s); };
+              }
+              return e;
+            });
       }
 
       return fn;
@@ -33229,7 +33374,7 @@ function $$QProvider() {
  * @param {function(function)} nextTick Function for executing functions in the next turn.
  * @param {function(...*)} exceptionHandler Function into which unexpected exceptions are passed for
  *     debugging purposes.
- @ param {=boolean} errorOnUnhandledRejections Whether an error should be generated on unhandled
+ * @param {boolean=} errorOnUnhandledRejections Whether an error should be generated on unhandled
  *     promises rejections.
  * @returns {object} Promise manager.
  */
@@ -33300,7 +33445,7 @@ function qFactory(nextTick, exceptionHandler, errorOnUnhandledRejections) {
     state.pending = undefined;
     try {
       for (var i = 0, ii = pending.length; i < ii; ++i) {
-        state.pur = true;
+        markQStateExceptionHandled(state);
         promise = pending[i][0];
         fn = pending[i][state.status];
         try {
@@ -33327,10 +33472,10 @@ function qFactory(nextTick, exceptionHandler, errorOnUnhandledRejections) {
     // eslint-disable-next-line no-unmodified-loop-condition
     while (!queueSize && checkQueue.length) {
       var toCheck = checkQueue.shift();
-      if (!toCheck.pur) {
-        toCheck.pur = true;
+      if (!isStateExceptionHandled(toCheck)) {
+        markQStateExceptionHandled(toCheck);
         var errorMessage = 'Possibly unhandled rejection: ' + toDebugString(toCheck.value);
-        if (toCheck.value instanceof Error) {
+        if (isError(toCheck.value)) {
           exceptionHandler(toCheck.value, errorMessage);
         } else {
           exceptionHandler(errorMessage);
@@ -33340,7 +33485,7 @@ function qFactory(nextTick, exceptionHandler, errorOnUnhandledRejections) {
   }
 
   function scheduleProcessQueue(state) {
-    if (errorOnUnhandledRejections && !state.pending && state.status === 2 && !state.pur) {
+    if (errorOnUnhandledRejections && !state.pending && state.status === 2 && !isStateExceptionHandled(state)) {
       if (queueSize === 0 && checkQueue.length === 0) {
         nextTick(processChecks);
       }
@@ -33619,6 +33764,16 @@ function qFactory(nextTick, exceptionHandler, errorOnUnhandledRejections) {
   $Q.race = race;
 
   return $Q;
+}
+
+function isStateExceptionHandled(state) {
+  return !!state.pur;
+}
+function markQStateExceptionHandled(state) {
+  state.pur = true;
+}
+function markQExceptionHandled(q) {
+  markQStateExceptionHandled(q.$$state);
 }
 
 /** @this */
@@ -34101,6 +34256,12 @@ function $RootScopeProvider() {
        *   values are examined for changes on every call to `$digest`.
        * - The `listener` is called whenever any expression in the `watchExpressions` array changes.
        *
+       * `$watchGroup` is more performant than watching each expression individually, and should be
+       * used when the listener does not need to know which expression has changed.
+       * If the listener needs to know which expression has changed,
+       * {@link ng.$rootScope.Scope#$watch $watch()} or
+       * {@link ng.$rootScope.Scope#$watchCollection $watchCollection()} should be used.
+       *
        * @param {Array.<string|Function(scope)>} watchExpressions Array of expressions that will be individually
        * watched using {@link ng.$rootScope.Scope#$watch $watch()}
        *
@@ -34109,7 +34270,34 @@ function $RootScopeProvider() {
        *    The `newValues` array contains the current values of the `watchExpressions`, with the indexes matching
        *    those of `watchExpression`
        *    and the `oldValues` array contains the previous values of the `watchExpressions`, with the indexes matching
-       *    those of `watchExpression`
+       *    those of `watchExpression`.
+       *
+       *    Note that `newValues` and `oldValues` reflect the differences in each **individual**
+       *    expression, and not the difference of the values between each call of the listener.
+       *    That means the difference between `newValues` and `oldValues` cannot be used to determine
+       *    which expression has changed / remained stable:
+       *
+       *    ```js
+       *
+       *    $scope.$watchGroup(['v1', 'v2'], function(newValues, oldValues) {
+       *      console.log(newValues, oldValues);
+       *    });
+       *
+       *    // newValues, oldValues initially
+       *    // [undefined, undefined], [undefined, undefined]
+       *
+       *    $scope.v1 = 'a';
+       *    $scope.v2 = 'a';
+       *
+       *    // ['a', 'a'], [undefined, undefined]
+       *
+       *    $scope.v2 = 'b'
+       *
+       *    // v1 hasn't changed since it became `'a'`, therefore its oldValue is still `undefined`
+       *    // ['a', 'b'], [undefined, 'a']
+       *
+       *    ```
+       *
        *    The `scope` refers to the current scope.
        * @returns {function()} Returns a de-registration function for all listeners.
        */
@@ -36684,7 +36872,7 @@ function $TimeoutProvider() {
     timeout.cancel = function(promise) {
       if (promise && promise.$$timeoutId in deferreds) {
         // Timeout cancels should not report an unhandled promise.
-        deferreds[promise.$$timeoutId].promise.catch(noop);
+        markQExceptionHandled(deferreds[promise.$$timeoutId].promise);
         deferreds[promise.$$timeoutId].reject('canceled');
         delete deferreds[promise.$$timeoutId];
         return $browser.defer.cancel(promise.$$timeoutId);
@@ -37119,7 +37307,7 @@ function $FilterProvider($provide) {
  *
  * @param {function(actual, expected)|true|false} [comparator] Comparator which is used in
  *     determining if values retrieved using `expression` (when it is not a function) should be
- *     considered a match based on the the expected value (from the filter expression) and actual
+ *     considered a match based on the expected value (from the filter expression) and actual
  *     value (from the object in the array).
  *
  *   Can be one of:
@@ -38038,6 +38226,9 @@ function jsonFilter() {
  * @kind function
  * @description
  * Converts string to lowercase.
+ *
+ * See the {@link ng.uppercase uppercase filter documentation} for a functionally identical example.
+ *
  * @see angular.lowercase
  */
 var lowercaseFilter = valueFn(lowercase);
@@ -38049,7 +38240,23 @@ var lowercaseFilter = valueFn(lowercase);
  * @kind function
  * @description
  * Converts string to uppercase.
- * @see angular.uppercase
+ * @example
+   <example module="uppercaseFilterExample" name="filter-uppercase">
+     <file name="index.html">
+       <script>
+         angular.module('uppercaseFilterExample', [])
+           .controller('ExampleController', ['$scope', function($scope) {
+             $scope.title = 'This is a title';
+           }]);
+       </script>
+       <div ng-controller="ExampleController">
+         <!-- This title should be formatted normally -->
+         <h1>{{title}}</h1>
+         <!-- This title should be capitalized -->
+         <h1>{{title | uppercase}}</h1>
+       </div>
+     </file>
+   </example>
  */
 var uppercaseFilter = valueFn(uppercase);
 
@@ -38237,6 +38444,9 @@ function sliceFn(input, begin, end) {
  * specified predicates can distinguish between two items, `orderBy` will automatically introduce a
  * dummy predicate that returns the item's index as `value`.
  * (If you are using a custom comparator, make sure it can handle this predicate as well.)
+ *
+ * If a custom comparator still can't distinguish between two items, then they will be sorted based
+ * on their index using the built-in comparator.
  *
  * Finally, in an attempt to simplify things, if a predicate returns an object as the extracted
  * value for an item, `orderBy` will try to convert that object to a primitive value, before passing
@@ -38784,7 +38994,7 @@ function orderByFilter($parse) {
         }
       }
 
-      return compare(v1.tieBreaker, v2.tieBreaker) * descending;
+      return (compare(v1.tieBreaker, v2.tieBreaker) || defaultCompare(v1.tieBreaker, v2.tieBreaker)) * descending;
     }
   };
 
@@ -39239,15 +39449,20 @@ var htmlAnchorDirective = valueFn({
  *
  * ## A note about browser compatibility
  *
- * Edge, Firefox, and Internet Explorer do not support the `details` element, it is
+ * Internet Explorer and Edge do not support the `details` element, it is
  * recommended to use {@link ng.ngShow} and {@link ng.ngHide} instead.
  *
  * @example
      <example name="ng-open">
        <file name="index.html">
-         <label>Check me check multiple: <input type="checkbox" ng-model="open"></label><br/>
+         <label>Toggle details: <input type="checkbox" ng-model="open"></label><br/>
          <details id="details" ng-open="open">
-            <summary>Show/Hide me</summary>
+            <summary>List</summary>
+            <ul>
+              <li>Apple</li>
+              <li>Orange</li>
+              <li>Durian</li>
+            </ul>
          </details>
        </file>
        <file name="protractor.js" type="protractor">
@@ -39387,17 +39602,23 @@ function nullFormRenameControl(control, name) {
  * @property {boolean} $dirty True if user has already interacted with the form.
  * @property {boolean} $valid True if all of the containing forms and controls are valid.
  * @property {boolean} $invalid True if at least one containing control or form is invalid.
- * @property {boolean} $pending True if at least one containing control or form is pending.
  * @property {boolean} $submitted True if user has submitted the form even if its invalid.
  *
- * @property {Object} $error Is an object hash, containing references to controls or
- *  forms with failing validators, where:
+ * @property {Object} $pending An object hash, containing references to controls or forms with
+ *  pending validators, where:
+ *
+ *  - keys are validations tokens (error names).
+ *  - values are arrays of controls or forms that have a pending validator for the given error name.
+ *
+ * See {@link form.FormController#$error $error} for a list of built-in validation tokens.
+ *
+ * @property {Object} $error An object hash, containing references to controls or forms with failing
+ *  validators, where:
  *
  *  - keys are validation tokens (error names),
- *  - values are arrays of controls or forms that have a failing validator for given error name.
+ *  - values are arrays of controls or forms that have a failing validator for the given error name.
  *
  *  Built-in validation tokens:
- *
  *  - `email`
  *  - `max`
  *  - `maxlength`
@@ -39643,9 +39864,24 @@ FormController.prototype = {
  * @name form.FormController#$setValidity
  *
  * @description
- * Sets the validity of a form control.
+ * Change the validity state of the form, and notify the parent form (if any).
  *
- * This method will also propagate to parent forms.
+ * Application developers will rarely need to call this method directly. It is used internally, by
+ * {@link ngModel.NgModelController#$setValidity NgModelController.$setValidity()}, to propagate a
+ * control's validity state to the parent `FormController`.
+ *
+ * @param {string} validationErrorKey Name of the validator. The `validationErrorKey` will be
+ *        assigned to either `$error[validationErrorKey]` or `$pending[validationErrorKey]` (for
+ *        unfulfilled `$asyncValidators`), so that it is available for data-binding. The
+ *        `validationErrorKey` should be in camelCase and will get converted into dash-case for
+ *        class name. Example: `myError` will result in `ng-valid-my-error` and
+ *        `ng-invalid-my-error` classes and can be bound to as `{{ someForm.$error.myError }}`.
+ * @param {boolean} isValid Whether the current state is valid (true), invalid (false), pending
+ *        (undefined),  or skipped (null). Pending is used for unfulfilled `$asyncValidators`.
+ *        Skipped is used by AngularJS when validators do not run because of parse errors and when
+ *        `$asyncValidators` do not run because any of the `$validators` failed.
+ * @param {NgModelController | FormController} controller - The controller whose validity state is
+ *        triggering the change.
  */
 addSetValidityMethod({
   clazz: FormController,
@@ -42490,6 +42726,13 @@ function classDirective(name, selector) {
     return {
       restrict: 'AC',
       link: function(scope, element, attr) {
+        var expression = attr[name].trim();
+        var isOneTime = (expression.charAt(0) === ':') && (expression.charAt(1) === ':');
+
+        var watchInterceptor = isOneTime ? toFlatValue : toClassString;
+        var watchExpression = $parse(expression, watchInterceptor);
+        var watchAction = isOneTime ? ngClassOneTimeWatchAction : ngClassWatchAction;
+
         var classCounts = element.data('$classCounts');
         var oldModulo = true;
         var oldClassString;
@@ -42512,7 +42755,7 @@ function classDirective(name, selector) {
           scope.$watch(indexWatchExpression, ngClassIndexWatchAction);
         }
 
-        scope.$watch($parse(attr[name], toClassString), ngClassWatchAction);
+        scope.$watch(watchExpression, watchAction, isOneTime);
 
         function addClasses(classString) {
           classString = digestClassCounts(split(classString), 1);
@@ -42554,9 +42797,9 @@ function classDirective(name, selector) {
         }
 
         function ngClassIndexWatchAction(newModulo) {
-          // This watch-action should run before the `ngClassWatchAction()`, thus it
+          // This watch-action should run before the `ngClass[OneTime]WatchAction()`, thus it
           // adds/removes `oldClassString`. If the `ngClass` expression has changed as well, the
-          // `ngClassWatchAction()` will update the classes.
+          // `ngClass[OneTime]WatchAction()` will update the classes.
           if (newModulo === selector) {
             addClasses(oldClassString);
           } else {
@@ -42566,13 +42809,15 @@ function classDirective(name, selector) {
           oldModulo = newModulo;
         }
 
-        function ngClassWatchAction(newClassString) {
-          // When using a one-time binding the newClassString will return
-          // the pre-interceptor value until the one-time is complete
-          if (!isString(newClassString)) {
-            newClassString = toClassString(newClassString);
-          }
+        function ngClassOneTimeWatchAction(newClassValue) {
+          var newClassString = toClassString(newClassValue);
 
+          if (newClassString !== oldClassString) {
+            ngClassWatchAction(newClassString);
+          }
+        }
+
+        function ngClassWatchAction(newClassString) {
           if (oldModulo === selector) {
             updateClasses(oldClassString, newClassString);
           }
@@ -42618,6 +42863,34 @@ function classDirective(name, selector) {
     }
 
     return classString;
+  }
+
+  function toFlatValue(classValue) {
+    var flatValue = classValue;
+
+    if (isArray(classValue)) {
+      flatValue = classValue.map(toFlatValue);
+    } else if (isObject(classValue)) {
+      var hasUndefined = false;
+
+      flatValue = Object.keys(classValue).filter(function(key) {
+        var value = classValue[key];
+
+        if (!hasUndefined && isUndefined(value)) {
+          hasUndefined = true;
+        }
+
+        return value;
+      });
+
+      if (hasUndefined) {
+        // Prevent the `oneTimeLiteralWatchInterceptor` from unregistering
+        // the watcher, by including at least one `undefined` value.
+        flatValue.push(undefined);
+      }
+    }
+
+    return flatValue;
   }
 }
 
@@ -45459,7 +45732,7 @@ function setupModelWatcher(ctrl) {
  *        (for unfulfilled `$asyncValidators`), so that it is available for data-binding.
  *        The `validationErrorKey` should be in camelCase and will get converted into dash-case
  *        for class name. Example: `myError` will result in `ng-valid-my-error` and `ng-invalid-my-error`
- *        class and can be bound to as  `{{someForm.someControl.$error.myError}}` .
+ *        classes and can be bound to as `{{ someForm.someControl.$error.myError }}`.
  * @param {boolean} isValid Whether the current state is valid (true), invalid (false), pending (undefined),
  *                          or skipped (null). Pending is used for unfulfilled `$asyncValidators`.
  *                          Skipped is used by Angular when validators do not run because of parse errors and
@@ -46534,7 +46807,8 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
   }
 
 
-  // we can't just jqLite('<option>') since jqLite is not smart enough
+  // Support: IE 9 only
+  // We can't just jqLite('<option>') since jqLite is not smart enough
   // to create it in <select> and IE barfs otherwise.
   var optionTemplate = window.document.createElement('option'),
       optGroupTemplate = window.document.createElement('optgroup');
@@ -46554,6 +46828,9 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
           break;
         }
       }
+
+      // The empty option will be compiled and rendered before we first generate the options
+      selectElement.empty();
 
       var providedEmptyOption = !!selectCtrl.emptyOption;
 
@@ -46576,12 +46853,15 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
       if (!multiple) {
 
         selectCtrl.writeValue = function writeNgOptionsValue(value) {
-          var selectedOption = options.selectValueMap[selectElement.val()];
+          // The options might not be defined yet when ngModel tries to render
+          if (!options) return;
+
+          var selectedOption = selectElement[0].options[selectElement[0].selectedIndex];
           var option = options.getOptionFromViewValue(value);
 
           // Make sure to remove the selected attribute from the previously selected option
           // Otherwise, screen readers might get confused
-          if (selectedOption) selectedOption.element.removeAttribute('selected');
+          if (selectedOption) selectedOption.removeAttribute('selected');
 
           if (option) {
             // Don't update the option when it is already selected.
@@ -46591,7 +46871,6 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
 
             if (selectElement[0].value !== option.selectValue) {
               selectCtrl.removeUnknownOption();
-              selectCtrl.unselectEmptyOption();
 
               selectElement[0].value = option.selectValue;
               option.element.selected = true;
@@ -46599,14 +46878,7 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
 
             option.element.setAttribute('selected', 'selected');
           } else {
-
-            if (providedEmptyOption) {
-              selectCtrl.selectEmptyOption();
-            } else if (selectCtrl.unknownOption.parent().length) {
-              selectCtrl.updateUnknownOption(value);
-            } else {
-              selectCtrl.renderUnknownOption(value);
-            }
+            selectCtrl.selectUnknownOrEmptyOption(value);
           }
         };
 
@@ -46635,9 +46907,11 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
       } else {
 
         selectCtrl.writeValue = function writeNgOptionsMultiple(values) {
+          // The options might not be defined yet when ngModel tries to render
+          if (!options) return;
+
           // Only set `<option>.selected` if necessary, in order to prevent some browsers from
           // scrolling to `<option>` elements that are outside the `<select>` element's viewport.
-
           var selectedOptions = values && values.map(getAndUpdateSelectedOption) || [];
 
           options.items.forEach(function(option) {
@@ -46679,12 +46953,10 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
 
       if (providedEmptyOption) {
 
-        // we need to remove it before calling selectElement.empty() because otherwise IE will
-        // remove the label from the element. wtf?
-        selectCtrl.emptyOption.remove();
-
         // compile the element since there might be bindings in it
         $compile(selectCtrl.emptyOption)(scope);
+
+        selectElement.prepend(selectCtrl.emptyOption);
 
         if (selectCtrl.emptyOption[0].nodeType === NODE_TYPE_COMMENT) {
           // This means the empty option has currently no actual DOM node, probably because
@@ -46703,8 +46975,12 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
               ngModelCtrl.$render();
 
               optionEl.on('$destroy', function() {
+                var needsRerender = selectCtrl.$isEmptyOptionSelected();
+
                 selectCtrl.hasEmptyOption = false;
                 selectCtrl.emptyOption = undefined;
+
+                if (needsRerender) ngModelCtrl.$render();
               });
             }
           };
@@ -46716,12 +46992,6 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
         }
 
       }
-
-      selectElement.empty();
-
-      // We need to do this here to ensure that the options object is defined
-      // when we first hit it in writeNgOptionsValue
-      updateOptions();
 
       // We will re-render the option elements if the option values or labels change
       scope.$watchCollection(ngOptions.getWatchables, updateOptions);
@@ -46746,7 +47016,8 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
       function updateOptionElement(option, element) {
         option.element = element;
         element.disabled = option.disabled;
-        // NOTE: The label must be set before the value, otherwise IE10/11/EDGE create unresponsive
+        // Support: IE 11 only, Edge 12-13 only
+        // NOTE: The label must be set before the value, otherwise IE 11 & Edge create unresponsive
         // selects in certain circumstances when multiple selects are next to each other and display
         // the option list in listbox style, i.e. the select is [multiple], or specifies a [size].
         // See https://github.com/angular/angular.js/issues/11314 for more info.
@@ -46781,11 +47052,6 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
         options = ngOptions.getOptions();
 
         var groupElementMap = {};
-
-        // Ensure that the empty option is always there if it was explicitly provided
-        if (providedEmptyOption) {
-          selectElement.prepend(selectCtrl.emptyOption);
-        }
 
         options.items.forEach(function addOption(option) {
           var groupElement;
@@ -46831,7 +47097,6 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
             ngModelCtrl.$render();
           }
         }
-
       }
   }
 
@@ -47305,7 +47570,9 @@ var ngPluralizeDirective = ['$locale', '$interpolate', '$log', function($locale,
  *     more than one tracking expression value resolve to the same key. (This would mean that two distinct objects are
  *     mapped to the same DOM element, which is not possible.)
  *
- *     Note that the tracking expression must come last, after any filters, and the alias expression.
+ *     <div class="alert alert-warning">
+ *       <strong>Note:</strong> the `track by` expression must come last - after any filters, and the alias expression.
+ *     </div>
  *
  *     For example: `item in items` is equivalent to `item in items track by $id(item)`. This implies that the DOM elements
  *     will be associated by item identity in the array.
@@ -47519,7 +47786,7 @@ var ngRepeatDirective = ['$parse', '$animate', '$compile', function($parse, $ani
         // Store a list of elements from previous run. This is a hash where key is the item from the
         // iterator, and the value is objects with following properties.
         //   - scope: bound scope
-        //   - element: previous element.
+        //   - clone: previous element.
         //   - index: position
         //
         // We are using no-proto object so that we don't need to guard against inherited props via
@@ -48622,7 +48889,7 @@ var scriptDirective = ['$templateCache', function($templateCache) {
 var noopNgModelController = { $setViewValue: noop, $render: noop };
 
 function setOptionSelectedStatus(optionEl, value) {
-  optionEl.prop('selected', value); // needed for IE
+  optionEl.prop('selected', value);
   /**
    * When unselecting an option, setting the property to null / false should be enough
    * However, screenreaders might react to the selected attribute instead, see
@@ -48636,10 +48903,120 @@ function setOptionSelectedStatus(optionEl, value) {
 /**
  * @ngdoc type
  * @name  select.SelectController
+ *
  * @description
- * The controller for the `<select>` directive. This provides support for reading
- * and writing the selected value(s) of the control and also coordinates dynamically
- * added `<option>` elements, perhaps by an `ngRepeat` directive.
+ * The controller for the {@link ng.select select} directive. The controller exposes
+ * a few utility methods that can be used to augment the behavior of a regular or an
+ * {@link ng.ngOptions ngOptions} select element.
+ *
+ * @example
+ * ### Set a custom error when the unknown option is selected
+ *
+ * This example sets a custom error "unknownValue" on the ngModelController
+ * when the select element's unknown option is selected, i.e. when the model is set to a value
+ * that is not matched by any option.
+ *
+ * <example name="select-unknown-value-error" module="staticSelect">
+ * <file name="index.html">
+ * <div ng-controller="ExampleController">
+ *   <form name="myForm">
+ *     <label for="testSelect"> Single select: </label><br>
+ *     <select name="testSelect" ng-model="selected" unknown-value-error>
+ *       <option value="option-1">Option 1</option>
+ *       <option value="option-2">Option 2</option>
+ *     </select><br>
+ *     <span ng-if="myForm.testSelect.$error.unknownValue">Error: The current model doesn't match any option</span>
+ *
+ *     <button ng-click="forceUnknownOption()">Force unknown option</button><br>
+ *   </form>
+ * </div>
+ * </file>
+ * <file name="app.js">
+ *  angular.module('staticSelect', [])
+ *    .controller('ExampleController', ['$scope', function($scope) {
+ *      $scope.selected = null;
+ *
+ *      $scope.forceUnknownOption = function() {
+ *        $scope.selected = 'nonsense';
+ *      };
+ *   }])
+ *   .directive('unknownValueError', function() {
+ *     return {
+ *       require: ['ngModel', 'select'],
+ *       link: function(scope, element, attrs, ctrls) {
+ *         var ngModelCtrl = ctrls[0];
+ *         var selectCtrl = ctrls[1];
+ *
+ *         ngModelCtrl.$validators.unknownValue = function(modelValue, viewValue) {
+ *           if (selectCtrl.$isUnknownOptionSelected()) {
+ *             return false;
+ *           }
+ *
+ *           return true;
+ *         };
+ *       }
+ *
+ *     };
+ *   });
+ * </file>
+ *</example>
+ *
+ *
+ * @example
+ * ### Set the "required" error when the unknown option is selected.
+ *
+ * By default, the "required" error on the ngModelController is only set on a required select
+ * when the empty option is selected. This example adds a custom directive that also sets the
+ * error when the unknown option is selected.
+ *
+ * <example name="select-unknown-value-required" module="staticSelect">
+ * <file name="index.html">
+ * <div ng-controller="ExampleController">
+ *   <form name="myForm">
+ *     <label for="testSelect"> Select: </label><br>
+ *     <select name="testSelect" ng-model="selected" unknown-value-required>
+ *       <option value="option-1">Option 1</option>
+ *       <option value="option-2">Option 2</option>
+ *     </select><br>
+ *     <span ng-if="myForm.testSelect.$error.required">Error: Please select a value</span><br>
+ *
+ *     <button ng-click="forceUnknownOption()">Force unknown option</button><br>
+ *   </form>
+ * </div>
+ * </file>
+ * <file name="app.js">
+ *  angular.module('staticSelect', [])
+ *    .controller('ExampleController', ['$scope', function($scope) {
+ *      $scope.selected = null;
+ *
+ *      $scope.forceUnknownOption = function() {
+ *        $scope.selected = 'nonsense';
+ *      };
+ *   }])
+ *   .directive('unknownValueRequired', function() {
+ *     return {
+ *       priority: 1, // This directive must run after the required directive has added its validator
+ *       require: ['ngModel', 'select'],
+ *       link: function(scope, element, attrs, ctrls) {
+ *         var ngModelCtrl = ctrls[0];
+ *         var selectCtrl = ctrls[1];
+ *
+ *         var originalRequiredValidator = ngModelCtrl.$validators.required;
+ *
+ *         ngModelCtrl.$validators.required = function() {
+ *           if (attrs.required && selectCtrl.$isUnknownOptionSelected()) {
+ *             return false;
+ *           }
+ *
+ *           return originalRequiredValidator.apply(this, arguments);
+ *         };
+ *       }
+ *     };
+ *   });
+ * </file>
+ *</example>
+ *
+ *
  */
 var SelectController =
         ['$element', '$scope', /** @this */ function($element, $scope) {
@@ -48657,15 +49034,18 @@ var SelectController =
   // does not match any of the options. When it is rendered the value of the unknown
   // option is '? XXX ?' where XXX is the hashKey of the value that is not known.
   //
+  // Support: IE 9 only
   // We can't just jqLite('<option>') since jqLite is not smart enough
   // to create it in <select> and IE barfs otherwise.
   self.unknownOption = jqLite(window.document.createElement('option'));
 
-  // The empty option is an option with the value '' that te application developer can
-  // provide inside the select. When the model changes to a value that doesn't match an option,
-  // it is selected - so if an empty option is provided, no unknown option is generated.
-  // However, the empty option is not removed when the model matches an option. It is always selectable
-  // and indicates that a "null" selection has been made.
+  // The empty option is an option with the value '' that the application developer can
+  // provide inside the select. It is always selectable and indicates that a "null" selection has
+  // been made by the user.
+  // If the select has an empty option, and the model of the select is set to "undefined" or "null",
+  // the empty option is selected.
+  // If the model is set to a different unmatched value, the unknown option is rendered and
+  // selected, i.e both are present, because a "null" selection and an unknown value are different.
   self.hasEmptyOption = false;
   self.emptyOption = undefined;
 
@@ -48701,7 +49081,7 @@ var SelectController =
 
   self.unselectEmptyOption = function() {
     if (self.hasEmptyOption) {
-      self.emptyOption.removeAttr('selected');
+      setOptionSelectedStatus(self.emptyOption, false);
     }
   };
 
@@ -48743,14 +49123,7 @@ var SelectController =
       var selectedOption = $element[0].options[$element[0].selectedIndex];
       setOptionSelectedStatus(jqLite(selectedOption), true);
     } else {
-      if (value == null && self.emptyOption) {
-        self.removeUnknownOption();
-        self.selectEmptyOption();
-      } else if (self.unknownOption.parent().length) {
-        self.updateUnknownOption(value);
-      } else {
-        self.renderUnknownOption(value);
-      }
+      self.selectUnknownOrEmptyOption(value);
     }
   };
 
@@ -48793,6 +49166,59 @@ var SelectController =
     return !!optionsMap.get(value);
   };
 
+  /**
+   * @ngdoc method
+   * @name select.SelectController#$hasEmptyOption
+   *
+   * @description
+   *
+   * Returns `true` if the select element currently has an empty option
+   * element, i.e. an option that signifies that the select is empty / the selection is null.
+   *
+   */
+  self.$hasEmptyOption = function() {
+    return self.hasEmptyOption;
+  };
+
+  /**
+   * @ngdoc method
+   * @name select.SelectController#$isUnknownOptionSelected
+   *
+   * @description
+   *
+   * Returns `true` if the select element's unknown option is selected. The unknown option is added
+   * and automatically selected whenever the select model doesn't match any option.
+   *
+   */
+  self.$isUnknownOptionSelected = function() {
+    // Presence of the unknown option means it is selected
+    return $element[0].options[0] === self.unknownOption[0];
+  };
+
+  /**
+   * @ngdoc method
+   * @name select.SelectController#$isEmptyOptionSelected
+   *
+   * @description
+   *
+   * Returns `true` if the select element has an empty option and this empty option is currently
+   * selected. Returns `false` if the select element has no empty option or it is not selected.
+   *
+   */
+  self.$isEmptyOptionSelected = function() {
+    return self.hasEmptyOption && $element[0].options[$element[0].selectedIndex] === self.emptyOption[0];
+  };
+
+  self.selectUnknownOrEmptyOption = function(value) {
+    if (value == null && self.emptyOption) {
+      self.removeUnknownOption();
+      self.selectEmptyOption();
+    } else if (self.unknownOption.parent().length) {
+      self.updateUnknownOption(value);
+    } else {
+      self.renderUnknownOption(value);
+    }
+  };
 
   var renderScheduled = false;
   function scheduleRender() {
@@ -48941,6 +49367,9 @@ var SelectController =
  * the content of the `value` attribute or the textContent of the `<option>`, if the value attribute is missing.
  * Value and textContent can be interpolated.
  *
+ * The {@link select.SelectController select controller} exposes utility functions that can be used
+ * to manipulate the select's behavior.
+ *
  * ## Matching model and option values
  *
  * In general, the match between the model and an option is evaluated by strictly comparing the model
@@ -48992,6 +49421,19 @@ var SelectController =
  * set on the model on selection. See {@link ngOptions `ngOptions`}.
  * @param {string=} ngAttrSize sets the size of the select element dynamically. Uses the
  * {@link guide/interpolation#-ngattr-for-binding-to-arbitrary-attributes ngAttr} directive.
+ *
+ *
+ * @knownIssue
+ *
+ * In Firefox, the select model is only updated when the select element is blurred. For example,
+ * when switching between options with the keyboard, the select model is only set to the
+ * currently selected option when the select is blurred, e.g via tab key or clicking the mouse
+ * outside the select.
+ *
+ * This is due to an ambiguity in the select element specification. See the
+ * [issue on the Firefox bug tracker](https://bugzilla.mozilla.org/show_bug.cgi?id=126379)
+ * for more information, and this
+ * [Github comment for a workaround](https://github.com/angular/angular.js/issues/9134#issuecomment-130800488)
  *
  * @example
  * ### Simple `select` elements with static options
@@ -49237,10 +49679,11 @@ var selectDirective = function() {
                                                includes(value, selectCtrl.selectValueMap[option.value]));
             var currentlySelected = option.selected;
 
-            // IE and Edge, adding options to the selection via shift+click/UP/DOWN,
+            // Support: IE 9-11 only, Edge 12-15+
+            // In IE and Edge adding options to the selection via shift+click/UP/DOWN
             // will de-select already selected options if "selected" on those options was set
             // more than once (i.e. when the options were already selected)
-            // So we only modify the selected property if neccessary.
+            // So we only modify the selected property if necessary.
             // Note: this behavior cannot be replicated via unit tests because it only shows in the
             // actual user interface.
             if (shouldBeSelected !== currentlySelected) {
@@ -49862,7 +50305,7 @@ exports.i(__webpack_require__(21), "");
 exports.i(__webpack_require__(23), "");
 
 // module
-exports.push([module.i, "/*Remove */\n.hide-chrome-autofill {\n    opacity: 0;\n    height: 0;\n    width: 0;\n}\n\n/*Global styles*/\n@font-face {\n  font-family: 'Noway';\n  src: url(" + __webpack_require__(43) + ");\n  src: url(" + __webpack_require__(46) + ") format('woff2'),\n       url(" + __webpack_require__(45) + ") format('woff'),\n       url(" + __webpack_require__(44) + ")  format('truetype')\n}\n\n@font-face {\n  font-family: 'ClearSans';\n  src: url(" + __webpack_require__(39) + ")  format('truetype')\n}\n\n.reed-app {\n    background-color: #FFF;\n}\n\nbody {\n    font-family:'ClearSans';\n    z-index: 1;\n}\n\na:hover {\n    text-decoration: none;\n}\n\n.reed-link {\n    text-decoration: none;\n}\n\n.reed-link:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n\n.reed-input {\n    outline: none;\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.reed-textarea {\n    outline: none;\n    resize: none;\n    border: 1px solid #CCCCCC;\n    width: 100%;\n    height:150px;\n    padding-left: 6px;\n    padding-top: 6px;\n    margin-bottom: 20px;\n}\n\n.reed-banner {\n    padding-top:10px;\n    padding-left:20px;\n    padding-right:20px;\n    padding-bottom: 20px;\n    background-color: #F8F8F8;\n}\n\n.reed-form {\n    margin-top:40px;\n}\n\n.reed-btn {\n\tborder: solid 1px #434343;\n\tfont-family: inherit;\n\tfont-size: 10px;\n\tcolor: inherit;\n\tbackground: none;\n\tcursor: pointer;\n\tpadding: 6px 10px;\n\tdisplay: inline-block;\n\ttext-transform: uppercase;\n\tletter-spacing: 1px;\n\tfont-weight: 700;\n\toutline: none;\n\tposition: relative;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn:after {\n\tcontent: '';\n\tposition: absolute;\n\tz-index: -1;\n\t-webkit-transition: all 0.3s;\n\ttransition: all 0.3s;\n}\n\n.reed-btn-heavy-click {\n    border: none;\n    border-radius: 0 0 5px 5px;\n    background: #cb4e4e;\n    color: #fff;\n    box-shadow: 0 6px #ab3c3c;\n    -webkit-transition: none;\n    transition: none;\n}\n\n.reed-btn-heavy-click:hover {\n    box-shadow: 0 8px #ab3c3c;\n\ttop: -2px;\n}\n\n\n.reed-btn-heavy-click:active {\n\tbox-shadow: 0 0 #ab3c3c;\n\ttop: 6px;\n}\n\n\n/*Nav styles*/\n\n.reed-nav {\n    background-color: #FFF;\n    border: none;\n}\n\n\n@media only screen and (min-width: 768px) {\n    .reed-nav-container-fluid {\n        padding-right: 0;\n    }\n}\n\n.reed-nav-link:hover {\n    background-color:#4E56EE !important;\n    color: #FFFFFF !important;\n}\n\n.reed-brand {\n    font-size: 20px;\n    color:#434343 !important;\n}\n", ""]);
+exports.push([module.i, "/*Remove */\n.hide-chrome-autofill {\n    opacity: 0;\n    height: 0;\n    width: 0;\n}\n\n/*Global styles*/\n@font-face {\n  font-family: 'Noway';\n  src: url(" + __webpack_require__(43) + ");\n  src: url(" + __webpack_require__(46) + ") format('woff2'),\n       url(" + __webpack_require__(45) + ") format('woff'),\n       url(" + __webpack_require__(44) + ")  format('truetype')\n}\n\n@font-face {\n  font-family: 'ClearSans';\n  src: url(" + __webpack_require__(39) + ")  format('truetype')\n}\n\n.reed-app {\n    background-color: #FFF;\n}\n\nbody {\n    font-family:'ClearSans';\n    z-index: 1;\n}\n\na:hover {\n    text-decoration: none;\n}\n\n.reed-link {\n    text-decoration: none;\n}\n\n.reed-link:hover{\n    background-color: #4E56EE;\n    color: #FFF;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n\n.reed-input {\n    outline: none;\n    width: 100%;\n    height: 40px;\n    padding-left: 4px;\n    margin-bottom: 20px;\n}\n\n.reed-textarea {\n    outline: none;\n    resize: none;\n    border: 1px solid #CCCCCC;\n    width: 100%;\n    height:150px;\n    padding-left: 6px;\n    padding-top: 6px;\n    margin-bottom: 20px;\n}\n\n.reed-banner {\n    padding-top:10px;\n    padding-left:20px;\n    padding-right:20px;\n    padding-bottom: 20px;\n    background-color: #F8F8F8;\n}\n\n.reed-form {\n    margin-top:40px;\n}\n\n.reed-btn {\n\tborder: solid 1px #434343;\n\tfont-family: inherit;\n\tfont-size: 10px;\n\tcolor: inherit;\n\tbackground: none;\n\tcursor: pointer;\n\tpadding: 6px 10px;\n\tdisplay: inline-block;\n\ttext-transform: uppercase;\n\tletter-spacing: 1px;\n\tfont-weight: 700;\n\toutline: none;\n\tposition: relative;\n\ttransition: all 0.3s;\n}\n\n.reed-btn:after {\n\tcontent: '';\n\tposition: absolute;\n\tz-index: -1;\n\ttransition: all 0.3s;\n}\n\n.reed-btn-heavy-click {\n    border: none;\n    border-radius: 0 0 5px 5px;\n    background: #cb4e4e;\n    color: #fff;\n    box-shadow: 0 6px #ab3c3c;\n    transition: none;\n}\n\n.reed-btn-heavy-click:hover {\n    box-shadow: 0 8px #ab3c3c;\n\ttop: -2px;\n}\n\n\n.reed-btn-heavy-click:active {\n\tbox-shadow: 0 0 #ab3c3c;\n\ttop: 6px;\n}\n\n\n/*Nav styles*/\n\n.reed-nav {\n    background-color: #FFF;\n    border: none;\n}\n\n\n@media only screen and (min-width: 768px) {\n    .reed-nav-container-fluid {\n        padding-right: 0;\n    }\n}\n\n.reed-nav-link:hover {\n    background-color:#4E56EE !important;\n    color: #FFFFFF !important;\n}\n\n.reed-brand {\n    font-size: 20px;\n    color:#434343 !important;\n}\n", ""]);
 
 // exports
 
@@ -50026,13 +50469,13 @@ module.exports = "<div id=\"tempIdArticles\">\n    <p>Current list titles</p>\n\
 "use strict";
 
 
-var cov_1xfhihfxwp = function () {
-  var path = '/Users/dstreuly/Sites/reed/reed/src/index.js',
-      hash = 'c43cdafabb1c625dc13593bf69016f1363f9011b',
+var cov_1q3r92nu4q = function () {
+  var path = '/Users/istreuly/Sites/reed/src/index.js',
+      hash = '2caa3955e7b3c17d5234fac7520b7a2e40ac98e2',
       global = new Function('return this')(),
       gcv = '__coverage__',
       coverageData = {
-    path: '/Users/dstreuly/Sites/reed/reed/src/index.js',
+    path: '/Users/istreuly/Sites/reed/src/index.js',
     statementMap: {
       '0': {
         start: {
@@ -50110,7 +50553,7 @@ __webpack_require__(17);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-++cov_1xfhihfxwp.s[0];
+cov_1q3r92nu4q.s[0]++;
 
 
 _angular2.default.module('app', ['ui.router', 'angular-jwt']).config(_routes2.default).component('dashboard', _dashboard.Dashboard).component('notifications', _notifications.Notifications).component('login', _login.Login).component('signup', _signup.Signup).component('search', _search.Search).component('profile', _profile.Profile).component('logout', _logout.Logout).component('notFound', _notFound.NotFound).component('tempHome', _tempHome.TempHome).service('Auth', _auth.AuthService);
