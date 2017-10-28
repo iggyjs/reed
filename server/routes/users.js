@@ -10,6 +10,37 @@ const cors = require('cors');
 
 let userId = '';
 
+
+//gets a user by username
+routes.get('/user/:username', (req, res) => {
+    let username = req.params.username;
+    User.find({name: username}, (err, user) => {
+        if (user.length > 0) {
+            //pass back only profile information
+            //exclude pw, other sensitive data
+
+            // TODO: Add user current list to return
+
+            let profileUser = {
+                username: user[0].name,
+                guid: user[0].guid,
+                followers: user[0].followers,
+                following: user[0].following,
+                followRequests: user[0].followRequests
+            }
+
+            res.json(profileUser);
+        }
+
+        else { //no user was found
+            res.json({userNotFound: true});
+        }
+
+
+    });
+});
+
+
 // routes to handle social features, following, getting follow requests, etc.
 //middleware to verify a tokens
 
@@ -69,38 +100,7 @@ routes.get('/currentUser', (req, res) => {
 
         res.json({user: saferUser});
     });
-})
-
-
-//gets a user by username
-routes.get('/user/:username', (req, res) => {
-    let username = req.params.username;
-    User.find({name: username}, (err, user) => {
-        if (user.length > 0) {
-            //pass back only profile information
-            //exclude pw, other sensitive data
-
-            // TODO: Add user current list to return
-
-            let profileUser = {
-                username: user[0].name,
-                guid: user[0].guid,
-                followers: user[0].followers,
-                following: user[0].following,
-                followRequests: user[0].followRequests
-            }
-
-            res.json(profileUser);
-        }
-
-        else { //no user was found
-            res.json({userNotFound: true});
-        }
-
-
-    });
 });
-
 
 //gets a user by guid
 routes.get('/user/guid/:guid', (req, res) => {
@@ -108,7 +108,7 @@ routes.get('/user/guid/:guid', (req, res) => {
 
     User.findOne({guid: guid}, (err, user) => {
         if (err) throw err;
-        
+
         let safeUserObj = {
             username: user.name,
             guid: user.guid

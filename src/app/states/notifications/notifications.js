@@ -30,6 +30,7 @@ class NotificationsController {
             }
         }).then((res) => {
             if (res.status === 200) {
+                console.log(res);
                 this.user = res.data.user;
                 // For now, the only thing that the notifications state contains is follow requests
                 this.followRequests = this.getFollowRequests();
@@ -44,9 +45,9 @@ class NotificationsController {
 
 
     getFollowRequests() {
+        let users = [];
         let reqs = this.user.followRequests;
         // we need the users for these requests
-        let users = [];
 
         for (let i=0; i<reqs.length; i++) {
             let endpoint = SERVER + '/api/user/guid/' + reqs[i];

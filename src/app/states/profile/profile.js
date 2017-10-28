@@ -25,6 +25,8 @@ class ProfileController {
         this.followRequestedShow = false;
         this.unfollowButtonShow = false;
 
+        this.isLoggedIn = Auth.getUserToken() === null ? false : true;
+        
 
         this.findUserByLocation();
         this.user = this.Auth.getUserToken();

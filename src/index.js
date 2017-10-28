@@ -1,7 +1,7 @@
 import angular from 'angular';
-// import services here
-// import {TodoService} from './app/todos/todos';
-// import different possible states here
+
+// states
+import {Landing} from './app/states/landing/landing';
 import {Dashboard} from './app/states/dashboard/dashboard';
 import {Notifications} from './app/states/notifications/notifications';
 import {Login} from './app/states/login/login';
@@ -12,20 +12,21 @@ import {Profile} from './app/states/profile/profile';
 import {NotFound} from './app/states/notFound/notFound';
 import {TempHome} from './app/states/tempHome/tempHome';
 
+// services
 import {AuthService} from './app/services/auth.js';
 
-// node_modules
+//node_modules
 import 'angular-ui-router';
 import 'angular-jwt';
 
 import routesConfig from './routes';
 
-//styles
 import './index.css';
 
 angular
   .module('app', ['ui.router', 'angular-jwt'])
   .config(routesConfig)
+  .component('landing', Landing)
   .component('dashboard', Dashboard)
   .component('notifications', Notifications)
   .component('login', Login)

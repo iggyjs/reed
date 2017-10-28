@@ -16,6 +16,8 @@ class SearchController {
         this.user = this.Auth.getUserToken();
 	}
 
+    // TODO: Hide before searching
+
     getAllUsers() {
         this.$http.get(SERVER + '/api/allUsers', {
             headers : {
