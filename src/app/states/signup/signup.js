@@ -94,6 +94,18 @@ class SignupController {
         });
     }
 
+    downloadExtension() {
+        let ctrl = this;
+
+        chrome.webstore.install('https://chrome.google.com/webstore/detail/jakgfopmadhihjajjegmbnaiimjbmdlk',
+        function(d){
+            console.log('installed')
+        },
+
+        function(e){
+            console.log('not installed: '+ e)
+        });
+    }
 }
 
 export const Signup = {

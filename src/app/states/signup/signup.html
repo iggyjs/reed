@@ -34,7 +34,7 @@
             <input id="signupButton" type="submit" value="Sign up">
         </form>
 
-        <a href="https://chrome.google.com/webstore/detail/jmfgnececdjgppliiaopmcfdbdednhpd/" target="_blank"><button id="downloadExtensionButton">Download Extension</button></a>
+        <button ng-click="$ctrl.downloadExtension()" id="downloadExtensionButton">Download Extension</button>
         <p ng-if="$ctrl.error" id="signupErrorMessage">{{$ctrl.errorMessage}}</p>
     </center>
 </div>
