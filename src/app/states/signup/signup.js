@@ -12,7 +12,6 @@ class SignupController {
         this.Auth = Auth;
 		this.data = $state.current.data;
 		this.$http = $http;
-
         this.error = false;
         this.errorMessage = '';
 
