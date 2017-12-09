@@ -30,11 +30,12 @@ class SignupController {
 
         // check if form is valid
         let passwordsMatch = this.password === this.password2 ? true : false;
-        let usernameIsLongEnough = this.username.length > 2 ? true : false
-        let usernameIsShortEnough = this.username.length < 25 ? true : false
+        let usernameIsLongEnough = this.username.length > 2 ? true : false;
+        let usernameIsShortEnough = this.username.length < 25 ? true : false;
+        let usernameContainsUnderscore = this.username.indexOf('_') > -1 ? true : false;
         let passwordIsLongEnough = this.password.length > 6 ? true : false;
 
-        if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough) {
+        if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough && !usernameContainsUnderscore) {
             this.AuthSignup(this.username, this.password);
         }
         else {
@@ -42,6 +43,11 @@ class SignupController {
                 //show password too short message
                 this.error = true;
                 this.errorMessage = 'Password is too short.';
+            }
+
+            if (usernameContainsUnderscore) {
+                this.error = true;
+                this.errorMessage = "No underscores in usernames. For now. I'm sorry.";
             }
 
             if (!usernameIsLongEnough) {

@@ -8621,11 +8621,19 @@ var ValidationUtilsService = exports.ValidationUtilsService = function () {
 		this.jwtHelper = jwtHelper;
 	}
 
+	//HACK: Need to find long term solution as to why @ can't be passed around as a route?
+
+
 	_createClass(ValidationUtilsService, [{
 		key: 'cleanUsername',
 		value: function cleanUsername(username) {
 			// Get rid of @ which is somehow fatal for this app???
 			return username.replace(new RegExp('@', 'g'), '_');
+		}
+	}, {
+		key: 'revertEmail',
+		value: function revertEmail(username) {
+			return username.replace(new RegExp('_', 'g'), '@');
 		}
 	}]);
 
@@ -9236,6 +9244,7 @@ var ProfileController = function () {
             var userId = this.$location.$$url;
             // Remove the slash and the at sign
             var parsedUserId = userId.substring(1, userId.length);
+            parsedUserId = this.ValidationUtils.revertEmail(parsedUserId);
 
             // search by user id
             var endpoint = SERVER + '/api/user/' + parsedUserId;
@@ -9557,15 +9566,21 @@ var SignupController = function () {
             var passwordsMatch = this.password === this.password2 ? true : false;
             var usernameIsLongEnough = this.username.length > 2 ? true : false;
             var usernameIsShortEnough = this.username.length < 25 ? true : false;
+            var usernameContainsUnderscore = this.username.indexOf('_') > -1 ? true : false;
             var passwordIsLongEnough = this.password.length > 6 ? true : false;
 
-            if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough) {
+            if (passwordsMatch && usernameIsLongEnough && usernameIsShortEnough && passwordIsLongEnough && !usernameContainsUnderscore) {
                 this.AuthSignup(this.username, this.password);
             } else {
                 if (this.password.length === 0) {
                     //show password too short message
                     this.error = true;
                     this.errorMessage = 'Password is too short.';
+                }
+
+                if (usernameContainsUnderscore) {
+                    this.error = true;
+                    this.errorMessage = "No underscores in usernames. For now. I'm sorry.";
                 }
 
                 if (!usernameIsLongEnough) {

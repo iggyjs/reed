@@ -11,9 +11,14 @@ export class ValidationUtilsService {
 		this.jwtHelper = jwtHelper;
 	}
 
+	//HACK: Need to find long term solution as to why @ can't be passed around as a route?
     cleanUsername(username) {
 		// Get rid of @ which is somehow fatal for this app???
 	    return username.replace(new RegExp('@', 'g'), '_');
     }
+
+    revertEmail(username) {
+		return username.replace(new RegExp('_', 'g'), '@');
+	}
 
 }

@@ -38,6 +38,7 @@ class ProfileController {
         let userId = this.$location.$$url;
         // Remove the slash and the at sign
         let parsedUserId = userId.substring(1, userId.length);
+        parsedUserId = this.ValidationUtils.revertEmail(parsedUserId);
 
         // search by user id
         let endpoint = SERVER + '/api/user/' + parsedUserId;
