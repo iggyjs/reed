@@ -18,7 +18,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="reed-nav-link" ui-sref="dashboard">Feed</a></li>
                 <li><a class="reed-nav-link" ui-sref="notifications">Notifications</a></li>
-                <li><a class="reed-nav-link" ui-sref="profile({userId: $ctrl.user.name })">Profile</a></li>
+                <li><a class="reed-nav-link" ui-sref="profile({userId: $ctrl.handle })">Profile</a></li>
                 <li><a class="reed-nav-link" ui-sref="search">Search</a></li>
                 <li><a class="reed-nav-link" ui-sref="logout">Logout</a></li>
             </ul>
@@ -39,7 +39,7 @@
 
         <!--  ng-if="$ctrl.searchQuery.length > 0"  -->
         <div ng-click="$ctrl.goToProfile(user)" class="search-results-banner" ng-repeat="user in $ctrl.allUsers | filter: $ctrl.searchQuery | limitTo : 15 ">
-            <p>@{{user.name}}</p>
+            <p>{{user.name}}</p>
         </div>
     </div>
 </div>

@@ -4,18 +4,20 @@ const SERVER = config.environment === 'DEV' ? config.development_server : config
 
 /** @ngInject */
 class DashboardController {
-  	constructor($http, $state, Auth) {
+  	constructor($http, $state, Auth, ValidationUtils) {
 		this.$state = $state;
         this.message = 'dashboard';
 		this.data = $state.current.data;
 		this.$http = $http;
         this.Auth = Auth;
+        this.ValidationUtils = ValidationUtils;
         this.followingList = [];
 
         //check if we need to validate
         if (this.data.authRequired) {
             //set the current user
             let user = this.Auth.validateUserToken();
+            this.handle = this.ValidationUtils.cleanUsername(user.name);
         }
 
         this.user = this.getCurrentUserFromDB();

@@ -4,9 +4,10 @@ const SERVER = config.environment === 'DEV' ? config.development_server : config
 
 /** @ngInject */
 class ProfileController {
-  	constructor($http, $state, $location, Auth) {
+  	constructor($http, $state, $location, Auth, ValidationUtils) {
 
         this.Auth = Auth;
+        this.ValidationUtils = ValidationUtils;
 		this.$state = $state;
         this.$location = $location;
         this.message = 'profile';
@@ -30,6 +31,7 @@ class ProfileController {
 
         this.findUserByLocation();
         this.user = this.Auth.getUserToken();
+        this.handle = this.ValidationUtils.cleanUsername(this.user.name);
 	}
 
     findUserByLocation() {

@@ -5,15 +5,17 @@ const HOST = config.environment === 'DEV' ? config.development_host : config.pro
 
 class SearchController {
     /** @ngInject */
-  	constructor($http, $state, Auth) {
+  	constructor($http, $state, Auth, ValidationUtils) {
 		this.$state = $state;
         this.Auth = Auth;
+        this.ValidationUtils = ValidationUtils;
         this.searchQuery = '';
 		this.data = $state.current.data;
 		this.$http = $http;
         this.allUsers = [];
         this.getAllUsers();
         this.user = this.Auth.getUserToken();
+        this.handle = this.ValidationUtils.cleanUsername(this.user.name);
 	}
 
     // TODO: Hide before searching
@@ -29,7 +31,8 @@ class SearchController {
     }
 
     goToProfile(user) {
-        this.$state.go('profile', {userId: user.name});
+
+        this.$state.go('profile', {userId: this.ValidationUtils.cleanUsername(user.name)});
     }
 }
 

@@ -14,6 +14,7 @@ import {TempHome} from './app/states/tempHome/tempHome';
 
 // services
 import {AuthService} from './app/services/auth.js';
+import {ValidationUtilsService} from './app/services/validationUtils.js';
 
 //node_modules
 import 'angular-ui-router';
@@ -36,4 +37,5 @@ angular
   .component('logout', Logout)
   .component('notFound', NotFound)
   .component('tempHome', TempHome)
-  .service('Auth', AuthService);
+  .service('Auth', AuthService)
+  .service('ValidationUtils', ValidationUtilsService);

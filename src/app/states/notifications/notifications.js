@@ -4,12 +4,13 @@ const SERVER = config.environment === 'DEV' ? config.development_server : config
 
 /** @ngInject */
 class NotificationsController {
-  	constructor($http, $state, Auth) {
+  	constructor($http, $state, Auth, ValidationUtils) {
 		this.$state = $state;
         this.message = 'dashboard';
 		this.data = $state.current.data;
 		this.$http = $http;
         this.Auth = Auth;
+        this.ValidationUtils = ValidationUtils;
 
         //check if we need to validate
         if (this.data.authRequired) {
@@ -33,6 +34,7 @@ class NotificationsController {
             if (res.status === 200) {
                 console.log(res);
                 this.user = res.data.user;
+                this.handle = this.ValidationUtils.cleanUsername(this.user.name);
                 // For now, the only thing that the notifications state contains is follow requests
                 this.followRequests = this.getFollowRequests();
 
