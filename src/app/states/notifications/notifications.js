@@ -33,7 +33,6 @@ class NotificationsController {
             if (res.status === 200) {
                 console.log(res);
                 this.user = res.data.user;
-                this.handle = '@' + res.data.user.name;
                 // For now, the only thing that the notifications state contains is follow requests
                 this.followRequests = this.getFollowRequests();
 

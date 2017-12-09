@@ -14,7 +14,6 @@ class SearchController {
         this.allUsers = [];
         this.getAllUsers();
         this.user = this.Auth.getUserToken();
-        this.handle = '@' + this.user.name;
 	}
 
     // TODO: Hide before searching

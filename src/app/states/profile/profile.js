@@ -30,7 +30,6 @@ class ProfileController {
 
         this.findUserByLocation();
         this.user = this.Auth.getUserToken();
-        this.handle = '@' + this.user.name;
 	}
 
     findUserByLocation() {
