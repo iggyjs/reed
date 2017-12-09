@@ -1,4 +1,5 @@
 # Reed
+- [Hosted here](http://reedinapp.com/)
 - A web application and Chrome Extension used to post reading lists.
 - MEAN stack application using ES6 with Angular 1.5.
 - Used gulp.js and webpack to bundle assets.
