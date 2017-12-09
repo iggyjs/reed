@@ -9188,7 +9188,7 @@ var ProfileController = function () {
 
             var userId = this.$location.$$url;
             // Remove the slash and the at sign
-            var parsedUserId = userId.substring(2, userId.length);
+            var parsedUserId = userId.substring(1, userId.length);
 
             // search by user id
             var endpoint = SERVER + '/api/user/' + parsedUserId;
@@ -9440,8 +9440,7 @@ var SearchController = function () {
     }, {
         key: 'goToProfile',
         value: function goToProfile(user) {
-            var username = '@' + user.name;
-            this.$state.go('profile', { userId: username });
+            this.$state.go('profile', { userId: user.name });
         }
     }]);
 

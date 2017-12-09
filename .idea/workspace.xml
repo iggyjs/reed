@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="666f6586-ab0e-4252-9bac-0475808febaa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/app/states/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/src/app/states/dashboard/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/states/dashboard/dashboard.js" afterPath="$PROJECT_DIR$/src/app/states/dashboard/dashboard.js" />
-      <change beforePath="$PROJECT_DIR$/src/app/states/notifications/notifications.html" afterPath="$PROJECT_DIR$/src/app/states/notifications/notifications.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/states/notifications/notifications.js" afterPath="$PROJECT_DIR$/src/app/states/notifications/notifications.js" />
-      <change beforePath="$PROJECT_DIR$/src/app/states/profile/profile.html" afterPath="$PROJECT_DIR$/src/app/states/profile/profile.html" />
+      <change beforePath="$PROJECT_DIR$/.tmp/index.js" afterPath="$PROJECT_DIR$/.tmp/index.js" />
       <change beforePath="$PROJECT_DIR$/src/app/states/profile/profile.js" afterPath="$PROJECT_DIR$/src/app/states/profile/profile.js" />
-      <change beforePath="$PROJECT_DIR$/src/app/states/search/search.html" afterPath="$PROJECT_DIR$/src/app/states/search/search.html" />
       <change beforePath="$PROJECT_DIR$/src/app/states/search/search.js" afterPath="$PROJECT_DIR$/src/app/states/search/search.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +17,18 @@
     <favorites_list name="reed" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/states/profile/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -34,6 +39,7 @@
       <find>profileLista</find>
       <find>this.user</find>
       <find>handle</find>
+      <find>@</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -51,14 +57,14 @@
         <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/config.js" />
-        <option value="$PROJECT_DIR$/src/app/states/profile/profile.js" />
         <option value="$PROJECT_DIR$/src/app/states/profile/profile.html" />
         <option value="$PROJECT_DIR$/src/app/states/notifications/notifications.js" />
         <option value="$PROJECT_DIR$/src/app/states/notifications/notifications.html" />
         <option value="$PROJECT_DIR$/src/app/states/dashboard/dashboard.html" />
         <option value="$PROJECT_DIR$/src/app/states/dashboard/dashboard.js" />
-        <option value="$PROJECT_DIR$/src/app/states/search/search.js" />
         <option value="$PROJECT_DIR$/src/app/states/search/search.html" />
+        <option value="$PROJECT_DIR$/src/app/states/search/search.js" />
+        <option value="$PROJECT_DIR$/src/app/states/profile/profile.js" />
       </list>
     </option>
   </component>
@@ -327,14 +333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/states/signup/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -382,7 +380,7 @@
         <state relative-caret-position="85">
           <caret line="5" column="123" lean-forward="false" selection-start-line="5" selection-start-column="123" selection-end-line="5" selection-end-column="123" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -399,14 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="111" lean-forward="false" selection-start-line="20" selection-start-column="111" selection-end-line="20" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/states/profile/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="97" column="20" lean-forward="true" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -469,8 +459,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/states/search/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="527">
+          <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/states/profile/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
           <folding />
         </state>
       </provider>
