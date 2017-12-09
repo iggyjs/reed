@@ -7,14 +7,16 @@ const config = require('./config');
 const User = require('./models/user');
 const cors = require('cors');
 const path = require('path');
-const PORT = process.env.PORT || 8000;
+const PORT;
 
 if (config.environment === 'DEV') {
     process.env['NODE_ENV'] = 'development';
     process.env['NODE_DB'] = config.development_database;
+    PORT = process.env.PORT || 8000;
 } else {
     process.env['NODE_ENV'] = 'production';
     process.env['NODE_DB'] = config.production_database;
+    PORT = process.env.PORT || 3000;
 }
 
 mongoose.connect(process.env['NODE_DB']);
