@@ -58,10 +58,8 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 			data: {
 				authRequired: false
 			}
-		}).state('profile', {
+		}).state('profile', { //variable route needs to be last
 			url: '/:userId',
 			component: 'profile'
 		});
-
-		//variable route needs to be last
 }

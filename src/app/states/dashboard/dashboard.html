@@ -18,7 +18,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="reed-nav-link" ui-sref="dashboard">Feed</a></li>
                 <li><a class="reed-nav-link" ui-sref="notifications">Notifications</a></li>
-                <li><a class="reed-nav-link" ui-sref="profile({userId: '@' + $ctrl.user.name })">Profile</a></li>
+                <li><a class="reed-nav-link" ui-sref="profile({userId: $ctrl.handle })">Profile</a></li>
                 <li><a class="reed-nav-link" ui-sref="search">Search</a></li>
                 <li><a class="reed-nav-link" ui-sref="logout">Logout</a></li>
             </ul>
@@ -35,11 +35,11 @@
 
     <div class="reed-follower-articles">
         <div ng-repeat="user in $ctrl.followingList" class="reed-follower-article-div">
-            <a ui-sref="profile({userId: '@' + user.username })" class="reed-follower-article-user">{{user.username}}</a>
+            <a ui-sref="profile({userId: user.username })" class="reed-follower-article-user">{{user.username}}</a>
 
             <div class="reed-articles-container">
                 <div ng-repeat="article in user.articles" class="reed-follower-articles">
-                    <p class="reed-follower-article-title">{{article.articleTitle}}</p>
+                    <a href="{{article.articleLink}}" target="_blank"><p class="reed-follower-article-title">{{article.articleTitle}}</p></a>
                     <p ng-if="article.articleDescription.length > 0" class="reed-follower-article-des">"{{article.articleDescription}}"</p>
                 </div>
             </div>

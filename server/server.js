@@ -51,9 +51,8 @@ app.use('/api', auth, profile, list, users);
 
 //server angular from express if in production
 if (process.env['NODE_ENV'] === 'production') {
-    //when running a dist:build on localhost:8000, remove the relative path to have just
-    // app.use(express.static('dist'));
-    app.use(express.static('dist'));
+
+    app.use(express.static('../dist'));
 
     app.use('*', (req, res) => {
       // Use res.sendfile, as it streams instead of reading the file into memory.

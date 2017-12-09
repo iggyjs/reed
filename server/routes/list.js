@@ -90,6 +90,28 @@ routes.post('/clearCurrList', (req, res) => {
 });
 
 
+routes.post('/deleteArticle', (req, res) => {
+    let articleId = req.body.articleId;
+    let guid = req.body.userId;
+
+    //get the list
+    List.find({user_guid: guid}, (err, data) => {
+        let userList = data[0];
+
+        let articles = userList.articles.filter((ele) => {
+           return ele._id != articleId;
+        });
+
+        List.findOneAndUpdate({user_id: userId}, {$set: { articles: articles}}, {new: true}, (err, newList) => {
+
+            if (err) throw err;
+            res.json({success: true, list: newList});
+
+        });
+    });
+});
+
+
 //adds a new article to the current list
 routes.post('/addArticle', (req, res) => {
     let today = moment().format('MM:DD:YYYY');

@@ -16,6 +16,7 @@ class DashboardController {
         if (this.data.authRequired) {
             //set the current user
             let user = this.Auth.validateUserToken();
+            this.handle = '@' + user.name;
         }
 
         this.user = this.getCurrentUserFromDB();

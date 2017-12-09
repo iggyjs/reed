@@ -34,9 +34,10 @@ class ProfileController {
 
     findUserByLocation() {
         let userId = this.$location.$$url;
+        // Remove the slash and the at sign
         let parsedUserId = userId.substring(2, userId.length);
 
-        // //search by user id
+        // search by user id
         let endpoint = SERVER + '/api/user/' + parsedUserId;
         this.$http.get(endpoint, {
             headers : {
@@ -134,7 +135,19 @@ class ProfileController {
     }
 
     deleteArticle(article) {
-        console.log(article);
+  	    let guid = this.profileUser.guid;
+
+        this.$http.post(SERVER + '/api/deleteArticle', {userId: guid, articleId: article._id}, {
+            headers : {
+                'x-access-token': localStorage.getItem('reed-token')
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                this.profileList = res.data.list;
+            } else {
+                //show error message
+            }
+        });
     }
 
     // TODO: Add form validation
