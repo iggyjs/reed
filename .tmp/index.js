@@ -9233,7 +9233,11 @@ var ProfileController = function () {
 
         this.findUserByLocation();
         this.user = this.Auth.getUserToken();
-        this.handle = this.ValidationUtils.cleanUsername(this.user.name);
+
+        // Safeguard for showing public profile
+        if (this.user !== null) {
+            this.handle = this.ValidationUtils.cleanUsername(this.user.name);
+        }
     }
 
     _createClass(ProfileController, [{

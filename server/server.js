@@ -53,7 +53,8 @@ app.use('/api', auth, profile, list, users);
 
 //server angular from express if in production
 if (process.env['NODE_ENV'] === 'production') {
-
+    // TODO: The solution to this problem is to use __dirname__.
+    // It looks like wherever it is that you call node server.js it uses that as the directory
     app.use(express.static('../dist'));
 
     app.use('*', (req, res) => {
