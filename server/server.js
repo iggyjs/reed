@@ -7,7 +7,7 @@ const config = require('./config');
 const User = require('./models/user');
 const cors = require('cors');
 const path = require('path');
-const PORT;
+let PORT = null;
 
 if (config.environment === 'DEV') {
     process.env['NODE_ENV'] = 'development';
