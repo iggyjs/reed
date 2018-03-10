@@ -28,7 +28,3 @@ cd server
 npm install
 
 forever restart server.js
-
-### Test to make sure we were in there ###
-echo 'Hey thereeee' > hey_iggy.txt
-
