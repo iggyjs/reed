@@ -1,42 +1,41 @@
-/*
-
-TODO: change highlight CSS
-
-
-*/
-
-.landing-view {
-
+/*******************/
+/* General styles */
+/*******************/
+/* Vertical centering */
+.outer {
+    display: table;
 }
 
-#bannerTwoImage {
-    pointer-events: none;
-    height: 110px;
-    width: auto;
-    position: relative;
-    top:0;
-    margin-top:-56px
+.middle {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-#bannerFourImage {
-    pointer-events: none;
-    height: 110px;
-    width: auto;
-    position: relative;
-    top:0;
-    margin-top:-42px
+.inner {
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.banner-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+}
 
-.banner-center-text {
+.landing-paragraph {
     line-height: 1.7em;
     margin-bottom: 20px;
     text-align: left;
     font-size: 23px;
 }
-
-.landing-text-container {
-    max-width: 700px;
+/*********************/
+/* 1st banner styles */
+/*********************/
+#bannerOne {
+    height: 90.2vh;
+    width: 100%;
 }
 
 #landingHeader {
@@ -44,38 +43,54 @@ TODO: change highlight CSS
     text-align: left;
 }
 
-#firstContainer {
-    padding-left: 20px;
-    padding-right: 20px;
+#bannerOneText {
+    margin-top: -200px;
 }
 
-#secondContainer {
-    color: #FFF;
-    padding-left: 20px;
-    padding-right: 20px;
+#bookIcon {
+    pointer-events: none;
+    height: 110px;
+    width: 128.5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -53px;
 }
 
-#fourthContainer {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#thirdContainer{
-    text-align: left;
-    padding: 10px 10px 10px 10px;
-}
-
+/*********************/
+/* 2nd banner styles */
+/*********************/
 #bannerTwo {
-    background-color: #4E56EE
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    background-color: #4E56EE;
 }
 
+/*********************/
+/* 3rd banner styles */
+/*********************/
+#bannerThree {
+    height: 100vh;
+    width: 100%;
+}
+
+#icebergIcon {
+    pointer-events: none;
+    height: 110px;
+    width: 126px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -68px;
+}
+
+/*********************/
+/* 4th banner styles */
+/*********************/
 #bannerFour {
-    -webkit-transition: background-color 400ms linear;
-    -moz-transition: background-color 400ms linear;
-    -o-transition: background-color 400ms linear;
-    -ms-transition: background-color 400ms linear;
-    transition: background-color 400ms linear;
-    color: #fff;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    background-color: #4E56EE;
 }
 
 #chromeExtensionDeclaration {
@@ -111,14 +126,9 @@ TODO: change highlight CSS
 }
 
 #signupLandingButton {
-    margin-top:40px;
-}
-
-#signupLandingButton > i {
-    padding-left: 5px;
-}
-
-.landing-button {
+    display: block;
+    margin: 0 auto;
+    margin-top:80px;
     text-transform: uppercase;
     height: 55px;
     width: 200px;
@@ -127,7 +137,25 @@ TODO: change highlight CSS
     background-color: transparent;
 }
 
-.landing-button:hover{
+#signupLandingButton > i {
+    padding-left: 5px;
+}
+
+#signupLandingButton:hover{
     background-color: #FFF;
     color: #4E56EE;
 }
+
+/*****************/
+/* Mobile styles */
+/*****************/
+@media only screen and (max-width: 400px) {
+    #bannerOne {
+        height: 81vh;
+    }
+
+    #bannerOneText {
+        margin-top: -150px;
+    }
+}
+

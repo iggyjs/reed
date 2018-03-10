@@ -8,11 +8,6 @@ class LandingController {
 		this.$state = $state;
         this.Auth = Auth;
         this.bannerFourBackgroundChanged = false;
-        this.alterUI();
-
-        $(window).resize(() => {
-            this.alterUI();
-        });
 
         let token = this.Auth.getUserToken();
 
