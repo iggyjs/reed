@@ -21,48 +21,6 @@ class LandingController {
             }
         }
 	}
-
-
-    alterUI() {
-        let bannerOneHeight = window.innerHeight - 71;
-
-        // banner 1
-        $('#bannerOne').css('height', bannerOneHeight + 'px');
-        $('#bannerOne').css('width', window.innerWidth + 'px');
-        $('#firstContainer').css('padding-top', (bannerOneHeight - $('#firstContainer').height())/3);
-
-        // banner two
-        $('#bannerTwo').css('width', window.innerWidth + 'px');
-        $('#bannerTwo').css('height', window.innerHeight + 'px');
-        $('#secondContainer').css('padding-top', (window.innerHeight - $('#secondContainer').height())/3);
-
-
-        //banner three
-        $('#bannerThree').css('width', window.innerWidth + 'px');
-        $('#bannerThree').css('height', window.innerHeight + 'px');
-        $('#thirdContainer').css('padding-top', (window.innerHeight - $('#thirdContainer').height())/3);
-
-        //banner four
-        $('#bannerFour').css('width', window.innerWidth + 'px');
-        $('#bannerFour').css('height', window.innerHeight + 'px');
-        $('#fourthContainer').css('padding-top', (window.innerHeight - $('#fourthContainer').height())/3);
-
-        $(window).scroll(function() {
-            var hT = $('#fourthContainer').offset().top,
-            hH = $('#fourthContainer').outerHeight(),
-            wH = $(window).height(),
-            wS = $(this).scrollTop();
-
-            if (wS > (hT+hH-wH)){
-                if (!this.bannerFourBackgroundChanged) {
-                    // execute only once
-                    $('#bannerFour').css('background-color', '#4E56EE');
-
-                    this.bannerFourBackgroundChanged = true;
-                }
-            }
-        });
-    }
 }
 
 export const Landing = {
