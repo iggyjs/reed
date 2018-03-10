@@ -17,7 +17,18 @@ else
 	git clone $GIT_URL $APP_DIR
 fi
 
-# Install dependencies
+# Install dependencies for client
 npm install
+
+# Rebuild client
+gulp build
+
+# Install dependencies and restart server
 cd server
 npm install
+
+forever restart server.js
+
+### Test to make sure we were in there ###
+echo 'Hey thereeee' > hey_iggy.txt
+
