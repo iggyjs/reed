@@ -15,4 +15,4 @@ Each individual shells, run:
 - Run `$ gulp build` to build to dist
 
 # Deploying
-- Coming soon :wink:
+- Run `$ ./deploy/initiate.sh` after pushing master to run deployment script on EC2 instance.
